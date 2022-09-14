@@ -16,6 +16,9 @@ Contents
 --------
 
 .. toctree::
+    :maxdepth: 3
+    :numbered:
+
     getting_started
     how_to
 

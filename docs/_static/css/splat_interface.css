@@ -1,5 +1,5 @@
 
-@import 'theme.css';
+@import url('theme.css');
 
 /* Customize for SPLAT Interface Documentation*/
 .rst-content .guilabel {
