@@ -29,7 +29,7 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 
-html_theme = 'css/splat_interface.css'
+html_theme = 'sphinx_rtd_theme'
 
 
 # These folders are copied to the documentation's HTML output
@@ -40,6 +40,8 @@ html_static_path = ['_static']
 html_css_files = [
     'css/splat_interface.css',
 ]
+
+html_style = 'css/splat_interface.css'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
