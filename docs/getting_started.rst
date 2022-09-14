@@ -1,3 +1,5 @@
+.. only:: html
+
 Getting Started
 ===============
 
