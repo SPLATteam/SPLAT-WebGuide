@@ -1,4 +1,4 @@
-Welcome to Lumache's documentation!
+SPLAT Interface documentation
 ===================================
 
 **SPLAT** interface is an excel workbook with a set of macros operated via buttons or short-cut keys. 
