@@ -1,0 +1,25 @@
+
+/* Customize for SPLAT Interface Documentation*/
+.rst-content .guilabel {
+ background:#7fbbe3
+}
+
+.rst-content .inputcell {
+ background:#FAA76C;
+ font-size: 80%;
+ border:1px solid #7fbbe3;
+ font-weight:700;
+ border-radius:4px;
+ padding:2.4px 6px;
+ margin:auto 2px
+}
+
+.rst-content .interfacecell {
+ background:#808080;
+ font-size: 80%;
+ border:1px solid #7fbbe3;
+ font-weight:700;
+ border-radius:4px;
+ padding:2.4px 6px;
+ margin:auto 2px
+}

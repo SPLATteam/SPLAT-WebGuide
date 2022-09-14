@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'SPLAT Interface'
+copyright = '2022, IRENA'
+author = 'Yunshu'
 
 release = '0.1'
 version = '0.1.0'
@@ -30,6 +30,16 @@ templates_path = ['_templates']
 # -- Options for HTML output
 
 html_theme = 'sphinx_rtd_theme'
+
+
+# These folders are copied to the documentation's HTML output
+html_static_path = ['_static']
+
+# These paths are either relative to html_static_path
+# or fully qualified paths (eg. https://...)
+html_css_files = [
+    'css/splat_interface.css',
+]
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
