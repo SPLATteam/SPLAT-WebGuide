@@ -29,7 +29,7 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'css/splat_interface.css'
 
 
 # These folders are copied to the documentation's HTML output
