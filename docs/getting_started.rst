@@ -24,7 +24,6 @@ The MESSAGE software comes with a free solver called GLPK. If a different solver
 
 Conventions
 ----------------
-
 :inputcell:`User Input Cell`
 
 Cells formatted as above (dark font with orange background) are user input cells, where the user is allowed and expected to enter data.
@@ -51,7 +50,9 @@ This documentation uses a simple model [to link] for demonstration. You can use 
 
 Opening the file
 ++++++++++++++++
-Open the Excel file that starts with *SPLAT_Interface_...*. When you open the file, you must click *Enable Content* (as shown below) for the file to function.
+Open the Excel file that starts with *SPLAT_Interface_...*.
+
+When you open the file, you must click :button:`Enable Content` (as shown below) for the file to function.
 
 .. image:: getting_started_opening_file.PNG
 
@@ -59,9 +60,10 @@ Open the Excel file that starts with *SPLAT_Interface_...*. When you open the fi
 
 Checking system's decimal symbol
 ++++++++++++++++++++++++++++++++++
-The "decimal separator" of your system must be set to '.' (point) in order for the SPLAT Excel interface to function properly. If it is otherwise, e.g. ',' (comma), please go to Control Panel > Region > Additional settings, and change decimal symbol to '.'.
+The "decimal separator" of your system must be set to '.' (point) in order for the SPLAT Excel interface to function properly. If it is otherwise, e.g. ',' (comma), please go to ``Control Panel`` > ``Region`` > ``Additional settings``, and change decimal symbol to '.'.
 
-The comma separator is often the default in French windows environments and would have to be changed in order to be able to use the interface.
+.. note::
+    The comma separator is often the default in French windows environments and would have to be changed in order to be able to use the interface.
 
 .. _link_interface:
 
