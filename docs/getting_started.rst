@@ -1,3 +1,8 @@
+.. role:: inputcell
+    :class: inputcell
+.. role:: interfacecell
+    :class: interfacecell
+
 Getting Started
 ===============
 
