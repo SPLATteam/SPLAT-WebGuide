@@ -2,11 +2,9 @@
 @import url('theme.css');
 
 /* Customize for SPLAT Interface Documentation*/
-.rst-content .guilabel {
- background:#7fbbe3
-}
 
-.rst-content .inputcell {
+
+.inputcell {
  background:#FAA76C;
  font-size: 80%;
  border:1px solid #7fbbe3;
@@ -16,7 +14,7 @@
  margin:auto 2px
 }
 
-.rst-content .interfacecell {
+.interfacecell {
  background:#808080;
  font-size: 80%;
  border:1px solid #7fbbe3;
