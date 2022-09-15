@@ -1,5 +1,3 @@
-.. rst-class:: inputcell outputcell
-
 Getting Started
 ===============
 
