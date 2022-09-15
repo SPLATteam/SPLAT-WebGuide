@@ -3,6 +3,8 @@
 .. role:: interfacecell
     :class: interfacecell
 
+outputcell
+
 Getting Started
 ===============
 
@@ -22,11 +24,11 @@ The MESSAGE software comes with a free solver called GLPK. If a different solver
 Conventions
 ----------------
 
-:inputcell: `User Input Cell`
+:inputcell:`User Input Cell`
 
 Cells formatted as above (dark font with orange background) are user input cells, where the user is allowed and expected to enter data.
 
-:interfacecell: `Reserved for Interface`
+:interfacecell:`Reserved for Interface`
 
 Cells formatted as above (dark font with pale grey background) are cells that are reserved for interface. These cells are populated by macros in the workbook or are calculated cells.
 
