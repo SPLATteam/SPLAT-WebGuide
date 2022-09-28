@@ -8,7 +8,7 @@
 Defining Time
 ==============
 
-.. note::
+.. important::
     The interface must be linked to the model before executing any of the steps in this section.
     See :ref:`link_interface`.
 

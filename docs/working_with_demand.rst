@@ -8,7 +8,7 @@
 Working with Demand
 ====================
 
-.. note::
+.. important::
     The interface must be linked to the model before executing any of the steps in this section.
     See :ref:`link_interface`.
 
@@ -23,21 +23,21 @@ The ``QueryDemand`` sheets allows the user to review parameters relating to dema
 
 1. In the sheet, specify what to extract:
 
-- Scenarios
+    - Scenarios
 
-- Countries
+    - Countries
 
-- Demand parameters
+    - Demand parameters
 
-    - FinalEnergyDemand: (MWyr) as specified in the model and also in GWh.
+        - ``FinalEnergyDemand`` (MWyr): as specified in the model and also in GWh.
 
-    - FinalPowerDemand (MW): calculated using the final energy demand and the load profiles for each of the demands.
+        - ``FinalPowerDemand`` (MW): calculated using the final energy demand and the load profiles for each of the demands.
 
-    - SecondaryEnergyDemand (MWyr and GWh): calculated using the final energy demand, the distribution losses and the transmission losses.
+        - ``SecondaryEnergyDemand`` (MWyr and GWh): calculated using the final energy demand, the distribution losses and the transmission losses.
 
-    - SecondaryPowerDemand (MW): calculated using the secondary energy demand and the load profiles.
+        - ``SecondaryPowerDemand`` (MW): calculated using the secondary energy demand and the load profiles.
 
-- Year
+    - Year
 
 2. Click the :button:`Refresh Query` button. The data is extracted in long format on the same sheet. The user can then review individual entries in the table using filters or a pivot table.
 

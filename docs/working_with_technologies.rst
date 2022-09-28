@@ -9,11 +9,13 @@
 Working with Technologies
 ==========================
 
-A technology in the model is a power-producing unit or a combination of such units with specific parameters such as, maximum capacity, capacity factor, CAPEX, FOM, fuel cost etc.
+A technology in the model is a power-producing unit or a combination of such units or a transmission line with specific parameters such as, maximum capacity, capacity factor, CAPEX, FOM, fuel cost etc.
+
+A technology can be site specific (a specific plant or transmission line with known parameters) or generic (a technology with generalised parameters).
 
 This section describes how to view, add and change technologies using the SPLAT Excel Interface.
 
-.. note::
+.. important::
     The interface must be linked to the model before executing any of the steps in this section.
     See :ref:`link_interface`.
 
@@ -34,6 +36,31 @@ Adding a technology
 Changing and renaming a technology
 ----------------------------------
 
+The ``SpecificTech`` sheet is used to review and update Site specific power generation technology parameters that don’t vary from year to year.
+
+The SpecificTech sheet has an extra button: :button:`Add missing Tech`, which allows the user to add new site specific technology to the MESSAGE model that is linked. Currently this technology makes the addition by copying the technology parameters of a generic technology of the same technology type as specified by the first 6 characters in the technology name. A new technology will be automatically added to all active scenarios. A MESSAGE technology code is created automatically based on the input and output commodities (as specified by the associated generic technology) and the already existing technologies having the same inputs and outputs.
+
+Once a new technology is added, its parameters must be updated using the :button:`Update Model Data` button.
+
+
+.. _fuel:
+
+Fuel price
+++++++++++
+
+These sheets are used to review or modify fuel supply technologies as per the definitions in the TechnologySets sheet (see section below). The fuel supply is specified in $/GJ. It is currently not possible to add new fuel supply technologies via the SPLAT interface, this is left for future development (as well as the possibility of specifying limits, which would be needed if one wanted to model a supply curve for a particular fuel).
+
+.. _tech_cost:
+
+Technology costs
+++++++++++++++++
+
+.. _tech_capacity:
+
+Capacity Limit
+++++++++++++++
+
+
 .. _delete_tech:
 
 Deleting a technology
@@ -49,12 +76,13 @@ Renewable and storage technologies
 Solar PV, onshore and offshore Wind
 +++++++++++++++++++++++++++++++++++
 
+
 .. _hydro_dam:
 
 Hydro Dam
 ++++++++++
 
-The sheet manipulates the hydro dams in the model.
+The ``SpecificTechHydroDams`` sheet manipulates the hydro dams in the model.
 
 :button:`Refresh Sheet` button extracts the technologies that belong to the `TechSetL2`: `Large Hydro Dams`.
 
@@ -88,5 +116,14 @@ Batteries
 Concentrated Solar Power (CSP)
 ++++++++++++++++++++++++++++++
 
+.. _transmission:
 
+Transmission and Distribution
+-----------------------------
+
+The ``Transmission`` sheets are used to review or modify transmission and distribution technologies parameters as per the definitions in the ``TechnologySets`` sheet (see section below).
+
+If the user wants to model with "sent-out" demand, transmission efficiency must be set to 100%, and investment costs set to a small value. In the default configuration there is no distribution technology specified for "Sent-out" electricity.
+
+The ``Interconnectors`` sheet is used to review and update cross-border interconnector/transmission lines parameters. This sheet also has an :button:`Add missing Tech` button which can be used to add new transmission technologies. At a minimum the two interconnecting countries (which must be active) must be specified. Once a new technology is added, its parameters must be updated using the :button:`Update Model Data` button.
 

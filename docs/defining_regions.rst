@@ -15,7 +15,6 @@ Regions can be added to an existing multi-region MESSAGE-SPLAT model as follows:
 
 -	Reload global in SPLAT interface
 
-
 4. Rename Technologies (use VBA code in ``Regions`` Module called: ``DeleteandrenameTechs()`` followed by VBA code in module ``writeadb`` called ``WriteAllScenarios()``
 
 5. Rename Country description (at the top)
