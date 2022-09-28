@@ -1,0 +1,50 @@
+Required:
+readthedocs account
+github account
+a text editor
+
+Create sections:
+	create a reference_link to section: .. section_name:
+	create a section: underline the section name with symbols (defined in this document as following)
+		first layer
+		===========
+		second layer
+		------------
+		third layer
+		+++++++++++
+		fourth layer
+		~~~~~~~~~~~~
+
+Add link:
+	:ref:`reference_link` (where reference_link is the reference_link of the section, for example :ref:`install_solver`)
+
+
+Add image:
+	.. image:: getting_started_extract_results_1.PNG (note: image has to be added and committed in repository under same name)
+	
+Add a call-out section (built-in):
+	.. note::
+	.. important::
+
+Format font:
+	``code``
+	*italics*
+	**bold**
+
+
+Customized styling by Yunshu:
+To use the styling below, add the following command at the beginning of the .rst file:
+.. role:: inputcell
+    :class: inputcell
+.. role:: interfacecell
+    :class: interfacecell
+.. role:: button
+    :class: button
+
+
+	:button:`button text` (for use when referring to a button in SPLAT interface)
+	:interfacecell:`interface text`
+	:inputcell:`input text`
+
+
+	

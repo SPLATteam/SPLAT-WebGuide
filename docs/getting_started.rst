@@ -18,7 +18,7 @@ Before using the SPLAT interface, ensure that you have the following software in
 -	Microsoft Excel
 -	MESSAGE
 
-The MESSAGE software comes with a free solver called GLPK. If a different solver is needed, it will have to be installed separately. Refer to :ref:`using_message` for using alternative solvers.
+The MESSAGE software comes with a free solver called GLPK. If a different solver is needed, it will have to be installed separately. Refer to :ref:`install_solver` for using alternative solvers.
 
 .. _conventions:
 
@@ -88,9 +88,9 @@ Linking the interface to your model file
 
 .. image:: getting_started_linking_interface_2.PNG
 
-.. _view_results:
+.. _view_input:
 
-Viewing model results
+Viewing model input
 ++++++++++++++++++++++
 
 The SPLAT Excel interface allows a user to easily see the input data stored in SPLAT-MESSAGE models.
