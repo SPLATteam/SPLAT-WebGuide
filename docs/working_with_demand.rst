@@ -8,11 +8,11 @@
 Working with Demand
 ====================
 
-This section describes how to view, change and add demand using the SPLAT interface.
-
 .. note::
     The interface must be linked to the model before executing any of the steps in this section.
     See :ref:`link_interface`.
+
+This section describes how to view, change and add demand using the SPLAT interface.
 
 .. view_demand:
 
@@ -22,14 +22,21 @@ Viewing demand input
 The ``QueryDemand`` sheets allows the user to review parameters relating to demand.
 
 1. In the sheet, specify what to extract:
-    - Scenarios
-    - Countries
-    - Demand parameters
-        o	FinalEnergyDemand: (MWyr) as specified in the model and also in GWh.
-        o	FinalPowerDemand (MW): calculated using the final energy demand and the load profiles for each of the demands.
-        o	SecondaryEnergyDemand (MWyr and GWh): calculated using the final energy demand, the distribution losses and the transmission losses.
-        o	SecondaryPowerDemand (MW): calculated using the secondary energy demand and the load profiles.
-    - Year
+
+- Scenarios
+
+- Countries
+
+- Demand parameters
+
+    o	FinalEnergyDemand: (MWyr) as specified in the model and also in GWh.
+
+    o	FinalPowerDemand (MW): calculated using the final energy demand and the load profiles for each of the demands.
+
+    o	SecondaryEnergyDemand (MWyr and GWh): calculated using the final energy demand, the distribution losses and the transmission losses.
+
+    o	SecondaryPowerDemand (MW): calculated using the secondary energy demand and the load profiles.
+- Year
 
 2. Click the :button:`Refresh Query` button. The data is extracted in long format on the same sheet. The user can then review individual entries in the table using filters or a pivot table.
 
@@ -40,3 +47,4 @@ A Pivot Table was created for the user in a sheet called ``Pivot_Demand``, with 
 
 Changing demand input
 ----------------------
+to add
