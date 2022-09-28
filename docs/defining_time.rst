@@ -30,6 +30,7 @@ Defining time zones and granularity
 .. note::
 
     There are 4 pre-defined Load Region configurations in the interface:
+
     - Large model: 30 time-slices/load regions (3 seasons each with 10 blocks)
 
     - Small model: 10 time-slices/load regions (3 season, 2 with 3 blocks, 1 with 4 blocks)

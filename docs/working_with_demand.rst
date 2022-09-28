@@ -29,13 +29,14 @@ The ``QueryDemand`` sheets allows the user to review parameters relating to dema
 
 - Demand parameters
 
-    o	FinalEnergyDemand: (MWyr) as specified in the model and also in GWh.
+    - FinalEnergyDemand: (MWyr) as specified in the model and also in GWh.
 
-    o	FinalPowerDemand (MW): calculated using the final energy demand and the load profiles for each of the demands.
+    - FinalPowerDemand (MW): calculated using the final energy demand and the load profiles for each of the demands.
 
-    o	SecondaryEnergyDemand (MWyr and GWh): calculated using the final energy demand, the distribution losses and the transmission losses.
+    - SecondaryEnergyDemand (MWyr and GWh): calculated using the final energy demand, the distribution losses and the transmission losses.
 
-    o	SecondaryPowerDemand (MW): calculated using the secondary energy demand and the load profiles.
+    - SecondaryPowerDemand (MW): calculated using the secondary energy demand and the load profiles.
+
 - Year
 
 2. Click the :button:`Refresh Query` button. The data is extracted in long format on the same sheet. The user can then review individual entries in the table using filters or a pivot table.
