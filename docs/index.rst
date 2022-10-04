@@ -17,10 +17,10 @@ Contents
     :maxdepth: 2
 
     getting_started
-    defining_regions
-    working_with_technologies
     working_with_demand
+    working_with_technologies
     defining_time
+    defining_regions
     working_with_scenarios
     how_to
     glossary

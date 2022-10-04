@@ -56,6 +56,10 @@ When you open the file, you must click :button:`Enable Content` (as shown below)
 
 .. image:: getting_started_opening_file.PNG
 
+The SPLAT Excel interface requires the 64-bit default version of Excel for its main functions. You can check your version of Excel by clicking the :button:`File` menu > :button:`Account` > :button:`About Excel`. If you have the older 32-bit Excel, it is recommended to uninstall and re-install your Microsoft Office software with 64-bit selected, or to use a computer with 64-bit software already installed.
+
+.. image:: getting_started_opening_file_2.PNG
+
 .. _checking_decimal:
 
 Checking system's decimal symbol
@@ -70,15 +74,17 @@ The "decimal separator" of your system must be set to '.' (point) in order for t
 Linking the interface to your model file
 +++++++++++++++++++++++++++++++++++++++++
 
-1. In the ``Main`` tab of the file, make sure the fields "Model Folder" and "Main Region" are set correctly as shown below, to reflect the location of the MESSAGE model files on your computer.
+1. In the ``Main`` tab of the file, make sure the fields :inputcell:`Model Folder` and :inputcell:`Main Region` are set correctly as shown below, to reflect the location of the MESSAGE model files on your computer.
 
-2. Click the :button:`Reload Global` button at the top of the page (this connects the MESSAGE model files with this Excel workbook).
+2. in the ``Subregions`` section of the ``Main`` tab, choose which country / countries you want to activate, by placing a "1" next to it in the orange column, and a "0" next to any other countries. Ensure that the ``MAINa`` sub-region region is activated.
 
-3. You will see a pop-up window which says "2 Countries data loaded in memory" (as shown below); press :button:`OK`.
+3. Click the :button:`Reload Global` button at the top of the page (this connects the MESSAGE model files with this Excel workbook).
+
+4. You will see a pop-up window which says "2 Countries data loaded in memory" (as shown below); press :button:`OK`.
 
 .. image:: getting_started_linking_interface_1.PNG
 
-4. In the Sub-Regions section of the ``Main`` tab, make sure your country is the only one active, by placing a "1" next to it in the orange column, and a "0" next to any other countries.
+TO UPDATE BELOW:
 
 5. Once you have done this, click on the :button:`Update Region Files` button.
 
@@ -123,7 +129,7 @@ After linking your model to the interface file in the ``Main`` tab, you can run 
 Extracting the results
 ++++++++++++++++++++++
 
-Use the ``ReportGen`` tab
+Use the ReportGen tab
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 The ``ReportGen-Annual`` tab is also where you can pull in the results of the model that you just ran.
 
