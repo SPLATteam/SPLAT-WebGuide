@@ -44,36 +44,36 @@ Save the ZIP file that starts with ``\MAINa_...`` into a known location of the c
 
     You will use the blue windows but always leave the black window open:
 
-.. image:: how_to_using_message_1.PNG
+.. image:: how_to_using_message_1.png
 
-.. image:: how_to_using_message_2.PNG
+.. image:: how_to_using_message_2.png
 
 3. Select :button:`Cases` > :button:`Restore`
 
-.. image:: how_to_using_message_3.PNG
+.. image:: how_to_using_message_3.png
 
 4. Select the ZIP file ``MAINa_...`` located in the place you previously saved
 
-.. image:: how_to_using_message_4.PNG
+.. image:: how_to_using_message_4.png
 
 5. Select :button:`Cases` > :button:`Open`
 
-.. image:: how_to_using_message_5.PNG
+.. image:: how_to_using_message_5.png
 
-.. image:: how_to_using_message_6.PNG
+.. image:: how_to_using_message_6.png
 
 6. Select "Africa" and your country code (Please see Table).
 
-.. image:: how_to_using_message_7.PNG
+.. image:: how_to_using_message_7.png
 
-.. image:: how_to_using_message_8.PNG
+.. image:: how_to_using_message_8.png
 
 For example, suppose your country is Cameroon, then you choose the code CMa, then the following window will appear with Case Study : CMa.
 
-.. image:: how_to_using_message_9.PNG
+.. image:: how_to_using_message_9.png
 
 7. You have now the Country model of your choice, which you can edit or work with.
 
 If you click :button:`Edit` and then click :button:`application db`, you get the following screen which you can use to view most of your model's input data.
 
-.. image:: how_to_using_message_10.PNG
+.. image:: how_to_using_message_10.png
