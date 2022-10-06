@@ -34,9 +34,7 @@ Restoring and opening a model using the MESSAGE interface
 ----------------------------------------------------------
 
 
-1. From the most recent folder that is being used in the training programme Sharepoint: Link to Sharepoint
-
-Save the ZIP file that starts with ``\MAINa_...`` into a known location of the computer
+1. Save the model ZIP file that starts with ``\MAINa_...`` into a known location of the computer
 
 2. After installation of MESSAGE, open the program and two windows will open; the blue one is the user interface for Windows OS and the black one is the command window for MESSAGE.
 
@@ -64,16 +62,14 @@ Save the ZIP file that starts with ``\MAINa_...`` into a known location of the c
 
 6. Select "Africa" and your country code (Please see Table).
 
+.. image:: how_to_using_message_9.png
+
+For example, suppose your country is Cameroon, then you choose the code CMa, then the following window will appear with Case Study : CMa.
+
 .. image:: how_to_using_message_7.png
 
 .. image:: how_to_using_message_8.png
 
-For example, suppose your country is Cameroon, then you choose the code CMa, then the following window will appear with Case Study : CMa.
-
-.. image:: how_to_using_message_9.png
-
-7. You have now the Country model of your choice, which you can edit or work with.
-
-If you click :button:`Edit` and then click :button:`application db`, you get the following screen which you can use to view most of your model's input data.
+7. You have now the Country model of your choice, which you can edit or work with. If you click :button:`Edit` and then click :button:`application db`, you get the following screen which you can use to view most of your model's input data.
 
 .. image:: how_to_using_message_10.png

@@ -46,6 +46,15 @@ First Steps
 --------------
 This documentation uses a simple model [to link] for demonstration. You can use an existing MESSAGE model for most of the examples in this documentation.
 
+.. _checking_bits:
+
+Checking Excel version
++++++++++++++++++++++++
+
+The SPLAT Excel interface requires the 64-bit default version of Excel for its main functions. You can check your version of Excel by clicking the :button:`File` menu > :button:`Account` > :button:`About Excel`. If you have the older 32-bit Excel, it is recommended to uninstall and re-install your Microsoft Office software with 64-bit selected, or to use a computer with 64-bit software already installed.
+
+.. image:: getting_started_opening_file_2.PNG
+
 .. _opening_file:
 
 Opening the file
@@ -56,15 +65,11 @@ When you open the file, you must click :button:`Enable Content` (as shown below)
 
 .. image:: getting_started_opening_file.PNG
 
-The SPLAT Excel interface requires the 64-bit default version of Excel for its main functions. You can check your version of Excel by clicking the :button:`File` menu > :button:`Account` > :button:`About Excel`. If you have the older 32-bit Excel, it is recommended to uninstall and re-install your Microsoft Office software with 64-bit selected, or to use a computer with 64-bit software already installed.
-
-.. image:: getting_started_opening_file_2.PNG
-
 .. _checking_decimal:
 
 Checking system's decimal symbol
 ++++++++++++++++++++++++++++++++++
-The "decimal separator" of your system must be set to '.' (point) in order for the SPLAT Excel interface to function properly. If it is otherwise, e.g. ',' (comma), please go to ``Control Panel`` > ``Region`` > ``Additional settings``, and change decimal symbol to '.'.
+The decimal separator of your system must be set to '.' (point) in order for the SPLAT Excel interface to function properly. If it is otherwise, e.g. ',' (comma), please go to ``Control Panel`` > ``Region`` > ``Additional settings``, and change decimal symbol to '.'.
 
 .. note::
     The comma separator is often the default in French windows environments and would have to be changed in order to be able to use the interface.
@@ -84,14 +89,6 @@ Linking the interface to your model file
 
 .. image:: getting_started_linking_interface_1.PNG
 
-TO UPDATE BELOW:
-
-5. Once you have done this, click on the :button:`Update Region Files` button.
-
-6. Press the :button:`Reload Global` button once again at the top of the page.
-
-7. After it is complete, you should see a pop-up window which says "2 Countries data loaded in memory" (as shown below); press :button:`OK`.
-
 .. image:: getting_started_linking_interface_2.PNG
 
 .. _view_input:
@@ -99,28 +96,34 @@ TO UPDATE BELOW:
 Viewing model input
 ++++++++++++++++++++++
 
-The SPLAT Excel interface allows a user to easily see the input data stored in SPLAT-MESSAGE models.
+The SPLAT Excel interface allows a user to see the input data stored in SPLAT-MESSAGE models.
 
-In any of the yellow tabs, the user must first choose the scenario from the dropdown list in cell C3. Then, by pressing the button :button:`Refresh Sheet`, as shown below, the data stored in the model will show in the table.
+1. In any of the yellow tabs, choose the scenario from the dropdown list in cell C3.
 
-Keep in mind that the "adb" scenario contains all of the basic data in the model. Choosing another scenario will show only the data that is **different** in that scenario. So, if you choose a scenario and the data is blank, then it means it has the same data as the "adb".
+2. Click on :button:`Refresh Sheet`, the data stored in the model will show in the table.
 
-This process works the same way for all the yellow tabs (``Demand``, ``Transmission``, ``Distribution``, etc.) of the SPLAT Excel Interface.
+This process works the same way for all the yellow tabs (``Demand``, ``Transmission``, ``Distribution``, etc.) of the SPLAT Excel Interface. You can also refresh all sheets in these tabs by clicking the :button:`Refresh all Sheets` in the ``Main`` tab.
 
 .. image:: getting_started_viewing_input.PNG
+
+.. note::
+    Keep in mind that the "adb" scenario contains all of the basic data in the model. Choosing another scenario will show only the data that is **different** in that scenario. So, if you choose a scenario and the data is blank, then it means it has the same data as the "adb".
+
 
 .. _run_model:
 
 Running the model
 ++++++++++++++++++
 
-After linking your model to the interface file in the ``Main`` tab, you can run your SPLAT model using the SPLAT Excel interface. The ``ReportGen-Annual`` tab is where you can do this.
+**After** linking your model to the interface file in the ``Main`` tab, you can run your SPLAT model using the ``ReportGen-Annual`` tab.
 
-1.	Ensure that you have selected the correct scenario and country combination that you want to run.
+1.	Selected the correct scenario and country combination that you want to run.
 
-2.	Ensure the correct option is selected under the "Run" categories. The categories correspond to the same options in the MESSAGE "Run" menu: ``Mxg`` = Matrix Generator; ``Opt`` = Optimisation; ``Cap`` = Cap file creation; ``All`` = perform all of the above. There are two different options provided in the interface for CPLEX and CBC, depending on which solver you have pre-installed. Note that the CBC option can only be used through this SPLAT Excel interface.
+2.  Select the preferred option (with or without interconnections between subregions) under ``Run Options (Subregions)``. In this example we select :inputcell:`Interconnected`.
 
-3.	Press the :button:`Run` button. You should see the black MESSAGE window appear and begin to run.
+3.	Select the correct option under the "Run" categories. The categories correspond to the same options in the MESSAGE "Run" menu: :inputcell:`Mxg` = Matrix Generator; :inputcell:`Opt` = Optimisation; :inputcell:`Cap` = Cap file creation; :inputcell:`All` = perform all of the above. There are three different options provided in the interface for CPLEX, CBC and GUROBI depending on which solver you have pre-installed.
+
+4.	Press the :button:`Run` button. You should see the black MESSAGE window appear and begin to run.
 
 .. image:: getting_started_running_model.PNG
 
@@ -133,15 +136,17 @@ Use the ReportGen tab
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 The ``ReportGen-Annual`` tab is also where you can pull in the results of the model that you just ran.
 
-1.	Ensure that you have selected the correct scenario and country combination that you want to view the results of.
+1.	Select the scenario(s), country(s), variable(s) and year(s) combination that you want to view the results of.
 
-2.	After that is checked, all you need to do is press the button in the sheet :button:`Get the results from the model you just ran` (red circle in picture below). You should see raw results appear beneath the tables when the process is finished.
+2.  Select the output format and enter output path (if applicable) under ``Results Destination`` section.
+
+3.	Click on :button:`Get Results` (red circle in picture below). If :inputcell:`on this sheet` is selected, you should see raw results appear beneath the tables when the process is finished.
 
 .. image:: getting_started_extract_results_1.PNG
 
 Update the results charts
 ~~~~~~~~~~~~~~~~~~~~~~~~~
-You can find the yearly result charts in the sheets: ``Capacity``, ``Output``, ``New Capacity``, ``CO2``, and ``Costs``.
+You can find the yearly result charts in the red sheets: ``Capacity``, ``Output``, ``New Capacity``, ``CO2``, and ``Costs``.
 
 .. important::
 
