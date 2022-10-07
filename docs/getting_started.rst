@@ -117,11 +117,16 @@ Running the model
 
 **After** linking your model to the interface file in the ``Main`` tab, you can run your SPLAT model using the ``ReportGen-Annual`` tab.
 
-1.	Selected the correct scenario and country combination that you want to run.
+1.	Select the correct scenario and country combination that you want to run.
 
 2.  Select the preferred option (with or without interconnections between subregions) under ``Run Options (Subregions)``. In this example we select :inputcell:`Interconnected`.
 
-3.	Select the correct option under the "Run" categories. The categories correspond to the same options in the MESSAGE "Run" menu: :inputcell:`Mxg` = Matrix Generator; :inputcell:`Opt` = Optimisation; :inputcell:`Cap` = Cap file creation; :inputcell:`All` = perform all of the above. There are three different options provided in the interface for CPLEX, CBC and GUROBI depending on which solver you have pre-installed.
+3.	Select the correct option under the "Run" categories. The categories correspond to the same options in the MESSAGE "Run" menu: 
+	:inputcell:`Mxg` = Matrix Generator; 
+	:inputcell:`Opt` = Optimisation; 
+	:inputcell:`Cap` = Cap file creation; 
+	:inputcell:`All` = perform all of the above. 
+	There are three different options provided in the interface for CPLEX, CBC and GUROBI depending on which solver you have pre-installed.
 
 4.	Press the :button:`Run` button. You should see the black MESSAGE window appear and begin to run.
 

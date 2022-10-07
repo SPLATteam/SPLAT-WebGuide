@@ -19,33 +19,24 @@ This section describes how to view, change and add demand using the SPLAT interf
 Viewing demand input
 ---------------------
 
-The ``QueryDemand`` sheets allows the user to review parameters relating to demand.
+1. In the ``Demand`` tab, enter the scenario to be queried in the cell ``Choose Scenario``
 
-1. In the sheet, specify what to extract:
+2. Click on :button:`Refresh Sheet`. The yearly demand in the scenario will be shown in the same sheet. Only data for the country(s) loaded (in the ``Main`` sheet) will be displayed.
 
-    - Scenarios
-
-    - Countries
-
-    - Demand parameters
-
-        - ``FinalEnergyDemand`` (MWyr): as specified in the model and also in GWh.
-
-        - ``FinalPowerDemand`` (MW): calculated using the final energy demand and the load profiles for each of the demands.
-
-        - ``SecondaryEnergyDemand`` (MWyr and GWh): calculated using the final energy demand, the distribution losses and the transmission losses.
-
-        - ``SecondaryPowerDemand`` (MW): calculated using the secondary energy demand and the load profiles.
-
-    - Year
-
-2. Click the :button:`Refresh Query` button. The data is extracted in long format on the same sheet. The user can then review individual entries in the table using filters or a pivot table.
-
-A Pivot Table was created for the user in a sheet called ``Pivot_Demand``, with some predefined views that can be modified as needed. It is also possible for the user to make multiple ‘Pivot tables’ from the same data dump or have multiple ‘Query sheets’ which query specific parameters. A new Query Sheet can be created by simply making a copy of an existing Query Sheet.
-
+3. In the ``PeakDemand`` tab, repeat steps 1 and 2 to retrieve the peak demand for the selected scenario.
 
 .. change_demand:
 
 Changing demand input
 ----------------------
-to add
+
+1. In the ``Demand`` tab, click on :button:`Refresh Sheet` to get the data saved in the model.
+
+2. Make changes to the demand series in the sheet.
+
+3. Click on :button:`Update Sheet` to update the model with the new data.
+
+.. image:: demand_update.PNG
+
+
+

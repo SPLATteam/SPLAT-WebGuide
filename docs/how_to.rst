@@ -24,6 +24,7 @@ However, to execute runs with this solver one must use the SPLAT Excel Interface
 
 .. image:: how_to_1.PNG
 
+
 2. Use a 3rd party software such as Winrar to extract the files from ``cbc.rar`` into the ``C:\Programs\MESSAGE_INT\message_bin`` folder (use "extract here")
 Some of the files may already exist in the folder, you can accept to overwrite those files with the ones from the ``cbc.rar`` archive.
 
@@ -32,7 +33,6 @@ Some of the files may already exist in the folder, you can accept to overwrite t
 
 Restoring and opening a model using the MESSAGE interface
 ----------------------------------------------------------
-
 
 1. Save the model ZIP file that starts with ``\MAINa_...`` into a known location of the computer
 
