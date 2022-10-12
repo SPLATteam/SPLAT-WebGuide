@@ -37,7 +37,12 @@ Viewing technology inputs
 Adding a technology
 -------------------
 
-to fill
+1. Refresh the sheet :ref:`SpecificTech` for the scenario selected.
+
+2. Add new specific tech name and parameters in the table. Ensure the that technology code is unique and not repeated.
+
+3. Click on :button:`Add New Techs`.
+
 
 .. _rename_tech:
 
@@ -48,7 +53,7 @@ Renaming a technology
 
 2. To confirm that the technology has been renamed, refresh the relevant tabs (``GenericTech`` or ``SpecificTech``) to see the updated names. Multiple technologies can be renamed.
 
-..image:: technology_rename.PNG
+.. image:: technology_rename.PNG
 
 .. _delete_tech:
 
@@ -59,7 +64,7 @@ Deleting a technology
 
 2. To confirm that the technology has been deleted, refresh the relevant tabs (``GenericTech`` or ``SpecificTech``) to see the update. Multiple technologies can be deleted.
 
-..image:: technology_delete.PNG
+.. image:: technology_delete.PNG
 
 .. _change_tech:
 
@@ -113,7 +118,8 @@ Capacity Limit
 3. Click on :button:`Update Model Data` to update the model with the new data.
 
 .. note::
-    If a user specifies values both in the Constant column, as well as under milestone year columns, only the constant value will be used to update the MESSAGE model and the other values will be ignored.
+    1. There are no capacity limits for generic technologies.
+    2. If a user specifies values both in the Constant column, as well as under milestone year columns, only the constant value will be used to update the MESSAGE model and the other values will be ignored.
 
 .. _renewable_tech:
 
@@ -175,7 +181,7 @@ To Fill
 Transmission and Distribution
 -----------------------------
 
-The `` ref:`transmission` `` and `` ref:`distribution` ``sheets are used to review or modify transmission and distribution technologies parameters as per the definitions in the ``TechnologySets`` sheet (see section below).
+The ref:`transmission` and ref:`distribution` sheets are used to review or modify transmission and distribution technologies parameters as per the definitions in the ``TechnologySets`` sheet (see section below).
 
 .. note::
     1. If the user wants to model with "sent-out" demand (see ref:`demand`), transmission efficiency must be set to 100%, and investment costs set to a small value. In the default configuration there is no distribution technology specified for "Sent-out" electricity.
@@ -187,6 +193,6 @@ The `` ref:`transmission` `` and `` ref:`distribution` ``sheets are used to revi
 Interconnection
 -----------------
 
-The `` ref:`interconnectors` `` sheet is used to review and update cross-border interconnector parameters. 
+The ref:`interconnectors` sheet is used to review and update cross-border interconnector parameters. 
 
 At a minimum the two interconnecting countries (which must be active) must be specified to view the interconnections between them. 
