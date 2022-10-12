@@ -15,48 +15,22 @@ Main
 
 Set the model path, reload model data to memory, and select active countries for querying
 
-:inputcell:`Model Folder`   path of the MESSAGE model to be connected to the SPLAT interface
-
-:inputcell:`Main Region`    name of the MESSAGE model to be connected to the SPLAT interface
-
-:inputcell:`Region Active?` list of sub-regions (countries) to be loaded into memory
-
-:inputcell:`Scenarios to Load`  list of currently specified scenarios in the main region, and to specify the scenarios to be loaded into memory
-
-:interfacecell:`Country Name`   country codes in the MESSAGE model
-
-:interfacecell:`Description`    country names expanded
-
-:interfacecell:`Power Pool`     the powerpool a country belongs to
-
-:interfacecell:`TimeSlices/Load Regions`    number of time slices modelled per year
-
-:interfacecell:`# Demands`  number of demand components
-
-:interfacecell:`# Technologies` number of technologies in country
-
-:interfacecell:`# Constraints`  number of constraints in country
-
-:interfacecell:`Scenarios`  name of scenarios
-
-:interfacecell:`Discount Rate`  discount rate of technologies
-
-:button:`Reload Global` import model data stored in adb and ldb files into memory, perform various calculations.
-o	The discount rate
-o	The Milestone Years (note that the current version of the interface doesn't support multi-year periods, but this would be added in future versions).
-o	The time-slice information (load regions)
-o	The demand projections
-o	The load and technology profiles
-o	The constraints
-o	The technology data
-o	LCOE for each power generating technology
-o	Load factors (availability) for technologies with load profiles and for demand
-o	Secondary Demand (energy and power)
-o	Allocate technologies to different sets as defined in the ``TechnologySets`` sheet
-
-:button:`Refresh all Sheets`    refresh data sheets (yellow sheets) for reloaded subregions and scenarios
-
-:button:`Save all Scenario Files using SPLAT formatting`    save all model (adb and ldb) files using excel-SPLAT formatting for selected subregions (use this after making a change with MESSAGE interface)
+:inputcell:`Model Folder`       path of the MESSAGE model to be connected to the SPLAT interface
+:inputcell:`Main Region`        name of the MESSAGE model to be connected to the SPLAT interface
+:inputcell:`Region Active?`     list of sub-regions (countries) to be loaded into memory
+:inputcell:`Scenarios to Load`      list of currently specified scenarios in the main region, and to specify the scenarios to be loaded into memory
+:interfacecell:`Country Name`       country codes in the MESSAGE model
+:interfacecell:`Description`        country names expanded
+:interfacecell:`Power Pool`         the powerpool a country belongs to
+:interfacecell:`TimeSlices/Load Regions`        number of time slices modelled per year
+:interfacecell:`# Demands`      number of demand components
+:interfacecell:`# Technologies`     number of technologies in country
+:interfacecell:`# Constraints`      number of constraints in country
+:interfacecell:`Scenarios`      name of scenarios
+:interfacecell:`Discount Rate`      discount rate of technologies
+:button:`Reload Global`     import model data stored in adb and ldb files into memory, perform various calculations.
+:button:`Refresh all Sheets`        refresh data sheets (yellow sheets) for reloaded subregions and scenarios
+:button:`Save all Scenario Files using SPLAT formatting`        save all model (adb and ldb) files using excel-SPLAT formatting for selected subregions (use this after making a change with MESSAGE interface)
 If this button is pressed the MAINa ldb files will also be updated if MAINa is selected, to exclude interconnectors for subregions that are not selected below.
 
 
