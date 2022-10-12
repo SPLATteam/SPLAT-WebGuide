@@ -9,22 +9,28 @@
 Working with Technologies
 ==========================
 
+.. important::
+    The interface must be linked to the model before executing any of the steps in this section.
+    See :ref:`link_interface`.
+
 A technology in the model is a power-producing unit or a combination of such units or a transmission line with specific parameters such as, maximum capacity, capacity factor, CAPEX, FOM, fuel cost etc.
 
 A technology can be site specific (a specific plant or transmission line with known parameters) or generic (a technology with generalised parameters).
 
-This section describes how to view, add and change technologies using the SPLAT Excel Interface.
+The Technology tabs are listed at :ref:`technologysheets`
 
-.. important::
-    The interface must be linked to the model before executing any of the steps in this section.
-    See :ref:`link_interface`.
+This section describes how to view, add and change technologies using the SPLAT Excel Interface.
 
 .. _view_tech_inputs:
 
 Viewing technology inputs
 -------------------------
 
-In the ``QueryTechInput`` sheet,
+1. In any of the :ref:`technologysheets` (except the tabs containing information of specific zones), enter the scenario to be queried in the cell ``Choose Scenario``
+
+2. Click on :button:`Refresh Sheet`. The technologies and their parameters in the scenario will be shown in the same sheet. Only data for the country(s) loaded (in the ``Main`` sheet) will be displayed.
+
+3. Refer to :ref:`renewable_tech` for steps to retrieve the information of renewable zones (Solar PV, Solar CSP, Onshore Wind, Offshore Wind).
 
 .. _add_tech:
 
@@ -35,6 +41,12 @@ Adding a technology
 
 Changing and renaming a technology
 ----------------------------------
+
+1. In any of the :ref:`technologysheets` (except the tabs containing information of specific zones), click on :button:`Refresh Sheet` to get the data saved in the model for the scenario chosen.
+
+2. Make changes to the technologies in the sheet.
+
+3. Click on :button:`Update Model Data` to update the model with the new data.
 
 The ``SpecificTech`` sheet is used to review and update Site specific power generation technology parameters that don’t vary from year to year.
 
@@ -47,8 +59,14 @@ Once a new technology is added, its parameters must be updated using the :button
 
 Fuel price
 ++++++++++
+1. In the tab :ref:`fuelprices`, click on :button:`Refresh Sheet` to get the data saved in the model for the scenario and countries chosen.
 
-These sheets are used to review or modify fuel supply technologies as per the definitions in the TechnologySets sheet (see section below). The fuel supply is specified in $/GJ. It is currently not possible to add new fuel supply technologies via the SPLAT interface, this is left for future development (as well as the possibility of specifying limits, which would be needed if one wanted to model a supply curve for a particular fuel).
+2. Make changes to the fuel prices in the sheet.
+
+3. Click on :button:`Update Model Data` to update the model with the new data.
+
+.. note::
+The fuel price is specified in $/GJ. It is currently not possible to add new fuel supply technologies via the SPLAT interface, this is left for future development (as well as the possibility of specifying limits, which would be needed if one wanted to model a supply curve for a particular fuel).
 
 .. _tech_cost:
 
