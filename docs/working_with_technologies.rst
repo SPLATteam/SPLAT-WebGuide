@@ -37,10 +37,34 @@ Viewing technology inputs
 Adding a technology
 -------------------
 
+to fill
+
+.. _rename_tech:
+
+Renaming a technology 
+---------------------
+
+1. Enter the old and new technology names in :ref:`RenameTechFacility` and click on :button:`Rename Techs in List`. 
+
+2. To confirm that the technology has been renamed, refresh the relevant tabs (``GenericTech`` or ``SpecificTech``) to see the updated names. Multiple technologies can be renamed.
+
+..image:: technology_rename.PNG
+
+.. _delete_tech:
+
+Deleting a technology
+----------------------
+
+1. Enter the technology names in :ref:`DeleteTechFacility` and click on :button:`Delete Techs in List`. 
+
+2. To confirm that the technology has been deleted, refresh the relevant tabs (``GenericTech`` or ``SpecificTech``) to see the update. Multiple technologies can be deleted.
+
+..image:: technology_delete.PNG
+
 .. _change_tech:
 
-Changing and renaming a technology
-----------------------------------
+Changing a technology 
+----------------------
 
 1. In any of the :ref:`technologysheets` (except the tabs containing information of specific zones), click on :button:`Refresh Sheet` to get the data saved in the model for the scenario chosen.
 
@@ -48,17 +72,11 @@ Changing and renaming a technology
 
 3. Click on :button:`Update Model Data` to update the model with the new data.
 
-The ``SpecificTech`` sheet is used to review and update Site specific power generation technology parameters that don’t vary from year to year.
-
-The SpecificTech sheet has an extra button: :button:`Add missing Tech`, which allows the user to add new site specific technology to the MESSAGE model that is linked. Currently this technology makes the addition by copying the technology parameters of a generic technology of the same technology type as specified by the first 6 characters in the technology name. A new technology will be automatically added to all active scenarios. A MESSAGE technology code is created automatically based on the input and output commodities (as specified by the associated generic technology) and the already existing technologies having the same inputs and outputs.
-
-Once a new technology is added, its parameters must be updated using the :button:`Update Model Data` button.
-
-
 .. _fuel:
 
 Fuel price
-++++++++++
+-----------
+
 1. In the tab :ref:`fuelprices`, click on :button:`Refresh Sheet` to get the data saved in the model for the scenario and countries chosen.
 
 2. Make changes to the fuel prices in the sheet.
@@ -66,23 +84,36 @@ Fuel price
 3. Click on :button:`Update Model Data` to update the model with the new data.
 
 .. note::
-The fuel price is specified in $/GJ. It is currently not possible to add new fuel supply technologies via the SPLAT interface, this is left for future development (as well as the possibility of specifying limits, which would be needed if one wanted to model a supply curve for a particular fuel).
+    1. The fuel price is specified in $/GJ. It is currently not possible to add new fuel supply technologies via the SPLAT interface, this is left for future development (as well as the possibility of specifying limits, which would be needed if one wanted to model a supply curve for a particular fuel).
+    2. If a user specifies values both in the Constant column, as well as under milestone year columns, only the constant value will be used to update the MESSAGE model and the other values will be ignored.
 
 .. _tech_cost:
 
 Technology costs
-++++++++++++++++
+-----------------
+
+1. In the tab :ref:`generictechcosts` and :ref:`specifictechcosts`, click on :button:`Refresh Sheet` to get the cost data saved in the model for the scenario and countries chosen.
+
+2. Make changes to the costs (Overnight Cost-$/kW, Fixed O&M Cost-$/kW, Variable O&M Cost-$/MWh) in the sheet.
+
+3. Click on :button:`Update Model Data` to update the model with the new data.
+
+.. note::
+    If a user specifies values both in the Constant column, as well as under milestone year columns, only the constant value will be used to update the MESSAGE model and the other values will be ignored.
 
 .. _tech_capacity:
 
 Capacity Limit
-++++++++++++++
+---------------
 
+1. In the tab :ref:`specificcapacitylimits`, click on :button:`Refresh Sheet` to get the capacity limits saved in the model for the scenario and countries chosen.
 
-.. _delete_tech:
+2. Make changes to the capacity limits in the sheet.
 
-Deleting a technology
-----------------------
+3. Click on :button:`Update Model Data` to update the model with the new data.
+
+.. note::
+    If a user specifies values both in the Constant column, as well as under milestone year columns, only the constant value will be used to update the MESSAGE model and the other values will be ignored.
 
 .. _renewable_tech:
 
@@ -94,6 +125,7 @@ Renewable and storage technologies
 Solar PV, onshore and offshore Wind
 +++++++++++++++++++++++++++++++++++
 
+VRE technologies can be defined in two ways - either as generic technologies or site-specific technologies.
 
 .. _hydro_dam:
 
@@ -129,19 +161,32 @@ If the user wants to simulate different rainfall scenarios without a full time s
 Batteries
 ++++++++++
 
+To Fill
+
 .. _csp:
 
 Concentrated Solar Power (CSP)
 ++++++++++++++++++++++++++++++
 
-.. _transmission:
+To Fill
+
+.. _transmission_distribution:
 
 Transmission and Distribution
 -----------------------------
 
-The ``Transmission`` sheets are used to review or modify transmission and distribution technologies parameters as per the definitions in the ``TechnologySets`` sheet (see section below).
+The `` ref:`transmission` `` and `` ref:`distribution` ``sheets are used to review or modify transmission and distribution technologies parameters as per the definitions in the ``TechnologySets`` sheet (see section below).
 
-If the user wants to model with "sent-out" demand, transmission efficiency must be set to 100%, and investment costs set to a small value. In the default configuration there is no distribution technology specified for "Sent-out" electricity.
+.. note::
+    1. If the user wants to model with "sent-out" demand (see ref:`demand`), transmission efficiency must be set to 100%, and investment costs set to a small value. In the default configuration there is no distribution technology specified for "Sent-out" electricity.
 
-The ``Interconnectors`` sheet is used to review and update cross-border interconnector/transmission lines parameters. This sheet also has an :button:`Add missing Tech` button which can be used to add new transmission technologies. At a minimum the two interconnecting countries (which must be active) must be specified. Once a new technology is added, its parameters must be updated using the :button:`Update Model Data` button.
+    2. If a user specifies values both in the Constant column, as well as under milestone year columns, only the constant value will be used to update the MESSAGE model and the other values will be ignored.
 
+.. _interconnection:
+
+Interconnection
+-----------------
+
+The `` ref:`interconnectors` `` sheet is used to review and update cross-border interconnector parameters. 
+
+At a minimum the two interconnecting countries (which must be active) must be specified to view the interconnections between them. 

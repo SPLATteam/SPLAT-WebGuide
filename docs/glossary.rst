@@ -15,22 +15,22 @@ Main
 
 Set the model path, reload model data to memory, and select active countries for querying
 
-::inputcell:`Model Folder`:       path of the MESSAGE model to be connected to the SPLAT interface
-::inputcell:`Main Region`:        name of the MESSAGE model to be connected to the SPLAT interface
-::inputcell:`Region Active?`:     list of sub-regions (countries) to be loaded into memory
-::inputcell:`Scenarios to Load`:      list of currently specified scenarios in the main region, and to specify the scenarios to be loaded into memory
-:interfacecell:`Country Name`       country codes in the MESSAGE model
-:interfacecell:`Description`        country names expanded
-:interfacecell:`Power Pool`         the powerpool a country belongs to
-:interfacecell:`TimeSlices/Load Regions`        number of time slices modelled per year
-:interfacecell:`# Demands`      number of demand components
-:interfacecell:`# Technologies`     number of technologies in country
-:interfacecell:`# Constraints`      number of constraints in country
-:interfacecell:`Scenarios`      name of scenarios
-:interfacecell:`Discount Rate`      discount rate of technologies
-:button:`Reload Global`     import model data stored in adb and ldb files into memory, perform various calculations.
-:button:`Refresh all Sheets`        refresh data sheets (yellow sheets) for reloaded subregions and scenarios
-:button:`Save all Scenario Files using SPLAT formatting`        save all model (adb and ldb) files using excel-SPLAT formatting for selected subregions (use this after making a change with MESSAGE interface)
+|:inputcell:`Model Folder`       path of the MESSAGE model to be connected to the SPLAT interface
+|:inputcell:`Main Region`        name of the MESSAGE model to be connected to the SPLAT interface
+|:inputcell:`Region Active?`     list of sub-regions (countries) to be loaded into memory
+|:inputcell:`Scenarios to Load`      list of currently specified scenarios in the main region, and to specify the scenarios to be loaded into memory
+|:interfacecell:`Country Name`       country codes in the MESSAGE model
+|:interfacecell:`Description`        country names expanded
+|:interfacecell:`Power Pool`         the powerpool a country belongs to
+|:interfacecell:`TimeSlices/Load Regions`        number of time slices modelled per year
+|:interfacecell:`# Demands`      number of demand components
+|:interfacecell:`# Technologies`     number of technologies in country
+|:interfacecell:`# Constraints`      number of constraints in country
+|:interfacecell:`Scenarios`      name of scenarios
+|:interfacecell:`Discount Rate`      discount rate of technologies
+|:button:`Reload Global`     import model data stored in adb and ldb files into memory, perform various calculations.
+|:button:`Refresh all Sheets`        refresh data sheets (yellow sheets) for reloaded subregions and scenarios
+|:button:`Save all Scenario Files using SPLAT formatting`        save all model (adb and ldb) files using excel-SPLAT formatting for selected subregions (use this after making a change with MESSAGE interface)
 If this button is pressed the MAINa ldb files will also be updated if MAINa is selected, to exclude interconnectors for subregions that are not selected below.
 
 
@@ -86,12 +86,46 @@ SpecificTech
 
 Displays site-specific technology parameters that are constant over the model horizon
 
+
+The ``SpecificTech`` sheet is used to review and update Site specific power generation technology parameters that don’t vary from year to year.
+
+The SpecificTech sheet has an extra button: :button:`Add missing Tech`, which allows the user to add new site specific technology to the MESSAGE model that is linked. Currently this technology makes the addition by copying the technology parameters of a generic technology of the same technology type as specified by the first 6 characters in the technology name. A new technology will be automatically added to all active scenarios. A MESSAGE technology code is created automatically based on the input and output commodities (as specified by the associated generic technology) and the already existing technologies having the same inputs and outputs.
+
+Once a new technology is added, its parameters must be updated using the :button:`Update Model Data` button.
+
+
+
 .. _specifictechhydrodams:
 
 SpecificTechHydroDams
 +++++++++++++++++++++
 
 Displays site-specific technology parameters that are specific to hydro plants with storage (dams)
+
+The ``SpecificTechHydroDams`` sheet manipulates the hydro dams in the model.
+
+:button:`Refresh Sheet` button extracts the technologies that belong to the `TechSetL2`: `Large Hydro Dams`.
+
+:button:`Create River Tech+Storage Constraint` button adds a technology and a storage constraint for each dam.
+
+A new dummy technology for each hydro station with Dam is added to model the river inflows to the dam. The naming convention of the dummy technology is XXRIDM_rivername, for example CMRIDM_LAGDO (using LAGDO as an example).  The output is set to the existing dummy elc energy form.
+
+A new storage constraint is added, example D_LAGDO with short name DXXX. The storage constraint is linked to CMRIDM_LAGDO with +1 coefficient, so each MWyr flow from CMRIDM_LAGDO increases the storage content by 1 MWyr.
+
+The storage constraint is linked to CMHYDM_LAGDO with -1 coefficient (meaning that each MWyr flow from CMHYDM_LAGDO decreases the storage content by 1 MWyr). It would be possible in theory to do cascade modelling by linking the output of upstream plants to storage constraints downstream (rather than a river technology). The coefficients would have to be scaled by the relative "Energy per unit volume (MJ/m3)" of the upstream and downstream plants. This functionality will need a revisit as a new development task if there is a pressing need for it.
+
+The user has to specify 2 parameters, whose values can be calculated in the right-most table and copy pasted.
+
+Once this is done the user can click on :button:`Update Model Data`:
+
+The capacity is set to max flow (in MW, m3/s max flow scaled by design flow). The capacity is specified as a capacity limit on the River Technology (bdi) .
+
+The storage constraint max volume is set to Max volume in MWyr as per table.
+
+The user then has to add a time series in the csv file under the tech CMRIDM_LAGDO and :button:`Update Timeslices` in the ``Timeslice`` sheet. The values in the csv file must be monthly average flow divided by "max flow" that was used to set the "River Capacity", using the same max flow value regardless of the scenario.
+If the user wants to simulate different rainfall scenarios without a full time series, they could use plant factor to scale up or down the profile in the ``SpecificTech`` sheet. It is currently not possible to specify a different seasonal profile by scenario, but this feature is on the todo list for the near future.
+
+
 
 .. _specifictechcosts:
 
@@ -187,29 +221,6 @@ Generate Sub-Annual (Profiles) Results File
 .. _timeslices:
 
 TimeSlices
-___________
+-----------
 
 Displays timeslice definitions (load regions) used in model
-
-RenameTechFacility: This sheet is used to change the technology name of selected technologies. Note that new Technology names should not be longer than 40 characters.
-
-DeleteTechFacility: This sheet is used to delete selected technologies from the linked MESSAGE model
-
-Constraints List (work in Progress)
-
-TechConstraintCoeffs (work in Progress)
-
-EForms
-
-
-Years
-
-Scenarios (Work in progress – Use MESSAGE interface for now)
-
-QueryDemand
-
-QueryTech
-
-Load Calibration (still in development)
-
-DemandProj
