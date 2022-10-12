@@ -15,10 +15,10 @@ Main
 
 Set the model path, reload model data to memory, and select active countries for querying
 
-:inputcell:`Model Folder`       path of the MESSAGE model to be connected to the SPLAT interface
-:inputcell:`Main Region`        name of the MESSAGE model to be connected to the SPLAT interface
-:inputcell:`Region Active?`     list of sub-regions (countries) to be loaded into memory
-:inputcell:`Scenarios to Load`      list of currently specified scenarios in the main region, and to specify the scenarios to be loaded into memory
+::inputcell:`Model Folder`:       path of the MESSAGE model to be connected to the SPLAT interface
+::inputcell:`Main Region`:        name of the MESSAGE model to be connected to the SPLAT interface
+::inputcell:`Region Active?`:     list of sub-regions (countries) to be loaded into memory
+::inputcell:`Scenarios to Load`:      list of currently specified scenarios in the main region, and to specify the scenarios to be loaded into memory
 :interfacecell:`Country Name`       country codes in the MESSAGE model
 :interfacecell:`Description`        country names expanded
 :interfacecell:`Power Pool`         the powerpool a country belongs to
