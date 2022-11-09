@@ -16,9 +16,20 @@ Pre-requisites
 Before using the SPLAT interface, ensure that you have the following software installed
 
 -	Microsoft Excel
--	MESSAGE
+-	MESSAGE (download from `MESSAGE folder`_)
 
-The MESSAGE software comes with a free solver called GLPK. If a different solver is needed, it will have to be installed separately. Refer to :ref:`install_solver` for using alternative solvers.
+The MESSAGE software comes with a free solver called GLPK. If a different solver is needed, it will have to be installed separately. Refer to :ref:`install_solver` for using alternative solvers like cbc.
+
+Ensure that you have the following files ready:
+
+-   A model (download an `SPLAT model example`_)
+-   SPLAT interface (download from `SPLAT interface example`_)
+
+.. _MESSAGE folder: https://irena.sharepoint.com/:u:/r/sites/EPS/PTG%20Tools%20and%20Data/SPLAT%20kit/Software/IAEA%20MESSAGE/MESSAGE_setup%20APR2011%20INT.exe?csf=1&web=1&e=oIuPR2
+
+.. _SPLAT interface example: https://irena.sharepoint.com/sites/EnergyPlanningCapacityBuilding-ExternalSharing/Shared%20Documents/Forms/AllItems.aspx?ga=1&id=%2Fsites%2FEnergyPlanningCapacityBuilding%2DExternalSharing%2FShared%20Documents%2F2021%5FCMP%20Training%2F202206%20training%201%20Addis%2FSPLAT%2DExcel%20Interface&viewid=ae43ff48%2D2e45%2D4dc6%2D8664%2Ddea09e767ed7
+
+.. _SPLAT model example: https://irena.sharepoint.com/sites/EnergyPlanningCapacityBuilding-ExternalSharing/Shared%20Documents/Forms/AllItems.aspx?ga=1&id=%2Fsites%2FEnergyPlanningCapacityBuilding%2DExternalSharing%2FShared%20Documents%2F2021%5FCMP%20Training%2F202206%20training%201%20Addis%2FSPLAT%20Africa%20Model%2FMAINa%5F2022%2D06%2D23%5F1003%5FAllCountries%2Ezip&viewid=ae43ff48%2D2e45%2D4dc6%2D8664%2Ddea09e767ed7&parent=%2Fsites%2FEnergyPlanningCapacityBuilding%2DExternalSharing%2FShared%20Documents%2F2021%5FCMP%20Training%2F202206%20training%201%20Addis%2FSPLAT%20Africa%20Model
 
 .. _conventions:
 
@@ -44,7 +55,7 @@ The tabs are organised according to the following conventions:
 
 First Steps
 --------------
-This documentation uses a simple model [to link] for demonstration. You can use an existing MESSAGE model for most of the examples in this documentation.
+This documentation uses a simple model for demonstration. You can use an existing MESSAGE model for most of the examples in this documentation.
 
 .. _checking_bits:
 
@@ -54,6 +65,13 @@ Checking Excel version
 The SPLAT Excel interface requires the 64-bit default version of Excel for its main functions. You can check your version of Excel by clicking the :button:`File` menu > :button:`Account` > :button:`About Excel`. If you have the older 32-bit Excel, it is recommended to uninstall and re-install your Microsoft Office software with 64-bit selected, or to use a computer with 64-bit software already installed.
 
 .. image:: getting_started_opening_file_2.PNG
+
+.. _restoring_model:
+
+Restore model in MESSAGE
+++++++++++++++++++++++++
+
+In order to run the model using the SPLAT excel interface, you may have to restore the model in MESSAGE once. Refer to the how-to guide on :ref:`using_message` for instructions on using MESSAGE.
 
 .. _opening_file:
 

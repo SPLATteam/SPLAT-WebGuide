@@ -15,14 +15,18 @@ Installing an Alternative (Faster) Free Solver
 
 The MESSAGE software comes by default with a free solver called GLPK. This solver is adequate for working with small models, however, when a larger model is to be used (e.g. many timeslices, many technologies and subregions), this solver becomes inadequate requiring a long time to complete a "RUN".
 
-There is an alternative free solver that can be used with MESSAGE called the CBC (Coil-or Branch and Cut solver [link:https://github.com/coin-or/Cbc]) that is more powerful and can solve larger problems at comparable speeds to some of the commercial solvers such as CPLEX.
+There is an alternative free solver that can be used with MESSAGE called the CBC (`Coil-or Branch and Cut solver`_) that is more powerful and can solve larger problems at comparable speeds to some of the commercial solvers such as CPLEX.
 
 However, to execute runs with this solver one must use the SPLAT Excel Interface to initiate runs (see Tutorial C - Using the SPLAT Excel Interface) and one has to add the solver to the user's existing MESSAGE installation. This guide gives a brief description on how to do this installation.
 
-1. Download the cbc.rar archive file from Sharepoint and put it in the MESSAGE installation folder called:
+1. Download the cbc.rar archive file from the `cbc link`_ and put it in the MESSAGE installation folder called:
 ``C:\Programs\MESSAGE_INT\message_bin``
 
-.. image:: how_to_1.PNG
+.. _cbc link: https://irena.sharepoint.com/:u:/r/sites/EPS/PTG%20Tools%20and%20Data/SPLAT%20kit/Software/AlternativeSolver/cbc_files.rar?csf=1&web=1&e=QPdmhj
+
+.. _Coil-or Branch and Cut solver: https://github.com/coin-or/Cbc
+
+.. image:: how_to_1.png
 
 
 2. Use a 3rd party software such as Winrar to extract the files from ``cbc.rar`` into the ``C:\Programs\MESSAGE_INT\message_bin`` folder (use "extract here")
