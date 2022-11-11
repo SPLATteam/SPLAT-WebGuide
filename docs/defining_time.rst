@@ -49,11 +49,3 @@ Defining time zones and granularity
 
 .. note::
     Required: Macros-> tools -> References (Microsoft Active X …..)
-
-
-.. _time_horizon:
-
-Changing the model horizon
----------------------------
-
-to add

@@ -176,10 +176,19 @@ If the user wants to simulate different rainfall scenarios without a full time s
 
 .. _batteries:
 
-Batteries
-++++++++++
+Batteries and Pump Storage
+++++++++++++++++++++++++++
 
-To Fill
+Batteries and pump storage technologies can be added and modified in the same way through the SPLAT excel interface.
+
+1. In ``Battery&PumpStorage`` sheet: create the technology with techname convention: xxELSTyyyy for a battery or xxELSTPSyyyy for pump storage, where xx is country code, and yyyy is site description. (For example, ZAELSTPSDrakensberg)
+
+2. :button:`Reload Global`
+
+3. In the same ``Battery&PumpStorage`` sheet click :button:`Refresh` and then specify storage hours and cycle efficiency
+
+3. In the ``TechSpecific`` sheets specify the other usual parameters hc, bdi, inv etc....
+
 
 .. _csp:
 
