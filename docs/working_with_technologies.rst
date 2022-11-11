@@ -187,8 +187,7 @@ Batteries and pump storage technologies can be added and modified in the same wa
 
 3. In the same ``Battery&PumpStorage`` sheet click :button:`Refresh` and then specify storage hours and cycle efficiency
 
-3. In the ``TechSpecific`` sheets specify the other usual parameters hc, bdi, inv etc....
-
+4. In the ``TechSpecific`` sheets specify the other usual parameters hc, bdi, inv etc....
 
 .. _csp:
 

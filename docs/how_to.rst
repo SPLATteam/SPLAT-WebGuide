@@ -8,6 +8,27 @@
 How-To Guides
 =============
 
+.. _change_decimal_seperator:
+
+Change decimal seperator in windows environment
+----------------------------------------------
+
+
+.. image:: how_to_ChangeDecimalSeparator1.png
+
+.. image:: how_to_ChangeDecimalSeparator2.png
+
+.. image:: how_to_ChangeDecimalSeparator3.png
+
+.. image:: how_to_ChangeDecimalSeparator4.png
+
+.. image:: how_to_ChangeDecimalSeparator5.png
+
+.. image:: how_to_ChangeDecimalSeparator6.png
+
+.. image:: how_to_ChangeDecimalSeparator7.png
+
+
 .. _install_solver:
 
 Installing an Alternative (Faster) Free Solver
@@ -77,3 +98,4 @@ For example, suppose your country is Cameroon, then you choose the code CMa, the
 7. You have now the Country model of your choice, which you can edit or work with. If you click :button:`Edit` and then click :button:`application db`, you get the following screen which you can use to view most of your model's input data.
 
 .. image:: how_to_using_message_10.png
+

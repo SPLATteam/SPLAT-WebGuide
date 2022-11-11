@@ -90,7 +90,7 @@ Checking system's decimal symbol
 The decimal separator of your system must be set to '.' (point) in order for the SPLAT Excel interface to function properly. If it is otherwise, e.g. ',' (comma), please go to ``Control Panel`` > ``Region`` > ``Additional settings``, and change decimal symbol to '.'.
 
 .. note::
-    The comma separator is often the default in French windows environments and would have to be changed in order to be able to use the interface.
+    The comma separator is often the default in French windows environments and would have to be changed in order to be able to use the interface. Refer to :ref:`change_decimal_seperator`.
 
 .. _link_interface:
 
@@ -139,12 +139,12 @@ Running the model
 
 2.  Select the preferred option (with or without interconnections between subregions) under ``Run Options (Subregions)``. In this example we select :inputcell:`Interconnected`.
 
-3.	Select the correct option under the "Run" categories. The categories correspond to the same options in the MESSAGE "Run" menu: 
-	:inputcell:`Mxg` = Matrix Generator; 
-	:inputcell:`Opt` = Optimisation; 
-	:inputcell:`Cap` = Cap file creation; 
-	:inputcell:`All` = perform all of the above. 
-	There are three different options provided in the interface for CPLEX, CBC and GUROBI depending on which solver you have pre-installed.
+3.	Select the correct option under the "Run" categories. The categories correspond to the same options in the MESSAGE "Run" menu:
+	:inputcell:`Mxg` = Matrix Generator;
+	:inputcell:`Opt` = Optimisation;
+	:inputcell:`Cap` = Cap file creation;
+	:inputcell:`All` = perform all of the above.
+	There are three different options provided in the interface for CPLEX, CBC and GUROBI depending on which solver you have pre-installed. If you are a new user, please install and use CBC (:ref:`install_solver`).
 
 4.	Press the :button:`Run` button. You should see the black MESSAGE window appear and begin to run.
 
@@ -159,7 +159,7 @@ Use the ReportGen tab
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 The ``ReportGen-Annual`` tab is also where you can pull in the results of the model that you just ran.
 
-1.	Select the scenario(s), country(s), variable(s) and year(s) combination that you want to view the results of.
+1.	Select the scenario(s), country(s), variable(s) and year(s) combination that you want to view the results of. Please ensure that your desired scenario has been loaded in the excel memory. If it does not appear in the dropdown list, please go again to 'Main' tab and mark the desired scenario '1' and press 'Reload Global' button.
 
 2.  Select the output format and enter output path (if applicable) under ``Results Destination`` section.
 
