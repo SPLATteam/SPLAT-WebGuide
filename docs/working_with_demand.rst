@@ -36,7 +36,7 @@ Changing demand input
 
 3. Click on :button:`Update Sheet` to update the model with the new data.
 
-.. image:: demand_update.PNG
+.. image:: /images/demand_update.PNG
 
 
 
