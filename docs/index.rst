@@ -15,7 +15,7 @@ Contents
 
 .. toctree::
     :maxdepth: 2
-	:numbered:
+    :numbered:
 	
     getting_started
     working_with_demand

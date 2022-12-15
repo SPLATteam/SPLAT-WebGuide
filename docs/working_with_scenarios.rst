@@ -6,5 +6,5 @@ Working with Scenarios
 
 Add a scenario
 ===================
-Scenarios need to be added via the MESSAGE interface. It is recommended that the user makes a copy of an existing scenario through the MESSAGE interface and load it into the SPLAT interface. Refer to :ref: `message_copy_scenario`.
+Scenarios need to be added via the MESSAGE interface. It is recommended that the user makes a copy of an existing scenario through the MESSAGE interface and load it into the SPLAT interface. Refer to :ref:`message_copy_scenario`.
 
