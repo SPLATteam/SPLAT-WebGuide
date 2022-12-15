@@ -55,7 +55,7 @@ Renaming a technology
 
 2. To confirm that the technology has been renamed, refresh the relevant tabs (``GenericTech`` or ``SpecificTech``) to see the updated names. Multiple technologies can be renamed.
 
-.. image:: technology_rename.PNG
+.. image:: /images/technology_rename.PNG
 
 .. _delete_tech:
 
@@ -66,7 +66,7 @@ Deleting a technology
 
 2. To confirm that the technology has been deleted, refresh the relevant tabs (``GenericTech`` or ``SpecificTech``) to see the update. Multiple technologies can be deleted.
 
-.. image:: technology_delete.PNG
+.. image:: /images/technology_delete.PNG
 
 .. _change_tech:
 

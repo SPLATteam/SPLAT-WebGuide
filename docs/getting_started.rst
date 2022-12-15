@@ -62,7 +62,7 @@ Checking Excel version
 
 The SPLAT Excel interface requires the 64-bit default version of Excel for its main functions. You can check your version of Excel by clicking the :button:`File` menu > :button:`Account` > :button:`About Excel`. If you have the older 32-bit Excel, it is recommended to uninstall and re-install your Microsoft Office software with 64-bit selected, or to use a computer with 64-bit software already installed.
 
-.. image:: getting_started_opening_file_2.PNG
+.. image:: /images/getting_started_opening_file_2.PNG
 
 .. _restoring_model:
 
@@ -79,7 +79,7 @@ Open the Excel file that starts with *SPLAT_Interface_...*.
 
 When you open the file, you must click :button:`Enable Content` (as shown below) for the file to function.
 
-.. image:: getting_started_opening_file.PNG
+.. image:: /images/getting_started_opening_file.PNG
 
 Also, macros must be enabled. Refer to link to `enable macros`_.
 
@@ -108,9 +108,9 @@ Linking the interface to your model file
 
 4. You will see a pop-up window which says "2 Countries data loaded in memory" (as shown below); press :button:`OK`.
 
-.. image:: getting_started_linking_interface_1.PNG
+.. image:: /images/getting_started_linking_interface_1.PNG
 
-.. image:: getting_started_linking_interface_2.PNG
+.. image:: /images/getting_started_linking_interface_2.PNG
 
 .. _view_input:
 
@@ -125,7 +125,7 @@ The SPLAT Excel interface allows a user to see the input data stored in SPLAT-ME
 
 This process works the same way for all the yellow tabs (``Demand``, ``Transmission``, ``Distribution``, etc.) of the SPLAT Excel Interface. You can also refresh all sheets in these tabs by clicking the :button:`Refresh all Sheets` in the ``Main`` tab.
 
-.. image:: getting_started_viewing_input.PNG
+.. image:: /images/getting_started_viewing_input.PNG
 
 
 .. caution::
@@ -156,7 +156,7 @@ Running the model
 
 4.	Press the :button:`Run` button. You should see the black MESSAGE window appear and begin to run.
 
-.. image:: getting_started_running_model.PNG
+.. image:: /images/getting_started_running_model.PNG
 
 .. _extract_results:
 
@@ -173,7 +173,7 @@ The ``ReportGen-Annual`` tab is also where you can pull in the results of the mo
 
 3.	Click on :button:`Get Results` (red circle in picture below). If :inputcell:`on this sheet` is selected, you should see raw results appear on the sheet when the process is finished.
 
-.. image:: getting_started_extract_results_1.PNG
+.. image:: /images/getting_started_extract_results_1.PNG
 
 Update the results charts
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -185,4 +185,4 @@ You can find the yearly result charts in the red sheets: ``Capacity``, ``Output`
 
 Right-click anywhere in the table on the worksheet, and select :button:`Refresh` from the options. These charts need to be updated **every time** you pull in new results.
 
-.. image:: getting_started_extract_results_2.PNG
+.. image:: /images/getting_started_extract_results_2.PNG
