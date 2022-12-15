@@ -16,10 +16,11 @@ Contents
 .. toctree::
     :maxdepth: 2
 	:numbered:
+	
     getting_started
     working_with_demand
     working_with_technologies
-    working_with_time
+    defining_time
     working_with_scenarios
     how_to
     glossary
