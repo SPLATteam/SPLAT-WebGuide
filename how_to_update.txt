@@ -41,10 +41,10 @@ To use the styling below, add the following command at the beginning of the .rst
 .. role:: button
     :class: button
 
-
+You can then use the styling in the text:
 	:button:`button text` (for use when referring to a button in SPLAT interface)
 	:interfacecell:`interface text`
 	:inputcell:`input text`
 
-
-	
+Refer to cheat sheet here for more tips:
+https://sphinx-tutorial.readthedocs.io/cheatsheet/

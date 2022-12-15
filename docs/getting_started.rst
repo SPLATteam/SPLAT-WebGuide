@@ -8,26 +8,24 @@
 
 Getting Started
 ===============
+This section seeks to guide the reader through a number of basic steps.
 
 .. _prerequisites:
 
 Pre-requisites
 --------------
-Before using the SPLAT interface, ensure that you have the following software installed
+Before using the SPLAT interface, ensure that you have the following software installed and files downloaded:
 
--	Microsoft Excel
--	MESSAGE (download from `MESSAGE folder`_)
-
-The MESSAGE software comes with a free solver called GLPK. If a different solver is needed, it will have to be installed separately. Refer to :ref:`install_solver` for using alternative solvers like cbc.
-
-Ensure that you have the following files:
-
+-	Microsoft Excel (64 bit version, to check :ref:`checking_bits`)
+-	IAEA MESSAGE tool (download from `MESSAGE folder`_ or link you have received in your email)
 -   A model (download a `SPLAT model example`_)
--   SPLAT excel interface (download a `SPLAT interface example`_)
+-   SPLAT excel interface (download`SPLAT interface`_)
+
+The MESSAGE software comes with a free solver called GLPK. If a different solver is needed, it will have to be installed separately. We recommend using the CBC solver for use with the SPLAT interface. Refer to :ref:`install_solver` for using alternative solvers like cbc. 
 
 .. _MESSAGE folder: https://irena.sharepoint.com/:u:/r/sites/EPS/PTG%20Tools%20and%20Data/SPLAT%20kit/Software/IAEA%20MESSAGE/MESSAGE_setup%20APR2011%20INT.exe?csf=1&web=1&e=oIuPR2
 
-.. _SPLAT interface example: https://irena.sharepoint.com/:x:/r/sites/EPS/PTG%20Tools%20and%20Data/SPLAT%20kit/Software/SPLAT_Interface_v23062022_Africa.xlsm?d=w661c9a3d3cb84282b2c15f595a63ab2e&csf=1&web=1&e=txXq8U
+.. _SPLAT interface: https://irena.sharepoint.com/:x:/r/sites/EPS/PTG%20Tools%20and%20Data/SPLAT%20kit/Software/SPLAT_Interface_v23062022_Africa.xlsm?d=w661c9a3d3cb84282b2c15f595a63ab2e&csf=1&web=1&e=txXq8U
 
 .. _SPLAT model example: https://irena.sharepoint.com/:u:/r/sites/EPS/PTG%20Tools%20and%20Data/SPLAT%20kit/Software/MAINa_2022-06-23_1003_AllCountries.zip?csf=1&web=1&e=IRPZjo
 
@@ -83,6 +81,11 @@ When you open the file, you must click :button:`Enable Content` (as shown below)
 
 .. image:: getting_started_opening_file.PNG
 
+Also, macros must be enabled. Refer to link to `enable macros`_.
+
+.. _enable macros:
+https://support.microsoft.com/en-gb/office/enable-or-disable-macros-in-microsoft-365-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6
+
 .. _checking_decimal:
 
 Checking system's decimal symbol
@@ -97,11 +100,11 @@ The decimal separator of your system must be set to '.' (point) in order for the
 Linking the interface to your model file
 +++++++++++++++++++++++++++++++++++++++++
 
-1. In the ``Main`` tab of the file, make sure the fields :inputcell:`Model Folder` and :inputcell:`Main Region` are set correctly as shown below, to reflect the location of the MESSAGE model files on your computer.
+1. In the ``Main`` tab of the file, make sure the fields :inputcell:`Model Folder` and :inputcell:`Main Region` are set correctly as shown below, to reflect the location of the restored MESSAGE model folder on your computer.
 
 2. in the ``Subregions`` section of the ``Main`` tab, choose which country / countries you want to activate, by placing a "1" next to it in the orange column, and a "0" next to any other countries. Ensure that the ``MAINa`` sub-region region is activated.
 
-3. Click the :button:`Reload Global` button at the top of the page (this connects the MESSAGE model files with this Excel workbook).
+3. Click the :button:`Reload Global` button at the top of the page (this connects the MESSAGE model files with this Excel workbook). The model files are read and loaded into memory in Excel.
 
 4. You will see a pop-up window which says "2 Countries data loaded in memory" (as shown below); press :button:`OK`.
 
@@ -124,8 +127,13 @@ This process works the same way for all the yellow tabs (``Demand``, ``Transmiss
 
 .. image:: getting_started_viewing_input.PNG
 
+
+.. caution::
+	If you have emptied the cells under the table header, pressing the 'Refresh sheet' will cause an error. This occurs because the underlying macro code is unable to identify the start cell to start pasting the requisite model data. If you come across this error, click 'end' > Reload global > write some simple single alphabet in the cell right under the first cell of table header > refresh sheet. 
+
+
 .. note::
-    Keep in mind that the "adb" scenario contains all of the basic data in the model. Choosing another scenario will show only the data that is **different** in that scenario. So, if you choose a scenario and the data is blank, then it means it has the same data as the "adb".
+    Keep in mind that the "adb" (Application Database) scenario contains all of the basic data in the model. Choosing another scenario will show only the data that is **different** in that scenario. So, if you choose a scenario and the data is blank, then it means it has the same data as the "adb".
 
 
 .. _run_model:
@@ -163,7 +171,7 @@ The ``ReportGen-Annual`` tab is also where you can pull in the results of the mo
 
 2.  Select the output format and enter output path (if applicable) under ``Results Destination`` section.
 
-3.	Click on :button:`Get Results` (red circle in picture below). If :inputcell:`on this sheet` is selected, you should see raw results appear beneath the tables when the process is finished.
+3.	Click on :button:`Get Results` (red circle in picture below). If :inputcell:`on this sheet` is selected, you should see raw results appear on the sheet when the process is finished.
 
 .. image:: getting_started_extract_results_1.PNG
 

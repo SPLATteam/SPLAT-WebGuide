@@ -59,13 +59,13 @@ Some of the files may already exist in the folder, you can accept to overwrite t
 Restoring and opening a model using the MESSAGE interface
 ----------------------------------------------------------
 
-1. Save the model ZIP file that starts with ``\MAINa_...`` into a known location of the computer
+1. Save the (SPLAT) model ZIP file that starts with ``\MAINa_...`` into a known location of the computer
 
 2. After installation of MESSAGE, open the program and two windows will open; the blue one is the user interface for Windows OS and the black one is the command window for MESSAGE.
 
 .. important::
 
-    You will use the blue windows but always leave the black window open:
+    You will use the blue windows. Do NOT close the black window as it will close the MESSAGE interface:
 
 .. image:: how_to_using_message_1.png
 
@@ -99,3 +99,15 @@ For example, suppose your country is Cameroon, then you choose the code CMa, the
 
 .. image:: how_to_using_message_10.png
 
+.. _message_copy_scenario:
+
+Copying a scenario using the MESSAGE interface
+-----------------------------------------------
+
+1. Open your model in MESSAGE. If you have not restored your model before, please restore it for the first time. (:ref:`using_message`)
+
+2. Select :button:`Cases` > :button:`Scenario`> :button:`Copy scenario`
+
+3. In the pop out window, select the scenario of your choice and enter the name of the new copy. Click :button:`OK`.
+
+.. image:: how_to_copy_scenario.PNG

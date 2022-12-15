@@ -21,6 +21,7 @@ The Technology tabs are listed at :ref:`technologysheets`
 
 This section describes how to view, add and change technologies using the SPLAT Excel Interface.
 
+
 .. _view_tech_inputs:
 
 Viewing technology inputs
@@ -134,7 +135,7 @@ Solar PV, onshore and offshore Wind
 
 VRE technologies can be defined in two ways - either as generic technologies or site-specific technologies. Below is an example for adding offshore wind, first as a generic technology, then as zones.
 
-1.	In the :ref:`GenericTech` tab, add technology "XXWDCLO00" (XX being country ID, for e.g. DZ) with tech description "Offshore generic tech". Use add new tech button. The macro will update the underlying files and reload at the end.
+1.	In the :ref:`GenericTech` tab, add technology "XXWDLCO00" (XX being country ID, for e.g. DZ) with tech description "Offshore generic tech". Use add new tech button. The macro will update the underlying files and reload at the end.
 
 2.	Go to :ref:`RenameTechFacility` sheet. Change the newly added offshore techs to appropriate generic tech name i.e. XXWDOC00. The macro will update the underlying files and reload at the end.
 
@@ -216,3 +217,33 @@ Interconnection
 The :ref:`interconnectors` sheet is used to review and update cross-border interconnector parameters.
 
 At a minimum the two interconnecting countries (which must be active) must be specified to view the interconnections between them. 
+
+.. _tech_naming:
+
+Technology naming in the SPLAT model
+------------------------------------
+
+The naming of technologies follow the following conventions in the SPLAT model:
+
+	??BMST_[name]	Biomass Bagasse Cogen
+	??BWST_[name]	Biomass Wood Cogen
+	??COSC_[name]	Coal
+	??COCS_[name]	Coal w CCS
+	??DSRC_[name]	Diesel Engine
+	??DSSC_[name]	Diesel Turbine
+	??NGCC_[name]	Gas Combined Cycle
+	??NGRC_[name]	Gas Engine
+	??NGSC_[name]	Gas Open Cycle
+	??GOCV_[name]	Geothermal
+	??HFRC_[name]	HFO Engine
+	??HFSC_[name]	HFO Steam turbine
+	??HFSC_[name]	HFO Steam turbine
+	??HYRO_[name]	Hydro Run of River
+	??HYMI_[name]	Hydro Small
+	??HYDM_[name]	Hydro With Dam
+	??NUPW_[name]	Nuclear
+	??EPPT_[name]	Pumped Storage
+	??SOTN_[name]	Solar CSP no Storage
+	??SOTS_[name]	Solar CSP with Storage
+	??SOPC_[name]	Solar PV system (utility)
+	??WDLC_[name]	Wind

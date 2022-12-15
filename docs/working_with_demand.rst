@@ -25,6 +25,13 @@ Viewing demand input
 
 3. In the ``PeakDemand`` tab, repeat steps 1 and 2 to retrieve the peak demand for the selected scenario.
 
+.. note::
+	Most SPLAT models only have Sent out demand. However, some models have also demand at industrial, urban , rural levels. The user will see demand data categorised into these said multiple demand levels. If the model is using just the send-out demand, user can simply ignore the data on other demand levels. These demand levels exist as an indication that a user always have the option to model these demand if he/she so wishes. 
+
+.. note::
+	Peak demand is not a direct input in SPLAT model. This sheet is populated by macro codes which multiply the peak of a normalised load curve with the region's annual electricity demand (Watt Hours).
+	
+	
 .. change_demand:
 
 Changing demand input
