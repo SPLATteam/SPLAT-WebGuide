@@ -24,6 +24,7 @@ Contents
     working_with_scenarios
     how_to
     glossary
+    MESSAGE
 
 
 
