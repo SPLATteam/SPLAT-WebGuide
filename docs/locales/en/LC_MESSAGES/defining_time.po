@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, IRENA
+# This file is distributed under the same license as the SPLAT Interface
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SPLAT Interface 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-12 16:38+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../defining_time.rst:9
+msgid "Defining Time"
+msgstr ""
+
+#: ../../defining_time.rst:12
+msgid ""
+"The interface must be linked to the model before executing any of the "
+"steps in this section. See :ref:`link_interface`."
+msgstr ""
+
+#: ../../defining_time.rst:15
+msgid ""
+"The ``Timeslices (Load Regions)`` sheet allows the user to see what load "
+"regions are in the model. It also allows user to select the timezone to "
+"run the model with. To make changes to the load region definition "
+"requires the demand and profile data to be provided in a specified folder"
+" as per specifications outlined later in this document."
+msgstr ""
+
+#: ../../defining_time.rst:17
+msgid ""
+"Note that currently the interface does not support multiple day types "
+"(e.g. weekday vs weekends), although this will be added in future "
+"versions of the interface."
+msgstr ""
+
+#: ../../defining_time.rst:19
+msgid ""
+"The user can review the load regions definition by clicking on the "
+":button:`Show TS in memory` button."
+msgstr ""
+
+#: ../../defining_time.rst:24
+msgid "Defining time zones and granularity"
+msgstr ""
+
+#: ../../defining_time.rst:26
+msgid "Add local time zone information to regid_AllRegions.tit (relative to UTC)."
+msgstr ""
+
+#: ../../defining_time.rst:28
+msgid ""
+"In the ``Timeslices (Load Regions)`` sheet, select one of the predefined "
+"configurations and the time zone of the model"
+msgstr ""
+
+#: ../../defining_time.rst:32
+msgid "There are 4 pre-defined Load Region configurations in the interface:"
+msgstr ""
+
+#: ../../defining_time.rst:34
+msgid "Large model: 30 time-slices/load regions (3 seasons each with 10 blocks)"
+msgstr ""
+
+#: ../../defining_time.rst:36
+msgid ""
+"Small model: 10 time-slices/load regions (3 season, 2 with 3 blocks, 1 "
+"with 4 blocks)"
+msgstr ""
+
+#: ../../defining_time.rst:38
+msgid "Small model V2: 10 time-slices/load regions (1 season with 10 blocks)"
+msgstr ""
+
+#: ../../defining_time.rst:40
+msgid "Very small model: 3 time-slices/load regions (1 season with 3 blocks)"
+msgstr ""
+
+#: ../../defining_time.rst:42
+msgid ""
+"Update the timeslice definitions in the model by clicking the "
+":button:`Update files` button. This will:"
+msgstr ""
+
+#: ../../defining_time.rst:44
+msgid "Update the timeslice definitions in the adb, ldb and ldr files"
+msgstr ""
+
+#: ../../defining_time.rst:46
+msgid ""
+"Shift the capacity factor time series and the demand time series from the"
+" regions' local time zones to the model time zone selected."
+msgstr ""
+
+#: ../../defining_time.rst:48
+msgid ""
+"Update the RE profiles and Demand profiles which are stored in 8760 data "
+"series in separate csv files. The csv files for demand and RE profiles "
+"are stored in each of the country/sub-region’s data folder."
+msgstr ""
+
+#: ../../defining_time.rst:51
+msgid "Required: Macros-> tools -> References (Microsoft Active X …..)"
+msgstr ""
+

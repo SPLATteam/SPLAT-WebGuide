@@ -1,0 +1,390 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, IRENA
+# This file is distributed under the same license as the SPLAT Interface
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SPLAT Interface 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-12 16:38+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../getting_started.rst:10
+msgid "Getting Started"
+msgstr ""
+
+#: ../../getting_started.rst:11
+msgid "This section seeks to guide the reader through a number of basic steps."
+msgstr ""
+
+#: ../../getting_started.rst:16
+msgid "Pre-requisites"
+msgstr ""
+
+#: ../../getting_started.rst:17
+msgid ""
+"Before using the SPLAT interface, ensure that you have the following "
+"software installed and files downloaded:"
+msgstr ""
+
+#: ../../getting_started.rst:20
+msgid ""
+"If you are already issued the SPLAT learning kit, the following software "
+"(except Microsoft Excel) can be accessed in the software folder. If the "
+"kit has not been issued to you yet, please fill in the `request form`_ , "
+"or contact the IRENA person you are in touch with."
+msgstr ""
+
+#: ../../getting_started.rst:23
+msgid "Microsoft Excel (64 bit version, to check :ref:`checking_bits`)"
+msgstr ""
+
+#: ../../getting_started.rst:24
+msgid "IAEA MESSAGE tool"
+msgstr ""
+
+#: ../../getting_started.rst:25
+msgid "A model"
+msgstr ""
+
+#: ../../getting_started.rst:26
+msgid "SPLAT excel interface"
+msgstr ""
+
+#: ../../getting_started.rst:27
+msgid "(recommended) CBC solver"
+msgstr ""
+
+#: ../../getting_started.rst:29
+msgid ""
+"The MESSAGE software comes with a free solver called GLPK. If a different"
+" solver is needed, it will have to be installed separately. We recommend "
+"using the CBC solver for use with the SPLAT interface. Refer to "
+":ref:`install_solver` for using alternative solvers like cbc."
+msgstr ""
+
+#: ../../getting_started.rst:33
+msgid ""
+"https://forms.office.com/Pages/ResponsePage.aspx?id"
+"=sOvdzLvS0ESYSo5CpcBis8X-"
+"QNFmuJNIrZ3pyvqZdPxURVJMTUw0Mzg1SkFHOTFFV0lXTFhLN1NEVS4u"
+msgstr ""
+
+#: ../../getting_started.rst:39
+msgid "Conventions"
+msgstr ""
+
+#: ../../getting_started.rst:40
+msgid ":inputcell:`User Input Cell`"
+msgstr ""
+
+#: ../../getting_started.rst:42
+msgid ""
+"Cells formatted as above (dark font with orange background) are user "
+"input cells, where the user is allowed and expected to enter data."
+msgstr ""
+
+#: ../../getting_started.rst:44
+msgid ":interfacecell:`Reserved for Interface`"
+msgstr ""
+
+#: ../../getting_started.rst:46
+msgid ""
+"Cells formatted as above (dark font with pale grey background) are cells "
+"that are reserved for interface. These cells are populated by macros in "
+"the workbook or are calculated cells."
+msgstr ""
+
+#: ../../getting_started.rst:48
+msgid "The tabs are organised according to the following conventions:"
+msgstr ""
+
+#: ../../getting_started.rst:50
+msgid "``Index`` sheet: lists all the sheets in the workbook"
+msgstr ""
+
+#: ../../getting_started.rst:51
+msgid ""
+"``Main`` sheet: where users set the model path, and select countries in "
+"the model"
+msgstr ""
+
+#: ../../getting_started.rst:52
+msgid "Yellow tabs: for reviewing and updating basic model inputs"
+msgstr ""
+
+#: ../../getting_started.rst:53
+msgid "Red tabs: for running a model and extracting results"
+msgstr ""
+
+#: ../../getting_started.rst:54
+msgid "Grey tabs: utilities available for more advanced users"
+msgstr ""
+
+#: ../../getting_started.rst:59
+msgid "First Steps"
+msgstr ""
+
+#: ../../getting_started.rst:60
+msgid ""
+"This documentation uses a simple model for demonstration. You can use an "
+"existing MESSAGE model for most of the examples in this documentation."
+msgstr ""
+
+#: ../../getting_started.rst:65
+msgid "Checking Excel version"
+msgstr ""
+
+#: ../../getting_started.rst:67
+msgid ""
+"The SPLAT Excel interface requires the 64-bit default version of Excel "
+"for its main functions. You can check your version of Excel by clicking "
+"the :button:`File` menu > :button:`Account` > :button:`About Excel`. If "
+"you have the older 32-bit Excel, it is recommended to uninstall and re-"
+"install your Microsoft Office software with 64-bit selected, or to use a "
+"computer with 64-bit software already installed."
+msgstr ""
+
+#: ../../getting_started.rst:74
+msgid "Restore model in MESSAGE"
+msgstr ""
+
+#: ../../getting_started.rst:76
+msgid ""
+"In order to run the model using the SPLAT excel interface, you may have "
+"to restore the model in MESSAGE once. Refer to the how-to guide on "
+":ref:`using_message` for instructions on using MESSAGE."
+msgstr ""
+
+#: ../../getting_started.rst:81
+msgid "Opening the file"
+msgstr ""
+
+#: ../../getting_started.rst:82
+msgid "Open the Excel file that starts with *SPLAT_Interface_...*."
+msgstr ""
+
+#: ../../getting_started.rst:84
+msgid ""
+"When you open the file, you must click :button:`Enable Content` (as shown"
+" below) for the file to function."
+msgstr ""
+
+#: ../../getting_started.rst:88
+msgid "Also, macros must be enabled. Refer to link to `enable macros`_."
+msgstr ""
+
+#: ../../getting_started.rst:91
+msgid ""
+"https://support.microsoft.com/en-gb/office/enable-or-disable-macros-in-"
+"microsoft-365-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6"
+msgstr ""
+
+#: ../../getting_started.rst:96
+msgid "Checking system's decimal symbol"
+msgstr ""
+
+#: ../../getting_started.rst:97
+msgid ""
+"The decimal separator of your system must be set to '.' (point) in order "
+"for the SPLAT Excel interface to function properly. If it is otherwise, "
+"e.g. ',' (comma), please go to ``Control Panel`` > ``Region`` > "
+"``Additional settings``, and change decimal symbol to '.'."
+msgstr ""
+
+#: ../../getting_started.rst:100
+msgid ""
+"The comma separator is often the default in French windows environments "
+"and would have to be changed in order to be able to use the interface. "
+"Refer to :ref:`change_decimal_seperator`."
+msgstr ""
+
+#: ../../getting_started.rst:105
+msgid "Linking the interface to your model file"
+msgstr ""
+
+#: ../../getting_started.rst:107
+msgid ""
+"In the ``Main`` tab of the file, make sure the fields :inputcell:`Model "
+"Folder` and :inputcell:`Main Region` are set correctly as shown below, to"
+" reflect the location of the restored MESSAGE model folder on your "
+"computer."
+msgstr ""
+
+#: ../../getting_started.rst:109
+msgid ""
+"in the ``Subregions`` section of the ``Main`` tab, choose which country /"
+" countries you want to activate, by placing a \"1\" next to it in the "
+"orange column, and a \"0\" next to any other countries. Ensure that the "
+"``MAINa`` sub-region region is activated."
+msgstr ""
+
+#: ../../getting_started.rst:111
+msgid ""
+"Click the :button:`Reload Global` button at the top of the page (this "
+"connects the MESSAGE model files with this Excel workbook). The model "
+"files are read and loaded into memory in Excel."
+msgstr ""
+
+#: ../../getting_started.rst:113
+msgid ""
+"You will see a pop-up window which says \"2 Countries data loaded in "
+"memory\" (as shown below); press :button:`OK`."
+msgstr ""
+
+#: ../../getting_started.rst:122
+msgid "Viewing model input"
+msgstr ""
+
+#: ../../getting_started.rst:124
+msgid ""
+"The SPLAT Excel interface allows a user to see the input data stored in "
+"SPLAT-MESSAGE models."
+msgstr ""
+
+#: ../../getting_started.rst:126
+msgid ""
+"In any of the yellow tabs, choose the scenario from the dropdown list in "
+"cell C3."
+msgstr ""
+
+#: ../../getting_started.rst:128
+msgid ""
+"Click on :button:`Refresh Sheet`, the data stored in the model will show "
+"in the table."
+msgstr ""
+
+#: ../../getting_started.rst:130
+msgid ""
+"This process works the same way for all the yellow tabs (``Demand``, "
+"``Transmission``, ``Distribution``, etc.) of the SPLAT Excel Interface. "
+"You can also refresh all sheets in these tabs by clicking the "
+":button:`Refresh all Sheets` in the ``Main`` tab."
+msgstr ""
+
+#: ../../getting_started.rst:136
+msgid ""
+"If you have emptied the cells under the table header, pressing the "
+"'Refresh sheet' will cause an error. This occurs because the underlying "
+"macro code is unable to identify the start cell to start pasting the "
+"requisite model data. If you come across this error, click 'end' > Reload"
+" global > write some simple single alphabet in the cell right under the "
+"first cell of table header > refresh sheet."
+msgstr ""
+
+#: ../../getting_started.rst:140
+msgid ""
+"Keep in mind that the \"adb\" (Application Database) scenario contains "
+"all of the basic data in the model. Choosing another scenario will show "
+"only the data that is **different** in that scenario. So, if you choose a"
+" scenario and the data is blank, then it means it has the same data as "
+"the \"adb\"."
+msgstr ""
+
+#: ../../getting_started.rst:146
+msgid "Running the model"
+msgstr ""
+
+#: ../../getting_started.rst:148
+msgid ""
+"**After** linking your model to the interface file in the ``Main`` tab, "
+"you can run your SPLAT model using the ``ReportGen-Annual`` tab."
+msgstr ""
+
+#: ../../getting_started.rst:150
+msgid "Select the correct scenario and country combination that you want to run."
+msgstr ""
+
+#: ../../getting_started.rst:152
+msgid ""
+"Select the preferred option (with or without interconnections between "
+"subregions) under ``Run Options (Subregions)``. In this example we select"
+" :inputcell:`Interconnected`."
+msgstr ""
+
+#: ../../getting_started.rst:154
+msgid ""
+"Select the correct option under the \"Run\" categories. The categories "
+"correspond to the same options in the MESSAGE \"Run\" menu: "
+":inputcell:`Mxg` = Matrix Generator; :inputcell:`Opt` = Optimisation; "
+":inputcell:`Cap` = Cap file creation; :inputcell:`All` = perform all of "
+"the above. There are three different options provided in the interface "
+"for CPLEX, CBC and GUROBI depending on which solver you have pre-"
+"installed. If you are a new user, please install and use CBC "
+"(:ref:`install_solver`)."
+msgstr ""
+
+#: ../../getting_started.rst:161
+msgid ""
+"Press the :button:`Run` button. You should see the black MESSAGE window "
+"appear and begin to run."
+msgstr ""
+
+#: ../../getting_started.rst:168
+msgid "Extracting the results"
+msgstr ""
+
+#: ../../getting_started.rst:171
+msgid "Use the ReportGen tab"
+msgstr ""
+
+#: ../../getting_started.rst:172
+msgid ""
+"The ``ReportGen-Annual`` tab is also where you can pull in the results of"
+" the model that you just ran."
+msgstr ""
+
+#: ../../getting_started.rst:174
+msgid ""
+"Select the scenario(s), country(s), variable(s) and year(s) combination "
+"that you want to view the results of. Please ensure that your desired "
+"scenario has been loaded in the excel memory. If it does not appear in "
+"the dropdown list, please go again to 'Main' tab and mark the desired "
+"scenario '1' and press 'Reload Global' button."
+msgstr ""
+
+#: ../../getting_started.rst:176
+msgid ""
+"Select the output format and enter output path (if applicable) under "
+"``Results Destination`` section."
+msgstr ""
+
+#: ../../getting_started.rst:178
+msgid ""
+"Click on :button:`Get Results` (red circle in picture below). If "
+":inputcell:`on this sheet` is selected, you should see raw results appear"
+" on the sheet when the process is finished."
+msgstr ""
+
+#: ../../getting_started.rst:183
+msgid "Update the results charts"
+msgstr ""
+
+#: ../../getting_started.rst:184
+msgid ""
+"You can find the yearly result charts in the red sheets: ``Capacity``, "
+"``Output``, ``New Capacity``, ``CO2``, and ``Costs``."
+msgstr ""
+
+#: ../../getting_started.rst:188
+msgid ""
+"Please be sure to check that the correct scenario and country are chosen "
+"at the top of the table."
+msgstr ""
+
+#: ../../getting_started.rst:190
+msgid ""
+"Right-click anywhere in the table on the worksheet, and select "
+":button:`Refresh` from the options. These charts need to be updated "
+"**every time** you pull in new results."
+msgstr ""
+

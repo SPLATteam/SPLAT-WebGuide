@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, IRENA
+# This file is distributed under the same license as the SPLAT Interface
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SPLAT Interface 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-12 16:38+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../how_to.rst:9
+msgid "How-To Guides"
+msgstr ""
+
+#: ../../how_to.rst:14
+msgid "Change decimal seperator in windows environment"
+msgstr ""
+
+#: ../../how_to.rst:35
+msgid "Installing an Alternative (Faster) Free Solver"
+msgstr ""
+
+#: ../../how_to.rst:37
+msgid ""
+"The MESSAGE software comes by default with a free solver called GLPK. "
+"This solver is adequate for working with small models, however, when a "
+"larger model is to be used (e.g. many timeslices, many technologies and "
+"subregions), this solver becomes inadequate requiring a long time to "
+"complete a \"RUN\"."
+msgstr ""
+
+#: ../../how_to.rst:39
+msgid ""
+"There is an alternative free solver that can be used with MESSAGE called "
+"the CBC (`Coil-or Branch and Cut solver`_) that is more powerful and can "
+"solve larger problems at comparable speeds to some of the commercial "
+"solvers such as CPLEX."
+msgstr ""
+
+#: ../../how_to.rst:41
+msgid ""
+"However, to execute runs with this solver one must use the SPLAT Excel "
+"Interface to initiate runs (see Tutorial C - Using the SPLAT Excel "
+"Interface) and one has to add the solver to the user's existing MESSAGE "
+"installation. This guide gives a brief description on how to do this "
+"installation."
+msgstr ""
+
+#: ../../how_to.rst:43
+msgid ""
+"1. Download the cbc.rar archive file from the `cbc link`_ and put it in "
+"the MESSAGE installation folder called: "
+"``C:\\Programs\\MESSAGE_INT\\message_bin``"
+msgstr ""
+
+#: ../../how_to.rst:53
+msgid ""
+"2. Use a 3rd party software such as Winrar to extract the files from "
+"``cbc.rar`` into the ``C:\\Programs\\MESSAGE_INT\\message_bin`` folder "
+"(use \"extract here\") Some of the files may already exist in the folder,"
+" you can accept to overwrite those files with the ones from the "
+"``cbc.rar`` archive."
+msgstr ""
+
+#: ../../how_to.rst:60
+msgid "Restoring and opening a model using the MESSAGE interface"
+msgstr ""
+
+#: ../../how_to.rst:62
+msgid ""
+"Save the (SPLAT) model ZIP file that starts with ``\\MAINa_...`` into a "
+"known location of the computer"
+msgstr ""
+
+#: ../../how_to.rst:64
+msgid ""
+"After installation of MESSAGE, open the program and two windows will "
+"open; the blue one is the user interface for Windows OS and the black one"
+" is the command window for MESSAGE."
+msgstr ""
+
+#: ../../how_to.rst:68
+msgid ""
+"You will use the blue windows. Do NOT close the black window as it will "
+"close the MESSAGE interface:"
+msgstr ""
+
+#: ../../how_to.rst:74
+msgid "Select :button:`Cases` > :button:`Restore`"
+msgstr ""
+
+#: ../../how_to.rst:78
+msgid ""
+"Select the ZIP file ``MAINa_...`` located in the place you previously "
+"saved"
+msgstr ""
+
+#: ../../how_to.rst:82
+msgid "Select :button:`Cases` > :button:`Open`"
+msgstr ""
+
+#: ../../how_to.rst:88
+msgid "Select \"Africa\" and your country code (Please see Table)."
+msgstr ""
+
+#: ../../how_to.rst:92
+msgid ""
+"For example, suppose your country is Cameroon, then you choose the code "
+"CMa, then the following window will appear with Case Study : CMa."
+msgstr ""
+
+#: ../../how_to.rst:98
+msgid ""
+"You have now the Country model of your choice, which you can edit or work"
+" with. If you click :button:`Edit` and then click :button:`application "
+"db`, you get the following screen which you can use to view most of your "
+"model's input data."
+msgstr ""
+
+#: ../../how_to.rst:105
+msgid "Copying a scenario using the MESSAGE interface"
+msgstr ""
+
+#: ../../how_to.rst:107
+msgid ""
+"Open your model in MESSAGE. If you have not restored your model before, "
+"please restore it for the first time. (:ref:`using_message`)"
+msgstr ""
+
+#: ../../how_to.rst:109
+msgid "Select :button:`Cases` > :button:`Scenario`> :button:`Copy scenario`"
+msgstr ""
+
+#: ../../how_to.rst:111
+msgid ""
+"In the pop out window, select the scenario of your choice and enter the "
+"name of the new copy. Click :button:`OK`."
+msgstr ""
+
+#: ../../how_to.rst:115
+msgid ""
+"If you are working in a region with multiple sub-regions, select "
+":button:`Yes` for :button:`Make copy for all subregions`?"
+msgstr ""
+
+#: ../../how_to.rst:119
+msgid ""
+"In the SPLAT interface Main sheet, Reload global. You will find the new "
+"scenario you copied in the Scenarios table. To use the new scenario, "
+"select ``1`` in Scenarios to Reload"
+msgstr ""
+

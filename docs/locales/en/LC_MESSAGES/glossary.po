@@ -1,0 +1,361 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, IRENA
+# This file is distributed under the same license as the SPLAT Interface
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SPLAT Interface 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-12 16:38+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../glossary.rst:9
+msgid "Description of Sheets"
+msgstr ""
+
+#: ../../glossary.rst:14
+msgid "Main"
+msgstr ""
+
+#: ../../glossary.rst:16
+msgid ""
+"Set the model path, reload model data to memory, and select active "
+"countries for querying"
+msgstr ""
+
+#: ../../glossary.rst:18
+msgid ""
+":inputcell:`Model Folder`       path of the MESSAGE model to be connected"
+" to the SPLAT interface"
+msgstr ""
+
+#: ../../glossary.rst:20
+msgid ""
+":inputcell:`Main Region`        name of the MESSAGE model to be connected"
+" to the SPLAT interface"
+msgstr ""
+
+#: ../../glossary.rst:22
+msgid ""
+":inputcell:`Region Active?`     list of sub-regions (countries) to be "
+"loaded into memory"
+msgstr ""
+
+#: ../../glossary.rst:24
+msgid ""
+":inputcell:`Scenarios to Load`      list of currently specified scenarios"
+" in the main region, and to specify the scenarios to be loaded into "
+"memory"
+msgstr ""
+
+#: ../../glossary.rst:26
+msgid ":interfacecell:`Country Name`       country codes in the MESSAGE model"
+msgstr ""
+
+#: ../../glossary.rst:28
+msgid ":interfacecell:`Description`        country names expanded"
+msgstr ""
+
+#: ../../glossary.rst:30
+msgid ":interfacecell:`Power Pool`         the powerpool a country belongs to"
+msgstr ""
+
+#: ../../glossary.rst:32
+msgid ""
+":interfacecell:`TimeSlices/Load Regions`        number of time slices "
+"modelled per year"
+msgstr ""
+
+#: ../../glossary.rst:34
+msgid ":interfacecell:`# Demands`      number of demand components"
+msgstr ""
+
+#: ../../glossary.rst:36
+msgid ":interfacecell:`# Technologies`     number of technologies in country"
+msgstr ""
+
+#: ../../glossary.rst:38
+msgid ":interfacecell:`# Constraints`      number of constraints in country"
+msgstr ""
+
+#: ../../glossary.rst:40
+msgid ":interfacecell:`Scenarios`      name of scenarios"
+msgstr ""
+
+#: ../../glossary.rst:42
+msgid ":interfacecell:`Discount Rate`      discount rate of technologies"
+msgstr ""
+
+#: ../../glossary.rst:44
+msgid ""
+":button:`Reload Global`     import model data stored in adb and ldb files"
+" into memory, perform various calculations."
+msgstr ""
+
+#: ../../glossary.rst:46
+msgid ""
+":button:`Refresh all Sheets`        refresh data sheets (yellow sheets) "
+"for reloaded subregions and scenarios"
+msgstr ""
+
+#: ../../glossary.rst:48
+msgid ""
+":button:`Save all Scenario Files using SPLAT formatting`        save all "
+"model (adb and ldb) files using excel-SPLAT formatting for selected "
+"subregions (use this after making a change with MESSAGE interface) If "
+"this button is pressed the MAINa ldb files will also be updated if MAINa "
+"is selected, to exclude interconnectors for subregions that are not "
+"selected below."
+msgstr ""
+
+#: ../../glossary.rst:55
+msgid "Demand sheets"
+msgstr ""
+
+#: ../../glossary.rst:60
+msgid "Demand"
+msgstr ""
+
+#: ../../glossary.rst:62
+msgid ""
+"Displays all demand series in the model, including total \"Sent Out\" "
+"(i.e. Secondary, or before transmission & distribution) demand and Final "
+"demand by sector"
+msgstr ""
+
+#: ../../glossary.rst:67
+msgid "PeakDemand"
+msgstr ""
+
+#: ../../glossary.rst:69
+msgid ""
+"Displays Peak Demand series in MW in the model, including total \"Sent "
+"Out\" (i.e. Secondary, or before transmission & distribution) demand and "
+"Final demand by sector"
+msgstr ""
+
+#: ../../glossary.rst:74
+msgid "FuelPrices"
+msgstr ""
+
+#: ../../glossary.rst:76
+msgid "Displays fuel prices used in the model"
+msgstr ""
+
+#: ../../glossary.rst:81
+msgid "Technology sheets"
+msgstr ""
+
+#: ../../glossary.rst:86
+msgid "GenericTech"
+msgstr ""
+
+#: ../../glossary.rst:88
+msgid ""
+"Displays generic technology parameters that are constant over the model "
+"horizon"
+msgstr ""
+
+#: ../../glossary.rst:93
+msgid "GenericTechCosts"
+msgstr ""
+
+#: ../../glossary.rst:95
+msgid ""
+"Displays generic technology cost parameters that are either constant or "
+"change over the model horizon (e.g. CAPEX, FOM, VOM)"
+msgstr ""
+
+#: ../../glossary.rst:100
+msgid "SpecificTech"
+msgstr ""
+
+#: ../../glossary.rst:102
+msgid ""
+"Displays site-specific technology parameters that are constant over the "
+"model horizon"
+msgstr ""
+
+#: ../../glossary.rst:105
+msgid ""
+"The ``SpecificTech`` sheet is used to review and update Site specific "
+"power generation technology parameters that don’t vary from year to year."
+msgstr ""
+
+#: ../../glossary.rst:107
+msgid ""
+"The SpecificTech sheet has an extra button: :button:`Add missing Tech`, "
+"which allows the user to add new site specific technology to the MESSAGE "
+"model that is linked. Currently this technology makes the addition by "
+"copying the technology parameters of a generic technology of the same "
+"technology type as specified by the first 6 characters in the technology "
+"name. A new technology will be automatically added to all active "
+"scenarios. A MESSAGE technology code is created automatically based on "
+"the input and output commodities (as specified by the associated generic "
+"technology) and the already existing technologies having the same inputs "
+"and outputs."
+msgstr ""
+
+#: ../../glossary.rst:109
+msgid ""
+"Once a new technology is added, its parameters must be updated using the "
+":button:`Update Model Data` button."
+msgstr ""
+
+#: ../../glossary.rst:116
+msgid "SpecificTechHydroDams"
+msgstr ""
+
+#: ../../glossary.rst:118
+msgid ""
+"Displays site-specific technology parameters that are specific to hydro "
+"plants with storage (dams)"
+msgstr ""
+
+#: ../../glossary.rst:120
+msgid ""
+"The ``SpecificTechHydroDams`` sheet manipulates the hydro dams in the "
+"model."
+msgstr ""
+
+#: ../../glossary.rst:122
+msgid ""
+":button:`Refresh Sheet` button extracts the technologies that belong to "
+"the `TechSetL2`: `Large Hydro Dams`."
+msgstr ""
+
+#: ../../glossary.rst:124
+msgid ""
+":button:`Create River Tech+Storage Constraint` button adds a technology "
+"and a storage constraint for each dam."
+msgstr ""
+
+#: ../../glossary.rst:126
+msgid ":button:`Update Model Data` updates the user input data."
+msgstr ""
+
+#: ../../glossary.rst:132
+msgid "SpecificTechCosts"
+msgstr ""
+
+#: ../../glossary.rst:134
+msgid ""
+"Displays site-specific technology cost parameters that are either "
+"constant or change over the model horizon (e.g. CAPEX, FOM, VOM)"
+msgstr ""
+
+#: ../../glossary.rst:139
+msgid "SpecificCapacityLimits"
+msgstr ""
+
+#: ../../glossary.rst:141
+msgid ""
+"Displays site-specific technology capacity limits that are either "
+"constant or change over the model horizon"
+msgstr ""
+
+#: ../../glossary.rst:146
+msgid "BatteryStorage"
+msgstr ""
+
+#: ../../glossary.rst:148
+msgid "Displays Battery Storage Parameters"
+msgstr ""
+
+#: ../../glossary.rst:153
+msgid "PVZones"
+msgstr ""
+
+#: ../../glossary.rst:155
+msgid "Displays PV Zones Data"
+msgstr ""
+
+#: ../../glossary.rst:160
+msgid "WindZones"
+msgstr ""
+
+#: ../../glossary.rst:162
+msgid "Displays Wind Zones Data"
+msgstr ""
+
+#: ../../glossary.rst:167
+msgid "OffshoreWindZones"
+msgstr ""
+
+#: ../../glossary.rst:169
+msgid "Displays OffshoreWind Zones Data"
+msgstr ""
+
+#: ../../glossary.rst:174
+msgid "CSP6hrZones"
+msgstr ""
+
+#: ../../glossary.rst:176
+msgid "Displays CSP 6hr Zones Data"
+msgstr ""
+
+#: ../../glossary.rst:181
+msgid "CSP12hrZones"
+msgstr ""
+
+#: ../../glossary.rst:183
+msgid "Displays CSP 12hr Zones Data"
+msgstr ""
+
+#: ../../glossary.rst:188
+msgid "Interconnectors"
+msgstr ""
+
+#: ../../glossary.rst:190
+msgid "Displays regional interconnector parameters"
+msgstr ""
+
+#: ../../glossary.rst:195
+msgid "Transmission"
+msgstr ""
+
+#: ../../glossary.rst:197
+msgid "Displays transmission network parameters by country"
+msgstr ""
+
+#: ../../glossary.rst:202
+msgid "Distribution"
+msgstr ""
+
+#: ../../glossary.rst:204
+msgid "Displays distribution network parameters by country and sector"
+msgstr ""
+
+#: ../../glossary.rst:209
+msgid "ReportGen-Annual"
+msgstr ""
+
+#: ../../glossary.rst:211
+msgid "Generate Annual Results File"
+msgstr ""
+
+#: ../../glossary.rst:216
+msgid "ReportGen-Profiles"
+msgstr ""
+
+#: ../../glossary.rst:218
+msgid "Generate Sub-Annual (Profiles) Results File"
+msgstr ""
+
+#: ../../glossary.rst:223
+msgid "TimeSlices"
+msgstr ""
+
+#: ../../glossary.rst:225
+msgid "Displays timeslice definitions (load regions) used in model"
+msgstr ""
+

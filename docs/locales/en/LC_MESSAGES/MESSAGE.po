@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, IRENA
+# This file is distributed under the same license as the SPLAT Interface
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SPLAT Interface 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-12 16:38+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../MESSAGE.rst:9
+msgid "MESSAGE"
+msgstr ""
+
+#: ../../MESSAGE.rst:14
+msgid "Databases in MESSAGE"
+msgstr ""
+
+#: ../../MESSAGE.rst:34
+msgid "tdb file is created and maintained independent of any case study"
+msgstr ""
+
+#: ../../MESSAGE.rst:33
+msgid "upd"
+msgstr ""
+
+#: ../../MESSAGE.rst:34
+msgid "Update database"
+msgstr ""
+
+#: ../../MESSAGE.rst:35
+msgid ""
+"upd file is created and maintained to update values in the adb and/or a "
+"set of scenarios in a case study across the board."
+msgstr ""
+

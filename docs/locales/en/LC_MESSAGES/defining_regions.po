@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, IRENA
+# This file is distributed under the same license as the SPLAT Interface
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SPLAT Interface 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-12 16:38+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../defining_regions.rst:2
+msgid "Defining Regions"
+msgstr ""
+
+#: ../../defining_regions.rst:4
+msgid "TOCHECK:"
+msgstr ""
+
+#: ../../defining_regions.rst:6
+msgid ""
+"Regions can be added to an existing multi-region MESSAGE-SPLAT model as "
+"follows:"
+msgstr ""
+
+#: ../../defining_regions.rst:8
+msgid "Copy Blank Regions folder"
+msgstr ""
+
+#: ../../defining_regions.rst:10
+msgid ""
+"Rename files (use VBA code in ``Regions`` Module called: "
+"``Rename_Files()``"
+msgstr ""
+
+#: ../../defining_regions.rst:12
+msgid "Edit files:"
+msgstr ""
+
+#: ../../defining_regions.rst:14
+msgid "C:\\Programs\\MESSAGE_INT\\models\\ACEC_V2\\MAINa\\Regid"
+msgstr ""
+
+#: ../../defining_regions.rst:16
+msgid "Reload global in SPLAT interface"
+msgstr ""
+
+#: ../../defining_regions.rst:18
+msgid ""
+"Rename Technologies (use VBA code in ``Regions`` Module called: "
+"``DeleteandrenameTechs()`` followed by VBA code in module ``writeadb`` "
+"called ``WriteAllScenarios()``"
+msgstr ""
+
+#: ../../defining_regions.rst:20
+msgid "Rename Country description (at the top)"
+msgstr ""
+
+#: ../../defining_regions.rst:22
+msgid "Search and replace traded commodity, as well as Secondary Electricity"
+msgstr ""
+
+#: ../../defining_regions.rst:24
+msgid ""
+"Add region name to "
+"C:\\Programs\\MESSAGE_INT\\models\\ACEC_V2\\MAINa\\data\\MAINa.gen file"
+msgstr ""
+
+#: ../../defining_regions.rst:26
+msgid "add XXa.dir file to C:\\Programs\\MESSAGE_INT\\models\\mms_fils\\"
+msgstr ""
+
+#: ../../defining_regions.rst:28
+msgid "Edit C:\\Programs\\MESSAGE_INT\\models\\mms_fils\\glob.reg and add path"
+msgstr ""
+
+#: ../../defining_regions.rst:30
+msgid "Edit C:\\Programs\\MESSAGE_INT\\models\\mms_fils\\mms.pro and add path"
+msgstr ""
+
+#: ../../defining_regions.rst:32
+msgid "-*.cin,-*.adb,-*.ldb,-*.mps,-*.chn,-*.lbu,-*.tab,-*.sol,-*.mst,-*.rar,-*.ggi,-*.sdb,-*.toc,-*.txt,-*.bat,-*.itl,-*.nbd"
+msgstr ""
+
