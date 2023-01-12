@@ -46,3 +46,4 @@ html_style = 'css/splat_interface.css'
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
+locale_dirs = ['locale']
