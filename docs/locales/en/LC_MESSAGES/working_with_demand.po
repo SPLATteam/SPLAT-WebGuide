@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, IRENA
+# This file is distributed under the same license as the SPLAT Interface
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SPLAT Interface 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-12 16:38+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../working_with_demand.rst:9
+msgid "Working with Demand"
+msgstr ""
+
+#: ../../working_with_demand.rst:12
+msgid ""
+"The interface must be linked to the model before executing any of the "
+"steps in this section. See :ref:`link_interface`."
+msgstr ""
+
+#: ../../working_with_demand.rst:15
+msgid ""
+"This section describes how to view, change and add demand using the SPLAT"
+" interface."
+msgstr ""
+
+#: ../../working_with_demand.rst:20
+msgid "Viewing demand input"
+msgstr ""
+
+#: ../../working_with_demand.rst:22
+msgid ""
+"In the ``Demand`` tab, enter the scenario to be queried in the cell "
+"``Choose Scenario``"
+msgstr ""
+
+#: ../../working_with_demand.rst:24
+msgid ""
+"Click on :button:`Refresh Sheet`. The yearly demand in the scenario will "
+"be shown in the same sheet. Only data for the country(s) loaded (in the "
+"``Main`` sheet) will be displayed."
+msgstr ""
+
+#: ../../working_with_demand.rst:26
+msgid ""
+"In the ``PeakDemand`` tab, repeat steps 1 and 2 to retrieve the peak "
+"demand for the selected scenario."
+msgstr ""
+
+#: ../../working_with_demand.rst:29
+msgid ""
+"Most SPLAT models only have Sent out demand. However, some models have "
+"also demand at industrial, urban , rural levels. The user will see demand"
+" data categorised into these said multiple demand levels. If the model is"
+" using just the send-out demand, user can simply ignore the data on other"
+" demand levels. These demand levels exist as an indication that a user "
+"always have the option to model these demand if he/she so wishes."
+msgstr ""
+
+#: ../../working_with_demand.rst:32
+msgid ""
+"Peak demand is not a direct input in SPLAT model. This sheet is populated"
+" by macro codes which multiply the peak of a normalised load curve with "
+"the region's annual electricity demand (Watt Hours)."
+msgstr ""
+
+#: ../../working_with_demand.rst:38
+msgid "Changing demand input"
+msgstr ""
+
+#: ../../working_with_demand.rst:40
+msgid ""
+"In the ``Demand`` tab, click on :button:`Refresh Sheet` to get the data "
+"saved in the model."
+msgstr ""
+
+#: ../../working_with_demand.rst:42
+msgid "Make changes to the demand series in the sheet."
+msgstr ""
+
+#: ../../working_with_demand.rst:44
+msgid "Click on :button:`Update Sheet` to update the model with the new data."
+msgstr ""
+

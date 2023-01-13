@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, IRENA
+# This file is distributed under the same license as the SPLAT Interface
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SPLAT Interface 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-12 16:38+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../index.rst:2
+msgid "SPLAT Interface Documentation"
+msgstr ""
+
+#: ../../index.rst:4
+msgid ""
+"The **SPLAT interface** is an excel workbook with a set of macros "
+"operated via buttons or short-cut keys. The workbook can be used in "
+"conjunction with the standard MESSAGE model interface. The workbook has "
+"been developed for single or multi-country MESSAGE_V2 models."
+msgstr ""
+
+#: ../../index.rst:6
+msgid ""
+"The workbook has a core set of spreadsheets that the user can add to or "
+"duplicate as needed for managing input data and results for the model "
+"they are working on. This guide describes the features of the latest "
+"stable version of the SPLAT excel interface."
+msgstr ""
+
+#: ../../index.rst:10
+msgid ""
+"This guide focuses on the use of the **SPLAT excel interface** to "
+"interact with the MESSAGE software. For a basic guide on how to use "
+"MESSAGE directly, refer to :ref:`using_message`."
+msgstr ""
+
+#: ../../index.rst:14
+msgid "Contents"
+msgstr ""
+

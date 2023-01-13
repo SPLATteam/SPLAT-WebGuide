@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, IRENA
+# This file is distributed under the same license as the SPLAT Interface
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SPLAT Interface 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-12 16:38+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../working_with_scenarios.rst:2
+msgid "Working with Scenarios"
+msgstr ""
+
+#: ../../working_with_scenarios.rst:5
+msgid ""
+"The SPLAT excel interface is limited in doing scenario management "
+"directly. Please add and delete scenarios directly through MESSAGE."
+msgstr ""
+
+#: ../../working_with_scenarios.rst:8
+msgid "Add a scenario"
+msgstr ""
+
+#: ../../working_with_scenarios.rst:9
+msgid ""
+"Scenarios need to be added via the MESSAGE interface. It is recommended "
+"that the user makes a copy of an existing scenario through the MESSAGE "
+"interface and load it into the SPLAT interface. Refer to "
+":ref:`message_copy_scenario`."
+msgstr ""
+

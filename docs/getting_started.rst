@@ -16,18 +16,22 @@ Pre-requisites
 --------------
 Before using the SPLAT interface, ensure that you have the following software installed and files downloaded:
 
+.. note::
+	If you are already issued the SPLAT learning kit, the following software (except Microsoft Excel) can be accessed in the software folder. If the kit has not been issued to you yet, please fill in the `request form`_ , or contact the IRENA person you are in touch with.
+
+
 -	Microsoft Excel (64 bit version, to check :ref:`checking_bits`)
--	IAEA MESSAGE tool (download from `MESSAGE folder`_ or link you have received in your email)
--   A model (download a `SPLAT model example`_)
--   SPLAT excel interface (download`SPLAT interface`_)
+-	IAEA MESSAGE tool
+-  	A model
+-   	SPLAT excel interface
+-	(recommended) CBC solver
 
 The MESSAGE software comes with a free solver called GLPK. If a different solver is needed, it will have to be installed separately. We recommend using the CBC solver for use with the SPLAT interface. Refer to :ref:`install_solver` for using alternative solvers like cbc. 
 
-.. _MESSAGE folder: https://irena.sharepoint.com/:u:/r/sites/EPS/PTG%20Tools%20and%20Data/SPLAT%20kit/Software/IAEA%20MESSAGE/MESSAGE_setup%20APR2011%20INT.exe?csf=1&web=1&e=oIuPR2
 
-.. _SPLAT interface: https://irena.sharepoint.com/:x:/r/sites/EPS/PTG%20Tools%20and%20Data/SPLAT%20kit/Software/SPLAT_Interface_v23062022_Africa.xlsm?d=w661c9a3d3cb84282b2c15f595a63ab2e&csf=1&web=1&e=txXq8U
+.. _request form:
+https://forms.office.com/Pages/ResponsePage.aspx?id=sOvdzLvS0ESYSo5CpcBis8X-QNFmuJNIrZ3pyvqZdPxURVJMTUw0Mzg1SkFHOTFFV0lXTFhLN1NEVS4u
 
-.. _SPLAT model example: https://irena.sharepoint.com/:u:/r/sites/EPS/PTG%20Tools%20and%20Data/SPLAT%20kit/Software/MAINa_2022-06-23_1003_AllCountries.zip?csf=1&web=1&e=IRPZjo
 
 .. _conventions:
 

@@ -1,0 +1,473 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, IRENA
+# This file is distributed under the same license as the SPLAT Interface
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SPLAT Interface 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-12 16:38+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../working_with_technologies.rst:10
+msgid "Working with Technologies"
+msgstr ""
+
+#: ../../working_with_technologies.rst:13
+msgid ""
+"The interface must be linked to the model before executing any of the "
+"steps in this section. See :ref:`link_interface`."
+msgstr ""
+
+#: ../../working_with_technologies.rst:16
+msgid ""
+"A technology in the model is a power-producing unit or a combination of "
+"such units or a transmission line with specific parameters such as, "
+"maximum capacity, capacity factor, CAPEX, FOM, fuel cost etc."
+msgstr ""
+
+#: ../../working_with_technologies.rst:18
+msgid ""
+"A technology can be site specific (a specific plant or transmission line "
+"with known parameters) or generic (a technology with generalised "
+"parameters)."
+msgstr ""
+
+#: ../../working_with_technologies.rst:20
+msgid "The Technology tabs are listed at :ref:`technologysheets`"
+msgstr ""
+
+#: ../../working_with_technologies.rst:22
+msgid ""
+"This section describes how to view, add and change technologies using the"
+" SPLAT Excel Interface."
+msgstr ""
+
+#: ../../working_with_technologies.rst:28
+msgid "Viewing technology inputs"
+msgstr ""
+
+#: ../../working_with_technologies.rst:30
+msgid ""
+"In any of the :ref:`technologysheets` (except the tabs containing "
+"information of specific zones), enter the scenario to be queried in the "
+"cell ``Choose Scenario``"
+msgstr ""
+
+#: ../../working_with_technologies.rst:32
+msgid ""
+"Click on :button:`Refresh Sheet`. The technologies and their parameters "
+"in the scenario will be shown in the same sheet. Only data for the "
+"country(s) loaded (in the ``Main`` sheet) will be displayed."
+msgstr ""
+
+#: ../../working_with_technologies.rst:34
+msgid ""
+"Refer to :ref:`renewable_tech` for steps to retrieve the information of "
+"renewable zones (Solar PV, Solar CSP, Onshore Wind, Offshore Wind)."
+msgstr ""
+
+#: ../../working_with_technologies.rst:39
+msgid "Adding a technology"
+msgstr ""
+
+#: ../../working_with_technologies.rst:41
+msgid "Refresh the sheet :ref:`SpecificTech` for the scenario selected."
+msgstr ""
+
+#: ../../working_with_technologies.rst:43
+msgid ""
+"Add new specific tech name and parameters in the table. Ensure the that "
+"technology code is unique and not repeated."
+msgstr ""
+
+#: ../../working_with_technologies.rst:45
+msgid ""
+"Click on :button:`Add New Techs`. A technology is added with parameters "
+"from the underlying generic tech."
+msgstr ""
+
+#: ../../working_with_technologies.rst:47
+msgid ""
+"Refresh sheet to see the new technology added. Refresh other sheets "
+"before modifying relevant parameters."
+msgstr ""
+
+#: ../../working_with_technologies.rst:52
+msgid "Renaming a technology"
+msgstr ""
+
+#: ../../working_with_technologies.rst:54
+msgid ""
+"Enter the old and new technology names in :ref:`RenameTechFacility` and "
+"click on :button:`Rename Techs in List`."
+msgstr ""
+
+#: ../../working_with_technologies.rst:56
+msgid ""
+"To confirm that the technology has been renamed, refresh the relevant "
+"tabs (``GenericTech`` or ``SpecificTech``) to see the updated names. "
+"Multiple technologies can be renamed."
+msgstr ""
+
+#: ../../working_with_technologies.rst:63
+msgid "Deleting a technology"
+msgstr ""
+
+#: ../../working_with_technologies.rst:65
+msgid ""
+"Enter the technology names in :ref:`DeleteTechFacility` and click on "
+":button:`Delete Techs in List`."
+msgstr ""
+
+#: ../../working_with_technologies.rst:67
+msgid ""
+"To confirm that the technology has been deleted, refresh the relevant "
+"tabs (``GenericTech`` or ``SpecificTech``) to see the update. Multiple "
+"technologies can be deleted."
+msgstr ""
+
+#: ../../working_with_technologies.rst:74
+msgid "Changing a technology"
+msgstr ""
+
+#: ../../working_with_technologies.rst:76
+msgid ""
+"In any of the :ref:`technologysheets` (except the tabs containing "
+"information of specific zones), click on :button:`Refresh Sheet` to get "
+"the data saved in the model for the scenario chosen."
+msgstr ""
+
+#: ../../working_with_technologies.rst:78
+msgid "Make changes to the technologies in the sheet."
+msgstr ""
+
+#: ../../working_with_technologies.rst:80
+#: ../../working_with_technologies.rst:91
+#: ../../working_with_technologies.rst:106
+#: ../../working_with_technologies.rst:120
+msgid ""
+"Click on :button:`Update Model Data` to update the model with the new "
+"data."
+msgstr ""
+
+#: ../../working_with_technologies.rst:85
+msgid "Fuel price"
+msgstr ""
+
+#: ../../working_with_technologies.rst:87
+msgid ""
+"In the tab :ref:`fuelprices`, click on :button:`Refresh Sheet` to get the"
+" data saved in the model for the scenario and countries chosen."
+msgstr ""
+
+#: ../../working_with_technologies.rst:89
+msgid "Make changes to the fuel prices in the sheet."
+msgstr ""
+
+#: ../../working_with_technologies.rst:94
+msgid ""
+"The fuel price is specified in $/GJ. It is currently not possible to add "
+"new fuel supply technologies via the SPLAT interface, this is left for "
+"future development (as well as the possibility of specifying limits, "
+"which would be needed if one wanted to model a supply curve for a "
+"particular fuel)."
+msgstr ""
+
+#: ../../working_with_technologies.rst:95
+#: ../../working_with_technologies.rst:109
+#: ../../working_with_technologies.rst:124
+#: ../../working_with_technologies.rst:210
+msgid ""
+"If a user specifies values both in the Constant column, as well as under "
+"milestone year columns, only the constant value will be used to update "
+"the MESSAGE model and the other values will be ignored."
+msgstr ""
+
+#: ../../working_with_technologies.rst:100
+msgid "Technology costs"
+msgstr ""
+
+#: ../../working_with_technologies.rst:102
+msgid ""
+"In the tab :ref:`generictechcosts` and :ref:`specifictechcosts`, click on"
+" :button:`Refresh Sheet` to get the cost data saved in the model for the "
+"scenario and countries chosen."
+msgstr ""
+
+#: ../../working_with_technologies.rst:104
+msgid ""
+"Make changes to the costs (Overnight Cost-$/kW, Fixed O&M Cost-$/kW, "
+"Variable O&M Cost-$/MWh) in the sheet."
+msgstr ""
+
+#: ../../working_with_technologies.rst:114
+msgid "Capacity Limit"
+msgstr ""
+
+#: ../../working_with_technologies.rst:116
+msgid ""
+"In the tab :ref:`specificcapacitylimits`, click on :button:`Refresh "
+"Sheet` to get the capacity limits saved in the model for the scenario and"
+" countries chosen."
+msgstr ""
+
+#: ../../working_with_technologies.rst:118
+msgid "Make changes to the capacity limits in the sheet."
+msgstr ""
+
+#: ../../working_with_technologies.rst:123
+msgid "There are no capacity limits for generic technologies."
+msgstr ""
+
+#: ../../working_with_technologies.rst:129
+msgid "Renewable and storage technologies"
+msgstr ""
+
+#: ../../working_with_technologies.rst:134
+msgid "Solar PV, onshore and offshore Wind"
+msgstr ""
+
+#: ../../working_with_technologies.rst:136
+msgid ""
+"VRE technologies can be defined in two ways - either as generic "
+"technologies or site-specific technologies. Below is an example for "
+"adding offshore wind, first as a generic technology, then as zones."
+msgstr ""
+
+#: ../../working_with_technologies.rst:138
+msgid ""
+"In the :ref:`GenericTech` tab, add technology \"XXWDLCO00\" (XX being "
+"country ID, for e.g. DZ) with tech description \"Offshore generic tech\"."
+" Use add new tech button. The macro will update the underlying files and "
+"reload at the end."
+msgstr ""
+
+#: ../../working_with_technologies.rst:140
+msgid ""
+"Go to :ref:`RenameTechFacility` sheet. Change the newly added offshore "
+"techs to appropriate generic tech name i.e. XXWDOC00. The macro will "
+"update the underlying files and reload at the end."
+msgstr ""
+
+#: ../../working_with_technologies.rst:142
+msgid ""
+"Go to :ref:`OffshoreWindZones` sheet. Add new techs in each country. "
+"Click on :button:`Add New Techs`. The macro will update the underlying "
+"files and reload at the end."
+msgstr ""
+
+#: ../../working_with_technologies.rst:144
+msgid ""
+"Locate the .tit file of the model and open as excel, it will ask you "
+"about delimit parameter. Select comma. The generic wind offshore and "
+"newly added offshore zones will have same profiles. Now, got to "
+":ref:`OffshoreWindZones` sheet. Give address to the file that contains "
+"the profiles, in the section MSR data file. This will update the zone "
+"profiles in .tit file. Currently, the wind offshore generic tech has same"
+" profile as wind generic. But remember, wind onshore generic tech has "
+"been ousted from model by setting first year=2050"
+msgstr ""
+
+#: ../../working_with_technologies.rst:146
+msgid ""
+"The updated profiles in the .tit file needs to be inserted in model "
+"files. Go to :ref:`TimeSlices` sheet, press :button:`Update Files`."
+msgstr ""
+
+#: ../../working_with_technologies.rst:152
+msgid "Hydro Dam"
+msgstr ""
+
+#: ../../working_with_technologies.rst:154
+msgid ""
+"The ``SpecificTechHydroDams`` sheet manipulates the hydro dams in the "
+"model."
+msgstr ""
+
+#: ../../working_with_technologies.rst:156
+msgid ""
+"Click on :button:`Refresh Sheet` button to extract the technologies that "
+"belong to the `TechSetL2`: `Large Hydro Dams`."
+msgstr ""
+
+#: ../../working_with_technologies.rst:158
+msgid ""
+":button:`Create River Tech+Storage Constraint` button adds a technology "
+"and a storage constraint for each dam."
+msgstr ""
+
+#: ../../working_with_technologies.rst:160
+msgid ""
+"A new dummy technology for each hydro station with Dam is added to model "
+"the river inflows to the dam. The naming convention of the dummy "
+"technology is XXRIDM_rivername, for example CMRIDM_LAGDO (using LAGDO as "
+"an example).  The output is set to the existing dummy elc energy form."
+msgstr ""
+
+#: ../../working_with_technologies.rst:162
+msgid ""
+"A new storage constraint is added, example D_LAGDO with short name DXXX. "
+"The storage constraint is linked to CMRIDM_LAGDO with +1 coefficient, so "
+"each MWyr flow from CMRIDM_LAGDO increases the storage content by 1 MWyr."
+msgstr ""
+
+#: ../../working_with_technologies.rst:164
+msgid ""
+"The storage constraint is linked to CMHYDM_LAGDO with -1 coefficient "
+"(meaning that each MWyr flow from CMHYDM_LAGDO decreases the storage "
+"content by 1 MWyr). It would be possible in theory to do cascade "
+"modelling by linking the output of upstream plants to storage constraints"
+" downstream (rather than a river technology). The coefficients would have"
+" to be scaled by the relative \"Energy per unit volume (MJ/m3)\" of the "
+"upstream and downstream plants. This functionality will need a revisit as"
+" a new development task if there is a pressing need for it."
+msgstr ""
+
+#: ../../working_with_technologies.rst:166
+msgid ""
+"The user has to specify 2 parameters, whose values can be calculated in "
+"the right-most table and copy pasted."
+msgstr ""
+
+#: ../../working_with_technologies.rst:168
+msgid "Once this is done the user can click on :button:`Update Model Data`:"
+msgstr ""
+
+#: ../../working_with_technologies.rst:170
+msgid ""
+"The capacity is set to max flow (in MW, m3/s max flow scaled by design "
+"flow). The capacity is specified as a capacity limit on the River "
+"Technology (bdi) ."
+msgstr ""
+
+#: ../../working_with_technologies.rst:172
+msgid ""
+"The storage constraint max volume is set to Max volume in MWyr as per "
+"table."
+msgstr ""
+
+#: ../../working_with_technologies.rst:174
+msgid ""
+"The user then has to add a time series in the csv file under the tech "
+"CMRIDM_LAGDO and :button:`Update Timeslices` in the ``Timeslice`` sheet. "
+"The values in the csv file must be monthly average flow divided by \"max "
+"flow\" that was used to set the \"River Capacity\", using the same max "
+"flow value regardless of the scenario. If the user wants to simulate "
+"different rainfall scenarios without a full time series, they could use "
+"plant factor to scale up or down the profile in the ``SpecificTech`` "
+"sheet. It is currently not possible to specify a different seasonal "
+"profile by scenario, but this feature is on the todo list for the near "
+"future."
+msgstr ""
+
+#: ../../working_with_technologies.rst:181
+msgid "Batteries and Pump Storage"
+msgstr ""
+
+#: ../../working_with_technologies.rst:183
+msgid ""
+"Batteries and pump storage technologies can be added and modified in the "
+"same way through the SPLAT excel interface."
+msgstr ""
+
+#: ../../working_with_technologies.rst:185
+msgid ""
+"In ``Battery&PumpStorage`` sheet: create the technology with techname "
+"convention: xxELSTyyyy for a battery or xxELSTPSyyyy for pump storage, "
+"where xx is country code, and yyyy is site description. (For example, "
+"ZAELSTPSDrakensberg)"
+msgstr ""
+
+#: ../../working_with_technologies.rst:187
+msgid ":button:`Reload Global`"
+msgstr ""
+
+#: ../../working_with_technologies.rst:189
+msgid ""
+"In the same ``Battery&PumpStorage`` sheet click :button:`Refresh` and "
+"then specify storage hours and cycle efficiency"
+msgstr ""
+
+#: ../../working_with_technologies.rst:191
+msgid ""
+"In the ``TechSpecific`` sheets specify the other usual parameters hc, "
+"bdi, inv etc...."
+msgstr ""
+
+#: ../../working_with_technologies.rst:196
+msgid "Concentrated Solar Power (CSP)"
+msgstr ""
+
+#: ../../working_with_technologies.rst:198
+msgid "Refer to steps in :ref:`solar_wind`. (Improvements upcoming)"
+msgstr ""
+
+#: ../../working_with_technologies.rst:203
+msgid "Transmission and Distribution"
+msgstr ""
+
+#: ../../working_with_technologies.rst:205
+msgid ""
+"The :ref:`transmission` and :ref:`distribution` sheets are used to review"
+" or modify transmission and distribution technologies parameters as per "
+"the definitions in the ``TechnologySets`` sheet (see section below)."
+msgstr ""
+
+#: ../../working_with_technologies.rst:208
+msgid ""
+"If the user wants to model with \"sent-out\" demand (see :ref:`demand`), "
+"transmission efficiency must be set to 100%, and investment costs set to "
+"a small value. In the default configuration there is no distribution "
+"technology specified for \"Sent-out\" electricity."
+msgstr ""
+
+#: ../../working_with_technologies.rst:215
+msgid "Interconnection"
+msgstr ""
+
+#: ../../working_with_technologies.rst:217
+msgid ""
+"The :ref:`interconnectors` sheet is used to review and update cross-"
+"border interconnector parameters."
+msgstr ""
+
+#: ../../working_with_technologies.rst:219
+msgid ""
+"At a minimum the two interconnecting countries (which must be active) "
+"must be specified to view the interconnections between them."
+msgstr ""
+
+#: ../../working_with_technologies.rst:224
+msgid "Technology naming in the SPLAT model"
+msgstr ""
+
+#: ../../working_with_technologies.rst:226
+msgid ""
+"The naming of technologies follow the following conventions in the SPLAT "
+"model:"
+msgstr ""
+
+#: ../../working_with_technologies.rst:228
+msgid ""
+"??BMST_[name]   Biomass Bagasse Cogen ??BWST_[name]   Biomass Wood Cogen "
+"??COSC_[name]   Coal ??COCS_[name]   Coal w CCS ??DSRC_[name]   Diesel "
+"Engine ??DSSC_[name]   Diesel Turbine ??NGCC_[name]   Gas Combined Cycle "
+"??NGRC_[name]   Gas Engine ??NGSC_[name]   Gas Open Cycle ??GOCV_[name]"
+"   Geothermal ??HFRC_[name]   HFO Engine ??HFSC_[name]   HFO Steam "
+"turbine ??HFSC_[name]   HFO Steam turbine ??HYRO_[name]   Hydro Run of "
+"River ??HYMI_[name]   Hydro Small ??HYDM_[name]   Hydro With Dam "
+"??NUPW_[name]   Nuclear ??EPPT_[name]   Pumped Storage ??SOTN_[name]   "
+"Solar CSP no Storage ??SOTS_[name]   Solar CSP with Storage ??SOPC_[name]"
+"   Solar PV system (utility) ??WDLC_[name]   Wind"
+msgstr ""
+
