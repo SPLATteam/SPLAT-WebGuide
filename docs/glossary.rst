@@ -48,8 +48,10 @@ Set the model path, reload model data to memory, and select active countries for
 :button:`Save all Scenario Files using SPLAT formatting`        save all model (adb and ldb) files using excel-SPLAT formatting for selected subregions (use this after making a change with MESSAGE interface)
 If this button is pressed the MAINa ldb files will also be updated if MAINa is selected, to exclude interconnectors for subregions that are not selected below.
 
-.. _csv-table::
-    :file:/csv_file/csv_file.csv
+.. _csv-table:: Trying to add table
+    :widths:10, 15, 10, 10, 30
+    :header:"Sheet", "Parameter", "Parameter Code", "Unit", "Definition"
+    :file:csv_file.csv
 
 
 .. _demandsheets:
