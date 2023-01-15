@@ -55,7 +55,7 @@ Demand sheets
 
 .. csv-table:: Trying to add table
     :file: csv_file/csv_file.csv
-    :widths: 20, 20, 10, 5, 35, 10, 0, 0
+    :widths: 10, 10, 10, 5, 45, 20
     :header-rows: 1
     
 
