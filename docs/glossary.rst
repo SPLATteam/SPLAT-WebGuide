@@ -53,159 +53,159 @@ If this button is pressed the MAINa ldb files will also be updated if MAINa is s
     :file: /csv_file/csv_file.csv
 
 
-.. _demandsheets:
+.. .. _demandsheets:
 
-Demand sheets
---------------
+.. Demand sheets
+.. --------------
 
-.. _demand:
+.. .. _demand:
 
-Demand
-++++++
+.. Demand
+.. ++++++
 
-Displays all demand series in the model, including total "Sent Out" (i.e. Secondary, or before transmission & distribution) demand and Final demand by sector
+.. Displays all demand series in the model, including total "Sent Out" (i.e. Secondary, or before transmission & distribution) demand and Final demand by sector
 
-.. _peakdemand:
+.. .. _peakdemand:
 
-PeakDemand
-++++++++++
+.. PeakDemand
+.. ++++++++++
 
-Displays Peak Demand series in MW in the model, including total "Sent Out" (i.e. Secondary, or before transmission & distribution) demand and Final demand by sector
+.. Displays Peak Demand series in MW in the model, including total "Sent Out" (i.e. Secondary, or before transmission & distribution) demand and Final demand by sector
 
-.. _fuelprices:
+.. .. _fuelprices:
 
-FuelPrices
-----------
+.. FuelPrices
+.. ----------
 
-Displays fuel prices used in the model
+.. Displays fuel prices used in the model
 
-.. _technologysheets:
+.. .. _technologysheets:
 
-Technology sheets
-------------------
+.. Technology sheets
+.. ------------------
 
-.. _generictech:
+.. .. _generictech:
 
-GenericTech
-+++++++++++
+.. GenericTech
+.. +++++++++++
 
-Displays generic technology parameters that are constant over the model horizon
+.. Displays generic technology parameters that are constant over the model horizon
 
-.. _generictechcosts:
+.. .. _generictechcosts:
 
-GenericTechCosts
-++++++++++++++++
+.. GenericTechCosts
+.. ++++++++++++++++
 
-Displays generic technology cost parameters that are either constant or change over the model horizon (e.g. CAPEX, FOM, VOM)
+.. Displays generic technology cost parameters that are either constant or change over the model horizon (e.g. CAPEX, FOM, VOM)
 
-.. _specifictec:
+.. .. _specifictec:
 
-SpecificTech
-+++++++++++++
+.. SpecificTech
+.. +++++++++++++
 
-Displays site-specific technology parameters that are constant over the model horizon
+.. Displays site-specific technology parameters that are constant over the model horizon
 
 
-The ``SpecificTech`` sheet is used to review and update Site specific power generation technology parameters that don’t vary from year to year.
+.. The ``SpecificTech`` sheet is used to review and update Site specific power generation technology parameters that don’t vary from year to year.
 
-The SpecificTech sheet has an extra button: :button:`Add missing Tech`, which allows the user to add new site specific technology to the MESSAGE model that is linked. Currently this technology makes the addition by copying the technology parameters of a generic technology of the same technology type as specified by the first 6 characters in the technology name. A new technology will be automatically added to all active scenarios. A MESSAGE technology code is created automatically based on the input and output commodities (as specified by the associated generic technology) and the already existing technologies having the same inputs and outputs.
+.. The SpecificTech sheet has an extra button: :button:`Add missing Tech`, which allows the user to add new site specific technology to the MESSAGE model that is linked. Currently this technology makes the addition by copying the technology parameters of a generic technology of the same technology type as specified by the first 6 characters in the technology name. A new technology will be automatically added to all active scenarios. A MESSAGE technology code is created automatically based on the input and output commodities (as specified by the associated generic technology) and the already existing technologies having the same inputs and outputs.
 
-Once a new technology is added, its parameters must be updated using the :button:`Update Model Data` button.
+.. Once a new technology is added, its parameters must be updated using the :button:`Update Model Data` button.
 
 
 
-.. _specifictechhydrodams:
+.. .. _specifictechhydrodams:
 
-SpecificTechHydroDams
-+++++++++++++++++++++
+.. SpecificTechHydroDams
+.. +++++++++++++++++++++
 
-Displays site-specific technology parameters that are specific to hydro plants with storage (dams)
+.. Displays site-specific technology parameters that are specific to hydro plants with storage (dams)
 
-The ``SpecificTechHydroDams`` sheet manipulates the hydro dams in the model.
+.. The ``SpecificTechHydroDams`` sheet manipulates the hydro dams in the model.
 
-:button:`Refresh Sheet` button extracts the technologies that belong to the `TechSetL2`: `Large Hydro Dams`.
+.. :button:`Refresh Sheet` button extracts the technologies that belong to the `TechSetL2`: `Large Hydro Dams`.
 
-:button:`Create River Tech+Storage Constraint` button adds a technology and a storage constraint for each dam.
+.. :button:`Create River Tech+Storage Constraint` button adds a technology and a storage constraint for each dam.
 
-:button:`Update Model Data` updates the user input data.
+.. :button:`Update Model Data` updates the user input data.
 
 
-.. _specifictechcosts:
+.. .. _specifictechcosts:
 
-SpecificTechCosts
-++++++++++++++++++
+.. SpecificTechCosts
+.. ++++++++++++++++++
 
-Displays site-specific technology cost parameters that are either constant or change over the model horizon (e.g. CAPEX, FOM, VOM)
+.. Displays site-specific technology cost parameters that are either constant or change over the model horizon (e.g. CAPEX, FOM, VOM)
 
-.. _specificcapacitylimits:
+.. .. _specificcapacitylimits:
 
-SpecificCapacityLimits
-+++++++++++++++++++++++
+.. SpecificCapacityLimits
+.. +++++++++++++++++++++++
 
-Displays site-specific technology capacity limits that are either constant or change over the model horizon
+.. Displays site-specific technology capacity limits that are either constant or change over the model horizon
 
-.. _batterystorage:
+.. .. _batterystorage:
 
-BatteryStorage
-++++++++++++++
+.. BatteryStorage
+.. ++++++++++++++
 
-Displays Battery Storage Parameters
+.. Displays Battery Storage Parameters
 
-.. _pvzones:
+.. .. _pvzones:
 
-PVZones
-++++++++
+.. PVZones
+.. ++++++++
 
-Displays PV Zones Data
+.. Displays PV Zones Data
 
-.. _windzones:
+.. .. _windzones:
 
-WindZones
-++++++++++
+.. WindZones
+.. ++++++++++
 
-Displays Wind Zones Data
+.. Displays Wind Zones Data
 
-.. _offshorewindzones:
+.. .. _offshorewindzones:
 
-OffshoreWindZones
-+++++++++++++++++
+.. OffshoreWindZones
+.. +++++++++++++++++
 
-Displays OffshoreWind Zones Data
+.. Displays OffshoreWind Zones Data
 
-.. _csp6hrzones:
+.. .. _csp6hrzones:
 
-CSP6hrZones
-++++++++++++
+.. CSP6hrZones
+.. ++++++++++++
 
-Displays CSP 6hr Zones Data
+.. Displays CSP 6hr Zones Data
 
-.. _csp12hrzones:
+.. .. _csp12hrzones:
 
-CSP12hrZones
-++++++++++++
+.. CSP12hrZones
+.. ++++++++++++
 
-Displays CSP 12hr Zones Data
+.. Displays CSP 12hr Zones Data
 
-.. _interconnectors:
+.. .. _interconnectors:
 
-Interconnectors
-+++++++++++++++
+.. Interconnectors
+.. +++++++++++++++
 
-Displays regional interconnector parameters
+.. Displays regional interconnector parameters
 
-.. _transmission:
+.. .. _transmission:
 
-Transmission
-++++++++++++
+.. Transmission
+.. ++++++++++++
 
-Displays transmission network parameters by country
+.. Displays transmission network parameters by country
 
-.. _distribution:
+.. .. _distribution:
 
-Distribution
-++++++++++++
+.. Distribution
+.. ++++++++++++
 
-Displays distribution network parameters by country and sector
+.. Displays distribution network parameters by country and sector
 
 .. _reportgen_annual:
 
