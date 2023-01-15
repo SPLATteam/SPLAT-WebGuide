@@ -3,8 +3,8 @@
 # -- Project information
 
 project = 'SPLAT Interface'
-copyright = '2022, IRENA'
-author = 'Yunshu'
+copyright = '2023, IRENA'
+author = 'Yunshu Li \n Himalaya Bir Shrestha'
 
 release = '0.1'
 version = '0.1.0'
