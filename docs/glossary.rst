@@ -49,8 +49,9 @@ Set the model path, reload model data to memory, and select active countries for
 If this button is pressed the MAINa ldb files will also be updated if MAINa is selected, to exclude interconnectors for subregions that are not selected below.
 
 .. _csv-table:: Trying to add table
-    :header: "Sheet", "Parameter", "Parameter Code", "Unit", "Definition"
-    :file: /csv_file/csv_file.csv
+    :file: csv_file/csv_file.csv
+    :header-rows: 1
+    
 
 
 .. .. _demandsheets:
