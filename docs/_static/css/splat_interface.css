@@ -32,3 +32,11 @@
  box-shadow: 2px 2px 2px gray;
  margin:auto 2px
 }
+
+table {
+    width: 50%;
+  }
+  
+  th {
+    height: 70px;
+  }

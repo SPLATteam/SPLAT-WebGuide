@@ -24,7 +24,7 @@ The first part of this section describes the various databases used in MESSAGE. 
 Databases in MESSAGE
 ------------------------
 
-.. csv-table:: Trying to add table
+.. csv-table:: Databases in MESSAGE
     :header-rows: 1
     :file: csv_file/message_databases.csv
     

@@ -53,7 +53,7 @@ If this button is pressed the MAINa ldb files will also be updated if MAINa is s
 Demand sheets
 --------------
 
-.. csv-table:: Trying to add table
+.. csv-table:: Inputs in SPLAT
     :file: csv_file/csv_file.csv
     :widths: 10, 10, 10, 5, 45, 20
     :header-rows: 1
