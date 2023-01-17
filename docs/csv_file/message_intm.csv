@@ -1,0 +1,3 @@
+﻿File,Full form,Significance
+Region_Casename.mps,Mathematical Programming System,"The mps file contains the optimization problem (model objective and constraints) in a solver readable format. Mathematically, the problem is represented in matrix notation. These files are created by running the model with MXG in the Report-Annual sheet in the model. MXG is a Python script that converts .adb or .ldb file into .mps file."
+Region_Casename_lin.sol,Linear Solution,"This file is created by running the model with either of these solvers: CPLEX, CBC, or Gurobi. The file carries solution of the problem in form of human readable format text but is still not in MESSAGE readable format."
