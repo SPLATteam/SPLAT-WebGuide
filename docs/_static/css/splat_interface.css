@@ -33,10 +33,10 @@
  margin:auto 2px
 }
 
-table {
+.table {
     width: 50%;
   }
   
   th {
-    height: 70px;
+    height: 100px;
   }
