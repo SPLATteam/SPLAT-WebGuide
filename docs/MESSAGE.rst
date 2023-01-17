@@ -15,6 +15,7 @@ The current version of the MESSAGE software consists of the following components
 * A program for the post processing of the solution for extraction of results called "cap".
 
 The following figure shows the flow of control and information between these components in execution of the MESSAGE program.
+
 .. image:: /images/message_components.PNG
 
 The first part of this section describes the various databases used in MESSAGE. And the second part describes the significance of modelling files created by various programs while using MESSAGE.
