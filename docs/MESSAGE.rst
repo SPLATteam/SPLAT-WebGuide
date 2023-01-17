@@ -7,29 +7,24 @@
 
 MESSAGE 
 =====================
+The current version of the MESSAGE software consists of the following components:
+* A user-interface for building a model.
+* Databases.
+* A matrix generation program called "mxg".
+* An optimization program called "opts".
+* A program for the post processing of the solution for extraction of results called "cap".
+
+The following figure shows the flow of control and information between these components in execution of the MESSAGE program.
+.. image:: /images/message_components.PNG
+
+The first part of this section describes the various databases used in MESSAGE. And the second part describes the significance of modelling files created by various programs while using MESSAGE.
 
 .. _Databases_in_MESSAGE:
 
 Databases in MESSAGE
 ------------------------
 
-.. list-table:: The extensions of MESSAGE files indicate the type of data they contain.
-    :widths: 10 10 50
+.. csv-table:: Trying to add table
+    :file: csv_file/message_databases.csv
     :header-rows: 1
-    :stub-columns: 1
 
-    * - Extension
-      - Full form
-      - Significance
-    * - adb
-      - Application database
-      - adb file is created and maintained for each case study. It contains information on default scenario created by MESSAGE.
-    * - ldb
-      - Local database 	
-      - ldb file is created and maintained for each (alternative) scenario in a case study. It is a copy of adb file. It is created for each alternative scenario, which user can modify as per their scenario narratives. When input sheets (parameters) are updated in SPLAT for alternative scenario, the corresponding ldb files also get updated.
-    * - tdb
-      - Technology database
-tdb file is created and maintained independent of any case study
-    * - upd
-      - Update database
-      - upd file is created and maintained to update values in the adb and/or a set of scenarios in a case study across the board.
