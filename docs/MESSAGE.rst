@@ -27,4 +27,5 @@ Databases in MESSAGE
 .. csv-table:: Trying to add table
     :file: csv_file/message_databases.csv
     :header-rows: 1
+    :widths: 20 30 50
 
