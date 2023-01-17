@@ -30,6 +30,7 @@ The first part of this section describes the various databases used in MESSAGE. 
 Databases in MESSAGE
 ------------------------
 MESSAGE creates each model in a separate case study and accordingly one database file for each model. The types of databases used in MESSAGE are given in the table below:
+
 .. csv-table:: Databases in MESSAGE
     :header-rows: 1
     :file: csv_file/message_databases.csv
@@ -40,7 +41,7 @@ The interrelationship of the databases used in the MESSAGE program is depicted i
 
 Significance of various MESSAGE model files
 -------------------------------------------
-This section describes the various file types which are present or created within the sub-folders such as ``data``, ``int``, and ``res`` inside the ``models`` folder while running the MESSAGE.
+This section describes the various file types which are present or created within the sub-folders such as ``data``, ``int``, and ``res`` inside the ``models/Region`` folder while running the MESSAGE.
 
 .. note::
   * ``Region`` could refer to an acronym for a country e.g., ``ZAa`` for SouthAfrica or ``MAINa`` for the entire continent.
