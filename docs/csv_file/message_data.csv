@@ -1,0 +1,5 @@
+﻿File,Full form,Significance
+Region.adb and Region_Casename.ldb,Application database; Local database,The data folder contains the required files for loading into the model. The adb file contains the model description and all information about technologies and their characterisitics for the default scenario in the model. The ldb file contains relevant data for default scenario as well as alternative scenarios in the model. These files are loaded into Excel memory by pressing the Reload Global button.
+Region.tit,Title file,This is not a standard MESSAGE file. This file is added by IRENA in the SPLAT model directory. It carries hourly profiles of all the technologies that have been configured in the model to have time slice wise capacity factors.
+Region_Casename.ldr,Load regions file,It contains information on load curves defined across various seasons in the model.
+Region.cin,Cap Input file,"SPLAT prepares this file before running the MESSAGE CAP utility. Parameters, whose results are required to be extracted, must be filled into corresponding cells in ReportGen-Annual sheet. CAP is a utility available in MESSAGE GUI package.​"

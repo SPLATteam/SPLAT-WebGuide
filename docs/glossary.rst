@@ -48,160 +48,167 @@ Set the model path, reload model data to memory, and select active countries for
 :button:`Save all Scenario Files using SPLAT formatting`        save all model (adb and ldb) files using excel-SPLAT formatting for selected subregions (use this after making a change with MESSAGE interface)
 If this button is pressed the MAINa ldb files will also be updated if MAINa is selected, to exclude interconnectors for subregions that are not selected below.
 
-
 .. _demandsheets:
 
 Demand sheets
 --------------
 
-.. _demand:
+.. csv-table:: Inputs in SPLAT
+    :file: csv_file/csv_file.csv
+    :widths: 10, 10, 10, 5, 45, 20
+    :header-rows: 1
+    
 
-Demand
-++++++
 
-Displays all demand series in the model, including total "Sent Out" (i.e. Secondary, or before transmission & distribution) demand and Final demand by sector
 
-.. _peakdemand:
+.. .. _demand:
 
-PeakDemand
-++++++++++
+.. Demand
+.. ++++++
 
-Displays Peak Demand series in MW in the model, including total "Sent Out" (i.e. Secondary, or before transmission & distribution) demand and Final demand by sector
+.. Displays all demand series in the model, including total "Sent Out" (i.e. Secondary, or before transmission & distribution) demand and Final demand by sector
 
-.. _fuelprices:
+.. .. _peakdemand:
 
-FuelPrices
-----------
+.. PeakDemand
+.. ++++++++++
 
-Displays fuel prices used in the model
+.. Displays Peak Demand series in MW in the model, including total "Sent Out" (i.e. Secondary, or before transmission & distribution) demand and Final demand by sector
 
-.. _technologysheets:
+.. .. _fuelprices:
 
-Technology sheets
-------------------
+.. FuelPrices
+.. ----------
 
-.. _generictech:
+.. Displays fuel prices used in the model
 
-GenericTech
-+++++++++++
+.. .. _technologysheets:
 
-Displays generic technology parameters that are constant over the model horizon
+.. Technology sheets
+.. ------------------
 
-.. _generictechcosts:
+.. .. _generictech:
 
-GenericTechCosts
-++++++++++++++++
+.. GenericTech
+.. +++++++++++
 
-Displays generic technology cost parameters that are either constant or change over the model horizon (e.g. CAPEX, FOM, VOM)
+.. Displays generic technology parameters that are constant over the model horizon
 
-.. _specifictec:
+.. .. _generictechcosts:
 
-SpecificTech
-+++++++++++++
+.. GenericTechCosts
+.. ++++++++++++++++
 
-Displays site-specific technology parameters that are constant over the model horizon
+.. Displays generic technology cost parameters that are either constant or change over the model horizon (e.g. CAPEX, FOM, VOM)
 
+.. .. _specifictec:
 
-The ``SpecificTech`` sheet is used to review and update Site specific power generation technology parameters that don’t vary from year to year.
+.. SpecificTech
+.. +++++++++++++
 
-The SpecificTech sheet has an extra button: :button:`Add missing Tech`, which allows the user to add new site specific technology to the MESSAGE model that is linked. Currently this technology makes the addition by copying the technology parameters of a generic technology of the same technology type as specified by the first 6 characters in the technology name. A new technology will be automatically added to all active scenarios. A MESSAGE technology code is created automatically based on the input and output commodities (as specified by the associated generic technology) and the already existing technologies having the same inputs and outputs.
+.. Displays site-specific technology parameters that are constant over the model horizon
 
-Once a new technology is added, its parameters must be updated using the :button:`Update Model Data` button.
 
+.. The ``SpecificTech`` sheet is used to review and update Site specific power generation technology parameters that don’t vary from year to year.
 
+.. The SpecificTech sheet has an extra button: :button:`Add missing Tech`, which allows the user to add new site specific technology to the MESSAGE model that is linked. Currently this technology makes the addition by copying the technology parameters of a generic technology of the same technology type as specified by the first 6 characters in the technology name. A new technology will be automatically added to all active scenarios. A MESSAGE technology code is created automatically based on the input and output commodities (as specified by the associated generic technology) and the already existing technologies having the same inputs and outputs.
 
-.. _specifictechhydrodams:
+.. Once a new technology is added, its parameters must be updated using the :button:`Update Model Data` button.
 
-SpecificTechHydroDams
-+++++++++++++++++++++
 
-Displays site-specific technology parameters that are specific to hydro plants with storage (dams)
 
-The ``SpecificTechHydroDams`` sheet manipulates the hydro dams in the model.
+.. .. _specifictechhydrodams:
 
-:button:`Refresh Sheet` button extracts the technologies that belong to the `TechSetL2`: `Large Hydro Dams`.
+.. SpecificTechHydroDams
+.. +++++++++++++++++++++
 
-:button:`Create River Tech+Storage Constraint` button adds a technology and a storage constraint for each dam.
+.. Displays site-specific technology parameters that are specific to hydro plants with storage (dams)
 
-:button:`Update Model Data` updates the user input data.
+.. The ``SpecificTechHydroDams`` sheet manipulates the hydro dams in the model.
 
+.. :button:`Refresh Sheet` button extracts the technologies that belong to the `TechSetL2`: `Large Hydro Dams`.
 
-.. _specifictechcosts:
+.. :button:`Create River Tech+Storage Constraint` button adds a technology and a storage constraint for each dam.
 
-SpecificTechCosts
-++++++++++++++++++
+.. :button:`Update Model Data` updates the user input data.
 
-Displays site-specific technology cost parameters that are either constant or change over the model horizon (e.g. CAPEX, FOM, VOM)
 
-.. _specificcapacitylimits:
+.. .. _specifictechcosts:
 
-SpecificCapacityLimits
-+++++++++++++++++++++++
+.. SpecificTechCosts
+.. ++++++++++++++++++
 
-Displays site-specific technology capacity limits that are either constant or change over the model horizon
+.. Displays site-specific technology cost parameters that are either constant or change over the model horizon (e.g. CAPEX, FOM, VOM)
 
-.. _batterystorage:
+.. .. _specificcapacitylimits:
 
-BatteryStorage
-++++++++++++++
+.. SpecificCapacityLimits
+.. +++++++++++++++++++++++
 
-Displays Battery Storage Parameters
+.. Displays site-specific technology capacity limits that are either constant or change over the model horizon
 
-.. _pvzones:
+.. .. _batterystorage:
 
-PVZones
-++++++++
+.. BatteryStorage
+.. ++++++++++++++
 
-Displays PV Zones Data
+.. Displays Battery Storage Parameters
 
-.. _windzones:
+.. .. _pvzones:
 
-WindZones
-++++++++++
+.. PVZones
+.. ++++++++
 
-Displays Wind Zones Data
+.. Displays PV Zones Data
 
-.. _offshorewindzones:
+.. .. _windzones:
 
-OffshoreWindZones
-+++++++++++++++++
+.. WindZones
+.. ++++++++++
 
-Displays OffshoreWind Zones Data
+.. Displays Wind Zones Data
 
-.. _csp6hrzones:
+.. .. _offshorewindzones:
 
-CSP6hrZones
-++++++++++++
+.. OffshoreWindZones
+.. +++++++++++++++++
 
-Displays CSP 6hr Zones Data
+.. Displays OffshoreWind Zones Data
 
-.. _csp12hrzones:
+.. .. _csp6hrzones:
 
-CSP12hrZones
-++++++++++++
+.. CSP6hrZones
+.. ++++++++++++
 
-Displays CSP 12hr Zones Data
+.. Displays CSP 6hr Zones Data
 
-.. _interconnectors:
+.. .. _csp12hrzones:
 
-Interconnectors
-+++++++++++++++
+.. CSP12hrZones
+.. ++++++++++++
 
-Displays regional interconnector parameters
+.. Displays CSP 12hr Zones Data
 
-.. _transmission:
+.. .. _interconnectors:
 
-Transmission
-++++++++++++
+.. Interconnectors
+.. +++++++++++++++
 
-Displays transmission network parameters by country
+.. Displays regional interconnector parameters
 
-.. _distribution:
+.. .. _transmission:
 
-Distribution
-++++++++++++
+.. Transmission
+.. ++++++++++++
 
-Displays distribution network parameters by country and sector
+.. Displays transmission network parameters by country
+
+.. .. _distribution:
+
+.. Distribution
+.. ++++++++++++
+
+.. Displays distribution network parameters by country and sector
 
 .. _reportgen_annual:
 
