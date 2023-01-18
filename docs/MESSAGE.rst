@@ -34,6 +34,7 @@ MESSAGE creates each model in a separate case study and accordingly one database
 .. csv-table:: Databases in MESSAGE
         :header-rows: 1
         :file: csv_file/message_databases.csv
+        :widths: auto
         
 The interrelationship of the databases used in the MESSAGE program is depicted in the figure below:
 
