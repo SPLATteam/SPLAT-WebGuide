@@ -4,6 +4,8 @@
     :class: interfacecell
 .. role:: button
     :class: button
+.. role:: table
+    :class: table
 
 MESSAGE 
 =====================
