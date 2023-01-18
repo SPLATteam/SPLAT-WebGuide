@@ -36,3 +36,13 @@
 .tight-table {
     white-space: normal !important;
 }
+
+.table {
+    table-layout: fixed;
+}
+
+.td {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    word-break: break-all !important;
+  }
