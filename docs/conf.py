@@ -3,8 +3,8 @@
 # -- Project information
 
 project = 'SPLAT Interface'
-copyright = '2022, IRENA'
-author = 'Yunshu'
+copyright = '2023, IRENA'
+author = 'Yunshu Li, Himalaya Bir Shrestha'
 
 release = '0.1'
 version = '0.1.0'
@@ -30,8 +30,6 @@ templates_path = ['_templates']
 # -- Options for HTML output
 
 html_theme = 'sphinx_rtd_theme'
-
-
 
 # These folders are copied to the documentation's HTML output
 html_static_path = ['_static']

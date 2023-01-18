@@ -4,10 +4,8 @@
     :class: interfacecell
 .. role:: button
     :class: button
-.. role:: table
-    :class: table
-.. role:: td
-    :class: td
+.. role:: tight-table
+    :class: tight-table
 
 MESSAGE 
 =====================
@@ -35,14 +33,10 @@ Databases in MESSAGE
 ------------------------
 MESSAGE creates each model in a separate case study and accordingly one database file for each model. The types of databases used in MESSAGE are given in the table below:
 
-.. table:: 
-    :class: contentstable
-    :widths: 100%
+.. tight-table:: 
     .. csv-table:: Databases in MESSAGE
         :header-rows: 1
         :file: csv_file/message_databases.csv
-        :widths: 20 30 50
-        
         
 The interrelationship of the databases used in the MESSAGE program is depicted in the figure below:
 
