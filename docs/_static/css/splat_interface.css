@@ -33,16 +33,18 @@
  margin:auto 2px
 }
 
-.tight-table {
-    white-space: normal !important;
+@media screen and (min-width: 767px) {
+    .wy-table-responsive table td {
+        /* !important prevents the common CSS stylesheets from overriding
+          this as on RTD they are loaded after this stylesheet */
+        white-space: normal !important;
+        background: rgb(250, 250, 250) !important;
+    }
+    .wy-table-responsive {
+        max-width: 100%;
+        overflow: visible !important;
+    }
+    .wy-nav-content {
+        max-width: 910px !important;
+    }
 }
-
-.table {
-    table-layout: fixed;
-}
-
-.td {
-    word-wrap: break-word !important;
-    overflow-wrap: break-word !important;
-    word-break: break-all !important;
-  }
