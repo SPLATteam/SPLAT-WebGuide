@@ -34,7 +34,7 @@ MESSAGE creates each model in a separate case study and accordingly one database
 .. csv-table:: Databases in MESSAGE
         :header-rows: 1
         :file: csv_file/message_databases.csv
-        :width: "100px"
+        :width: "100%"
         :width: 20, 30, 50
 
         
