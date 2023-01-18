@@ -36,3 +36,9 @@
 .table {
     table-layout: fixed;
 }
+
+td {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all;
+  }
