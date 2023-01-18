@@ -35,7 +35,7 @@ MESSAGE creates each model in a separate case study and accordingly one database
         :header-rows: 1
         :file: csv_file/message_databases.csv
         :widths: 20 30 50
-        :width: 100 %
+        :width: 50 %
 
         
 The interrelationship of the databases used in the MESSAGE program is depicted in the figure below:
