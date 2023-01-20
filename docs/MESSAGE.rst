@@ -42,11 +42,17 @@ The first part of this section describes the various databases used in MESSAGE. 
 Databases in MESSAGE
 ------------------------
 MESSAGE creates each model in a separate case study and accordingly one database file for each model. The types of databases used in MESSAGE are given in the table below:
-
-.. csv-table:: Databases in MESSAGE
-    :header-rows: 1
-    :file: csv_file/message_databases.csv
-        
++-----------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Acronyms  | Full form             | Significance                                                                                                                                                                                                                                                                                                                                    |
++===========+=======================+=================================================================================================================================================================================================================================================================================================================================================+
+| adb       | Application database  | adb file is created and maintained for each case study. It contains information on default scenario created by MESSAGE. For a new case study, it is appropriate to work on its adb rather than creating a scenario and working on an ldb.                                                                                                       |
+| ldb       | Local database        | ldb file is created and maintained for each (alternative) scenario in a case study. It is a copy of adb file. It is created for each alternative scenario, which user can modify as per their scenario narratives. When input sheets (parameters) are updated in SPLAT for alternative scenario, the corresponding ldb files also get updated.  |
+| tdb       | Technology database   | tdb file is created and maintained independent of any case study                                                                                                                                                                                                                                                                                |
+| upd       | Update database       | upd file is created and maintained to update values in the adb and/or a set of scenarios in a case study across the board.                                                                                                                                                                                                                      |
++-----------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. .. csv-table:: Databases in MESSAGE
+..     :header-rows: 1
+..     :file: csv_file/message_databases.csv     
 The interrelationship of the databases used in the MESSAGE program is depicted in the figure below:
 
 .. image:: /images/message_databases.PNG
