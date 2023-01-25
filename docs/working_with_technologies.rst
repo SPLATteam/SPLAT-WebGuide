@@ -16,6 +16,15 @@ Working with Technologies
 A technology in the model is a power-producing unit or a combination of such units or a transmission line with specific parameters such as, maximum capacity, capacity factor, CAPEX, FOM, fuel cost etc.
 
 A technology can be site specific (a specific plant or transmission line with known parameters) or generic (a technology with generalised parameters).
+Technologies in SPLAT are classified into four main types:
+
+**1. Existing technologies:** The technologies which are already in place as of the reference year.
+
+**2. Committed technologies:** The technologies which are currently under construction, or whose implementation has been approved. The deployment of these technologies may be considered guaranteed in the model results.
+
+**3. Candidate technologies:** The technologies which may or may not be retained in the long term and thus are part of the optimisation process. The characteristics of these projects (size, location, technology, etc.) must be consistent with existing infrastructure, price trends and energy resource potential. The model will select them if they show a net benefit to the modelled power system, which implies that building, operating and maintaining them should minimise the total cost of power system expansion.
+
+**4. Generic technologies:** These technologies are not site specific. They have generalised parameters. Similar to candidate technologies, these technologies are also part of the optimisation process. The model would select these technologies if they show a net benefit to the modelled power system.
 
 The Technology tabs are listed at :ref:`technologysheets`
 
