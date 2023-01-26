@@ -4,9 +4,21 @@
     :class: interfacecell
 .. role:: button
     :class: button
+.. role:: tight-table
+    :class: tight-table
 
 MESSAGE 
 =====================
+Model for Energy System Strategy Alternatives and their General Environmental Impacts (MESSAGE)
+has been desgined to develop an optimization model of an energy system for medium to long term planning, energy policy analysis and scenario development.
+MESSAGE formulates the dynamic linear programming model with a mixed integer option. 
+(Nonlinear constraints or nonlinear objective function can only be defined for specific problem.)
+MESSAGE solves the optimization model in the following two steps:
+
+1. Generation of matrix.
+
+2. Optimization of model using the generated matrix.
+
 The current version of the MESSAGE software consists of the following components:
 
 * A user-interface for building a model.
@@ -33,7 +45,8 @@ MESSAGE creates each model in a separate case study and accordingly one database
 
 .. csv-table:: Databases in MESSAGE
     :header-rows: 1
-    :file: csv_file/message_databases.csv
+    :file: csv_file/message_databases.csv     
+    :width: 5, 5, 20
 
 The interrelationship of the databases used in the MESSAGE program is depicted in the figure below:
 
