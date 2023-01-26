@@ -22,9 +22,15 @@ Technologies in SPLAT are classified into four main types:
 
 **2. Committed technologies:** The technologies which are currently under construction, or whose implementation has been approved. The deployment of these technologies may be considered guaranteed in the model results.
 
-**3. Candidate technologies:** The technologies which may or may not be retained in the long term and thus are part of the optimisation process. The characteristics of these projects (size, location, technology, etc.) must be consistent with existing infrastructure, price trends and energy resource potential. The model will select them if they show a net benefit to the modelled power system, which implies that building, operating and maintaining them should minimise the total cost of power system expansion.
+**3. Candidate technologies:** The technologies which may or may not be commissioned in the long term and thus are part of the optimisation process. The characteristics of these projects (size, location, technology, etc.) must be consistent with existing infrastructure, price trends and energy resource potential. 
+The model will select them if they show a net benefit to the modelled power system, which implies that building, operating and maintaining them should minimise the total cost of power system expansion.
+
+The SPLAT Africa model used in the Continental Power System Master Plan (CMP) project makes used of energy model "supply regions" (MSR). 
+MSR comprises of pre-loaded georeferenced solar PV, solar CSP, wind onshore and offshore supply options designed by IRENA through a systematic geospatil analysis explained in this `paper <https://www.nature.com/articles/s41597-022-01786-5>`_.
+These variable renewable energy technologies are also considered as candidate technologies.
 
 **4. Generic technologies:** These technologies are not site specific. They have generalised parameters. Similar to candidate technologies, these technologies are also part of the optimisation process. The model would select these technologies if they show a net benefit to the modelled power system.
+One of the main motivations to have generic technologies in the model is to make the model tech-agnostic, which in turn increases acceptance among stakeholders.
 
 The Technology tabs are listed at :ref:`technologysheets`
 
