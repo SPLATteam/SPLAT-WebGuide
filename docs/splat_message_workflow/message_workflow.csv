@@ -1,0 +1,19 @@
+﻿Nodes,Labels,Edge Labels,Shapes,Colors
+A1,Define Region and Case to be loaded.,,oval,mistyrose
+A2,"Button: Reload Global (Main Sheet)
+
+Action: Load the SPLAT model into Excel memory",,box,skyblue
+A3,"Button: Run (ReportGen-Annual sheet)​ with Options (Solver): MXG ​
+
+Action: Create solver readable file of the desired scenario ",\intm\Region_Case.MPS file (matrix problem),box,skyblue
+A4,"Button: Run (ReportGen-Annual sheet)​
+Run Options (Solver): Opt_CPLEX or Opt_CBC or Opt_GUROBI 
+
+Action: Solve the optimization problem",\intm\Region_Case_lin.sol file (solution file),box,skyblue
+A5,"Button: Run (ReportGen-Annual sheet)​ with Options (Solver): Cap 
+
+Action: Read the solution file",\res\Region_Case.TAB (results table),box,skyblue
+A6,"Button: Get Results (ReportGen-Annual sheet)​
+
+Action: Extract results from results table​",,box,skyblue
+A7,Get results in same sheet or separate excel or csv file,,oval,mistyrose

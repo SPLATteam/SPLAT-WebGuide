@@ -1,0 +1,29 @@
+digraph {
+	A1 [label="Define Region and Case to be loaded." color=mistyrose shape=oval style=filled]
+	A2 [label="Button: Reload Global (Main Sheet)
+
+Action: Load the SPLAT model into Excel memory" color=skyblue shape=box style=filled]
+	A3 [label="Button: Run (ReportGen-Annual sheet)​ with Options (Solver): MXG ​
+
+Action: Create solver readable file of the desired scenario " color=skyblue shape=box style=filled]
+	A4 [label="Button: Run (ReportGen-Annual sheet)​
+Run Options (Solver): Opt_CPLEX or Opt_CBC or Opt_GUROBI 
+
+Action: Solve the optimization problem" color=skyblue shape=box style=filled]
+	A5 [label="Button: Run (ReportGen-Annual sheet)​ with Options (Solver): Cap 
+
+Action: Read the solution file" color=skyblue shape=box style=filled]
+	A6 [label="Button: Get Results (ReportGen-Annual sheet)​
+
+Action: Extract results from results table​" color=skyblue shape=box style=filled]
+	A7 [label="Get results in same sheet or separate excel or csv file" color=mistyrose shape=oval style=filled]
+	A1 -> A2
+	A2 -> A3
+	A3 -> A4 [label="Creates matrix problem
+ \\intm\\Region_Case.mps"]
+	A4 -> A5 [label="Creates linear solution
+ \\intm\\Region_Case_lin.sol"]
+	A5 -> A6 [label="Creates results table
+ \\res\\Region_Case.tab"]
+	A6 -> A7
+}
