@@ -31,7 +31,7 @@ These variable renewable energy technologies are also considered as candidate te
 
 **4. Generic technologies:** These technologies are not site specific. They have generalised parameters. Similar to candidate technologies, these technologies are also part of the optimisation process. The model would select these technologies if they show a net benefit to the modelled power system.
 
-One of the main motivations to have generic technologies in the model is to make the model tech-agnostic, which in turn increases acceptance among stakeholders.
+The generic technologies are normally set up in a way that they don't come online in reference scenaerios. One of the main motivations to have generic technologies in the model is to make the model tech-agnostic, which in turn increases acceptance among stakeholders.
 
 The Technology tabs are listed at :ref:`technologysheets`
 
