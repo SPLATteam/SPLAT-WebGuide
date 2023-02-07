@@ -62,6 +62,9 @@ Adding a technology
 
 4. Refresh sheet to see the new technology added. Refresh other sheets before modifying relevant parameters.
 
+.. note::
+	Battery and pump storage technologies need to be defined separately in :ref:`Battery&PumpStorage` sheet in SPLAT interface.
+
 .. _rename_tech:
 
 Renaming a technology 
