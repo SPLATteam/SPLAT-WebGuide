@@ -81,5 +81,12 @@ File types inside res folder
     :header-rows: 1
     :file: csv_file/message_res.csv
 
-  
+.. _splat_message_workflow:
+
+SPLAT MESSAGE workflow
+-----------------------
+
+The SPLAT MESSAGE workflow diagram looks as follows:
+
+.. image:: /images/splat_message_workflow.PNG
 
