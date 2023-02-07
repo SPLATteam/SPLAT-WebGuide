@@ -147,7 +147,8 @@ Running the model
 
 **After** linking your model to the interface file in the ``Main`` tab, you can run your SPLAT model using the ``ReportGen-Annual`` tab.
 
-1.	Select the correct scenario and country combination that you want to run. To run the model for entire continent, select all the countries and "MAINa" in Subregions/Countries.
+1.	Select the correct scenario and country combination that you want to run.
+To run the model for entire continent, select all the countries and "MAINa" in Subregions/Countries.
 
 2.  Select the preferred option (with or without interconnections between subregions) under ``Run Options (Subregions)``. 
 For a single county model, select :inputcell:`Separate Subregions`. 
