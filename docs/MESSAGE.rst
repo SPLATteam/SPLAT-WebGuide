@@ -66,18 +66,21 @@ This section describes the various file types which are present or created withi
 File types inside data folder
 +++++++++++++++++++++++++++++
 .. csv-table::
+    :class: full-width
     :header-rows: 1
     :file: csv_file/message_data.csv
 
 File types inside intm (interim) folder
 +++++++++++++++++++++++++++++
 .. csv-table::
+    :class: full-width
     :header-rows: 1
     :file: csv_file/message_intm.csv
 
 File types inside res folder
 +++++++++++++++++++++++++++++
 .. csv-table::
+    :class: full-width
     :header-rows: 1
     :file: csv_file/message_res.csv
 
