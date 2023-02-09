@@ -21,15 +21,15 @@ Viewing demand input
 
 1. In the ``Demand`` tab, enter the scenario to be queried in the cell ``Choose Scenario``
 
-2. Click on :button:`Refresh Sheet`. The yearly demand in the scenario will be shown in the same sheet. Only data for the country(s) loaded (in the ``Main`` sheet) will be displayed.
+2. Click on :button:`Refresh Sheet`. The annual demand in the scenario (adb or ldb file) will be shown in the same sheet. Only data for the country(s) loaded (in the ``Main`` sheet) will be displayed.
 
 3. In the ``PeakDemand`` tab, repeat steps 1 and 2 to retrieve the peak demand for the selected scenario.
 
 .. note::
-	Most SPLAT models only have Sent out demand. However, some models have also demand at industrial, urban , rural levels. The user will see demand data categorised into these said multiple demand levels. If the model is using just the send-out demand, user can simply ignore the data on other demand levels. These demand levels exist as an indication that a user always have the option to model these demand if he/she so wishes. 
+	Provision was made to either work with "sent-out" demand or sectoral demand such as industrial, urban and rural. The user will see demand data categorised into these said multiple demand levels. If the model is using just the send-out demand, user must set the data on other demand levels to zero, and visa versa otherwise demand will be double counted. Also note that the raw data is stored in the adb and ldb files in MWyr. The MWyr values are converted by SPLAT to GWh by default. 
 
 .. note::
-	Peak demand is not a direct input in SPLAT model. This sheet is populated by macro codes which multiply the peak of a normalised load curve with the region's annual electricity demand (Watt Hours).
+	Peak demand is not a direct input in SPLAT model. The Peak demand is estimated based on the annual energy values and the corresponding profile parameterization stored in the Application Database (adb) file.
 	
 	
 .. change_demand:

@@ -106,7 +106,7 @@ Linking the interface to your model file
 
 1. In the ``Main`` tab of the file, make sure the fields :inputcell:`Model Folder` and :inputcell:`Main Region` are set correctly as shown below, to reflect the location of the restored MESSAGE model folder on your computer.
 
-2. in the ``Subregions`` section of the ``Main`` tab, choose which country / countries you want to activate, by placing a "1" next to it in the orange column, and a "0" next to any other countries. Ensure that the ``MAINa`` sub-region region is activated.
+2. in the ``Subregions`` section of the ``Main`` tab, choose which country / countries you want to activate, by placing a "1" next to it in the orange column, and a "0" next to any other countries.
 
 3. Click the :button:`Reload Global` button at the top of the page (this connects the MESSAGE model files with this Excel workbook). The model files are read and loaded into memory in Excel.
 
@@ -179,7 +179,7 @@ The ``ReportGen-Annual`` tab is also where you can pull in the results of the mo
 
 2.  Select the output format and enter output path (if applicable) under ``Results Destination`` section.
 
-3.	Click on :button:`Get Results` (red circle in picture below). If :inputcell:`on this sheet` is selected, you should see raw results appear on the sheet when the process is finished.
+3.	Click on :button:`Get Results` (red circle in picture below). If :inputcell:`on this sheet` is selected, you should see raw results appear on the sheet when the process is finished. If :inputcell:`csv` is selected, then the results will be written to a csv file at the specified location. If the location doesn't exist then there will be an error message. The csv option is more convenient when working with large set of results, and they can be linked to other pivot tables in Excel or other software such as PowerBi or Tableau.
 
 .. image:: /images/getting_started_extract_results_1.PNG
 
