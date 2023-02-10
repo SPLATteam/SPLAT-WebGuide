@@ -1,0 +1,4 @@
+﻿Sheet,Parameter,Parameter Code,Unit,Definition
+Transmission and Distribution,Efficiency,,%,Efficiency of the transmission or distribution system.
+Transmission and Distribution,Overnight Cost,,$/kW,"The cost of a construction project if no interest was incurred during construction, as if the project was completed ""overnight"". Values are given in constant prices of base year."
+Transmission and Distribution,Fixed O&M Cost,,$/kW,Annual fixed operating and maintenance cost in prices of base year.

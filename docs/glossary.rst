@@ -48,18 +48,41 @@ Set the model path, reload model data to memory, and select active countries for
 :button:`Save all Scenario Files using SPLAT formatting`        save all model (adb and ldb) files using excel-SPLAT formatting for selected subregions (use this after making a change with MESSAGE interface)
 If this button is pressed the MAINa ldb files will also be updated if MAINa is selected, to exclude interconnectors for subregions that are not selected below.
 
-.. _demandsheets:
+.. _input_sheets:
 
-Demand sheets
+Input Sheets
 --------------
 
-.. csv-table:: Inputs in SPLAT
-    :file: csv_file/csv_file.csv
-    :widths: 10, 10, 10, 5, 45, 20
-    :header-rows: 1
-    
+.. _demand_sheet:
+
+Demand
++++++++++++++++++++
+
+.. csv-table:: Demand Sheet
+    :file: csv_file/demand_sheet.csv
+    :header-row: 1
 
 
+.. _peakdemand_sheet:
+
+PeakDemand
++++++++++++
+
+.. csv-table:: PeakDemand Sheet
+    :file: csv_file/peakdemand_sheet.csv
+    :header-row: 1
+
+.. _tnd_sheet:
+
+Transmission and Distribution
++++++++++++
+
+.. csv-table:: Transmission and Distribution Sheets
+    :file: csv_file/tnd_sheet.csv
+    :header-row: 1
+
+.. note:: 
+    For distribution, values need to be entered for urban, rural, industry and commerce distribution types.
 
 .. .. _demand:
 
