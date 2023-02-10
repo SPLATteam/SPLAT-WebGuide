@@ -36,3 +36,7 @@
 .tight-table {
     white-space: normal !important;
 }
+
+.wy-nav-content {
+    max-width: none;
+}
