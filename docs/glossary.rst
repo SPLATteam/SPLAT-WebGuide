@@ -60,7 +60,7 @@ Demand
 
 .. csv-table:: Demand Sheet
     :file: csv_file/demand_sheet.csv
-    :header-row: 1
+    :header-rows: 1
 
 
 .. _peakdemand_sheet:
@@ -70,7 +70,7 @@ PeakDemand
 
 .. csv-table:: PeakDemand Sheet
     :file: csv_file/peakdemand_sheet.csv
-    :header-row: 1
+    :header-rows: 1
 
 .. _tnd_sheet:
 
@@ -79,7 +79,7 @@ Transmission and Distribution
 
 .. csv-table:: Transmission and Distribution Sheets
     :file: csv_file/tnd_sheet.csv
-    :header-row: 1
+    :header-rows: 1
 
 .. note:: 
     For distribution, values need to be entered for urban, rural, industry and commerce distribution types.
