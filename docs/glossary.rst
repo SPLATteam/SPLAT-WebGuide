@@ -65,13 +65,11 @@ This section contains the list of parameters (along with parameter code, their u
 
 Demand
 +++++++++++++++++++
-.. tabular_columns:: |p{2cm}|p{2cm}|p{5cm}|
     
 .. csv-table::
     :file: csv_file/demand_sheet.csv
     :header-rows: 1
-    :widths: 2 1 5
-    :class: longtable
+    :widths: 20 10 50
 
 .. _peakdemand_sheet:
 
@@ -80,6 +78,7 @@ PeakDemand
 .. csv-table::
     :file: csv_file/peakdemand_sheet.csv
     :header-rows: 1
+    :widths: 20 10 50
 
 .. _t&d_sheet:
 
@@ -89,6 +88,7 @@ Transmission and Distribution
 .. csv-table::
     :file: csv_file/t&d_sheet.csv
     :header-rows: 1
+    :widths: 20 10 50
 
 .. note:: 
     For distribution, values need to be entered for urban, rural, industry and commerce distribution types.
@@ -100,6 +100,7 @@ FuelPrices
 .. csv-table:: 
     :file: csv_file/fuelprices_sheet.csv
     :header-rows: 1
+    :widths: 20 10 50
 
 .. _tech_sheet:
 
@@ -115,6 +116,7 @@ Once a new technology is added, its parameters must be updated using the :button
 .. csv-table:: 
     :file: csv_file/tech_sheet.csv
     :header-rows: 1
+    :widths: 20 20 10 50
 
 .. note:: 
     1. * The profiles/load curves are calculated by SPLAT based on the hourly values (8760) present in *.tit file in data folder. They are stored in the adb, ldb and ldr files. The reason for not having them in the spreadsheet is that they vary depending on the load region/timeslice definition (e.g. large model/small model) and are would be very difficult to manage effectively in a spreadsheet.
@@ -131,6 +133,7 @@ These sheets display the cost parameters that are either constant or change over
 .. csv-table:: 
     :file: csv_file/techcosts_sheet.csv
     :header-rows: 1
+    :widths: 20 10 50
 
 .. _specifictechhydrodams_sheet:
 
@@ -146,6 +149,7 @@ The :button:`Update Model Data` updates the user input data.
 .. csv-table:: 
     :file: csv_file/specifictechhydrodams_sheet.csv
     :header-rows: 1
+    :widths: 20 20 10 50
 
 .. _battery&pumpstorage_sheet:
 
@@ -155,6 +159,7 @@ Battery&PumpStorage
 .. csv-table:: 
     :file: csv_file/battery&pumpstorage_sheet.csv
     :header-rows: 1
+    :widths: 20 20 10 50
 
 .. _interconnectors_sheet:
 
@@ -164,6 +169,7 @@ Interconnectors
 .. csv-table:: 
     :file: csv_file/interconnectors_sheet.csv
     :header-rows: 1
+    :widths: 20 20 10 50
 
 .. _caplimits_sheet:
 
@@ -173,6 +179,7 @@ SpecificCapacityLimits and InterconnectorsCapLimits
 .. csv-table:: 
     :file: csv_file/caplimits_sheet.csv
     :header-rows: 1
+    :widths: 20 10 50
 
 .. _vrezones_sheet:
 
@@ -182,6 +189,7 @@ PVZones, WindZones, OffshoreWindZones, CSP6hrZones and CSP12hrZones
 .. csv-table:: 
     :file: csv_file/vrezones_sheet.csv
     :header-rows: 1
+    :widths: 20 20 10 50
 
 .. note::
     1. Latitute and Longitude data can be stored in the adb files together with the rest of the model input data. It is not used by SPLAT or MESSAGE for anything, but it can be used by results viewers for display on maps (e.g. in Tableau). 
