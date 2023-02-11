@@ -4,5 +4,5 @@ Total Capacity Upper Limit,Par_bdi_up,MW,Maximum possible installed capacity of 
 Latitude,Par_lat,degree,Latitude of the given VRE zone.
 Longitude,Par_long,degree,Longitude of the given VRE zone.
 Offset Investment (connection to road+grid) extension,Par_offsetinv,$/kW,"Offset investment to account for connection to road and grid extension for the VRE zones.
- SPLAT will add that value to what ever value is currently stored for investment cost ""inv"" with that technology."
+SPLAT will add that value to what ever value is currently stored for investment cost ""inv"" with that technology."
 Multiplier Investment (according to turbine class),Par_multinv,factor,Factor to scale investment cost for onshore wind technologies.
