@@ -1,5 +1,5 @@
 ﻿Parameter,Parameter Code,Unit,Definition
-Desciption,Par_Descr1,,List of possible generic interconnectors between country 1 and country 2 in the model.
+Desciption,Par_Descr1,,List of possible interconnectors between country 1 and country 2 in the model.
 First Year,Par_fyear,,First year in which the technology can be built in the future.
 Efficiency,Par_moutp,,Efficiency of transmission. Assumed 95% or above.
 Total Capacity Upper Limit,Par_bdi_up,,Maximum possible installed transfer capacity of the interconnectors.
