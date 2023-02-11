@@ -1,0 +1,17 @@
+﻿Parameter,Parameter Code,Unit,Definition
+Input/Fuel,Par_minp,,"The fuel that is consumed by a technology and it's level in the energy system. e.g., Gas/Primary is the input fuel for gas co-fired technology."
+Output,Par_moutp-ef,,"The output of the given technology. e.g., Electricity/Secondary is the output of gas co-fired technology."
+Minimum utilization rate,Par_minutil,,"Fraction of time in a year the technology must be used/dispatched. The value ranges between 0 and 1, and is 0 for most technologies."
+First year,Par_fyear,,First year in which the technology can be built in the future.
+Life,Par_pll,year,Operational life of the technology.
+Efficiency,Par_moutp,%,Output to input ratio of the given technology.
+Plant factor*,Par_plf,,"A technology has a profile if one of its inputs/outputs has a profile. 
+If a technology has profile (e.g., hydropower), plant factor is the maximum availability of a technology in each load region.
+If the technology has no profile, plant factor is the maximum availability of a technology per year.
+The availability gets scaled by plant factor. Leave equal to 1 or blank to use availability as specified by profile."
+Operation time,Par_optm,,Fraction of time in a year the technology can be in operation.
+Plant Status**,Par_status,,"Can be existing, committed or candidate depending on the status of the plant."
+hist.string**,Par_hisc,year1 MW1 year2 MW2,"Year of installation of the technology, and its capacity at the time.
+If a plant is installed over multiple years in different steps, it can be specified as year1 MW1 and year2 MW2 for unit1 and unit2 respectively."
+Total Capacity Upper Limit**,Par_bdi_up,,Total capacity upper limit of the technology throughout its lifetime.
+Load Curve**,,,"This is not an input parameter, but a flag to indicate whether a load profile (or curve) is associated with this Technology. 1 = yes, 0 = no."

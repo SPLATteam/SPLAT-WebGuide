@@ -1,2 +1,2 @@
-﻿Sheet,Parameter,Parameter Code,Unit,Definition
-Peakdemand,SentOut,,GWh,The aggregate peak demand of the country for the specific year. Sectoral final electricity demand can also be entered.
+﻿Parameter,Unit,Definition
+SentOut,GWh,The aggregate peak demand of the country for the specific year. Sectoral final electricity demand can also be entered.
