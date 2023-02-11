@@ -17,7 +17,9 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'sphinx_rtd_size'
 ]
+
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
@@ -41,6 +43,8 @@ html_css_files = [
 ]
 
 html_style = 'css/splat_interface.css'
+
+sphinx_rtd_size_width = "90%"
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
