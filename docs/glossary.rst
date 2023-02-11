@@ -65,11 +65,13 @@ This section contains the list of parameters (along with parameter code, their u
 
 Demand
 +++++++++++++++++++
+.. tabular_columns:: |p{2cm}|p{2cm}|p{5cm}|
+    
 .. csv-table::
     :file: csv_file/demand_sheet.csv
     :header-rows: 1
-    :widths: 20, 20, 50
-    :width: 600px
+    :widths: 2 1 5
+    :class: longtable
 
 .. _peakdemand_sheet:
 
