@@ -1,0 +1,2 @@
+﻿Sheet,Parameter,Parameter Code,Unit,Definition,
+FuelPrices,Variable Cost,,$/GJ,"Refers to the price of the given fuel or resource.Variable cost for supply of wind, solar and hydro, and extraction of bagasse are set as zero.",
