@@ -53,6 +53,14 @@ If this button is pressed the MAINa ldb files will also be updated if MAINa is s
 Input Sheets
 --------------
 
+This section contains the list of parameters (along with parameter code, their unit and definitions) present in each input sheet in the SPLAT interface.
+
+.. note::
+    1. The parameter values refer to the value of the parameter fand the given country fand the given scenario and fand the given year(s).
+    2. If there is no year mentioned in the input sheet, then the value is constant for all years.
+    3. If the input sheets contain placeholders only fand specific years, then the values of the parameter fand the years in between are linearly interpolated.
+    4. Costs are provided in terms of base year values (2019 as of now).
+
 .. _demand_sheet:
 
 Demand
@@ -65,18 +73,17 @@ Demand
 
 PeakDemand
 +++++++++++
-
 .. csv-table::
     :file: csv_file/peakdemand_sheet.csv
     :header-rows: 1
 
-.. _tnd_sheet:
+.. _t&d_sheet:
 
 Transmission and Distribution
 ++++++++++++++++++++++++++++++
 
 .. csv-table::
-    :file: csv_file/tnd_sheet.csv
+    :file: csv_file/t&d_sheet.csv
     :header-rows: 1
 
 .. note:: 
@@ -94,6 +101,13 @@ FuelPrices
 
 GenericTech and SpecificTech
 +++++++++++++++++++
+
+The ``GenericTech`` sheet displays generic technology parameters that are constant over the model horizon
+
+The ``SpecificTech`` sheet is used to review and update site specific power generation technology parameters that don’t vary from year to year.
+The ``SpecificTech`` sheet has an extra button: :button:`Add missing Tech`, which allows the user to add new site specific technology to the MESSAGE model that is linked. Currently this technology makes the addition by copying the technology parameters of a generic technology of the same technology type as specified by the first 6 characters in the technology name. A new technology will be automatically added to all active scenarios. A MESSAGE technology code is created automatically based on the input and output commodities (as specified by the associated generic technology) and the already existing technologies having the same inputs and outputs.
+Once a new technology is added, its parameters must be updated using the :button:`Update Model Data` button.
+
 .. csv-table:: 
     :file: csv_file/tech_sheet.csv
     :header-rows: 1
@@ -107,6 +121,9 @@ GenericTech and SpecificTech
 
 GenericTechCosts and SpecificTechCosts
 +++++++++++++++++++
+
+These sheets display the cost parameters that are either constant or change over the model horizon.
+
 .. csv-table:: 
     :file: csv_file/techcosts_sheet.csv
     :header-rows: 1
@@ -115,8 +132,51 @@ GenericTechCosts and SpecificTechCosts
 
 SpecificTechHydroDams
 +++++++++++++++++++
+
+This sheet displays site-specific technology parameters that are specific to hydro plants with storage (dams).
+The ``SpecificTechHydroDams`` sheet manipulates the hydro dams in the model.
+The :button:`Refresh Sheet` button extracts the technologies that belong to the `TechSetL2`: `Large Hydro Dams`.
+And the :button:`Create River Tech+Storage Constraint` button adds a technology and a storage constraint for each dam.
+The :button:`Update Model Data` updates the user input data.
+
 .. csv-table:: 
     :file: csv_file/specifictechhydrodams_sheet.csv
+    :header-rows: 1
+
+.. _battery&pumpstorage_sheet:
+
+Battery&PumpStorage
++++++++++++++++++++
+
+.. csv-table:: 
+    :file: csv_file/battery&pumpstorage_sheet.csv
+    :header-rows: 1
+
+.. _interconnectors_sheet:
+
+Interconnectors
++++++++++++++++++++
+
+.. csv-table:: 
+    :file: csv_file/interconnectors_sheet.csv
+    :header-rows: 1
+
+.. _caplimits_sheet:
+
+SpecificCapacityLimits and InterconnectorsCapLimits
++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.. csv-table:: 
+    :file: csv_file/caplimits_sheet.csv
+    :header-rows: 1
+
+.. _vrezones_sheet:
+
+PVZones, WindZones, OffshoreWindZones, CSP6hrZones and CSP12hrZones
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.. csv-table:: 
+    :file: csv_file/vrezones_sheet.csv
     :header-rows: 1
 
 .. .. _demand:
