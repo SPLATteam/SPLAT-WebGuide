@@ -57,7 +57,6 @@ Input Sheets
 
 Demand
 +++++++++++++++++++
-
 .. csv-table:: Demand Sheet
     :file: csv_file/demand_sheet.csv
     :header-rows: 1
@@ -67,7 +66,6 @@ Demand
 
 PeakDemand
 +++++++++++
-
 .. csv-table:: PeakDemand Sheet
     :file: csv_file/peakdemand_sheet.csv
     :header-rows: 1
@@ -76,7 +74,6 @@ PeakDemand
 
 Transmission and Distribution
 +++++++++++
-
 .. csv-table:: Transmission and Distribution Sheets
     :file: csv_file/tnd_sheet.csv
     :header-rows: 1
