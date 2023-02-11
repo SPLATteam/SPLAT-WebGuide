@@ -69,6 +69,7 @@ Demand
     :file: csv_file/demand_sheet.csv
     :header-rows: 1
     :widths: 20, 20, 50
+    :width: "90%"
 
 .. _peakdemand_sheet:
 
