@@ -101,7 +101,23 @@ GenericTech and SpecificTech
 .. note:: 
     *  The profiles/load curves are calculated by SPLAT based on the hourly values (8760) present in *.tit file in data folder. They are stored in the adb, ldb and ldr files. The reason for not having them in the spreadsheet is that they vary depending on the load region/timeslice definition (e.g. large model/small model) and are would be very difficult to manage effectively in a spreadsheet.
 
-    ** Parameters relevant to SpecificTech sheet only.
+    ** Parameters relevant to ``SpecificTech`` sheet only.
+
+.. _techcosts_sheet:
+
+GenericTechCosts and SpecificTechCosts
++++++++++++++++++++
+.. csv-table:: 
+    :file: csv_file/techcosts_sheet.csv
+    :header-rows: 1
+
+.. _specifictechhydrodams_sheet:
+
+SpecificTechHydroDams
++++++++++++++++++++
+.. csv-table:: 
+    :file: csv_file/specifictechhydrodams_sheet.csv
+    :header-rows: 1
 
 .. .. _demand:
 

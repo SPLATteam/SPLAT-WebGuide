@@ -1,0 +1,4 @@
+﻿Parameter,Unit,Definition
+Overnight Investment Cost,$/kW,Overnight costs in constant prices of base year.
+Fixed O&M Cost,$/kW,Fixed operation and maintenace cost for the given technology.
+Variable O&M Cost,$/MWh,Variable operation and maintenance cost for the given technology.
