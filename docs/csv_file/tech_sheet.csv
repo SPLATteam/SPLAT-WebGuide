@@ -5,7 +5,7 @@ Minimum utilization rate,Par_minutil,,"Fraction of time in a year the technology
 First year,Par_fyear,,First year in which the technology can be built in the future.
 Life,Par_pll,year,Operational life of the technology.
 Efficiency,Par_moutp,%,Output to input ratio of the given technology.
-Plant factor*,Par_plf,,"A technology has a profile if one of its inputs/outputs has a profile. 
+Plant factor,Par_plf,,"A technology has a profile if one of its inputs/outputs has a profile. 
 If a technology has profile (e.g., hydropower), plant factor is the maximum availability of a technology in each load region.
 If the technology has no profile, plant factor is the maximum availability of a technology per year.
 The availability gets scaled by plant factor. Leave equal to 1 or blank to use availability as specified by profile."
