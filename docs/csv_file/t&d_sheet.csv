@@ -1,5 +1,6 @@
 ﻿Parameter,Unit,Definition
 Efficiency,%,Efficiency of the transmission or distribution system.
 Overnight Cost,$/kW,"The cost of a construction project if no interest was incurred during construction, as if the project was completed ""overnight"".
- Values are given in constant prices of base year."
+ Values are given in constant prices of base year.
+ "
 Fixed O&M Cost,$/kW,Annual fixed operating and maintenance cost in prices of base year.
