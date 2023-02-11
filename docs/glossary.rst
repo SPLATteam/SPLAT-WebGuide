@@ -113,9 +113,9 @@ Once a new technology is added, its parameters must be updated using the :button
     :header-rows: 1
 
 .. note:: 
-    *  The profiles/load curves are calculated by SPLAT based on the hourly values (8760) present in *.tit file in data folder. They are stored in the adb, ldb and ldr files. The reason for not having them in the spreadsheet is that they vary depending on the load region/timeslice definition (e.g. large model/small model) and are would be very difficult to manage effectively in a spreadsheet.
+    1. * The profiles/load curves are calculated by SPLAT based on the hourly values (8760) present in *.tit file in data folder. They are stored in the adb, ldb and ldr files. The reason for not having them in the spreadsheet is that they vary depending on the load region/timeslice definition (e.g. large model/small model) and are would be very difficult to manage effectively in a spreadsheet.
 
-    ** Parameters relevant to ``SpecificTech`` sheet only.
+    2. ** Parameters relevant to ``SpecificTech`` sheet only.
 
 .. _techcosts_sheet:
 
@@ -178,6 +178,13 @@ PVZones, WindZones, OffshoreWindZones, CSP6hrZones and CSP12hrZones
 .. csv-table:: 
     :file: csv_file/vrezones_sheet.csv
     :header-rows: 1
+
+.. note::
+    1. Latitute and Longitude data can be stored in the adb files together with the rest of the model input data. It is not used by SPLAT or MESSAGE for anything, but it can be used by results viewers for display on maps (e.g. in Tableau). 
+
+    2. For offset investment and multiplier investment parameters, one has to remember to use the pull down option "Reset Investment" in cell F6, when generic costs are updated for whatever reason, or before an update was made in raw MSR data, before re-applying the "Offset Investment".
+
+    3. The multiplier investment (according to turbine class) parameter is in ``WindZones`` sheet only. This categorization doesn't apply to offshore as it is assumed all offshore wind turbines are of the same class.
 
 .. .. _demand:
 

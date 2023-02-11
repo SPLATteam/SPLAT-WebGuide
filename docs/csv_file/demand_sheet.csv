@@ -1,2 +1,3 @@
 ﻿Parameter,Unit,Definition
-SentOut,GWh,"The overall sentout electricity demand (i.e., Secondary, or before  transmission & distribution) for aggregate sectors within the given country. Sectoral final electricity demand could also be provided."
+SentOut,GWh,"The overall sentout electricity demand (i.e., Secondary, or before  transmission & distribution) for aggregate sectors within the given country.
+ Sectoral final electricity demand could also be provided."
