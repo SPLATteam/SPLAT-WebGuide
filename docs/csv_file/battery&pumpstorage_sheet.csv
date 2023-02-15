@@ -1,5 +1,5 @@
 ﻿Parameter,Parameter Code,Unit,Definition
-Description*,Par_descr1,,Includes technology name (Battery Storage or Pump Storage) and storage hours.
+Description,Par_descr1,,Includes technology name (Battery Storage or Pump Storage) and storage hours.
 Corresponding Proxy Tech,,,"Technology code: {CountryCode}ELPT{StorageHours} for battery storage and {CountryCode}. 
 ELPTPS for pump storage."
 Hours of storage,Par_hrs,hours,Storage hours offered by the techniology.

@@ -352,14 +352,15 @@ PVZones, WindZones, OffshoreWindZones, CSP6hrZones and CSP12hrZones
 ReportGen-Annual
 -----------------
 
-Generate Annual Results File
+This sheet allows to run the model and get results in annual resolution.
+The steps are described in :ref:`_run_model`.
 
 .. _reportgen_profiles:
 
 ReportGen-Profiles
 -------------------
 
-Generate Sub-Annual (Profiles) Results File
+This sheet allows to generate Sub-Annual (Profiles) results file. The steps are described in :ref:`_extract_results`.
 
 .. _timeslices:
 
