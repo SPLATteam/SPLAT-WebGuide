@@ -4,8 +4,6 @@
     :class: interfacecell
 .. role:: button
     :class: button
-.. role:: raw-math(raw)
-    :format: latex html
 
 Description of Sheets
 =====================
@@ -364,9 +362,9 @@ Reserve Margin Constraint
 Reserve margin (RM) is the margin of firm capacity required above peak demand. It ranges usually between 10 to 25% of peak capacity.
 The constraint equation used in this sheet is as follows:
 
-:raw-math:`$$\sum (Capacity_PP \times RM_LHS) > 0$$`
+:math:`$\sum (Capacity_PP \times RM_LHS) > 0$`
 
-The transmission technology is also used to calculate peak demand, and their RM coefficient is negative.
+The transmission technology is also used to calculate peak demand, and their RM coefficient is considered negative because of their nature of transmitting rather than generating activity.
 
 .. csv-table::
     :file: csv_file/rmconstraint_sheet.csv
