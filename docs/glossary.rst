@@ -353,14 +353,14 @@ ReportGen-Annual
 -----------------
 
 This sheet allows to run the model and get results in annual resolution.
-The steps are described in :ref:`_run_model`.
+The steps are described in :ref:`run_model`.
 
 .. _reportgen_profiles:
 
 ReportGen-Profiles
 -------------------
 
-This sheet allows to generate Sub-Annual (Profiles) results file. The steps are described in :ref:`_extract_results`.
+This sheet allows to generate Sub-Annual (Profiles) results file. The steps are described in :ref:`extract_results`.
 
 .. _timeslices:
 
