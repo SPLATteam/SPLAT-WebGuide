@@ -362,7 +362,7 @@ Reserve Margin Constraint
 Reserve margin (RM) is the margin of firm capacity required above peak demand. It ranges usually between 10 to 25% of peak capacity.
 The constraint equation used in this sheet is as follows:
 
-:math:`\sum (Capacity_\text{PP} \times RM_\text{LHS}) > 0`
+:math:`\sum (Capacity_{PP} \times RM_{LHS}) > 0`
 
 The transmission technology is also used to calculate peak demand, and their RM coefficient is considered negative because of their nature of transmitting rather than generating activity.
 
