@@ -417,7 +417,11 @@ When modelling long term development of a power system, an analyst should make s
     1. There's a lot of stochastic behavior in a real system that cannot be captured in the same way within the model.
     2. It is possible to run analysis with various demand and supply availability patterns and model extreme operational conditions.
 
-Reserve margin (RM) is the margin of firm capacity that is required above peak load. It ranges usually between 10% to 25% of peak load. 
+Reserve margin is the margin of firm capacity that is required above peak demand/load. It ranges usually between 10% to 25% of peak load.
+For e.g., if a region has 12 GW of firm capacity and 10 GW of peak demand, the reserve margin would be 20%.
+
+Reserve Margin (RM) = (Firm Capacity - Peak Demand) / Peak Demand
+
 The representation of system reserve in MESSAGE modelling framework is as shown below:
 
 .. image:: /images/system_reserve_in_message.PNG
