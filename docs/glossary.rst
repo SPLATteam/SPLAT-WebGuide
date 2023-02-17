@@ -356,7 +356,7 @@ Constraints are linear mathematical equations applicable across several technolo
 These are user-defined relations to guide a model based on scenario narratives.
 In MESSAGE, a constraint is defined as a sum-product of a coefficient and variable with user-defined upper or lower limits as shown below: 
 
-.. image:: /images/constraint_form.png
+.. image:: /images/constraint_form.PNG
 
 This section describes the different constraints (including their equations and parameters) present in different Constraint sheets in SPLAT.
 
@@ -388,12 +388,12 @@ When modelling long term development of a power system, an analyst should make s
 Reserve margin (RM) is the margin of firm capacity that is required above peak load. It ranges usually between 10% to 25% of peak load. 
 The representation of system reserve in MESSAGE modelling framework is as shown below:
 
-.. image:: /images/system_reserve_in_message.png
+.. image:: /images/system_reserve_in_message.PNG
 
 The constraint equation used in the ``ReserveMarginConstraint`` sheet is as follows:
-.. :math:`\sum (Capacity_{PP} \times RM_{LHS}) > 0`
+.. .. :math:`\sum (Capacity_{PP} \times RM_{LHS}) > 0`
 
-Sum(CapacityCredit_PP * Capacity_PP) - (1+RM)/(1-LS) * Capacity_Pt&d >= 0
+.. :math:`$\sum\limits_{PP}(CapacityCredit_{PP} \times Capacity_{PP}) - \dfrac{1+RM}{1-LS} \cdot Capacity_{Ptnd} \geq 0$`
 
 where, CapacityCredit_PP and Capacity_PP refer to capacity credit and installed capacity of power plant.
 
