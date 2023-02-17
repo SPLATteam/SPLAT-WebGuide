@@ -367,6 +367,31 @@ ConstraintList
 
 This sheet contains the list of all the constraints in the model which are defined in the following sheets.
 
+.. _buildlimconstraint_sheet:
+
+PVAnnualBuildLim and WindAnnualBuildLim
++++++++++++++++++++++++++++++++++++++++
+
+These two sheets are used to set annual build limits for solar PV and wind onshore respectively.
+The equation(s) used in the sheet is as given below:
+
+Sum(NewCapacity_PV, t) <= PVBR_RHS(t)
+
+Sum(NewCapacity_Wind, t) <= WindBR_RHS(t)
+
+The equation suggests that the new installed capacity of solar PV or wind for a given country for a given year should be below the upper limits defined in this sheet. 
+
+The parameters used in this sheet are as follows:
+
+.. csv-table::
+    :file: csv_file/buildlimconstraint_sheet.csv
+    :header-row: 1
+    :widths: 20 20 10 50
+
+.. note::
+    The target (% of peak demand), Min and Max values are set as design decision/suggestion. These values could be made larger or smaller. 
+    One can also make country specific coefficients by overwriting the formulas for upper limits.
+
 .. _rmconstraint_sheet:
 
 ReserveMarginConstraint
@@ -450,6 +475,7 @@ other_gen = generation from non-VRE technologies
     :header-row: 1
     :widths: 20 20 10 50
 
+
 .. _co2constraint_sheet:
 
 CO2Constraint:
@@ -464,14 +490,15 @@ Sum(CO2_power, t) >= Max_CO2_power(t)
 
 where,
 
-LHS represents the sum of CO2 emissions from power sector in year t
+LHS represents the sum of CO2 emissions from power sector in year t.
 
-RHS represents the maximum limit of CO2 emissions from power sector in same year t
+RHS represents the maximum limit of CO2 emissions from power sector in same year t.
 
 .. csv-table::
     :file: csv_file/co2constraint_sheet.csv
     :header-row: 1
     :widths: 20 10 50
+
 
 .. _reportgen_annual:
 
