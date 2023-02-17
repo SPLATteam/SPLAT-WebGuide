@@ -449,7 +449,7 @@ other_gen = generation from non-VRE technologies
     :file: csv_file/localreconstraint_sheet.csv
     :header-row: 1
     :widths: 20 20 10 50
-
+    
 .. _co2constraint_sheet:
 
 CO2 Constraint Sheet:
