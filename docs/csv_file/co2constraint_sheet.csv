@@ -1,0 +1,3 @@
+﻿Parameter,Unit,Definition
+Reduction target,,Target for reducing emissions from power sector relative to reference values (in columns J-N)
+RHS Upper Limit,ktCO2,Maximum possible CO2 emissions from the power system.

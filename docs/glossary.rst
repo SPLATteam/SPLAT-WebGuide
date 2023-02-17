@@ -360,6 +360,13 @@ In MESSAGE, a constraint is defined as a sum-product of a coefficient and variab
 
 This section describes the different constraints (including their equations and parameters) present in different Constraint sheets in SPLAT.
 
+.. _constraintlist_sheet:
+
+Constraint List Sheet
++++++++++++++++++++++
+
+This sheet contains the list of all the constraints in the model which are defined in the following sheets.
+
 .. _rmconstraint_sheet:
 
 Reserve Margin Constraint
@@ -404,10 +411,67 @@ LS = Transmission Losses
 
 Capacity_Pt&d = Transmission and Distribution Capacity
 
+"ConCap_RM" stands for Coefficient applicable on Capacity (MW) and associated to Reserve Margin constraint
+
 .. csv-table::
     :file: csv_file/rmconstraint_sheet.csv
     :header-rows: 1
     :widths: 20 20 10 50
+
+.. _localreconstraint_sheet:
+
+LocalREConstraint Sheet:
+++++++++++++++++++++++++
+
+Different countries or regions can have target of achieving certain minimum share RE in the the total power generation by certain year.
+In the ``LocalREConstraint`` sheet, the minimum share of RE (more specifically VRE) technologies in the total power generation is set as a constraint in the model for different years.
+The equation representing this constraint can be represented below:
+
+vres_gen >= vres_share * total_gen
+
+vres_gen >= vres_share * (vres_gen + other_gen)
+
+vres_gen - vres_share * vres_gen - vres_share * other_gen >=0
+
+(1 - vres_share) * vres_gen - vres_share * other_gen >= 0
+
+where,
+
+vres_gen = generation from VRE technology
+
+vres_share = share of VRE in total generation (total_gen) which is set as the minimum target share by a country or region
+
+other_gen = generation from non-VRE technologies
+
+"ConAct_RE" refers to the coefficient of Activity/Generation (GWh) of a power plant technology.
+
+.. csv-table::
+    :file: csv_file/localreconstraint_sheet.csv
+    :header-row: 1
+    :widths: 20 20 10 50
+
+.. _co2constraint_sheet:
+
+CO2 Constraint Sheet:
+++++++++++++++++++++++++
+
+The CO2 emissions constraints are set in more ambitious scenarios.
+In this sheet, the reduction target for CO2 emissions for different years is set relative to a specific reference scenario.
+This in turn sets the upper limit on the CO2 emissions from power generation from different technologies.
+The constraint equation used in the model is as shown below:
+
+Sum(CO2_power, t) >= Max_CO2_power(t)
+
+where,
+
+LHS represents the sum of CO2 emissions from power sector in year t
+
+RHS represents the maximum limit of CO2 emissions from power sector in same year t
+
+.. csv-table::
+    :file: csv_file/co2constraint_sheet.csv
+    :header-row: 1
+    :widths: 20 10 50
 
 .. _reportgen_annual:
 
