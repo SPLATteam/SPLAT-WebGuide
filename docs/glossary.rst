@@ -362,15 +362,15 @@ This section describes the different constraints (including their equations and 
 
 .. _constraintlist_sheet:
 
-Constraint List Sheet
-+++++++++++++++++++++
+ConstraintList
+++++++++++++++
 
 This sheet contains the list of all the constraints in the model which are defined in the following sheets.
 
 .. _rmconstraint_sheet:
 
-Reserve Margin Constraint
-+++++++++++++++++++++++++
+ReserveMarginConstraint
++++++++++++++++++++++++
 
 In a power system, generation must always equal consumption.
 When the balance is disrupted, it can lead to outages and complete black outs.
@@ -420,8 +420,8 @@ Capacity_Pt&d = Transmission and Distribution Capacity
 
 .. _localreconstraint_sheet:
 
-LocalREConstraint Sheet:
-++++++++++++++++++++++++
+LocalREConstraint
++++++++++++++++++
 
 Different countries or regions can have target of achieving certain minimum share RE in the the total power generation by certain year.
 In the ``LocalREConstraint`` sheet, the minimum share of RE (more specifically VRE) technologies in the total power generation is set as a constraint in the model for different years.
@@ -449,11 +449,11 @@ other_gen = generation from non-VRE technologies
     :file: csv_file/localreconstraint_sheet.csv
     :header-row: 1
     :widths: 20 20 10 50
-    
+
 .. _co2constraint_sheet:
 
-CO2 Constraint Sheet:
-++++++++++++++++++++++++
+CO2Constraint:
+++++++++++++++
 
 The CO2 emissions constraints are set in more ambitious scenarios.
 In this sheet, the reduction target for CO2 emissions for different years is set relative to a specific reference scenario.
