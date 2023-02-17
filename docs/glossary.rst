@@ -385,7 +385,7 @@ The parameters used in this sheet are as follows:
 
 .. csv-table::
     :file: csv_file/buildlimconstraint_sheet.csv
-    :header-row: 1
+    :header-rows: 1
     :widths: 20 20 10 50
 
 .. note::
@@ -472,7 +472,7 @@ other_gen = generation from non-VRE technologies
 
 .. csv-table::
     :file: csv_file/localreconstraint_sheet.csv
-    :header-row: 1
+    :header-rows: 1
     :widths: 20 20 10 50
 
 
@@ -496,7 +496,7 @@ RHS represents the maximum limit of CO2 emissions from power sector in same year
 
 .. csv-table::
     :file: csv_file/co2constraint_sheet.csv
-    :header-row: 1
+    :header-rows: 1
     :widths: 20 10 50
 
 
