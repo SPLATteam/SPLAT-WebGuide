@@ -490,7 +490,7 @@ In this sheet, the reduction target for CO2 emissions for different years is set
 This in turn sets the upper limit on the CO2 emissions from power generation from different technologies.
 The constraint equation used in the model is as shown below:
 
-Sum(CO2_power, t) >= Max_CO2_power(t)
+Sum(CO2_PP, t) <= Max_CO2_PP(t)
 
 where,
 
