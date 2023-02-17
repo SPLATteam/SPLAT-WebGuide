@@ -110,10 +110,10 @@ Copying a scenario using the MESSAGE interface
 
 3. In the pop out window, select the scenario of your choice and enter the name of the new copy. Click :button:`OK`.
 
-.. image:: how_to_copy_scenario.PNG
+.. image:: /images/how_to_copy_scenario.PNG
 
 4. If you are working in a region with multiple sub-regions, select :button:`Yes` for :button:`Make copy for all subregions`?
 
-.. image:: how_to_copy_scenario_2.PNG
+.. image:: /images/how_to_copy_scenario_2.PNG
 
 5. In the SPLAT interface Main sheet, Reload global. You will find the new scenario you copied in the Scenarios table. To use the new scenario, select ``1`` in Scenarios to Reload

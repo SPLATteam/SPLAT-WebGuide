@@ -352,6 +352,12 @@ PVZones, WindZones, OffshoreWindZones, CSP6hrZones and CSP12hrZones
 Constraint Sheets
 -----------------
 
+Constraints are linear mathematical equations applicable across several technologies (power plants, storage, transmission, etc. 
+These are user-defined relations to guide a model based on scenario narratives.
+In MESSAGE, a constraint is defined as a sum-product of a coefficient and variable with user-defined upper or lower limits as shown below: 
+
+.. image:: /images/constraint_form.png
+
 This section describes the different constraints (including their equations and parameters) present in different Constraint sheets in SPLAT.
 
 .. _rmconstraint_sheet:
@@ -359,12 +365,43 @@ This section describes the different constraints (including their equations and 
 Reserve Margin Constraint
 +++++++++++++++++++++++++
 
-Reserve margin (RM) is the margin of firm capacity required above peak demand. It ranges usually between 10 to 25% of peak capacity.
-The constraint equation used in this sheet is as follows:
+In a power system, generation must always equal consumption.
+When the balance is disrupted, it can lead to outages and complete black outs.
+There are many events that might disturb the balance (many of them are stochastic/predictable with probability) such as planned maintenance, unplaneed stops, changes/variations in demand, and changes in supply.
+Therefore, reserves are needed in the system to make sure that power demand is always met.
 
-:math:`\sum (Capacity_{PP} \times RM_{LHS}) > 0`
+Based on the response (reaction time), reserved can be classified as:
 
-The transmission technology is also used to calculate peak demand, and their RM coefficient is considered negative because of their nature of transmitting rather than generating activity.
+i. Primary reserves: part of operational (running) or fast to activate capacity available to immediately (in seconds) for cover for disturbances.
+
+ii. Secondary reserve: can be operating or cold (not operating) capacity to be activated in minutes (after initial disturbance and activation of primary reserve, secondary reserve is activated, and units are redispatched so to re-activate primary reserve capabilities.)
+
+iii. Tertiary reserve: these are usually back-up units that can be activated in minutes/hours to allow reactivation of secondary reserve capabilities.
+
+In MESSAGE framework, all information about current and future power system is assumed to be known (with 100% certainty), i.e., not stochastic, therefore, production pattern decisions always have to deterministic.
+When modelling long term development of a power system, an analyst should make sure that the future capacity is sufficient to cover demand during critical periods (usually during peak hours) and to cover other operational needs (e.g., maintenance).
+
+.. note::
+    1. There's a lot of stochastic behavior in a real system that cannot be captured in the same way within the model.
+    2. It is possible to run analysis with various demand and supply availability patterns and model extreme operational conditions.
+
+Reserve margin (RM) is the margin of firm capacity that is required above peak load. It ranges usually between 10% to 25% of peak load. 
+The representation of system reserve in MESSAGE modelling framework is as shown below:
+
+.. image:: /images/system_reserve_in_message.png
+
+The constraint equation used in the ``ReserveMarginConstraint`` sheet is as follows:
+.. :math:`\sum (Capacity_{PP} \times RM_{LHS}) > 0`
+
+Sum(CapacityCredit_PP * Capacity_PP) - (1+RM)/(1-LS) * Capacity_Pt&d >= 0
+
+where, CapacityCredit_PP and Capacity_PP refer to capacity credit and installed capacity of power plant.
+
+RM = Reserve Margin
+
+LS = Transmission Losses
+
+Capacity_Pt&d = Transmission and Distribution Capacity
 
 .. csv-table::
     :file: csv_file/rmconstraint_sheet.csv

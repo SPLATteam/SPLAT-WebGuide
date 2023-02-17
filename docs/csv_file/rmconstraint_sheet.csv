@@ -1,6 +1,6 @@
 ﻿Parameter,Parameter Code,Unit,Definition
 RHS Reserve Margin Lower Limit,RM,,Set as 0 by default. Minimum RM.
 RHS Reserve Margin Upper Limit,,,"Maximum RM. Since the model is solving for least cost, it will not ""overbuild"" without a good reason for it. We don't want to disallow overbuild, which setting an upper limit would do. Therefore, it is kept blank."
-Reserve Margin (for transmission capacity credit),,%,Percentage of peak demand. Used to derive capacity credit of transmission.
+Reserve Margin,,%,Percentage of peak demand. Used to derive capacity credit of transmission.
 Tx Losses (for transmission capacity credit),,%,Percentage of transmission losses.
 LHS Capacity credit,Concap_RM,,"Capacity of the technology that is allocted to provide reliable and stable power. It is measured over period of critical conditions, such as peak load."
