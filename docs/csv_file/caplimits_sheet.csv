@@ -1,0 +1,7 @@
+﻿Parameter,Unit,Definition
+New capacity fixed limit,MW,Fixed limit on new capacity addition of the technology. Same as bdc_fx.
+New capacity lower limit,MW,Minimum new capacity addition of the technology. Same as bdc_lo.
+New capacity upper limit,MW,Maximum new capacity addition of the technology. Same as bdc_up.
+Total capacity fixed limit,MW,Fixed limit on total installed capacity of the technology. Same as bdi_fx.
+Total capacity lower limit,MW,Minimum total installed capacity of the technology. Same as bdi_lo.
+Total Capacity Upper Limit,MW,Maximum total installed capacity of the technology. Same as bdi_up.

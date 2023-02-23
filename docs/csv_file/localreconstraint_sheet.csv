@@ -1,0 +1,7 @@
+﻿Parameter,Parameter Code,Unit,Definition
+RHE RE share lower limit,,%,Minimum RE share in electricity supply. Set as 0 by default.
+RHS RE Share upper limit,,%,Maximum RE share in electricity supply. Left blank by default.
+RHS RE target,,%,RE target to meet share of electricity demand by  given year.
+RHS Tx Losses,,%,Percentage of transmission losses in given year.
+LHS ConAct_RE,ConAct_RE,,Set to 1 for RE techs and zero for the others. Backstop is included to avoid infeasibilities in the case where there are not enough technology options to meet the target.
+LHS transmission,,,"set to -x for the transmission technology, where x is the RE target share (by energy), "

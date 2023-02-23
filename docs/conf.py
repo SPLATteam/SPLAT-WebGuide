@@ -19,6 +19,7 @@ extensions = [
     'sphinx.ext.intersphinx',
 ]
 
+
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
     'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
@@ -41,6 +42,7 @@ html_css_files = [
 ]
 
 html_style = 'css/splat_interface.css'
+
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'

@@ -36,3 +36,11 @@
 .tight-table {
     white-space: normal !important;
 }
+
+.wy-nav-content {
+    max-width: 1200px !important;
+}
+
+table.docutils div.line-block {
+    margin-left: 0;
+}

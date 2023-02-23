@@ -1,0 +1,7 @@
+﻿Parameter,Parameter Code,Unit,Definition
+Target (% of peak demand),,% of peak demand,This refers to the country target to meet certain percentage of peak demand by means of given technology. Set as a design decision/suggestion.
+Max,,MW,Maximum new installed capacity limit for any country in the region. Set as design decision/suggestion.
+Min,,MW,Minimum new installed capacity limit for any country in the region. Set as design decision/suggestion.
+Upper limit,PVBR or WDBR,MW,"x = Min value.
+y = Minimum between Max and VRE capacity target to meet the peak demand.
+The capacity upper limit is defined as the maximum value between x and y."
