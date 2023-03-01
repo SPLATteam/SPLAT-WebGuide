@@ -440,9 +440,9 @@ CapacityCredit_PP and Capacity_PP refer to capacity credit and installed capacit
 
 RM = Reserve Margin
 
-LS = Transmission Losses
+Capacity_Pt&d = Size (MW) of transmission and distribution grid used as proxy of peak demand
 
-Capacity_Pt&d = Transmission and Distribution Capacity
+LS = Transmission Losses
 
 "ConCap_RM" stands for Coefficient applicable on Capacity (MW) and associated to Reserve Margin constraint.
 
