@@ -380,10 +380,6 @@ The equation(s) used in the sheet is as given below:
 :math:`\sum\limits_{PV}New\, Capacity\, in\, year\, t_{PV} <=  PVBR\, in\, year\, t`
 
 :math:`\sum\limits_{Wind}New\, Capacity\, in\, year\, t_{Wind} <=  WindBR\, in\, year\, t`
-.. :math:`\sum\limits_{PV}NewCapacity_t <=  PVBR_t`
-.. :math:`\sum\limits_{Wind}NewCapacity_t <=  PVBR_t`
-.. Sum(NewCapacity_PV, t) <= PVBR_RHS(t)
-.. Sum(NewCapacity_Wind, t) <= WindBR_RHS(t)
 
 The equation suggests that the new installed capacity of solar PV or wind for year t should be below the build rates defined in this sheet. 
 
@@ -503,7 +499,7 @@ In this sheet, the reduction target for CO2 emissions for different years is set
 This in turn sets the upper limit on the CO2 emissions from power generation from different technologies.
 The constraint equation used in the model is as shown below:
 
-Sum(CO2_PP, t) <= Max_CO2_PP(t)
+:math:`\sum\limits_{PP}CO2_{PP, t} <= MaxCO2_t`
 
 where,
 
