@@ -375,15 +375,16 @@ PVAnnualBuildLim and WindAnnualBuildLim
 These two sheets are used to set annual build limits for solar PV and wind onshore respectively.
 The equation(s) used in the sheet is as given below:
 
-:math:`\sum\limits_{PV}(New_capacity_t) <= PVBR_RHS_t`
+.. https://quicklatex.com/
+.. https://www.overleaf.com/learn/latex/Integrals%2C_sums_and_limits
+:math:`\sum\limits_{PV}$\ New capacity for year t$ <= $\ PVBR for year t$`
 
-.. :math:`\sum\(CapacityCredit_{PP} \times Capacity_{PP}) - \dfrac{1+RM}{1-LS} \cdot Capacity_{Ptnd} \geq 0`
+:math:`\sum\limits_{Wind}$\ New capacity for year t$ <= $\ WindBR for year t$`
 
-Sum(NewCapacity_PV, t) <= PVBR_RHS(t)
+.. Sum(NewCapacity_PV, t) <= PVBR_RHS(t)
+.. Sum(NewCapacity_Wind, t) <= WindBR_RHS(t)
 
-Sum(NewCapacity_Wind, t) <= WindBR_RHS(t)
-
-The equation suggests that the new installed capacity of solar PV or wind for year t should be below the upper build limits defined in this sheet. 
+The equation suggests that the new installed capacity of solar PV or wind for year t should be below the build rates defined in this sheet. 
 
 The parameters used in this sheet are as follows:
 
@@ -446,13 +447,16 @@ LS = Transmission Losses
 
 Capacity_Pt&d = Transmission and Distribution Capacity
 
-"ConCap_RM" stands for Coefficient applicable on Capacity (MW) and associated to Reserve Margin constraint
+"ConCap_RM" stands for Coefficient applicable on Capacity (MW) and associated to Reserve Margin constraint.
 
 .. csv-table::
     :file: csv_file/rmconstraint_sheet.csv
     :header-rows: 1
     :widths: 20 20 10 50
 
+.. note::
+    Unlike build rate constraint, SPLAT requires the user to insert reserve margin constraint as a non time-series constraint i.e., a constant upper or lower limit applied on all years in modelling horizon.
+    
 .. _localreconstraint_sheet:
 
 LocalREConstraint
