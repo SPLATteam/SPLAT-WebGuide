@@ -377,10 +377,11 @@ The equation(s) used in the sheet is as given below:
 
 .. https://quicklatex.com/
 .. https://www.overleaf.com/learn/latex/Integrals%2C_sums_and_limits
-:math:`\sum\limits_{PV}$\ New capacity for year t$ <= $\ PVBR for year t$`
+:math:`\sum\limits_{PV}New\, Capacity\, in\, year\, t_{PV} <=  PVBR\, in\, year\, t`
 
-:math:`\sum\limits_{Wind}$\ New capacity for year t$ <= $\ WindBR for year t$`
-
+:math:`\sum\limits_{Wind}New\, Capacity\, in\, year\, t_{Wind} <=  WindBR\, in\, year\, t`
+.. :math:`\sum\limits_{PV}NewCapacity_t <=  PVBR_t`
+.. :math:`\sum\limits_{Wind}NewCapacity_t <=  PVBR_t`
 .. Sum(NewCapacity_PV, t) <= PVBR_RHS(t)
 .. Sum(NewCapacity_Wind, t) <= WindBR_RHS(t)
 
