@@ -56,11 +56,10 @@ Input Sheets
 This section contains the list of parameters (along with parameter code, their unit and definitions) present in each input sheet in the SPLAT interface.
 
 .. note::
-    1. The parameter values refer to the value of the parameter fand the given country fand the given scenario and fand the given year(s).
-    2. If there is no year mentioned in the input sheet, then the value is constant for all years.
-    3. If the input sheets contain placeholders only fand specific years, then the values of the parameter fand the years in between are linearly interpolated.
-    4. Costs are provided in terms of base year values (2019 as of now).
-
+    1. The parameter values refer to the value of the parameter for the given country for the given scenario for the given year(s).
+    2. Time series data can sometimes be inserted for small number of years and SPLAT will interpolate it linearly for missing years.
+    3. All costs must be given in common base year (e.g. CMP model adopted 2019 base year.)
+    
 .. _demand_sheet:
 
 Demand
@@ -107,10 +106,11 @@ FuelPrices
 GenericTech and SpecificTech
 +++++++++++++++++++
 
-The ``GenericTech`` sheet displays generic technology parameters that are constant over the model horizon
+The ``GenericTech`` sheet displays generic technology parameters.
 
-The ``SpecificTech`` sheet is used to review and update site specific power generation technology parameters that don’t vary from year to year.
-The ``SpecificTech`` sheet has an extra button: :button:`Add missing Tech`, which allows the user to add new site specific technology to the MESSAGE model that is linked. Currently this technology makes the addition by copying the technology parameters of a generic technology of the same technology type as specified by the first 6 characters in the technology name. A new technology will be automatically added to all active scenarios. A MESSAGE technology code is created automatically based on the input and output commodities (as specified by the associated generic technology) and the already existing technologies having the same inputs and outputs.
+The ``SpecificTech`` sheet is used to review and update site specific power generation technology parameters that are constant over time.
+The ``SpecificTech`` sheet has an extra button: :button:`Add missing Tech`, which allows the user to add new site specific technology to the MESSAGE model that is linked. 
+Currently this action makes the addition by copying the technology parameters of a generic technology of the same technology type as specified by the first 6 characters in the technology name. A new technology will be automatically added to all active scenarios. A MESSAGE technology code is created automatically based on the input and output commodities (as specified by the associated generic technology) and the already existing technologies having the same inputs and outputs.
 Once a new technology is added, its parameters must be updated using the :button:`Update Model Data` button.
 
 .. csv-table:: 
@@ -143,7 +143,7 @@ SpecificTechHydroDams
 This sheet displays site-specific technology parameters that are specific to hydro plants with storage (dams).
 The ``SpecificTechHydroDams`` sheet manipulates the hydro dams in the model.
 The :button:`Refresh Sheet` button extracts the technologies that belong to the `TechSetL2`: `Large Hydro Dams`.
-And the :button:`Create River Tech+Storage Constraint` button adds a technology and a storage constraint for each dam.
+And the :button:`Create River Tech+Storage Constraint` button adds hydropower generator (technology), dam behind the generator (constraint) and rivertech behind the dam (technology) for each dam.
 The :button:`Update Model Data` updates the user input data.
 
 .. csv-table:: 
@@ -375,6 +375,10 @@ PVAnnualBuildLim and WindAnnualBuildLim
 These two sheets are used to set annual build limits for solar PV and wind onshore respectively.
 The equation(s) used in the sheet is as given below:
 
+:math:`\sum\limits_{All PV technologies}(New capacity for year t) <= PVBR for year t`
+
+.. :math:`\sum\(CapacityCredit_{PP} \times Capacity_{PP}) - \dfrac{1+RM}{1-LS} \cdot Capacity_{Ptnd} \geq 0`
+
 Sum(NewCapacity_PV, t) <= PVBR_RHS(t)
 
 Sum(NewCapacity_Wind, t) <= WindBR_RHS(t)
@@ -428,9 +432,11 @@ The representation of system reserve in MESSAGE modelling framework is as shown 
 
 The constraint equation used in the ``ReserveMarginConstraint`` sheet is as follows:
 
-:math:`\sum\limits_{PP}(CapacityCredit_{PP} \times Capacity_{PP}) - \dfrac{1+RM}{1-LS} \cdot Capacity_{Ptnd} \geq 0`
+:math:`\sum\(CapacityCredit_{PP} \times Capacity_{PP}) - \dfrac{1+RM}{1-LS} \cdot Capacity_{Ptnd} \geq 0`
 
 where,
+
+PP refers to all applicable power plants.
 
 CapacityCredit_PP and Capacity_PP refer to capacity credit and installed capacity of power plant.
 
@@ -453,16 +459,18 @@ LocalREConstraint
 +++++++++++++++++
 
 Different countries or regions can have target of achieving certain minimum share RE in the the total power generation by certain year.
-In the ``LocalREConstraint`` sheet, the minimum share of RE (more specifically VRE) technologies in the total power generation is set as a constraint in the model for different years.
+In the ``LocalREConstraint`` sheet, the minimum "target" share of RE (more specifically VRE) technologies in the total power generation is set as a constraint in the model for different years.
 The equation representing this constraint can be represented below:
 
-vres_gen >= vres_share * total_gen
+vres_gen >= target_vres_share * total_gen
 
-vres_gen >= vres_share * (vres_gen + other_gen)
+vres_gen - target_vres_share * total_gen >= 0
 
-vres_gen - vres_share * vres_gen - vres_share * other_gen >=0
+vres_gen - target_vres_share * (vres_gen + other_gen) >= 0
 
-(1 - vres_share) * vres_gen - vres_share * other_gen >= 0
+vres_gen - target_vres_share * vres_gen - target_vres_share * other_gen >=0
+
+(1 - target_vres_share) * vres_gen - target_vres_share * other_gen >= 0
 
 where,
 

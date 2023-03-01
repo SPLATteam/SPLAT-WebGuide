@@ -26,8 +26,6 @@ Contents
     glossary
     MESSAGE
     add_tutorials_section
-    basic_tutorials
-
 
 
 

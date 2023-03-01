@@ -98,49 +98,49 @@ Changing a technology
 
 3. Click on :button:`Update Model Data` to update the model with the new data.
 
-.. _fuel:
+.. .. _fuel:
 
-Fuel price
------------
+.. Fuel price
+.. -----------
 
-1. In the tab :ref:`fuelprices`, click on :button:`Refresh Sheet` to get the data saved in the model for the scenario and countries chosen.
+.. 1. In the tab :ref:`fuelprices`, click on :button:`Refresh Sheet` to get the data saved in the model for the scenario and countries chosen.
 
-2. Make changes to the fuel prices in the sheet.
+.. 2. Make changes to the fuel prices in the sheet.
 
-3. Click on :button:`Update Model Data` to update the model with the new data.
+.. 3. Click on :button:`Update Model Data` to update the model with the new data.
 
-.. note::
-    1. The fuel price is specified in $/GJ. It is currently not possible to add new fuel supply technologies via the SPLAT interface, this is left for future development (as well as the possibility of specifying limits, which would be needed if one wanted to model a supply curve for a particular fuel).
-    2. If a user specifies values both in the Constant column, as well as under milestone year columns, only the constant value will be used to update the MESSAGE model and the other values will be ignored.
+.. .. note::
+..     1. The fuel price is specified in $/GJ. It is currently not possible to add new fuel supply technologies via the SPLAT interface, this is left for future development (as well as the possibility of specifying limits, which would be needed if one wanted to model a supply curve for a particular fuel).
+..     2. If a user specifies values both in the Constant column, as well as under milestone year columns, only the constant value will be used to update the MESSAGE model and the other values will be ignored.
 
-.. _tech_cost:
+.. .. _tech_cost:
 
-Technology costs
------------------
+.. Technology costs
+.. -----------------
 
-1. In the tab :ref:`generictechcosts` and :ref:`specifictechcosts`, click on :button:`Refresh Sheet` to get the cost data saved in the model for the scenario and countries chosen.
+.. 1. In the tab :ref:`generictechcosts` and :ref:`specifictechcosts`, click on :button:`Refresh Sheet` to get the cost data saved in the model for the scenario and countries chosen.
 
-2. Make changes to the costs (Overnight Cost-$/kW, Fixed O&M Cost-$/kW, Variable O&M Cost-$/MWh) in the sheet.
+.. 2. Make changes to the costs (Overnight Cost-$/kW, Fixed O&M Cost-$/kW, Variable O&M Cost-$/MWh) in the sheet.
 
-3. Click on :button:`Update Model Data` to update the model with the new data.
+.. 3. Click on :button:`Update Model Data` to update the model with the new data.
 
-.. note::
-    If a user specifies values both in the Constant column, as well as under milestone year columns, only the constant value will be used to update the MESSAGE model and the other values will be ignored.
+.. .. note::
+..     If a user specifies values both in the Constant column, as well as under milestone year columns, only the constant value will be used to update the MESSAGE model and the other values will be ignored.
 
-.. _tech_capacity:
+.. .. _tech_capacity:
 
-Capacity Limit
----------------
+.. Capacity Limit
+.. ---------------
 
-1. In the tab :ref:`specificcapacitylimits`, click on :button:`Refresh Sheet` to get the capacity limits saved in the model for the scenario and countries chosen.
+.. 1. In the tab :ref:`specificcapacitylimits`, click on :button:`Refresh Sheet` to get the capacity limits saved in the model for the scenario and countries chosen.
 
-2. Make changes to the capacity limits in the sheet.
+.. 2. Make changes to the capacity limits in the sheet.
 
-3. Click on :button:`Update Model Data` to update the model with the new data.
+.. 3. Click on :button:`Update Model Data` to update the model with the new data.
 
-.. note::
-    1. There are no capacity limits for generic technologies.
-    2. If a user specifies values both in the Constant column, as well as under milestone year columns, only the constant value will be used to update the MESSAGE model and the other values will be ignored.
+.. .. note::
+..     1. There are no capacity limits for generic technologies.
+..     2. If a user specifies values both in the Constant column, as well as under milestone year columns, only the constant value will be used to update the MESSAGE model and the other values will be ignored.
 
 .. _renewable_tech:
 
