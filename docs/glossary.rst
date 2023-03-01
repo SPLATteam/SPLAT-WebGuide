@@ -430,7 +430,7 @@ The representation of system reserve in MESSAGE modelling framework is as shown 
 
 The constraint equation used in the ``ReserveMarginConstraint`` sheet is as follows:
 
-:math:`\sum\(CapacityCredit_{PP} \times Capacity_{PP}) - \dfrac{1+RM}{1-LS} \cdot Capacity_{Ptnd} \geq 0`
+:math:`\sum\limits_{PP}(CapacityCredit_{PP} \times Capacity_{PP}) - \dfrac{1+RM}{1-LS} \cdot Capacity_{Ptnd} \geq 0`
 
 where,
 
