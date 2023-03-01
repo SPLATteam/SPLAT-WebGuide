@@ -375,7 +375,7 @@ PVAnnualBuildLim and WindAnnualBuildLim
 These two sheets are used to set annual build limits for solar PV and wind onshore respectively.
 The equation(s) used in the sheet is as given below:
 
-:math:`\sum\limits_{All PV technologies}(New capacity for year t) <= PVBR for year t`
+:math:`\sum\limits_{PV}(New_capacity_t) <= PVBR_RHS_t`
 
 .. :math:`\sum\(CapacityCredit_{PP} \times Capacity_{PP}) - \dfrac{1+RM}{1-LS} \cdot Capacity_{Ptnd} \geq 0`
 
@@ -383,7 +383,7 @@ Sum(NewCapacity_PV, t) <= PVBR_RHS(t)
 
 Sum(NewCapacity_Wind, t) <= WindBR_RHS(t)
 
-The equation suggests that the new installed capacity of solar PV or wind for a given country for a given year should be below the upper limits defined in this sheet. 
+The equation suggests that the new installed capacity of solar PV or wind for year t should be below the upper build limits defined in this sheet. 
 
 The parameters used in this sheet are as follows:
 
