@@ -25,7 +25,6 @@ Contents
     how_to
     glossary
     MESSAGE
-    add_tutorials_section
 
 
 
