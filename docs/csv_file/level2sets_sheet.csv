@@ -1,0 +1,43 @@
+﻿Level 2 Sets,Code
+Coal PP,??COSC*
+Coal w CCS PP,??COCS*
+Diesel PP,"??DSRC*,??DSSC*,??DSCC*"
+Diesel gen.small PP,"??DSRI*,??DSRB*,??DSRU*,??DSRR*"
+HFO PP,??HF*
+Natural Gas PP,??NG*
+Nuclear PP,??NUPW*
+Pump Storage PP,??EPPT*
+Pumping,??EPPP*
+Large Hydro Dam PP,??HYDM*
+Large Hydro ROR PP,??HYRO*
+Small Hydro PP,??HYMI*
+Solar Thermal PP,??SOT*
+Solar PV - Utility PP,??SOPC*
+Solar PV - Rooftop PP,"??SOPB*,??SOPR*,??SOPU*,??SOPS*"
+Geothermal PP,??GO*
+Wind PP,??WD*
+Biomass PP,"??BMST*,??BWST*"
+Transmission,??EL00T00
+Distribution,??EL00TD*
+Demand,??EL00TU*
+Coal Fuel,??CO00*
+Diesel Fuel,??DS00*
+HFO Fuel,??HF00*
+Natural Gas Fuel,??NG00*
+Nuclear Fuel,??NU00*
+Biomass Fuel,??BM00*
+Electricity for Hydrogen,??ELHGT*
+Hydrogen Production,??HGNEL*
+Electricity Net Imports,??EL00i00
+Electricity Trade Outside Region,"??EL00i00*,!??EL00i00"
+Hydrogen Imports/Exports,??HG00i00*
+River Techs,??RIDM*
+BatteryStorage,??ELST*
+PumpStorage,??ELSTPS*
+ProxyTech for Battery Storage,??ELPT*
+DummyTech for Battery Storage,??ELDT*
+Backstop,??ELBS00*
+RE Curtailment,??RECURTAIL
+RE Supply,"??WD00*,??HY00*,??SO00*"
+TxBorderNonGeneric,"??ELEX*,??ELNC*,??ELNP*"
+TxBorderGeneric,??ELNG*

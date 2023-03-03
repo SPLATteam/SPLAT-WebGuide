@@ -240,27 +240,30 @@ Batteries and pump storage technologies can be added and modified in the same wa
 Technology naming in the SPLAT model
 ------------------------------------
 
-The naming of technologies follow the following conventions in the SPLAT model:
+The naming convention of various technologies including technology set levels 1 and 2, and generic technologies are given in the table below.
+The "??" in the technology code in the front refers to the two-letter country code (alpha-2). And the * provides further information about the technology.
 
-	??BMST_[name]	Biomass Bagasse Cogen
-	??BWST_[name]	Biomass Wood Cogen
-	??COSC_[name]	Coal
-	??COCS_[name]	Coal w CCS
-	??DSRC_[name]	Diesel Engine
-	??DSSC_[name]	Diesel Turbine
-	??NGCC_[name]	Gas Combined Cycle
-	??NGRC_[name]	Gas Engine
-	??NGSC_[name]	Gas Open Cycle
-	??GOCV_[name]	Geothermal
-	??HFRC_[name]	HFO Engine
-	??HFSC_[name]	HFO Steam turbine
-	??HFSC_[name]	HFO Steam turbine
-	??HYRO_[name]	Hydro Run of River
-	??HYMI_[name]	Hydro Small
-	??HYDM_[name]	Hydro With Dam
-	??NUPW_[name]	Nuclear
-	??EPPT_[name]	Pumped Storage
-	??SOTN_[name]	Solar CSP no Storage
-	??SOTS_[name]	Solar CSP with Storage
-	??SOPC_[name]	Solar PV system (utility)
-	??WDLC_[name]	Wind
+The naming of technology set level 1 follow the following conventions in the SPLAT model:
+
+.. csv-table:: 
+    :file: csv_file/level1sets_sheet.csv
+    :header-rows: 1
+
+The naming of technology set level 2 follow the following conventions in the SPLAT model:
+
+.. csv-table:: 
+    :file: csv_file/level2sets_sheet.csv
+    :header-rows: 1
+
+The naming convention of generic technologies is given in the table below:
+
+.. csv-table:: 
+    :file: csv_file/generictechcodes_sheet.csv
+    :header-rows: 1
+
+.. _country_code:
+
+Country Code in the SPLAT model
+-------------------------------
+
+The two-letter or three-letter country codes used in the SPLAT model are based on `ISO 3166-1<https://en.wikipedia.org/wiki/ISO_3166-1>` standard.
