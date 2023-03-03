@@ -266,4 +266,4 @@ The naming convention of generic technologies is given in the table below:
 Country Code in the SPLAT model
 -------------------------------
 
-The two-letter or three-letter country codes used in the SPLAT model are based on `ISO 3166-1<https://en.wikipedia.org/wiki/ISO_3166-1>` standard.
+The two-letter or three-letter country codes used in the SPLAT model are based on `ISO 3166-1 <https://en.wikipedia.org/wiki/ISO_3166-1>` standard.
