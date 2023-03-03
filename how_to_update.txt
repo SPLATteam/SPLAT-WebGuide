@@ -48,3 +48,14 @@ You can then use the styling in the text:
 
 Refer to cheat sheet here for more tips:
 https://sphinx-tutorial.readthedocs.io/cheatsheet/
+
+To run the translation code, see instructions below:
+1. Create a google cloud account
+2. Follow the instructions on this page to get started: https://cloud.google.com/translate/docs/setup
+	2a) Create a project (https://cloud.google.com/translate/docs/setup#project)
+	2b) Enable API (https://cloud.google.com/translate/docs/setup#api)
+	2c) You will need to create a service account and save a json key on your computer. Then, set the system environment variable to point to the key. (refer to https://cloud.google.com/translate/docs/setup#creating_service_accounts_and_keys)
+Alternatively, ask YL to create json key and send it to you, then you only need to set the system environment variable to point to the key.
+
+3. Run the code translate.py, results will be written in folder "translated"
+4. Copy .rst files into "doc" folder, commit and push on the branch of the relevant language
