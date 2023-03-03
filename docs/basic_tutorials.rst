@@ -1,38 +1,38 @@
 .. role:: inputcell
-    :class: inputcell
+:class: inputcell
 .. role:: interfacecell
-    :class: interfacecell
+:class: interfacecell
 .. role:: button
-    :class: button
+:class: button
 
-Basic Tutorials
+Tutoriels de base
 ====================
 
-This section consists of some basic tutorials for running SPLAT:
+Cette section se compose de quelques tutoriels de base pour exécuter SPLAT :
 
 .. note::
-    This section is currently work in progress, and will be populated over time.
+Cette section est actuellement en cours de développement et sera alimentée au fil du temps.
 
-.. tutorial_1:
-Modifying single country model contents
----------------------------------------
-
-
-.. tutorial_2:
-Modifying model contents that interlink multiple countries
-----------------------------------------------------------
+.. tutorial_1 :
+Modification du contenu du modèle d&#39;un seul pays
+-----------------------------------------------------
 
 
-.. tutorial_3:
-SPLAT processes
+.. tutorial_2 :
+Modification du contenu du modèle qui relie plusieurs pays
+-------------------------------------------------- --------
+
+
+.. tutorial_3 :
+Processus SPLAT
 ---------------
 
-.. tutorial_4:
-Scenarios
+.. tutorial_4 :
+Scénarios
 ---------
 
-.. tutorial_5:
-Miscellaneous
--------------
+.. tutorial_5 :
+Divers
+--------------
 
 

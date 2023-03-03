@@ -1,47 +1,47 @@
 .. role:: inputcell
-    :class: inputcell
+:class: inputcell
 .. role:: interfacecell
-    :class: interfacecell
+:class: interfacecell
 .. role:: button
-    :class: button
+:class: button
 
-Working with Demand
-====================
+Travailler avec la demande
+===========================
 
 .. important::
-    The interface must be linked to the model before executing any of the steps in this section.
-    See :ref:`link_interface`.
+L&#39;interface doit être liée au modèle avant d&#39;exécuter l&#39;une des étapes de cette section.
+Voir :ref:`link_interface`.
 
-This section describes how to view, change and add demand using the SPLAT interface.
+Cette section décrit comment afficher, modifier et ajouter une demande à l&#39;aide de l&#39;interface SPLAT.
 
-.. view_demand:
+.. view_demand :
 
-Viewing demand input
----------------------
+Affichage de la saisie de la demande
+---------------------------------------
 
-1. In the ``Demand`` tab, enter the scenario to be queried in the cell ``Choose Scenario``
+1. Dans l&#39;onglet ``Demande``, entrez le scénario à interroger dans la cellule ``Choisir le scénario``
 
-2. Click on :button:`Refresh Sheet`. The yearly demand in the scenario will be shown in the same sheet. Only data for the country(s) loaded (in the ``Main`` sheet) will be displayed.
+2. Cliquez sur :button:`Actualiser la feuille`. La demande annuelle dans le scénario sera indiquée dans la même feuille. Seules les données du ou des pays chargés (dans la feuille ``Principal``) seront affichées.
 
-3. In the ``PeakDemand`` tab, repeat steps 1 and 2 to retrieve the peak demand for the selected scenario.
-
-.. note::
-	Most SPLAT models only have Sent out demand. However, some models have also demand at industrial, urban , rural levels. The user will see demand data categorised into these said multiple demand levels. If the model is using just the send-out demand, user can simply ignore the data on other demand levels. These demand levels exist as an indication that a user always have the option to model these demand if he/she so wishes. 
+3. Dans l&#39;onglet ``PeakDemand``, répétez les étapes 1 et 2 pour récupérer la demande de pointe pour le scénario sélectionné.
 
 .. note::
-	Peak demand is not a direct input in SPLAT model. This sheet is populated by macro codes which multiply the peak of a normalised load curve with the region's annual electricity demand (Watt Hours).
-	
-	
-.. change_demand:
+La plupart des modèles SPLAT n&#39;ont qu&#39;une demande envoyée. Cependant, certains modèles ont également une demande aux niveaux industriel, urbain et rural. L&#39;utilisateur verra les données de demande classées dans ces niveaux de demande multiples. Si le modèle utilise uniquement la demande d&#39;émission, l&#39;utilisateur peut simplement ignorer les données sur les autres niveaux de demande. Ces niveaux de demande existent pour indiquer qu&#39;un utilisateur a toujours la possibilité de modéliser ces demandes s&#39;il le souhaite.
 
-Changing demand input
-----------------------
+.. note::
+La demande de pointe n&#39;est pas une entrée directe dans le modèle SPLAT. Cette feuille est alimentée par des macro-codes qui multiplient le pic d&#39;une courbe de charge normalisée par la demande annuelle d&#39;électricité de la région (wattheures).
 
-1. In the ``Demand`` tab, click on :button:`Refresh Sheet` to get the data saved in the model.
 
-2. Make changes to the demand series in the sheet.
+.. change_demand :
 
-3. Click on :button:`Update Sheet` to update the model with the new data.
+Modification de l&#39;entrée de la demande
+--------------------------------------------
+
+1. Dans l&#39;onglet ``Demande``, cliquez sur :button:`Refresh Sheet` pour obtenir les données enregistrées dans le modèle.
+
+2. Apportez des modifications à la série de demandes dans la feuille.
+
+3. Cliquez sur :button:`Mettre à jour la feuille` pour mettre à jour le modèle avec les nouvelles données.
 
 .. image:: /images/demand_update.PNG
 

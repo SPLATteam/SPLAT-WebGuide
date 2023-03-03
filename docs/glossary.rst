@@ -1,527 +1,527 @@
 .. role:: inputcell
-    :class: inputcell
+:class: inputcell
 .. role:: interfacecell
-    :class: interfacecell
+:class: interfacecell
 .. role:: button
-    :class: button
+:class: button
 
-Description of Sheets
-=====================
+Description des feuilles
+========================
 
-.. _main:
+.. _principal:
 
-Main
------
+Principal
+----------
 
-Set the model path, reload model data to memory, and select active countries for querying
+Définissez le chemin du modèle, rechargez les données du modèle dans la mémoire et sélectionnez les pays actifs pour l&#39;interrogation
 
-:inputcell:`Model Folder`       path of the MESSAGE model to be connected to the SPLAT interface
+:inputcell:`Model Folder` chemin du modèle MESSAGE à connecter à l&#39;interface SPLAT
 
-:inputcell:`Main Region`        name of the MESSAGE model to be connected to the SPLAT interface
+:inputcell:`Région principale` nom du modèle MESSAGE à connecter à l&#39;interface SPLAT
 
-:inputcell:`Region Active?`     list of sub-regions (countries) to be loaded into memory
+:inputcell:`Region Active?` liste des sous-régions (pays) à charger en mémoire
 
-:inputcell:`Scenarios to Load`      list of currently specified scenarios in the main region, and to specify the scenarios to be loaded into memory
+:inputcell:`Scenarios to Load` liste des scénarios actuellement spécifiés dans la région principale et pour spécifier les scénarios à charger en mémoire
 
-:interfacecell:`Country Name`       country codes in the MESSAGE model
+:interfacecell:`Country Name` codes pays dans le modèle MESSAGE
 
-:interfacecell:`Description`        country names expanded
+:interfacecell:`Description` noms de pays développés
 
-:interfacecell:`Power Pool`         the powerpool a country belongs to
+:interfacecell:`Power Pool` le pool énergétique auquel appartient un pays
 
-:interfacecell:`TimeSlices/Load Regions`        number of time slices modelled per year
+:interfacecell:`TimeSlices/Load Regions` nombre de tranches de temps modélisées par an
 
-:interfacecell:`# Demands`      number of demand components
+:interfacecell:`# Demands` nombre de composants de la demande
 
-:interfacecell:`# Technologies`     number of technologies in country
+:interfacecell:`# Technologies` nombre de technologies dans le pays
 
-:interfacecell:`# Constraints`      number of constraints in country
+:interfacecell:`# Contraintes` nombre de contraintes dans le pays
 
-:interfacecell:`Scenarios`      name of scenarios
+:interfacecell:`Scenarios` nom des scénarios
 
-:interfacecell:`Discount Rate`      discount rate of technologies
+:interfacecell:`Taux d&#39;actualisation` taux d&#39;actualisation des technologies
 
-:button:`Reload Global`     import model data stored in adb and ldb files into memory, perform various calculations.
+:button:`Reload Global` importe les données du modèle stockées dans les fichiers adb et ldb dans la mémoire, effectue divers calculs.
 
-:button:`Refresh all Sheets`        refresh data sheets (yellow sheets) for reloaded subregions and scenarios
+:button:`Actualiser toutes les feuilles` rafraîchit les feuilles de données (feuilles jaunes) pour les sous-régions et les scénarios rechargés
 
-:button:`Save all Scenario Files using SPLAT formatting`        save all model (adb and ldb) files using excel-SPLAT formatting for selected subregions (use this after making a change with MESSAGE interface)
-If this button is pressed the MAINa ldb files will also be updated if MAINa is selected, to exclude interconnectors for subregions that are not selected below.
+:button:`Enregistrer tous les fichiers de scénario en utilisant le formatage SPLAT` enregistrer tous les fichiers de modèle (adb et ldb) en utilisant le formatage Excel-SPLAT pour les sous-régions sélectionnées (utilisez ceci après avoir apporté une modification avec l&#39;interface MESSAGE)
+Si vous appuyez sur ce bouton, les fichiers MAINa ldb seront également mis à jour si MAINa est sélectionné, pour exclure les interconnexions des sous-régions qui ne sont pas sélectionnées ci-dessous.
 
-.. _input_sheets:
+.. _input_sheets :
 
-Input Sheets
+Feuilles d&#39;entrée
 --------------
 
-This section contains the list of parameters (along with parameter code, their unit and definitions) present in each input sheet in the SPLAT interface.
+Cette section contient la liste des paramètres (ainsi que le code des paramètres, leur unité et leurs définitions) présents dans chaque feuille de saisie de l&#39;interface SPLAT.
 
 .. note::
-    1. The parameter values refer to the value of the parameter fand the given country fand the given scenario and fand the given year(s).
-    2. If there is no year mentioned in the input sheet, then the value is constant for all years.
-    3. If the input sheets contain placeholders only fand specific years, then the values of the parameter fand the years in between are linearly interpolated.
-    4. Costs are provided in terms of base year values (2019 as of now).
+1. Les valeurs des paramètres se réfèrent à la valeur du paramètre et au pays donné, au scénario donné et à la ou aux années données.
+2. Si aucune année n&#39;est mentionnée dans la feuille de saisie, la valeur est constante pour toutes les années.
+3. Si les feuilles d&#39;entrée contiennent uniquement des espaces réservés et des années spécifiques, les valeurs du paramètre et les années intermédiaires sont interpolées linéairement.
+4. Les coûts sont fournis en termes de valeurs de l&#39;année de référence (2019 à ce jour).
 
-.. _demand_sheet:
+.. _demand_sheet :
 
-Demand
-+++++++++++++++++++
-    
-.. csv-table::
-    :file: csv_file/demand_sheet.csv
-    :header-rows: 1
-    :widths: 20 10 50
+Demande
++++++++++++++++++++++
 
-.. _peakdemand_sheet:
+.. table-csv ::
+:file: csv_file/demand_sheet.csv
+:lignes d&#39;en-tête : 1
+:widths: 20 10 50
 
-PeakDemand
-+++++++++++
-.. csv-table::
-    :file: csv_file/peakdemand_sheet.csv
-    :header-rows: 1
-    :widths: 20 10 50
+.. _peakdemand_sheet :
 
-.. _t&d_sheet:
+Pic de demande
++++++++++++++++
+.. table-csv ::
+:file: csv_file/peakdemand_sheet.csv
+:lignes d&#39;en-tête : 1
+:widths: 20 10 50
 
-Transmission and Distribution
-++++++++++++++++++++++++++++++
+.. _t&amp;d_sheet :
 
-.. csv-table::
-    :file: csv_file/t&d_sheet.csv
-    :header-rows: 1
-    :widths: 20 10 50
+Transport et distribution
+++++++++++++++++++++++++++++++++
 
-.. note:: 
-    For distribution, values need to be entered for urban, rural, industry and commerce distribution types.
+.. table-csv ::
+:file: csv_file/t&amp;d_sheet.csv
+:lignes d&#39;en-tête : 1
+:widths: 20 10 50
 
-.. _fuelprices_sheet:
+.. note::
+Pour la distribution, les valeurs doivent être saisies pour les types de distribution urbaine, rurale, industrielle et commerciale.
 
-FuelPrices
-+++++++++++++++++++
-.. csv-table:: 
-    :file: csv_file/fuelprices_sheet.csv
-    :header-rows: 1
-    :widths: 20 10 50
+.. _fuelprices_sheet :
 
-.. _tech_sheet:
+Prix du carburant
++++++++++++++++++++++
+.. table-csv ::
+:file: csv_file/fuelprices_sheet.csv
+:lignes d&#39;en-tête : 1
+:widths: 20 10 50
 
-GenericTech and SpecificTech
-+++++++++++++++++++
+.. _tech_sheet :
 
-The ``GenericTech`` sheet displays generic technology parameters that are constant over the model horizon
+GenericTech et SpecificTech
+++++++++++++++++++++++++++++
 
-The ``SpecificTech`` sheet is used to review and update site specific power generation technology parameters that donâ€™t vary from year to year.
-The ``SpecificTech`` sheet has an extra button: :button:`Add missing Tech`, which allows the user to add new site specific technology to the MESSAGE model that is linked. Currently this technology makes the addition by copying the technology parameters of a generic technology of the same technology type as specified by the first 6 characters in the technology name. A new technology will be automatically added to all active scenarios. A MESSAGE technology code is created automatically based on the input and output commodities (as specified by the associated generic technology) and the already existing technologies having the same inputs and outputs.
-Once a new technology is added, its parameters must be updated using the :button:`Update Model Data` button.
+La feuille ``GenericTech`` affiche les paramètres technologiques génériques qui sont constants sur l&#39;horizon du modèle
 
-.. csv-table:: 
-    :file: csv_file/tech_sheet.csv
-    :header-rows: 1
-    :widths: 20 20 10 50
+La feuille ``SpecificTech`` est utilisée pour examiner et mettre à jour les paramètres de la technologie de production d&#39;énergie spécifiques au site qui ne varient pas d&#39;une année à l&#39;autre.
+La feuille ``SpecificTech`` a un bouton supplémentaire : :button:`Add missing Tech`, qui permet à l&#39;utilisateur d&#39;ajouter une nouvelle technologie spécifique au site au modèle MESSAGE qui est lié. Actuellement cette technologie effectue l&#39;ajout en copiant les paramètres technologiques d&#39;une technologie générique du même type de technologie tel que spécifié par les 6 premiers caractères du nom de la technologie. Une nouvelle technologie sera automatiquement ajoutée à tous les scénarios actifs. Un code de technologie MESSAGE est créé automatiquement sur la base des produits d&#39;entrée et de sortie (tels que spécifiés par la technologie générique associée) et des technologies déjà existantes ayant les mêmes entrées et sorties.
+Une fois qu&#39;une nouvelle technologie est ajoutée, ses paramètres doivent être mis à jour à l&#39;aide du bouton :button:`Mettre à jour les données du modèle`.
 
-.. note:: 
-    1. The profiles/load curves are calculated by SPLAT based on the hourly values (8760) present in *.tit file in data folder. They are stored in the adb, ldb and ldr files. The reason for not having them in the spreadsheet is that they vary depending on the load region/timeslice definition (e.g. large model/small model) and are would be very difficult to manage effectively in a spreadsheet.
+.. table-csv ::
+:file: csv_file/tech_sheet.csv
+:lignes d&#39;en-tête : 1
+:widths: 20 20 10 50
 
-    2. ** Parameters relevant to ``SpecificTech`` sheet only.
+.. note::
+1. Les profils/courbes de charge sont calculés par SPLAT sur la base des valeurs horaires (8760) présentes dans le fichier *.tit du dossier de données. Ils sont stockés dans les fichiers adb, ldb et ldr. La raison pour laquelle ils ne figurent pas dans la feuille de calcul est qu&#39;ils varient en fonction de la définition de la région de chargement/de la tranche de temps (par exemple, grand modèle/petit modèle) et qu&#39;il serait très difficile de les gérer efficacement dans une feuille de calcul.
 
-.. _techcosts_sheet:
+2. ** Paramètres pertinents pour la feuille ``SpecificTech`` uniquement.
 
-GenericTechCosts and SpecificTechCosts
-+++++++++++++++++++
+.. _techcosts_sheet :
 
-These sheets display the cost parameters that are either constant or change over the model horizon.
+GenericTechCosts et SpecificTechCosts
++++++++++++++++++++++++++++++++++++++++
 
-.. csv-table:: 
-    :file: csv_file/techcosts_sheet.csv
-    :header-rows: 1
-    :widths: 20 10 50
+Ces feuilles affichent les paramètres de coût qui sont constants ou changent sur l&#39;horizon du modèle.
 
-.. _specifictechhydrodams_sheet:
+.. table-csv ::
+:file: csv_file/techcosts_sheet.csv
+:lignes d&#39;en-tête : 1
+:widths: 20 10 50
+
+.. _specifictechhydrodams_sheet :
 
 SpecificTechHydroDams
-+++++++++++++++++++
++++++++++++++++++++++
 
-This sheet displays site-specific technology parameters that are specific to hydro plants with storage (dams).
-The ``SpecificTechHydroDams`` sheet manipulates the hydro dams in the model.
-The :button:`Refresh Sheet` button extracts the technologies that belong to the `TechSetL2`: `Large Hydro Dams`.
-And the :button:`Create River Tech+Storage Constraint` button adds a technology and a storage constraint for each dam.
-The :button:`Update Model Data` updates the user input data.
+Cette fiche affiche les paramètres technologiques spécifiques au site qui sont spécifiques aux centrales hydroélectriques avec stockage (barrages).
+La feuille ``SpecificTechHydroDams`` manipule les barrages hydroélectriques dans le modèle.
+Le bouton :button:`Refresh Sheet` extrait les technologies appartenant au `TechSetL2` : `Large Hydro Dams`.
+Et le bouton :button:`Create River Tech+Storage Constraint` ajoute une technologie et une contrainte de stockage pour chaque barrage.
+Le :button:`Mettre à jour les données du modèle` met à jour les données d&#39;entrée de l&#39;utilisateur.
 
-.. csv-table:: 
-    :file: csv_file/specifictechhydrodams_sheet.csv
-    :header-rows: 1
-    :widths: 20 20 10 50
+.. table-csv ::
+:file: csv_file/specifictechhydrodams_sheet.csv
+:lignes d&#39;en-tête : 1
+:widths: 20 20 10 50
 
-.. _battery&pumpstorage_sheet:
+.. _batterie&amp;pumpstorage_sheet :
 
-Battery&PumpStorage
-+++++++++++++++++++
+Stockage de la batterie et de la pompe
++++++++++++++++++++++
 
-.. csv-table:: 
-    :file: csv_file/battery&pumpstorage_sheet.csv
-    :header-rows: 1
-    :widths: 20 20 10 50
+.. table-csv ::
+:file: csv_file/batterie&amp;pumpstorage_sheet.csv
+:lignes d&#39;en-tête : 1
+:widths: 20 20 10 50
 
-.. _interconnectors_sheet:
+.. _interconnectors_sheet :
 
-Interconnectors
-+++++++++++++++++++
+Interconnexions
++++++++++++++++++++++
 
-.. csv-table:: 
-    :file: csv_file/interconnectors_sheet.csv
-    :header-rows: 1
-    :widths: 20 20 10 50
+.. table-csv ::
+:file: csv_file/interconnectors_sheet.csv
+:lignes d&#39;en-tête : 1
+:widths: 20 20 10 50
 
-.. _caplimits_sheet:
+.. _caplimits_sheet :
 
-SpecificCapacityLimits and InterconnectorsCapLimits
+SpecificCapacityLimits et InterconnectorsCapLimits
 +++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. csv-table:: 
-    :file: csv_file/caplimits_sheet.csv
-    :header-rows: 1
-    :widths: 20 10 50
+.. table-csv ::
+:file: csv_file/caplimits_sheet.csv
+:lignes d&#39;en-tête : 1
+:widths: 20 10 50
 
-.. _vrezones_sheet:
+.. _vrezones_sheet :
 
-PVZones, WindZones, OffshoreWindZones, CSP6hrZones and CSP12hrZones
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+PVZones, WindZones, OffshoreWindZones, CSP6hrZones et CSP12hrZones
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. csv-table:: 
-    :file: csv_file/vrezones_sheet.csv
-    :header-rows: 1
-    :widths: 20 20 10 50
+.. table-csv ::
+:file: csv_file/vrezones_sheet.csv
+:lignes d&#39;en-tête : 1
+:widths: 20 20 10 50
 
 .. note::
-    1. Latitute and Longitude data can be stored in the adb files together with the rest of the model input data. It is not used by SPLAT or MESSAGE for anything, but it can be used by results viewers for display on maps (e.g. in Tableau). 
+1. Les données de latitude et de longitude peuvent être stockées dans les fichiers adb avec le reste des données d&#39;entrée du modèle. Il n&#39;est pas utilisé par SPLAT ou MESSAGE pour quoi que ce soit, mais il peut être utilisé par les visualiseurs de résultats pour l&#39;affichage sur des cartes (par exemple dans Tableau).
 
-    2. For offset investment and multiplier investment parameters, one has to remember to use the pull down option "Reset Investment" in cell F6, when generic costs are updated for whatever reason, or before an update was made in raw MSR data, before re-applying the "Offset Investment".
+2. Pour les paramètres d&#39;investissement compensatoire et d&#39;investissement multiplicateur, il ne faut pas oublier d&#39;utiliser l&#39;option déroulante &quot;Réinitialiser l&#39;investissement&quot; dans la cellule F6, lorsque les coûts génériques sont mis à jour pour une raison quelconque, ou avant qu&#39;une mise à jour ne soit effectuée dans les données MSR brutes, avant -l&#39;application de &quot;l&#39;Investissement Offset&quot;.
 
-    3. The multiplier investment (according to turbine class) parameter is in ``WindZones`` sheet only. This categorization doesn't apply to offshore as it is assumed all offshore wind turbines are of the same class.
+3. Le paramètre d&#39;investissement multiplicateur (selon la classe de turbine) se trouve uniquement dans la feuille ``WindZones``. Cette catégorisation ne s&#39;applique pas à l&#39;offshore car il est supposé que toutes les éoliennes offshore sont de la même classe.
 
-.. .. _demand:
+.. .. _demande:
 
-.. Demand
-.. ++++++
+.. Demande
+.. ++++++++
 
-.. Displays all demand series in the model, including total "Sent Out" (i.e. Secondary, or before transmission & distribution) demand and Final demand by sector
+.. Affiche toutes les séries de demande dans le modèle, y compris la demande totale &quot;envoyée&quot; (c&#39;est-à-dire secondaire, ou avant la transmission et la distribution) et la demande finale par secteur
 
-.. .. _peakdemand:
+.. .. _picdedemande :
 
-.. PeakDemand
-.. ++++++++++
+.. Pic de demande
+.. ++++++++++++++++
 
-.. Displays Peak Demand series in MW in the model, including total "Sent Out" (i.e. Secondary, or before transmission & distribution) demand and Final demand by sector
+.. Affiche les séries de demande de pointe en MW dans le modèle, y compris la demande totale &quot;envoyée&quot; (c&#39;est-à-dire secondaire, ou avant la transmission et la distribution) et la demande finale par secteur
 
-.. .. _fuelprices:
+.. .. _Prix du carburant:
 
-.. FuelPrices
-.. ----------
-
-.. Displays fuel prices used in the model
-
-.. .. _technologysheets:
-
-.. Technology sheets
+.. Prix du carburant
 .. ------------------
 
-.. .. _generictech:
+.. Affiche les prix des carburants utilisés dans le modèle
+
+.. .. _fichestechniques :
+
+.. Fiches techniques
+.. ------------------
+
+.. .. _generictech :
 
 .. GenericTech
 .. +++++++++++
 
-.. Displays generic technology parameters that are constant over the model horizon
+.. Affiche les paramètres technologiques génériques qui sont constants sur l&#39;horizon du modèle
 
-.. .. _generictechcosts:
+.. .. _generictechcosts :
 
-.. GenericTechCosts
-.. ++++++++++++++++
+.. Coûts techniques génériques
+.. ++++++++++++++++++++++++++++
 
-.. Displays generic technology cost parameters that are either constant or change over the model horizon (e.g. CAPEX, FOM, VOM)
+.. Affiche les paramètres génériques de coût de la technologie qui sont constants ou changent sur l&#39;horizon du modèle (par exemple CAPEX, FOM, VOM)
 
-.. .. _specifictec:
+.. .. _specifictec :
 
 .. SpecificTech
-.. +++++++++++++
+.. +++++++++++++++
 
-.. Displays site-specific technology parameters that are constant over the model horizon
-
-
-.. The ``SpecificTech`` sheet is used to review and update Site specific power generation technology parameters that donâ€™t vary from year to year.
-
-.. The SpecificTech sheet has an extra button: :button:`Add missing Tech`, which allows the user to add new site specific technology to the MESSAGE model that is linked. Currently this technology makes the addition by copying the technology parameters of a generic technology of the same technology type as specified by the first 6 characters in the technology name. A new technology will be automatically added to all active scenarios. A MESSAGE technology code is created automatically based on the input and output commodities (as specified by the associated generic technology) and the already existing technologies having the same inputs and outputs.
-
-.. Once a new technology is added, its parameters must be updated using the :button:`Update Model Data` button.
+.. Affiche les paramètres technologiques spécifiques au site qui sont constants sur l&#39;horizon du modèle
 
 
+.. La feuille ``SpecificTech`` est utilisée pour revoir et mettre à jour les paramètres de la technologie de production d&#39;énergie spécifiques au site qui ne varient pas d&#39;une année à l&#39;autre.
 
-.. .. _specifictechhydrodams:
+.. La feuille SpecificTech a un bouton supplémentaire : :button:`Add missing Tech`, qui permet à l&#39;utilisateur d&#39;ajouter une nouvelle technologie spécifique au site au modèle MESSAGE qui est lié. Actuellement cette technologie effectue l&#39;ajout en copiant les paramètres technologiques d&#39;une technologie générique du même type de technologie tel que spécifié par les 6 premiers caractères du nom de la technologie. Une nouvelle technologie sera automatiquement ajoutée à tous les scénarios actifs. Un code de technologie MESSAGE est créé automatiquement sur la base des produits d&#39;entrée et de sortie (tels que spécifiés par la technologie générique associée) et des technologies déjà existantes ayant les mêmes entrées et sorties.
+
+.. Une fois qu&#39;une nouvelle technologie est ajoutée, ses paramètres doivent être mis à jour à l&#39;aide du bouton :button:`Mettre à jour les données du modèle`.
+
+
+
+.. .. _specifictechhydrodams :
 
 .. SpecificTechHydroDams
-.. +++++++++++++++++++++
-
-.. Displays site-specific technology parameters that are specific to hydro plants with storage (dams)
-
-.. The ``SpecificTechHydroDams`` sheet manipulates the hydro dams in the model.
-
-.. :button:`Refresh Sheet` button extracts the technologies that belong to the `TechSetL2`: `Large Hydro Dams`.
-
-.. :button:`Create River Tech+Storage Constraint` button adds a technology and a storage constraint for each dam.
-
-.. :button:`Update Model Data` updates the user input data.
-
-
-.. .. _specifictechcosts:
-
-.. SpecificTechCosts
-.. ++++++++++++++++++
-
-.. Displays site-specific technology cost parameters that are either constant or change over the model horizon (e.g. CAPEX, FOM, VOM)
-
-.. .. _specificcapacitylimits:
-
-.. SpecificCapacityLimits
 .. +++++++++++++++++++++++
 
-.. Displays site-specific technology capacity limits that are either constant or change over the model horizon
+.. Affiche les paramètres technologiques spécifiques au site qui sont spécifiques aux centrales hydroélectriques avec stockage (barrages)
 
-.. .. _batterystorage:
+.. La feuille ``SpecificTechHydroDams`` manipule les barrages hydrauliques dans le modèle.
 
-.. BatteryStorage
+.. Le bouton :button:`Refresh Sheet` extrait les technologies appartenant au `TechSetL2` : `Large Hydro Dams`.
+
+.. Le bouton :button:`Create River Tech+Storage Constraint` ajoute une technologie et une contrainte de stockage pour chaque barrage.
+
+.. :button:`Mettre à jour les données du modèle` met à jour les données d&#39;entrée de l&#39;utilisateur.
+
+
+.. .. _coûts techniques spécifiques :
+
+.. Coûts techniques spécifiques
+.. ++++++++++++++++++++++++++++++++
+
+.. Affiche les paramètres de coût de la technologie spécifiques au site qui sont constants ou changent sur l&#39;horizon du modèle (par exemple CAPEX, FOM, VOM)
+
+.. .. _limitesspécifiquesdecapacité :
+
+.. LimitesDeCapacitéSpécifiques
+.. +++++++++++++++++++++++++++++
+
+.. Affiche les limites de capacité technologique spécifiques au site qui sont constantes ou changent sur l&#39;horizon du modèle
+
+.. .. _stockagebatterie :
+
+.. Stockage de la batterie
 .. ++++++++++++++
 
-.. Displays Battery Storage Parameters
+.. Affiche les paramètres de stockage de la batterie
 
-.. .. _pvzones:
+.. .. _pvzones :
 
 .. PVZones
 .. ++++++++
 
-.. Displays PV Zones Data
+.. Affiche les données des zones PV
 
-.. .. _windzones:
+.. .. _zones de vent :
 
-.. WindZones
-.. ++++++++++
+.. Zones de vent
+.. ++++++++++++++
 
-.. Displays Wind Zones Data
+.. Affiche les données des zones de vent
 
-.. .. _offshorewindzones:
+.. .. _zones de vent offshore :
 
-.. OffshoreWindZones
-.. +++++++++++++++++
+.. Zones de vent offshore
+.. +++++++++++++++++++++++
 
-.. Displays OffshoreWind Zones Data
+.. Affiche les données des zones de vent offshore
 
-.. .. _csp6hrzones:
+.. .. _csp6hrzones :
 
 .. CSP6hrZones
 .. ++++++++++++
 
-.. Displays CSP 6hr Zones Data
+.. Affiche les données des zones CSP 6 h
 
-.. .. _csp12hrzones:
+.. .. _csp12hrzones :
 
 .. CSP12hrZones
 .. ++++++++++++
 
-.. Displays CSP 12hr Zones Data
+.. Affiche les données des zones CSP 12 h
 
-.. .. _interconnectors:
+.. .. _interconnexions :
 
-.. Interconnectors
-.. +++++++++++++++
+.. Interconnexions
+.. +++++++++++++++++
 
-.. Displays regional interconnector parameters
+.. Affiche les paramètres de l&#39;interconnexion régionale
 
 .. .. _transmission:
 
 .. Transmission
 .. ++++++++++++
 
-.. Displays transmission network parameters by country
+.. Affiche les paramètres du réseau de transmission par pays
 
 .. .. _distribution:
 
 .. Distribution
 .. ++++++++++++
 
-.. Displays distribution network parameters by country and sector
+.. Affiche les paramètres du réseau de distribution par pays et par secteur
 
-.. _constraint_sheets:
+.. _constraint_sheets :
 
-Constraint Sheets
+Feuilles de contraintes
 -----------------
 
-Constraints are linear mathematical equations applicable across several technologies (power plants, storage, transmission, etc. 
-These are user-defined relations to guide a model based on scenario narratives.
-In MESSAGE, a constraint is defined as a sum-product of a coefficient and variable with user-defined upper or lower limits as shown below: 
+Les contraintes sont des équations mathématiques linéaires applicables à plusieurs technologies (centrales électriques, stockage, transmission, etc.
+Ce sont des relations définies par l&#39;utilisateur pour guider un modèle basé sur des récits de scénarios.
+Dans MESSAGE, une contrainte est définie comme un produit somme d&#39;un coefficient et d&#39;une variable avec des limites supérieures ou inférieures définies par l&#39;utilisateur, comme indiqué ci-dessous :
 
 .. image:: /images/constraint_form.PNG
 
-This section describes the different constraints (including their equations and parameters) present in different Constraint sheets in SPLAT.
+Cette section décrit les différentes contraintes (y compris leurs équations et paramètres) présentes dans différentes feuilles de contraintes dans SPLAT.
 
-.. _constraintlist_sheet:
+.. _constraintlist_sheet :
 
-ConstraintList
-++++++++++++++
+Liste de contraintes
+++++++++++++++++
 
-This sheet contains the list of all the constraints in the model which are defined in the following sheets.
+Cette feuille contient la liste de toutes les contraintes du modèle qui sont définies dans les feuilles suivantes.
 
-.. _buildlimconstraint_sheet:
+.. _buildlimconstraint_sheet :
 
-PVAnnualBuildLim and WindAnnualBuildLim
+PVAnnualBuildLim et WindAnnualBuildLim
 +++++++++++++++++++++++++++++++++++++++
 
-These two sheets are used to set annual build limits for solar PV and wind onshore respectively.
-The equation(s) used in the sheet is as given below:
+Ces deux feuilles sont utilisées pour fixer les limites annuelles de construction pour le solaire PV et l&#39;éolien terrestre respectivement.
+La ou les équations utilisées dans la feuille sont les suivantes :
 
-Sum(NewCapacity_PV, t) <= PVBR_RHS(t)
+Somme(NewCapacity_PV, t) &lt;= PVBR_RHS(t)
 
-Sum(NewCapacity_Wind, t) <= WindBR_RHS(t)
+Somme(NewCapacity_Wind, t) &lt;= WindBR_RHS(t)
 
-The equation suggests that the new installed capacity of solar PV or wind for a given country for a given year should be below the upper limits defined in this sheet. 
+L&#39;équation suggère que la nouvelle capacité installée d&#39;énergie solaire PV ou éolienne pour un pays donné pour une année donnée devrait être inférieure aux limites supérieures définies dans cette feuille.
 
-The parameters used in this sheet are as follows:
+Les paramètres utilisés dans cette fiche sont les suivants :
 
-.. csv-table::
-    :file: csv_file/buildlimconstraint_sheet.csv
-    :header-rows: 1
-    :widths: 20 20 10 50
+.. table-csv ::
+:file: csv_file/buildlimconstraint_sheet.csv
+:lignes d&#39;en-tête : 1
+:widths: 20 20 10 50
 
 .. note::
-    The target (% of peak demand), Min and Max values are set as design decision/suggestion. These values could be made larger or smaller. 
-    One can also make country specific coefficients by overwriting the formulas for upper limits.
+La cible (% de la demande de pointe), les valeurs Min et Max sont définies comme décision/suggestion de conception. Ces valeurs pourraient être rendues plus grandes ou plus petites.
+On peut également créer des coefficients spécifiques à chaque pays en écrasant les formules des limites supérieures.
 
-.. _rmconstraint_sheet:
+.. _rmconstraint_sheet :
 
 ReserveMarginConstraint
-+++++++++++++++++++++++
++++++++++++++++++++++++++
 
-In a power system, generation must always equal consumption.
-When the balance is disrupted, it can lead to outages and complete black outs.
-There are many events that might disturb the balance (many of them are stochastic/predictable with probability) such as planned maintenance, unplaneed stops, changes/variations in demand, and changes in supply.
-Therefore, reserves are needed in the system to make sure that power demand is always met.
+Dans un système électrique, la production doit toujours être égale à la consommation.
+Lorsque l&#39;équilibre est rompu, cela peut entraîner des pannes et des pannes complètes.
+De nombreux événements peuvent perturber l&#39;équilibre (beaucoup d&#39;entre eux sont stochastiques/prévisibles avec probabilité) tels que la maintenance planifiée, les arrêts non planifiés, les changements/variations de la demande et les changements de l&#39;offre.
+Par conséquent, des réserves sont nécessaires dans le système pour s&#39;assurer que la demande de puissance est toujours satisfaite.
 
-Based on the response (reaction time), reserved can be classified as:
+Sur la base de la réponse (temps de réaction), réservé peut être classé comme :
 
-i. Primary reserves: part of operational (running) or fast to activate capacity available to immediately (in seconds) for cover for disturbances.
+je. Réserves primaires : partie de la capacité opérationnelle (courante) ou rapide à activer disponible immédiatement (en secondes) pour couvrir les perturbations.
 
-ii. Secondary reserve: can be operating or cold (not operating) capacity to be activated in minutes (after initial disturbance and activation of primary reserve, secondary reserve is activated, and units are redispatched so to re-activate primary reserve capabilities.)
+ii. Réserve secondaire : peut être une capacité opérationnelle ou froide (non opérationnelle) à activer en quelques minutes (après la perturbation initiale et l&#39;activation de la réserve primaire, la réserve secondaire est activée et les unités sont réexpédiées afin de réactiver les capacités de la réserve primaire.)
 
-iii. Tertiary reserve: these are usually back-up units that can be activated in minutes/hours to allow reactivation of secondary reserve capabilities.
+iii. Réserve tertiaire : il s&#39;agit généralement d&#39;unités de secours qui peuvent être activées en quelques minutes/heures pour permettre la réactivation des capacités de réserve secondaire.
 
-In MESSAGE framework, all information about current and future power system is assumed to be known (with 100% certainty), i.e., not stochastic, therefore, production pattern decisions always have to deterministic.
-When modelling long term development of a power system, an analyst should make sure that the future capacity is sufficient to cover demand during critical periods (usually during peak hours) and to cover other operational needs (e.g., maintenance).
+Dans le cadre MESSAGE, toutes les informations sur le système électrique actuel et futur sont supposées connues (avec une certitude à 100%), c&#39;est-à-dire non stochastiques, par conséquent, les décisions relatives au modèle de production doivent toujours être déterministes.
+Lors de la modélisation du développement à long terme d&#39;un système électrique, un analyste doit s&#39;assurer que la capacité future est suffisante pour couvrir la demande pendant les périodes critiques (généralement pendant les heures de pointe) et pour couvrir les autres besoins opérationnels (par exemple, la maintenance).
 
 .. note::
-    1. There's a lot of stochastic behavior in a real system that cannot be captured in the same way within the model.
-    2. It is possible to run analysis with various demand and supply availability patterns and model extreme operational conditions.
+1. Il y a beaucoup de comportements stochastiques dans un système réel qui ne peuvent pas être capturés de la même manière dans le modèle.
+2. Il est possible d&#39;effectuer une analyse avec divers modèles de disponibilité de la demande et de l&#39;offre et de modéliser des conditions opérationnelles extrêmes.
 
-Reserve margin is the margin of firm capacity that is required above peak demand/load. It ranges usually between 10% to 25% of peak load.
-For e.g., if a region has 12 GW of firm capacity and 10 GW of peak demand, the reserve margin would be 20%.
+La marge de réserve est la marge de capacité ferme requise au-dessus de la demande/charge de pointe. Elle varie généralement entre 10 % et 25 % de la charge de pointe.
+Par exemple, si une région a 12 GW de capacité ferme et 10 GW de demande de pointe, la marge de réserve serait de 20 %.
 
-Reserve Margin (RM) = (Firm Capacity - Peak Demand) / Peak Demand
+Marge de réserve (RM) = (Capacité ferme - Demande de pointe) / Demande de pointe
 
-The representation of system reserve in MESSAGE modelling framework is as shown below:
+La représentation de la réserve système dans le cadre de modélisation MESSAGE est illustrée ci-dessous :
 
 .. image:: /images/system_reserve_in_message.PNG
 
-The constraint equation used in the ``ReserveMarginConstraint`` sheet is as follows:
+L&#39;équation de contrainte utilisée dans la feuille ``ReserveMarginConstraint`` est la suivante :
 
 :math:`\sum\limits_{PP}(CapacityCredit_{PP} \times Capacity_{PP}) - \dfrac{1+RM}{1-LS} \cdot Capacity_{Ptnd} \geq 0`
 
-where,
+où,
 
-CapacityCredit_PP and Capacity_PP refer to capacity credit and installed capacity of power plant.
+CapacityCredit_PP et Capacity_PP font référence au crédit de capacité et à la capacité installée de la centrale électrique.
 
-RM = Reserve Margin
+RM = marge de réserve
 
-LS = Transmission Losses
+LS = Pertes de transmission
 
-Capacity_Pt&d = Transmission and Distribution Capacity
+Capacity_Pt&amp;d = Capacité de transport et de distribution
 
-"ConCap_RM" stands for Coefficient applicable on Capacity (MW) and associated to Reserve Margin constraint
+&quot;ConCap_RM&quot; signifie Coefficient applicable sur la Capacité (MW) et associé à la contrainte de Marge de Réserve
 
-.. csv-table::
-    :file: csv_file/rmconstraint_sheet.csv
-    :header-rows: 1
-    :widths: 20 20 10 50
+.. table-csv ::
+:file: csv_file/rmconstraint_sheet.csv
+:lignes d&#39;en-tête : 1
+:widths: 20 20 10 50
 
-.. _localreconstraint_sheet:
+.. _localreconstraint_sheet :
 
 LocalREConstraint
-+++++++++++++++++
++++++++++++++++++++
 
-Different countries or regions can have target of achieving certain minimum share RE in the the total power generation by certain year.
-In the ``LocalREConstraint`` sheet, the minimum share of RE (more specifically VRE) technologies in the total power generation is set as a constraint in the model for different years.
-The equation representing this constraint can be represented below:
+Différents pays ou régions peuvent avoir pour objectif d&#39;atteindre une certaine part minimale d&#39;ER dans la production totale d&#39;électricité d&#39;ici une certaine année.
+Dans la feuille ``LocalREConstraint``, la part minimale des technologies RE (plus spécifiquement VRE) dans la production totale d&#39;électricité est définie comme une contrainte dans le modèle pour différentes années.
+L&#39;équation représentant cette contrainte peut être représentée ci-dessous :
 
-vres_gen >= vres_share * total_gen
+vres_gen &gt;= vres_share * total_gen
 
-vres_gen >= vres_share * (vres_gen + other_gen)
+vres_gen &gt;= vres_share * (vres_gen + other_gen)
 
-vres_gen - vres_share * vres_gen - vres_share * other_gen >=0
+vres_gen - vres_share * vres_gen - vres_share * other_gen &gt;=0
 
-(1 - vres_share) * vres_gen - vres_share * other_gen >= 0
+(1 - vres_share) * vres_gen - vres_share * other_gen &gt;= 0
 
-where,
+où,
 
-vres_gen = generation from VRE technology
+vres_gen = génération issue de la technologie VRE
 
-vres_share = share of VRE in total generation (total_gen) which is set as the minimum target share by a country or region
+vres_share = part d&#39;ERV dans la production totale (total_gen) qui est définie comme la part cible minimale par un pays ou une région
 
-other_gen = generation from non-VRE technologies
+other_gen = génération à partir de technologies non VRE
 
-"ConAct_RE" refers to the coefficient of Activity/Generation (GWh) of a power plant technology.
+&quot;ConAct_RE&quot; fait référence au coefficient d&#39;Activité/Génération (GWh) d&#39;une technologie de centrale électrique.
 
-.. csv-table::
-    :file: csv_file/localreconstraint_sheet.csv
-    :header-rows: 1
-    :widths: 20 20 10 50
-
-
-.. _co2constraint_sheet:
-
-CO2Constraint:
-++++++++++++++
-
-The CO2 emissions constraints are set in more ambitious scenarios.
-In this sheet, the reduction target for CO2 emissions for different years is set relative to a specific reference scenario.
-This in turn sets the upper limit on the CO2 emissions from power generation from different technologies.
-The constraint equation used in the model is as shown below:
-
-Sum(CO2_PP, t) <= Max_CO2_PP(t)
-
-where,
-
-LHS represents the sum of CO2 emissions from power sector in year t.
-
-RHS represents the maximum limit of CO2 emissions from power sector in same year t.
-
-.. csv-table::
-    :file: csv_file/co2constraint_sheet.csv
-    :header-rows: 1
-    :widths: 20 10 50
+.. table-csv ::
+:file: csv_file/localreconstraint_sheet.csv
+:lignes d&#39;en-tête : 1
+:widths: 20 20 10 50
 
 
-.. _reportgen_annual:
+.. _co2constraint_sheet :
 
-ReportGen-Annual
+Contrainte CO2 :
+++++++++++++++++
+
+Les contraintes d&#39;émissions de CO2 sont fixées dans des scénarios plus ambitieux.
+Dans cette fiche, l&#39;objectif de réduction des émissions de CO2 pour différentes années est fixé par rapport à un scénario de référence précis.
+Cela fixe à son tour la limite supérieure des émissions de CO2 provenant de la production d&#39;électricité à partir de différentes technologies.
+L&#39;équation de contrainte utilisée dans le modèle est la suivante :
+
+Somme(CO2_PP, t) &lt;= Max_CO2_PP(t)
+
+où,
+
+LHS représente la somme des émissions de CO2 du secteur de l&#39;électricité au cours de l&#39;année t.
+
+RHS représente la limite maximale des émissions de CO2 du secteur de l&#39;électricité au cours de la même année t.
+
+.. table-csv ::
+:file: csv_file/co2constraint_sheet.csv
+:lignes d&#39;en-tête : 1
+:widths: 20 10 50
+
+
+.. _reportgen_annual :
+
+ReportGen-Annuel
 -----------------
 
-This sheet allows to run the model and get results in annual resolution.
-The steps are described in :ref:`run_model`.
+Cette feuille permet d&#39;exécuter le modèle et d&#39;obtenir des résultats en résolution annuelle.
+Les étapes sont décrites dans :ref:`run_model`.
 
-.. _reportgen_profiles:
+.. _reportgen_profiles :
 
-ReportGen-Profiles
+ReportGen-Profils
 -------------------
 
-This sheet allows to generate Sub-Annual (Profiles) results file. The steps are described in :ref:`extract_results`.
+Cette feuille permet de générer un fichier de résultats sous-annuel (profils). Les étapes sont décrites dans :ref:`extract_results`.
 
-.. _timeslices:
+.. _timeslices :
 
-TimeSlices
------------
+Tranches de temps
+-----------------
 
-Displays timeslice definitions (load regions) used in model
+Affiche les définitions de tranches de temps (régions de chargement) utilisées dans le modèle

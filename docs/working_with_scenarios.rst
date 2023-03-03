@@ -1,36 +1,36 @@
 .. role:: button
-    :class: button
+:class: button
 
-Working with Scenarios
-=======================
-
-.. note::
-    The SPLAT excel interface is limited in doing scenario management directly. Please add and delete scenarios directly through MESSAGE.
-
-.. _add_scenario:
-
-Add a scenario
---------------
-Scenarios need to be added via the MESSAGE interface. It is recommended that the user makes a copy of an existing scenario through the MESSAGE interface and load it into the SPLAT interface. Refer to :ref:`message_copy_scenario`.
-
-.. _select_scenario:
-
-Select a scenario
------------------
-To select a specific scenario in SPLAT, the respective scenario needs to be activated (Put "1" in Scenario to Reload column for the respective scenario in the Scenario table) in the Main sheet.
-Then the Reload Global needs to be activated to load model data for model specified for given subregion and scenario specified in the table.
-
-The data needs to be defined in the input sheets and constraints sheets to match the narratives and assumptions of the specific scenario.
+Travailler avec des scénarios
+===============================
 
 .. note::
-    When a input or constraints sheet is refreshed for a scenario (except adb) and a data field is empty, it implies that the scenario assumes the same value as defined in the adb scenario.
-    To  define a new value for the data field, the data needs to be entered and :button:`Update model data` needs to be pressed to update the model data for the given scenario.
+L&#39;interface Excel SPLAT est limitée dans la gestion directe des scénarios. Veuillez ajouter et supprimer des scénarios directement via MESSAGE.
 
-.. .. _define_fullintegration_scenario:
+.. _add_scenario :
 
-.. Defining FullIntegration scenario
-.. ---------------------------------
-.. A Full Integration scenario considers integration in both country and regional level in the model. As opposed to other scenarios, the generic interconnectors come online in this scenario.
-.. Therefore, the overnight costs of generic interconnectors ($/kW) need to be "well defined" in the ``Interconnectors`` sheet in the case of FullIntegration scenario.
+Ajouter un scénario
+---------------------
+Les scénarios doivent être ajoutés via l&#39;interface MESSAGE. Il est recommandé à l&#39;utilisateur de faire une copie d&#39;un scénario existant via l&#39;interface MESSAGE et de le charger dans l&#39;interface SPLAT. Reportez-vous à :ref:`message_copy_scenario`.
+
+.. _select_scenario :
+
+Sélectionnez un scénario
+--------------------------
+Pour sélectionner un scénario spécifique dans SPLAT, le scénario respectif doit être activé (mettez &quot;1&quot; dans la colonne Scénario à recharger pour le scénario respectif dans le tableau Scénario) dans la feuille principale.
+Ensuite, le rechargement global doit être activé pour charger les données du modèle pour le modèle spécifié pour une sous-région et un scénario donnés spécifiés dans le tableau.
+
+Les données doivent être définies dans les fiches d&#39;entrée et les fiches de contraintes pour correspondre aux récits et aux hypothèses du scénario spécifique.
+
+.. note::
+Lorsqu&#39;une feuille d&#39;entrées ou de contraintes est rafraîchie pour un scénario (sauf adb) et qu&#39;un champ de données est vide, cela implique que le scénario prend la même valeur que celle définie dans le scénario adb.
+Pour définir une nouvelle valeur pour le champ de données, les données doivent être saisies et :button:`Mettre à jour les données du modèle` doit être enfoncé pour mettre à jour les données du modèle pour le scénario donné.
+
+.. .. _define_fullintegration_scenario :
+
+.. Définition du scénario FullIntegration
+.. -----------------------------------------
+.. Un scénario d&#39;intégration complète considère l&#39;intégration au niveau national et régional dans le modèle. Contrairement à d&#39;autres scénarios, les interconnexions génériques sont mises en ligne dans ce scénario.
+.. Par conséquent, les coûts de nuit des interconnexions génériques ($/kW) doivent être &quot;bien définis&quot; dans la feuille ``Interconnectors`` dans le cas du scénario FullIntegration.
 
 

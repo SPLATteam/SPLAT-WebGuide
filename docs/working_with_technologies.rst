@@ -1,268 +1,268 @@
 .. role:: inputcell
-    :class: inputcell
+:class: inputcell
 .. role:: interfacecell
-    :class: interfacecell
+:class: interfacecell
 .. role:: button
-    :class: button
+:class: button
 
 
-Working with Technologies
-==========================
+Travailler avec les technologies
+=================================
 
 .. important::
-    The interface must be linked to the model before executing any of the steps in this section.
-    See :ref:`link_interface`.
+L&#39;interface doit être liée au modèle avant d&#39;exécuter l&#39;une des étapes de cette section.
+Voir :ref:`link_interface`.
 
-A technology in the model is a power-producing unit or a combination of such units or a transmission line with specific parameters such as, maximum capacity, capacity factor, CAPEX, FOM, fuel cost etc.
+Une technologie dans le modèle est une unité de production d&#39;électricité ou une combinaison de ces unités ou une ligne de transmission avec des paramètres spécifiques tels que la capacité maximale, le facteur de capacité, le CAPEX, le FOM, le coût du carburant, etc.
 
-A technology can be site specific (a specific plant or transmission line with known parameters) or generic (a technology with generalised parameters).
-Technologies in SPLAT are classified into four main types:
+Une technologie peut être spécifique à un site (une centrale ou une ligne de transmission spécifique avec des paramètres connus) ou générique (une technologie avec des paramètres généralisés).
+Les technologies dans SPLAT sont classées en quatre types principaux :
 
-**1. Existing technologies:** The technologies which are already in place as of the reference year.
+**1. Existing technologies:** Les technologies qui sont déjà en place à partir de l&#39;année de référence.
 
-**2. Committed technologies:** The technologies which are currently under construction, or whose implementation has been approved. The deployment of these technologies may be considered guaranteed in the model results.
+**2. Committed technologies:** Les technologies en cours de construction ou dont la mise en œuvre a été approuvée. Le déploiement de ces technologies peut être considéré comme garanti dans les résultats du modèle.
 
-**3. Candidate technologies:** The technologies which may or may not be commissioned in the long term and thus are part of the optimisation process. The characteristics of these projects (size, location, technology, etc.) must be consistent with existing infrastructure, price trends and energy resource potential. 
-The model will select them if they show a net benefit to the modelled power system, which implies that building, operating and maintaining them should minimise the total cost of power system expansion.
+**3. Candidate technologies:** Les technologies qui peuvent ou non être mises en service à long terme et donc faire partie du processus d&#39;optimisation. Les caractéristiques de ces projets (taille, emplacement, technologie, etc.) doivent être cohérentes avec les infrastructures existantes, l&#39;évolution des prix et le potentiel des ressources énergétiques.
+Le modèle les sélectionnera s&#39;ils présentent un avantage net pour le système électrique modélisé, ce qui implique que leur construction, leur exploitation et leur maintenance devraient minimiser le coût total de l&#39;expansion du système électrique.
 
-The SPLAT Africa model used in the Continental Power System Master Plan (CMP) project makes used of energy model "supply regions" (MSR). 
-MSR comprises of pre-loaded georeferenced solar PV, solar CSP, wind onshore and offshore supply options designed by IRENA through a systematic geospatial analysis explained in this `paper <https://www.nature.com/articles/s41597-022-01786-5>`_.
-These variable renewable energy technologies are also considered as candidate technologies.
+Le modèle SPLAT Africa utilisé dans le projet Continental Power System Master Plan (CMP) utilise le modèle énergétique « supply regions » (MSR).
+MSR comprend des options d&#39;approvisionnement solaire PV géoréférencées, solaires CSP, éoliennes terrestres et offshore conçues par l&#39;IRENA grâce à une analyse géospatiale systématique expliquée dans cet article.<https://www.nature.com/articles/s41597-022-01786-5> `_.
+Ces technologies d&#39;énergies renouvelables variables sont également considérées comme des technologies candidates.
 
-**4. Generic technologies:** These technologies are not site specific. They have generalised parameters. Similar to candidate technologies, these technologies are also part of the optimisation process. The model would select these technologies if they show a net benefit to the modelled power system.
+**4. Generic technologies:** Ces technologies ne sont pas spécifiques au site. Ils ont des paramètres généralisés. À l&#39;instar des technologies candidates, ces technologies font également partie du processus d&#39;optimisation. Le modèle sélectionnerait ces technologies si elles présentent un avantage net pour le système électrique modélisé.
 
-The generic technologies are normally set up in a way that they don't come online in reference scenaerios. One of the main motivations to have generic technologies in the model is to make the model tech-agnostic, which in turn increases acceptance among stakeholders.
+Les technologies génériques sont normalement configurées de manière à ne pas être mises en ligne dans des scénarios de référence. L&#39;une des principales motivations pour avoir des technologies génériques dans le modèle est de rendre le modèle indépendant de la technologie, ce qui à son tour augmente l&#39;acceptation parmi les parties prenantes.
 
-The Technology tabs are listed at :ref:`technologysheets`
+Les onglets Technologie sont répertoriés dans :ref:`technologysheets`
 
-This section describes how to view, add and change technologies using the SPLAT Excel Interface.
+Cette section décrit comment afficher, ajouter et modifier des technologies à l&#39;aide de l&#39;interface SPLAT Excel.
 
 
-.. _view_tech_inputs:
+.. _view_tech_inputs :
 
-Viewing technology inputs
--------------------------
+Affichage des entrées technologiques
+--------------------------------------
 
-1. In any of the :ref:`technologysheets` (except the tabs containing information of specific zones), enter the scenario to be queried in the cell ``Choose Scenario``
+1. Dans l&#39;une des :ref:`fiches technologiques` (à l&#39;exception des onglets contenant des informations sur des zones spécifiques), saisissez le scénario à interroger dans la cellule ``Choisir un scénario``
 
-2. Click on :button:`Refresh Sheet`. The technologies and their parameters in the scenario will be shown in the same sheet. Only data for the country(s) loaded (in the ``Main`` sheet) will be displayed.
+2. Cliquez sur :button:`Actualiser la feuille`. Les technologies et leurs paramètres dans le scénario seront présentés dans la même feuille. Seules les données du ou des pays chargés (dans la feuille ``Principal``) seront affichées.
 
-3. Refer to :ref:`renewable_tech` for steps to retrieve the information of renewable zones (Solar PV, Solar CSP, Onshore Wind, Offshore Wind).
+3. Reportez-vous à :ref:`renewable_tech` pour connaître les étapes de récupération des informations sur les zones renouvelables (Solar PV, Solar CSP, Onshore Wind, Offshore Wind).
 
-.. _add_tech:
+.. _add_tech :
 
-Adding a technology
--------------------
+Ajouter une technologie
+------------------------
 
-1. Refresh the sheet :ref:`SpecificTech` for the scenario selected.
+1. Actualisez la feuille :ref:`SpecificTech` pour le scénario sélectionné.
 
-2. Add new specific tech name and parameters in the table. Ensure the that technology code is unique and not repeated.
+2. Ajoutez un nouveau nom de technologie spécifique et des paramètres dans le tableau. Assurez-vous que le code de technologie est unique et non répété.
 
-3. Click on :button:`Add New Techs`. A technology is added with parameters from the underlying generic tech.
+3. Cliquez sur :button:`Ajouter de nouveaux techniciens`. Une technologie est ajoutée avec les paramètres de la technologie générique sous-jacente.
 
-4. Refresh sheet to see the new technology added. Refresh other sheets before modifying relevant parameters.
+4. Actualisez la feuille pour voir la nouvelle technologie ajoutée. Actualisez les autres feuilles avant de modifier les paramètres pertinents.
 
 .. note::
-	Battery and pump storage technologies need to be defined separately in :ref:`Battery&PumpStorage` sheet in SPLAT interface.
+Les technologies de stockage de batterie et de pompe doivent être définies séparément dans la feuille :ref:`Battery&amp;PumpStorage` dans l&#39;interface SPLAT.
 
-.. _rename_tech:
+.. _rename_tech :
 
-Renaming a technology 
----------------------
+Renommer une technologie
+--------------------------
 
-1. Enter the old and new technology names in :ref:`RenameTechFacility` and click on :button:`Rename Techs in List`. 
+1. Entrez les anciens et nouveaux noms de technologie dans :ref:`RenameTechFacility` et cliquez sur :button:`Rename Techs in List`.
 
-2. To confirm that the technology has been renamed, refresh the relevant tabs (``GenericTech`` or ``SpecificTech``) to see the updated names. Multiple technologies can be renamed.
+2. Pour confirmer que la technologie a été renommée, actualisez les onglets correspondants (``GenericTech`` ou ``SpecificTech``) pour voir les noms mis à jour. Plusieurs technologies peuvent être renommées.
 
 .. image:: /images/technology_rename.PNG
 
-.. _delete_tech:
+.. _delete_tech :
 
-Deleting a technology
+Suppression d&#39;une technologie
 ----------------------
 
-1. Enter the technology names in :ref:`DeleteTechFacility` and click on :button:`Delete Techs in List`. 
+1. Entrez les noms des technologies dans :ref:`DeleteTechFacility` et cliquez sur :button:`Delete Techs in List`.
 
-2. To confirm that the technology has been deleted, refresh the relevant tabs (``GenericTech`` or ``SpecificTech``) to see the update. Multiple technologies can be deleted.
+2. Pour confirmer que la technologie a bien été supprimée, actualisez les onglets correspondants (``GenericTech`` ou ``SpecificTech``) pour voir la mise à jour. Plusieurs technologies peuvent être supprimées.
 
 .. image:: /images/technology_delete.PNG
 
-.. _change_tech:
+.. _change_tech :
 
-Changing a technology 
+Changer de technologie
 ----------------------
 
-1. In any of the :ref:`technologysheets` (except the tabs containing information of specific zones), click on :button:`Refresh Sheet` to get the data saved in the model for the scenario chosen.
+1. Dans l&#39;une des :ref:`fiches techniques` (à l&#39;exception des onglets contenant des informations sur des zones spécifiques), cliquez sur :button:`Actualiser la feuille` pour obtenir les données enregistrées dans le modèle pour le scénario choisi.
 
-2. Make changes to the technologies in the sheet.
+2. Apportez des modifications aux technologies de la feuille.
 
-3. Click on :button:`Update Model Data` to update the model with the new data.
+3. Cliquez sur :button:`Mettre à jour les données du modèle` pour mettre à jour le modèle avec les nouvelles données.
 
-.. _fuel:
+.. _carburant:
 
-Fuel price
------------
+Prix du carburant
+------------------
 
-1. In the tab :ref:`fuelprices`, click on :button:`Refresh Sheet` to get the data saved in the model for the scenario and countries chosen.
+1. Dans l&#39;onglet :ref:`fuelprices`, cliquez sur :button:`Refresh Sheet` pour obtenir les données enregistrées dans le modèle pour le scénario et les pays choisis.
 
-2. Make changes to the fuel prices in the sheet.
+2. Modifiez les prix du carburant dans la feuille.
 
-3. Click on :button:`Update Model Data` to update the model with the new data.
-
-.. note::
-    1. The fuel price is specified in $/GJ. It is currently not possible to add new fuel supply technologies via the SPLAT interface, this is left for future development (as well as the possibility of specifying limits, which would be needed if one wanted to model a supply curve for a particular fuel).
-    2. If a user specifies values both in the Constant column, as well as under milestone year columns, only the constant value will be used to update the MESSAGE model and the other values will be ignored.
-
-.. _tech_cost:
-
-Technology costs
------------------
-
-1. In the tab :ref:`generictechcosts` and :ref:`specifictechcosts`, click on :button:`Refresh Sheet` to get the cost data saved in the model for the scenario and countries chosen.
-
-2. Make changes to the costs (Overnight Cost-$/kW, Fixed O&M Cost-$/kW, Variable O&M Cost-$/MWh) in the sheet.
-
-3. Click on :button:`Update Model Data` to update the model with the new data.
+3. Cliquez sur :button:`Mettre à jour les données du modèle` pour mettre à jour le modèle avec les nouvelles données.
 
 .. note::
-    If a user specifies values both in the Constant column, as well as under milestone year columns, only the constant value will be used to update the MESSAGE model and the other values will be ignored.
+1. Le prix du carburant est indiqué en $/GJ. Il n&#39;est actuellement pas possible d&#39;ajouter de nouvelles technologies d&#39;approvisionnement en carburant via l&#39;interface SPLAT, cela est laissé pour un développement futur (ainsi que la possibilité de spécifier des limites, qui seraient nécessaires si l&#39;on voulait modéliser une courbe d&#39;approvisionnement pour un carburant particulier).
+2. Si un utilisateur spécifie des valeurs à la fois dans la colonne Constante et dans les colonnes de l&#39;année du jalon, seule la valeur constante sera utilisée pour mettre à jour le modèle MESSAGE et les autres valeurs seront ignorées.
 
-.. _tech_capacity:
+.. _tech_cost :
 
-Capacity Limit
----------------
+Coûts technologiques
+--------------------
 
-1. In the tab :ref:`specificcapacitylimits`, click on :button:`Refresh Sheet` to get the capacity limits saved in the model for the scenario and countries chosen.
+1. Dans l&#39;onglet :ref:`generictechcosts` et :ref:`specifictechcosts`, cliquez sur :button:`Refresh Sheet` pour obtenir les données de coûts enregistrées dans le modèle pour le scénario et les pays choisis.
 
-2. Make changes to the capacity limits in the sheet.
+2. Modifiez les coûts (coût de nuit-$/kW, coût fixe d&#39;O&amp;M-$/kW, coût variable d&#39;O&amp;M-$/MWh) dans la feuille.
 
-3. Click on :button:`Update Model Data` to update the model with the new data.
+3. Cliquez sur :button:`Mettre à jour les données du modèle` pour mettre à jour le modèle avec les nouvelles données.
 
 .. note::
-    1. There are no capacity limits for generic technologies.
-    2. If a user specifies values both in the Constant column, as well as under milestone year columns, only the constant value will be used to update the MESSAGE model and the other values will be ignored.
+Si un utilisateur spécifie des valeurs à la fois dans la colonne Constante et dans les colonnes de l&#39;année du jalon, seule la valeur constante sera utilisée pour mettre à jour le modèle MESSAGE et les autres valeurs seront ignorées.
 
-.. _renewable_tech:
+.. _tech_capacity :
 
-Renewable and storage technologies
-----------------------------------
+Limite de capacité
+------------------------------
 
-.. _solar_wind:
+1. Dans l&#39;onglet :ref:`specificcapacitylimits`, cliquez sur :button:`Refresh Sheet` pour obtenir les limites de capacité enregistrées dans le modèle pour le scénario et les pays choisis.
 
-Solar PV, onshore and offshore Wind
-+++++++++++++++++++++++++++++++++++
+2. Modifiez les limites de capacité dans la feuille.
 
-VRE technologies can be defined in two ways - either as generic technologies or site-specific technologies. Below is an example for adding offshore wind, first as a generic technology, then as zones.
+3. Cliquez sur :button:`Mettre à jour les données du modèle` pour mettre à jour le modèle avec les nouvelles données.
 
-1.	In the :ref:`GenericTech` tab, add technology "XXWDLCO00" (XX being country ID, for e.g. DZ) with tech description "Offshore generic tech". Use add new tech button. The macro will update the underlying files and reload at the end.
+.. note::
+1. Il n&#39;y a pas de limite de capacité pour les technologies génériques.
+2. Si un utilisateur spécifie des valeurs à la fois dans la colonne Constante et dans les colonnes de l&#39;année du jalon, seule la valeur constante sera utilisée pour mettre à jour le modèle MESSAGE et les autres valeurs seront ignorées.
 
-2.	Go to :ref:`RenameTechFacility` sheet. Change the newly added offshore techs to appropriate generic tech name i.e. XXWDOC00. The macro will update the underlying files and reload at the end.
+.. _renewable_tech :
 
-3.	Go to :ref:`OffshoreWindZones` sheet. Add new techs in each country. Click on :button:`Add New Techs`. The macro will update the underlying files and reload at the end.
+Technologies renouvelables et de stockage
+------------------------------------------
 
-4.	Locate the .tit file of the model and open as excel, it will ask you about delimit parameter. Select comma. The generic wind offshore and newly added offshore zones will have same profiles. Now, got to :ref:`OffshoreWindZones` sheet. Give address to the file that contains the profiles, in the section MSR data file. This will update the zone profiles in .tit file. Currently, the wind offshore generic tech has same profile as wind generic. But remember, wind onshore generic tech has been ousted from model by setting first year=2050
+.. _solar_wind :
 
-5.	The updated profiles in the .tit file needs to be inserted in model files. Go to :ref:`TimeSlices` sheet, press :button:`Update Files`.
+Solaire PV, éolien onshore et offshore
++++++++++++++++++++++++++++++++++++++++
+
+Les technologies VRE peuvent être définies de deux manières : soit comme des technologies génériques, soit comme des technologies spécifiques à un site. Vous trouverez ci-dessous un exemple d&#39;ajout d&#39;éolien offshore, d&#39;abord en tant que technologie générique, puis en tant que zones.
+
+1. Dans l&#39;onglet :ref:`GenericTech`, ajoutez la technologie &quot;XXWDLCO00&quot; (XX étant l&#39;ID du pays, par exemple DZ) avec la description de la technologie &quot;Technologie générique offshore&quot;. Utilisez le bouton Ajouter une nouvelle technologie. La macro mettra à jour les fichiers sous-jacents et se rechargera à la fin.
+
+2. Accédez à la feuille :ref:`RenameTechFacility`. Remplacez les technologies offshore nouvellement ajoutées par le nom de technologie générique approprié, c&#39;est-à-dire XXWDOC00. La macro mettra à jour les fichiers sous-jacents et se rechargera à la fin.
+
+3. Accédez à la feuille :ref:`OffshoreWindZones`. Ajoutez de nouvelles technologies dans chaque pays. Cliquez sur :button:`Ajouter de nouveaux techniciens`. La macro mettra à jour les fichiers sous-jacents et se rechargera à la fin.
+
+4. Localisez le fichier .tit du modèle et ouvrez-le en tant qu&#39;Excel, il vous demandera le paramètre de délimitation. Sélectionnez virgule. Les zones génériques éoliennes offshore et offshore nouvellement ajoutées auront les mêmes profils. Maintenant, allez à la feuille :ref:`OffshoreWindZones`. Donnez l&#39;adresse au fichier qui contient les profils, dans la section fichier de données MSR. Cela mettra à jour les profils de zone dans le fichier .tit. Actuellement, la technologie générique éolienne offshore a le même profil que l&#39;éolien générique. Mais rappelez-vous, la technologie générique éolienne terrestre a été évincée du modèle en définissant la première année = 2050
+
+5. Les profils mis à jour dans le fichier .tit doivent être insérés dans les fichiers modèles. Accédez à la feuille :ref:`TimeSlices`, appuyez sur :button:`Update Files`.
 
 
-.. _hydro_dam:
+.. _hydro_dam :
 
-Hydro Dam
-++++++++++
+Barrage hydroélectrique
+++++++++++++++++++++++++++++++
 
-The ``SpecificTechHydroDams`` sheet manipulates the hydro dams in the model.
+La feuille ``SpecificTechHydroDams`` manipule les barrages hydroélectriques dans le modèle.
 
-1. Click on :button:`Refresh Sheet` button to extract the technologies that belong to the `TechSetL2`: `Large Hydro Dams`.
+1. Cliquez sur le bouton :button:`Refresh Sheet` pour extraire les technologies appartenant au `TechSetL2` : `Large Hydro Dams`.
 
-2. :button:`Create River Tech+Storage Constraint` button adds a technology and a storage constraint for each dam.
+2. Le bouton :button:`Create River Tech+Storage Constraint` ajoute une technologie et une contrainte de stockage pour chaque barrage.
 
-A new dummy technology for each hydro station with Dam is added to model the river inflows to the dam. The naming convention of the dummy technology is XXRIDM_rivername, for example CMRIDM_LAGDO (using LAGDO as an example).  The output is set to the existing dummy elc energy form.
+Une nouvelle technologie factice pour chaque centrale hydroélectrique avec barrage est ajoutée pour modéliser les apports de la rivière au barrage. La convention de dénomination de la technologie factice est XXRIDM_rivername, par exemple CMRIDM_LAGDO (en utilisant LAGDO comme exemple). La sortie est réglée sur la forme d&#39;énergie elc fictive existante.
 
-A new storage constraint is added, example D_LAGDO with short name DXXX. The storage constraint is linked to CMRIDM_LAGDO with +1 coefficient, so each MWyr flow from CMRIDM_LAGDO increases the storage content by 1 MWyr.
+Une nouvelle contrainte de stockage est ajoutée, exemple D_LAGDO avec le nom abrégé DXXX. La contrainte de stockage est liée à CMRIDM_LAGDO avec un coefficient de +1, donc chaque flux de MWyr de CMRIDM_LAGDO augmente le contenu de stockage de 1 MWyr.
 
-The storage constraint is linked to CMHYDM_LAGDO with -1 coefficient (meaning that each MWyr flow from CMHYDM_LAGDO decreases the storage content by 1 MWyr). It would be possible in theory to do cascade modelling by linking the output of upstream plants to storage constraints downstream (rather than a river technology). The coefficients would have to be scaled by the relative "Energy per unit volume (MJ/m3)" of the upstream and downstream plants. This functionality will need a revisit as a new development task if there is a pressing need for it.
+La contrainte de stockage est liée à CMHYDM_LAGDO avec un coefficient -1 (c&#39;est-à-dire que chaque flux de MWyr de CMHYDM_LAGDO diminue le contenu du stockage de 1 MWyr). Il serait en théorie possible de faire une modélisation en cascade en liant le débit des usines amont à des contraintes de stockage en aval (plutôt qu&#39;une technologie fluviale). Les coefficients devraient être mis à l&#39;échelle par &quot;l&#39;énergie par unité de volume (MJ/m3)&quot; relative des usines en amont et en aval. Cette fonctionnalité devra être revisitée en tant que nouvelle tâche de développement s&#39;il y a un besoin pressant.
 
-The user has to specify 2 parameters, whose values can be calculated in the right-most table and copy pasted.
+L&#39;utilisateur doit spécifier 2 paramètres, dont les valeurs peuvent être calculées dans le tableau le plus à droite et copiées-collées.
 
-3. Once this is done the user can click on :button:`Update Model Data`:
+3. Une fois cela fait, l&#39;utilisateur peut cliquer sur :button:`Mettre à jour les données du modèle` :
 
-The capacity is set to max flow (in MW, m3/s max flow scaled by design flow). The capacity is specified as a capacity limit on the River Technology (bdi) .
+La capacité est définie sur le débit maximal (en MW, débit maximal en m3/s mis à l&#39;échelle par le débit de conception). La capacité est spécifiée comme limite de capacité sur la River Technology (bdi) .
 
-The storage constraint max volume is set to Max volume in MWyr as per table.
+Le volume maximal de la contrainte de stockage est défini sur Volume maximal en MWyr conformément au tableau.
 
-The user then has to add a time series in the csv file under the tech CMRIDM_LAGDO and :button:`Update Timeslices` in the ``Timeslice`` sheet. The values in the csv file must be monthly average flow divided by "max flow" that was used to set the "River Capacity", using the same max flow value regardless of the scenario.
-If the user wants to simulate different rainfall scenarios without a full time series, they could use plant factor to scale up or down the profile in the ``SpecificTech`` sheet. It is currently not possible to specify a different seasonal profile by scenario, but this feature is on the todo list for the near future.
+L&#39;utilisateur doit ensuite ajouter une série temporelle dans le fichier csv sous les technologies CMRIDM_LAGDO et :button:`Update Timeslices` dans la feuille ``Timeslice``. Les valeurs dans le fichier csv doivent être le débit moyen mensuel divisé par le &quot;débit max&quot; qui a été utilisé pour définir la &quot;capacité de la rivière&quot;, en utilisant la même valeur de débit max quel que soit le scénario.
+Si l&#39;utilisateur souhaite simuler différents scénarios de précipitations sans série temporelle complète, il peut utiliser le facteur de plante pour augmenter ou réduire le profil dans la feuille ``SpecificTech``. Il n&#39;est actuellement pas possible de spécifier un profil saisonnier différent par scénario, mais cette fonctionnalité est sur la liste des tâches dans un avenir proche.
 
 
 .. _batteries:
 
-Batteries and Pump Storage
-++++++++++++++++++++++++++
+Batteries et stockage de la pompe
+++++++++++++++++++++++++++++++++++++++
 
-Batteries and pump storage technologies can be added and modified in the same way through the SPLAT excel interface.
+Les technologies de stockage de batteries et de pompes peuvent être ajoutées et modifiées de la même manière via l&#39;interface excel SPLAT.
 
-1. In ``Battery&PumpStorage`` sheet: create the technology with techname convention: xxELSTyyyy for a battery or xxELSTPSyyyy for pump storage, where xx is country code, and yyyy is site description. (For example, ZAELSTPSDrakensberg)
+1. Dans la feuille ``Battery&amp;PumpStorage`` : créez la technologie avec la convention techname : xxELSTyyyy pour une batterie ou xxELSTPSyyyy pour le stockage de la pompe, où xx est le code du pays et yyyy est la description du site. (Par exemple, ZAELSTPSDrakensberg)
 
-2. :button:`Reload Global`
+2. :button:`Recharger Global`
 
-3. In the same ``Battery&PumpStorage`` sheet click :button:`Refresh` and then specify storage hours and cycle efficiency
+3. Dans la même feuille ``Battery&amp;PumpStorage`` cliquez sur :button:`Refresh` puis spécifiez les heures de stockage et l&#39;efficacité du cycle
 
-4. In the ``TechSpecific`` sheets specify the other usual parameters hc, bdi, inv etc....
+4. Dans les fiches ``TechSpecific`` précisez les autres paramètres usuels hc, bdi, inv etc...
 
-.. _csp:
+.. _csp :
 
-Concentrated Solar Power (CSP)
-++++++++++++++++++++++++++++++
+Énergie Solaire Concentrée (CSP)
+++++++++++++++++++++++++++++++++
 
-Refer to steps in :ref:`solar_wind`. (Improvements upcoming)
+Reportez-vous aux étapes de :ref:`solar_wind`. (Améliorations à venir)
 
-.. _transmission_distribution:
+.. _transmission_distribution :
 
-Transmission and Distribution
+Transport et Distribution
 -----------------------------
 
-The :ref:`transmission` and :ref:`distribution` sheets are used to review or modify transmission and distribution technologies parameters as per the definitions in the ``TechnologySets`` sheet (see section below).
+Les feuilles :ref:`transmission` et :ref:`distribution` sont utilisées pour revoir ou modifier les paramètres des technologies de transmission et de distribution selon les définitions de la feuille ``TechnologySets`` (voir section ci-dessous).
 
 .. note::
-    1. If the user wants to model with "sent-out" demand (see :ref:`demand`), transmission efficiency must be set to 100%, and investment costs set to a small value. In the default configuration there is no distribution technology specified for "Sent-out" electricity.
+1. Si l&#39;utilisateur souhaite modéliser avec une demande &quot;envoyée&quot; (voir :ref:`demande`), l&#39;efficacité de transmission doit être définie sur 100 % et les coûts d&#39;investissement sur une petite valeur. Dans la configuration par défaut, aucune technologie de distribution n&#39;est spécifiée pour l&#39;électricité &quot;envoyée&quot;.
 
-    2. If a user specifies values both in the Constant column, as well as under milestone year columns, only the constant value will be used to update the MESSAGE model and the other values will be ignored.
+2. Si un utilisateur spécifie des valeurs à la fois dans la colonne Constante et dans les colonnes de l&#39;année du jalon, seule la valeur constante sera utilisée pour mettre à jour le modèle MESSAGE et les autres valeurs seront ignorées.
 
-.. _interconnection:
+.. _interconnexion :
 
-Interconnection
+Interconnexion
 -----------------
 
-The :ref:`interconnectors` sheet is used to review and update cross-border interconnector parameters.
+La fiche :ref:`interconnectors` permet de revoir et de mettre à jour les paramètres des interconnexions transfrontalières.
 
-At a minimum the two interconnecting countries (which must be active) must be specified to view the interconnections between them. 
+Au minimum, les deux pays interconnectés (qui doivent être actifs) doivent être spécifiés pour visualiser les interconnexions entre eux.
 
-.. _tech_naming:
+.. _tech_naming :
 
-Technology naming in the SPLAT model
-------------------------------------
+Nommage de la technologie dans le modèle SPLAT
+--------------------------------------------------
 
-The naming of technologies follow the following conventions in the SPLAT model:
+La dénomination des technologies suit les conventions suivantes dans le modèle SPLAT :
 
-	??BMST_[name]	Biomass Bagasse Cogen
-	??BWST_[name]	Biomass Wood Cogen
-	??COSC_[name]	Coal
-	??COCS_[name]	Coal w CCS
-	??DSRC_[name]	Diesel Engine
-	??DSSC_[name]	Diesel Turbine
-	??NGCC_[name]	Gas Combined Cycle
-	??NGRC_[name]	Gas Engine
-	??NGSC_[name]	Gas Open Cycle
-	??GOCV_[name]	Geothermal
-	??HFRC_[name]	HFO Engine
-	??HFSC_[name]	HFO Steam turbine
-	??HFSC_[name]	HFO Steam turbine
-	??HYRO_[name]	Hydro Run of River
-	??HYMI_[name]	Hydro Small
-	??HYDM_[name]	Hydro With Dam
-	??NUPW_[name]	Nuclear
-	??EPPT_[name]	Pumped Storage
-	??SOTN_[name]	Solar CSP no Storage
-	??SOTS_[name]	Solar CSP with Storage
-	??SOPC_[name]	Solar PV system (utility)
-	??WDLC_[name]	Wind
+??BMST_[nom] Biomasse Bagasse Cogen
+??BWST_[nom] Biomasse Bois Cogen
+??COSC_[nom] Charbon
+??COCS_[nom] Charbon w CCS
+??DSRC_[nom] Moteur diesel
+??DSSC_[nom] Turbine Diesel
+??NGCC_[nom] Cycle Combiné Gaz
+??NGRC_[nom] Moteur à essence
+??NGSC_[nom] Cycle d&#39;ouverture du gaz
+??GOCV_[nom] Géothermie
+??HFRC_[nom] Moteur HFO
+??HFSC_[nom] HFO Turbine à vapeur
+??HFSC_[nom] HFO Turbine à vapeur
+??HYRO_[nom] Hydro au fil de l&#39;eau
+??HYMI_[nom] Hydro Small
+??HYDM_[nom] Hydro avec barrage
+??NUPW_[nom] Nucléaire
+??EPPT_[nom] Stockage pompé
+??SOTN_[nom] Solar CSP pas de stockage
+??SOTS_[nom] Solar CSP avec stockage
+??SOPC_[nom] Système solaire photovoltaïque (service public)
+??WDLC_[nom] Vent

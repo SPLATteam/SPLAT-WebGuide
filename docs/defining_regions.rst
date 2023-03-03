@@ -1,32 +1,32 @@
-Defining Regions
-=================
+Définition des régions
+======================
 
-TOCHECK:
+VÉRIFIER:
 
-Regions can be added to an existing multi-region MESSAGE-SPLAT model as follows:
+Des régions peuvent être ajoutées à un modèle MESSAGE-SPLAT multirégion existant comme suit :
 
-1. Copy Blank Regions folder
+1. Copier le dossier Blank Regions
 
-2. Rename files (use VBA code in ``Regions`` Module called: ``Rename_Files()``
+2. Renommez les fichiers (utilisez le code VBA dans ``Regions`` Module appelé : ``Rename_Files()``
 
-3. Edit files:
+3. Modifiez les fichiers :
 
--	C:\Programs\MESSAGE_INT\models\ACEC_V2\MAINa\Regid
+- C:\Programs\MESSAGE_INT\models\ACEC_V2\MAINa\Regid
 
--	Reload global in SPLAT interface
+- Recharger global dans l&#39;interface SPLAT
 
-4. Rename Technologies (use VBA code in ``Regions`` Module called: ``DeleteandrenameTechs()`` followed by VBA code in module ``writeadb`` called ``WriteAllScenarios()``
+4. Rename Technologies (utilisez le code VBA dans le module ``Regions`` appelé : ``DeleteandrenameTechs()`` suivi du code VBA dans le module ``writeadb`` appelé ``WriteAllScenarios()``
 
-5. Rename Country description (at the top)
+5. Renommer la description du pays (en haut)
 
-6. Search and replace traded commodity, as well as Secondary Electricity
+6. Rechercher et remplacer les produits échangés, ainsi que l&#39;électricité secondaire
 
-7. Add region name to C:\Programs\MESSAGE_INT\models\ACEC_V2\MAINa\data\MAINa.gen file
+7. Ajoutez le nom de région to C:\Programs\MESSAGE_INT\models\ACEC_V2\MAINa\data\MAINa.gen fichier
 
-8.  add XXa.dir file to C:\Programs\MESSAGE_INT\models\mms_fils\
+8. ajouter le fichier XXa.dir to C:\Programs\MESSAGE_INT\models\mms_fils\
 
-9. Edit C:\Programs\MESSAGE_INT\models\mms_fils\glob.reg and add path
+9. Edit C:\Programs\MESSAGE_INT\models\mms_fils\glob.reg et ajoutez le chemin
 
-10. Edit C:\Programs\MESSAGE_INT\models\mms_fils\mms.pro and add path
+10. Edit C:\Programs\MESSAGE_INT\models\mms_fils\mms.pro et ajoutez le chemin
 
--*.cin,-*.adb,-*.ldb,-*.mps,-*.chn,-*.lbu,-*.tab,-*.sol,-*.mst,-*.rar,-*.ggi,-*.sdb,-*.toc,-*.txt,-*.bat,-*.itl,-*.nbd
+-*.cin,-*.adb,-*.ldb,-*.mps,-*.chn,-*.lbu,-*.tab,-*.sol,-*.mst,-*.rar, -*.ggi,-*.sdb,-*.toc,-*.txt,-*.bat,-*.itl,-*.nbd
