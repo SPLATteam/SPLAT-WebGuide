@@ -1,0 +1,8 @@
+regex,example
+..\s\w+\::\s\w+\S,".. role:: inputcell
+"
+..\s\w+\::,.. role::
+..\s\w+\:\S,.. tutorial_1:
+:\w+\: \w+,:class: inputcell
+:\w+\:,:class:
+\w+\_\w+,file_path
