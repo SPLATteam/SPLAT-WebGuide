@@ -98,58 +98,58 @@ Changing a technology
 
 3. Click on :button:`Update Model Data` to update the model with the new data.
 
-.. _fuel:
+.. .. _fuel:
 
-Fuel price
------------
+.. Fuel price
+.. -----------
 
-1. In the tab :ref:`fuelprices`, click on :button:`Refresh Sheet` to get the data saved in the model for the scenario and countries chosen.
+.. 1. In the tab :ref:`fuelprices`, click on :button:`Refresh Sheet` to get the data saved in the model for the scenario and countries chosen.
 
-2. Make changes to the fuel prices in the sheet.
+.. 2. Make changes to the fuel prices in the sheet.
 
-3. Click on :button:`Update Model Data` to update the model with the new data.
+.. 3. Click on :button:`Update Model Data` to update the model with the new data.
 
-.. note::
-    1. The fuel price is specified in $/GJ. It is currently not possible to add new fuel supply technologies via the SPLAT interface, this is left for future development (as well as the possibility of specifying limits, which would be needed if one wanted to model a supply curve for a particular fuel).
-    2. If a user specifies values both in the Constant column, as well as under milestone year columns, only the constant value will be used to update the MESSAGE model and the other values will be ignored.
+.. .. note::
+..     1. The fuel price is specified in $/GJ. It is currently not possible to add new fuel supply technologies via the SPLAT interface, this is left for future development (as well as the possibility of specifying limits, which would be needed if one wanted to model a supply curve for a particular fuel).
+..     2. If a user specifies values both in the Constant column, as well as under milestone year columns, only the constant value will be used to update the MESSAGE model and the other values will be ignored.
 
-.. _tech_cost:
+.. .. _tech_cost:
 
-Technology costs
------------------
+.. Technology costs
+.. -----------------
 
-1. In the tab :ref:`generictechcosts` and :ref:`specifictechcosts`, click on :button:`Refresh Sheet` to get the cost data saved in the model for the scenario and countries chosen.
+.. 1. In the tab :ref:`generictechcosts` and :ref:`specifictechcosts`, click on :button:`Refresh Sheet` to get the cost data saved in the model for the scenario and countries chosen.
 
-2. Make changes to the costs (Overnight Cost-$/kW, Fixed O&M Cost-$/kW, Variable O&M Cost-$/MWh) in the sheet.
+.. 2. Make changes to the costs (Overnight Cost-$/kW, Fixed O&M Cost-$/kW, Variable O&M Cost-$/MWh) in the sheet.
 
-3. Click on :button:`Update Model Data` to update the model with the new data.
+.. 3. Click on :button:`Update Model Data` to update the model with the new data.
 
-.. note::
-    If a user specifies values both in the Constant column, as well as under milestone year columns, only the constant value will be used to update the MESSAGE model and the other values will be ignored.
+.. .. note::
+..     If a user specifies values both in the Constant column, as well as under milestone year columns, only the constant value will be used to update the MESSAGE model and the other values will be ignored.
 
-.. _tech_capacity:
+.. .. _tech_capacity:
 
-Capacity Limit
----------------
+.. Capacity Limit
+.. ---------------
 
-1. In the tab :ref:`specificcapacitylimits`, click on :button:`Refresh Sheet` to get the capacity limits saved in the model for the scenario and countries chosen.
+.. 1. In the tab :ref:`specificcapacitylimits`, click on :button:`Refresh Sheet` to get the capacity limits saved in the model for the scenario and countries chosen.
 
-2. Make changes to the capacity limits in the sheet.
+.. 2. Make changes to the capacity limits in the sheet.
 
-3. Click on :button:`Update Model Data` to update the model with the new data.
+.. 3. Click on :button:`Update Model Data` to update the model with the new data.
 
-.. note::
-    1. There are no capacity limits for generic technologies.
-    2. If a user specifies values both in the Constant column, as well as under milestone year columns, only the constant value will be used to update the MESSAGE model and the other values will be ignored.
+.. .. note::
+..     1. There are no capacity limits for generic technologies.
+..     2. If a user specifies values both in the Constant column, as well as under milestone year columns, only the constant value will be used to update the MESSAGE model and the other values will be ignored.
 
 .. _renewable_tech:
 
-Renewable and storage technologies
-----------------------------------
+Defining variable renewable energy technologies
+-----------------------------------------------
 
 .. _solar_wind:
 
-Solar PV, onshore and offshore Wind
+Solar PV, CSP, onshore and offshore Wind
 +++++++++++++++++++++++++++++++++++
 
 VRE technologies can be defined in two ways - either as generic technologies or site-specific technologies. Below is an example for adding offshore wind, first as a generic technology, then as zones.
@@ -163,7 +163,6 @@ VRE technologies can be defined in two ways - either as generic technologies or 
 4.	Locate the .tit file of the model and open as excel, it will ask you about delimit parameter. Select comma. The generic wind offshore and newly added offshore zones will have same profiles. Now, got to :ref:`OffshoreWindZones` sheet. Give address to the file that contains the profiles, in the section MSR data file. This will update the zone profiles in .tit file. Currently, the wind offshore generic tech has same profile as wind generic. But remember, wind onshore generic tech has been ousted from model by setting first year=2050
 
 5.	The updated profiles in the .tit file needs to be inserted in model files. Go to :ref:`TimeSlices` sheet, press :button:`Update Files`.
-
 
 .. _hydro_dam:
 
@@ -193,7 +192,6 @@ The storage constraint max volume is set to Max volume in MWyr as per table.
 The user then has to add a time series in the csv file under the tech CMRIDM_LAGDO and :button:`Update Timeslices` in the ``Timeslice`` sheet. The values in the csv file must be monthly average flow divided by "max flow" that was used to set the "River Capacity", using the same max flow value regardless of the scenario.
 If the user wants to simulate different rainfall scenarios without a full time series, they could use plant factor to scale up or down the profile in the ``SpecificTech`` sheet. It is currently not possible to specify a different seasonal profile by scenario, but this feature is on the todo list for the near future.
 
-
 .. _batteries:
 
 Batteries and Pump Storage
@@ -209,60 +207,63 @@ Batteries and pump storage technologies can be added and modified in the same wa
 
 4. In the ``TechSpecific`` sheets specify the other usual parameters hc, bdi, inv etc....
 
-.. _csp:
+.. .. _csp:
 
-Concentrated Solar Power (CSP)
-++++++++++++++++++++++++++++++
+.. Concentrated Solar Power (CSP)
+.. ++++++++++++++++++++++++++++++
 
-Refer to steps in :ref:`solar_wind`. (Improvements upcoming)
+.. Refer to steps in :ref:`solar_wind`. (Improvements upcoming)
 
-.. _transmission_distribution:
+.. .. _transmission_distribution:
 
-Transmission and Distribution
------------------------------
+.. Transmission and Distribution
+.. -----------------------------
 
-The :ref:`transmission` and :ref:`distribution` sheets are used to review or modify transmission and distribution technologies parameters as per the definitions in the ``TechnologySets`` sheet (see section below).
+.. The :ref:`transmission` and :ref:`distribution` sheets are used to review or modify transmission and distribution technologies parameters as per the definitions in the ``TechnologySets`` sheet (see section below).
 
-.. note::
-    1. If the user wants to model with "sent-out" demand (see :ref:`demand`), transmission efficiency must be set to 100%, and investment costs set to a small value. In the default configuration there is no distribution technology specified for "Sent-out" electricity.
+.. .. note::
+..     1. If the user wants to model with "sent-out" demand (see :ref:`demand`), transmission efficiency must be set to 100%, and investment costs set to a small value. In the default configuration there is no distribution technology specified for "Sent-out" electricity.
 
-    2. If a user specifies values both in the Constant column, as well as under milestone year columns, only the constant value will be used to update the MESSAGE model and the other values will be ignored.
+..     2. If a user specifies values both in the Constant column, as well as under milestone year columns, only the constant value will be used to update the MESSAGE model and the other values will be ignored.
 
-.. _interconnection:
+.. .. _interconnection:
 
-Interconnection
------------------
+.. Interconnection
+.. -----------------
 
-The :ref:`interconnectors` sheet is used to review and update cross-border interconnector parameters.
+.. The :ref:`interconnectors` sheet is used to review and update cross-border interconnector parameters.
 
-At a minimum the two interconnecting countries (which must be active) must be specified to view the interconnections between them. 
+.. At a minimum the two interconnecting countries (which must be active) must be specified to view the interconnections between them. 
 
 .. _tech_naming:
 
 Technology naming in the SPLAT model
 ------------------------------------
 
-The naming of technologies follow the following conventions in the SPLAT model:
+The naming convention of various technologies including technology set levels 1 and 2, and generic technologies are given in the table below.
+The "??" in the technology code in the front refers to the two-letter country code (alpha-2). And the * provides further information about the technology.
 
-	??BMST_[name]	Biomass Bagasse Cogen
-	??BWST_[name]	Biomass Wood Cogen
-	??COSC_[name]	Coal
-	??COCS_[name]	Coal w CCS
-	??DSRC_[name]	Diesel Engine
-	??DSSC_[name]	Diesel Turbine
-	??NGCC_[name]	Gas Combined Cycle
-	??NGRC_[name]	Gas Engine
-	??NGSC_[name]	Gas Open Cycle
-	??GOCV_[name]	Geothermal
-	??HFRC_[name]	HFO Engine
-	??HFSC_[name]	HFO Steam turbine
-	??HFSC_[name]	HFO Steam turbine
-	??HYRO_[name]	Hydro Run of River
-	??HYMI_[name]	Hydro Small
-	??HYDM_[name]	Hydro With Dam
-	??NUPW_[name]	Nuclear
-	??EPPT_[name]	Pumped Storage
-	??SOTN_[name]	Solar CSP no Storage
-	??SOTS_[name]	Solar CSP with Storage
-	??SOPC_[name]	Solar PV system (utility)
-	??WDLC_[name]	Wind
+The naming of technology set level 1 follow the following conventions in the SPLAT model:
+
+.. csv-table:: 
+    :file: csv_file/level1sets_sheet.csv
+    :header-rows: 1
+
+The naming of technology set level 2 follow the following conventions in the SPLAT model:
+
+.. csv-table:: 
+    :file: csv_file/level2sets_sheet.csv
+    :header-rows: 1
+
+The naming convention of generic technologies is given in the table below:
+
+.. csv-table:: 
+    :file: csv_file/generictechcodes_sheet.csv
+    :header-rows: 1
+
+.. _country_code:
+
+Country Code in the SPLAT model
+-------------------------------
+
+The two-letter or three-letter country codes used in the SPLAT model are based on `ISO 3166-1 <https://en.wikipedia.org/wiki/ISO_3166-1>`_ standard.

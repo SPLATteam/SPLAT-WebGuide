@@ -1,5 +1,5 @@
 ﻿Parameter,Parameter Code,Unit,Definition
-RHE RE share lower limit,,%,Minimum RE share in electricity supply. Set as 0 by default.
+RHS RE share lower limit,,%,Minimum RE share in electricity supply. Set as 0 by default.
 RHS RE Share upper limit,,%,Maximum RE share in electricity supply. Left blank by default.
 RHS RE target,,%,RE target to meet share of electricity demand by  given year.
 RHS Tx Losses,,%,Percentage of transmission losses in given year.

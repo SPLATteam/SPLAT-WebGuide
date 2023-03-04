@@ -1,0 +1,30 @@
+﻿Generic Technology Codes,Code
+Biomass Bagasse CogenBagasseTransmission,??BMST00*
+Biomass Bagasse CogenBagasseTransmission,??BMST00*
+Biomass Wood CogenWood residueTransmission,??BWST00*
+GeothermalNATransmission,??GOCV00*
+Hydro DamNATransmission,??HYDM00*
+Hydro SmallNADistribution,??HYMI00*
+Hydro Run of RiverNATransmission,??HYRO00*
+Solar PVNATransmission,??SOPC00*
+Solar CSP no StorageNATransmission,??SOTN00*
+Solar CSP with StorageNATransmission,??SOTS00*
+WindNATransmission,??WDLC00*
+CoalCoalTransmission,??COSC00*
+Coal w CCSCoalTransmission,??COCS00*
+Diesel 100 kW system (industry)DieselOff-grid,??DSRI00*
+Diesel EngineDieselTransmission,??DSRC00*
+Diesel Open CycleDieselTransmission,??DSSC00*
+Diesel/Gasoline 1kW system (commercial buildings)DieselOff-grid,??DSRB00*
+Diesel/Gasoline 1kW system (urban)DieselOff-grid,??DSRU00*
+Diesel/Gasoline 1kW system (rural)DieselOff-grid,??DSRR00*
+Gas Combined CycleNatural GasTransmission,??NGCC00*
+Gas Open CycleNatural GasTransmission,??NGSC00*
+Gas EngineNatural GasTransmission,??NGRC00*
+HFO EngineHFOTransmission,??HFRC00*
+BagasseDomestic,??BM00X00*
+Wood residueDomestic,??BW00X00*
+CoalImport,??CO00I00*
+DieselImport,??DS00I00*
+HFOImport,??HF00I00*
+Natural Gas (Domestic)Domestic,??NG00X00*
