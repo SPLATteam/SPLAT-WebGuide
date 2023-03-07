@@ -8,7 +8,7 @@
     :class: tight-table
 
 MESSAGE 
-=====================
+=============================
 Model for Energy System Strategy Alternatives and their General Environmental Impacts (MESSAGE)
 has been desgined to develop an optimization model of an energy system for medium to long term planning, energy policy analysis and scenario development.
 MESSAGE formulates the dynamic linear programming model with a mixed integer option. 
@@ -40,7 +40,7 @@ The first part of this section describes the various databases used in MESSAGE. 
 .. _Databases_in_MESSAGE:
 
 Databases in MESSAGE
-------------------------
+--------------------------------
 MESSAGE creates each model in a separate case study and accordingly one database file for each model. The types of databases used in MESSAGE are given in the table below:
 
 .. csv-table:: Databases in MESSAGE
@@ -53,7 +53,7 @@ The interrelationship of the databases used in the MESSAGE program is depicted i
 .. image:: /images/message_databases.PNG
 
 Significance of various MESSAGE model files
--------------------------------------------
+-----------------------------------------------------------
 This section describes the various file types which are present or created within the sub-folders such as ``data``, ``int``, and ``res`` inside the ``models/Region`` folder while running the MESSAGE.
 
 .. note::
@@ -64,21 +64,21 @@ This section describes the various file types which are present or created withi
   * ``MXG`` is a matrix generation program and ``CAP`` is used for post processing of the solution and for extraction of results within MESSAGE GUI application.
 
 File types inside data folder
-+++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++
 .. csv-table::
     :class: full-width
     :header-rows: 1
     :file: csv_file/message_data.csv
 
 File types inside intm (interim) folder
-+++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++
 .. csv-table::
     :class: full-width
     :header-rows: 1
     :file: csv_file/message_intm.csv
 
 File types inside res folder
-+++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++
 .. csv-table::
     :class: full-width
     :header-rows: 1
@@ -87,7 +87,7 @@ File types inside res folder
 .. _splat_message_workflow:
 
 SPLAT MESSAGE workflow
------------------------
+-------------------------------
 
 The SPLAT MESSAGE workflow diagram looks as follows:
 

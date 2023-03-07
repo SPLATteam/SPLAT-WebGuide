@@ -7,7 +7,7 @@
 
 
 Working with Technologies
-==========================
+====================================
 
 .. important::
     The interface must be linked to the model before executing any of the steps in this section.
@@ -41,7 +41,7 @@ This section describes how to view, add and change technologies using the SPLAT 
 .. _view_tech_inputs:
 
 Viewing technology inputs
--------------------------
+-----------------------------------
 
 1. In any of the :ref:`technologysheets` (except the tabs containing information of specific zones), enter the scenario to be queried in the cell ``Choose Scenario``
 
@@ -52,7 +52,7 @@ Viewing technology inputs
 .. _add_tech:
 
 Adding a technology
--------------------
+-------------------------
 
 1. Refresh the sheet :ref:`SpecificTech` for the scenario selected.
 
@@ -68,7 +68,7 @@ Adding a technology
 .. _rename_tech:
 
 Renaming a technology 
----------------------
+-----------------------------
 
 1. Enter the old and new technology names in :ref:`RenameTechFacility` and click on :button:`Rename Techs in List`. 
 
@@ -79,7 +79,7 @@ Renaming a technology
 .. _delete_tech:
 
 Deleting a technology
-----------------------
+------------------------------
 
 1. Enter the technology names in :ref:`DeleteTechFacility` and click on :button:`Delete Techs in List`. 
 
@@ -90,7 +90,7 @@ Deleting a technology
 .. _change_tech:
 
 Changing a technology 
-----------------------
+------------------------------
 
 1. In any of the :ref:`technologysheets` (except the tabs containing information of specific zones), click on :button:`Refresh Sheet` to get the data saved in the model for the scenario chosen.
 
@@ -101,7 +101,7 @@ Changing a technology
 .. .. _fuel:
 
 .. Fuel price
-.. -----------
+.. ---------------
 
 .. 1. In the tab :ref:`fuelprices`, click on :button:`Refresh Sheet` to get the data saved in the model for the scenario and countries chosen.
 
@@ -116,7 +116,7 @@ Changing a technology
 .. .. _tech_cost:
 
 .. Technology costs
-.. -----------------
+.. -----------------------
 
 .. 1. In the tab :ref:`generictechcosts` and :ref:`specifictechcosts`, click on :button:`Refresh Sheet` to get the cost data saved in the model for the scenario and countries chosen.
 
@@ -130,7 +130,7 @@ Changing a technology
 .. .. _tech_capacity:
 
 .. Capacity Limit
-.. ---------------
+.. ---------------------
 
 .. 1. In the tab :ref:`specificcapacitylimits`, click on :button:`Refresh Sheet` to get the capacity limits saved in the model for the scenario and countries chosen.
 
@@ -145,12 +145,12 @@ Changing a technology
 .. _renewable_tech:
 
 Defining variable renewable energy technologies
------------------------------------------------
+-----------------------------------------------------------------
 
 .. _solar_wind:
 
 Solar PV, CSP, onshore and offshore Wind
-+++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++
 
 VRE technologies can be defined in two ways - either as generic technologies or site-specific technologies. Below is an example for adding offshore wind, first as a generic technology, then as zones.
 
@@ -167,7 +167,7 @@ VRE technologies can be defined in two ways - either as generic technologies or 
 .. _hydro_dam:
 
 Hydro Dam
-++++++++++
+++++++++++++++
 
 The ``SpecificTechHydroDams`` sheet manipulates the hydro dams in the model.
 
@@ -195,7 +195,7 @@ If the user wants to simulate different rainfall scenarios without a full time s
 .. _batteries:
 
 Batteries and Pump Storage
-++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++
 
 Batteries and pump storage technologies can be added and modified in the same way through the SPLAT excel interface.
 
@@ -210,14 +210,14 @@ Batteries and pump storage technologies can be added and modified in the same wa
 .. .. _csp:
 
 .. Concentrated Solar Power (CSP)
-.. ++++++++++++++++++++++++++++++
+.. ++++++++++++++++++++++++++++++++++++++++++
 
 .. Refer to steps in :ref:`solar_wind`. (Improvements upcoming)
 
 .. .. _transmission_distribution:
 
 .. Transmission and Distribution
-.. -----------------------------
+.. ---------------------------------------
 
 .. The :ref:`transmission` and :ref:`distribution` sheets are used to review or modify transmission and distribution technologies parameters as per the definitions in the ``TechnologySets`` sheet (see section below).
 
@@ -229,7 +229,7 @@ Batteries and pump storage technologies can be added and modified in the same wa
 .. .. _interconnection:
 
 .. Interconnection
-.. -----------------
+.. -----------------------
 
 .. The :ref:`interconnectors` sheet is used to review and update cross-border interconnector parameters.
 
@@ -238,7 +238,7 @@ Batteries and pump storage technologies can be added and modified in the same wa
 .. _tech_naming:
 
 Technology naming in the SPLAT model
-------------------------------------
+--------------------------------------------------
 
 The naming convention of various technologies including technology set levels 1 and 2, and generic technologies are given in the table below.
 The "??" in the technology code in the front refers to the two-letter country code (alpha-2). And the * provides further information about the technology.
@@ -264,6 +264,6 @@ The naming convention of generic technologies is given in the table below:
 .. _country_code:
 
 Country Code in the SPLAT model
--------------------------------
+-------------------------------------------
 
 The two-letter or three-letter country codes used in the SPLAT model are based on `ISO 3166-1 <https://en.wikipedia.org/wiki/ISO_3166-1>`_ standard.

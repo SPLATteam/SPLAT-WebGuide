@@ -7,13 +7,13 @@
 
 
 Getting Started
-===============
+=====================
 This section seeks to guide the reader through a number of basic steps.
 
 .. _prerequisites:
 
 Pre-requisites
---------------
+------------------
 Before using the SPLAT interface, ensure that you have the following software installed and files downloaded:
 
 .. note::
@@ -36,7 +36,7 @@ https://forms.office.com/Pages/ResponsePage.aspx?id=sOvdzLvS0ESYSo5CpcBis8X-QNFm
 .. _conventions:
 
 Conventions
-----------------
+----------------------
 :inputcell:`User Input Cell`
 
 Cells formatted as above (dark font with orange background) are user input cells, where the user is allowed and expected to enter data.
@@ -56,13 +56,13 @@ The tabs are organised according to the following conventions:
 .. _first_steps:
 
 First Steps
---------------
+------------------
 This documentation uses a simple model for demonstration. You can use an existing MESSAGE model for most of the examples in this documentation.
 
 .. _checking_bits:
 
 Checking Excel version
-+++++++++++++++++++++++
++++++++++++++++++++++++++++++++
 
 The SPLAT Excel interface requires the 64-bit default version of Excel for its main functions. You can check your version of Excel by clicking the :button:`File` menu > :button:`Account` > :button:`About Excel`. If you have the older 32-bit Excel, it is recommended to uninstall and re-install your Microsoft Office software with 64-bit selected, or to use a computer with 64-bit software already installed.
 
@@ -71,14 +71,14 @@ The SPLAT Excel interface requires the 64-bit default version of Excel for its m
 .. _restoring_model:
 
 Restore model in MESSAGE
-++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++
 
 In order to run the model using the SPLAT excel interface, you may have to restore the model in MESSAGE once. Refer to the how-to guide on :ref:`using_message` for instructions on using MESSAGE.
 
 .. _opening_file:
 
 Opening the file
-++++++++++++++++
+++++++++++++++++++++++
 Open the Excel file that starts with *SPLAT_Interface_...*.
 
 When you open the file, you must click :button:`Enable Content` (as shown below) for the file to function.
@@ -93,7 +93,7 @@ https://support.microsoft.com/en-gb/office/enable-or-disable-macros-in-microsoft
 .. _checking_decimal:
 
 Checking system's decimal symbol
-++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++
 The decimal separator of your system must be set to '.' (point) in order for the SPLAT Excel interface to function properly. If it is otherwise, e.g. ',' (comma), please go to ``Control Panel`` > ``Region`` > ``Additional settings``, and change decimal symbol to '.'.
 
 .. note::
@@ -102,7 +102,7 @@ The decimal separator of your system must be set to '.' (point) in order for the
 .. _link_interface:
 
 Linking the interface to your model file
-+++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 1. In the ``Main`` tab of the file, make sure the fields :inputcell:`Model Folder` and :inputcell:`Main Region` are set correctly as shown below, to reflect the location of the restored MESSAGE model folder on your computer.
 
@@ -119,7 +119,7 @@ Linking the interface to your model file
 .. _view_input:
 
 Viewing model input
-++++++++++++++++++++++
+++++++++++++++++++++++++++++++
 
 The SPLAT Excel interface allows a user to see the input data stored in SPLAT-MESSAGE models.
 
@@ -143,7 +143,7 @@ This process works the same way for all the yellow tabs (``Demand``, ``Transmiss
 .. _run_model:
 
 Running the model
-++++++++++++++++++
+++++++++++++++++++++++++
 
 **After** linking your model to the interface file in the ``Main`` tab, you can run your SPLAT model using the ``ReportGen-Annual`` tab.
 
@@ -169,10 +169,10 @@ In this example we select :inputcell:`Interconnected`` option.
 .. _extract_results:
 
 Extracting the results
-++++++++++++++++++++++
+++++++++++++++++++++++++++++++
 
 Use the ReportGen tab
-~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The ``ReportGen-Annual`` tab is also where you can pull in the results of the model that you just ran.
 
 1.	Select the scenario(s), country(s), variable(s) and year(s) combination that you want to view the results of. Please ensure that your desired scenario has been loaded in the excel memory. If it does not appear in the dropdown list, please go again to 'Main' tab and mark the desired scenario '1' and press 'Reload Global' button.
@@ -184,7 +184,7 @@ The ``ReportGen-Annual`` tab is also where you can pull in the results of the mo
 .. image:: /images/getting_started_extract_results_1.PNG
 
 Update the results charts
-~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 You can find the yearly result charts in the red sheets: ``Capacity``, ``Output``, ``New Capacity``, ``CO2``, and ``Costs``.
 
 .. important::

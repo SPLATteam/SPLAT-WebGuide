@@ -6,12 +6,12 @@
     :class: button
 
 How-To Guides
-=============
+=================
 
 .. _change_decimal_seperator:
 
 Change decimal seperator in windows environment
-----------------------------------------------
+----------------------------------------------------------------
 
 
 .. image:: /images/how_to_ChangeDecimalSeparator1.png
@@ -32,7 +32,7 @@ Change decimal seperator in windows environment
 .. _install_solver:
 
 Installing an Alternative (Faster) Free Solver
-----------------------------------------------
+----------------------------------------------------------------
 
 The MESSAGE software comes by default with a free solver called GLPK. This solver is adequate for working with small models, however, when a larger model is to be used (e.g. many timeslices, many technologies and subregions), this solver becomes inadequate requiring a long time to complete a "RUN".
 
@@ -57,7 +57,7 @@ Some of the files may already exist in the folder, you can accept to overwrite t
 .. _using_message:
 
 Restoring and opening a model using the MESSAGE interface
-----------------------------------------------------------
+--------------------------------------------------------------------------------
 
 1. Save the (SPLAT) model ZIP file that starts with ``\MAINa_...`` into a known location of the computer
 
@@ -102,7 +102,7 @@ For example, suppose your country is Cameroon, then you choose the code CMa, the
 .. _message_copy_scenario:
 
 Copying a scenario using the MESSAGE interface
------------------------------------------------
+-----------------------------------------------------------------
 
 1. Open your model in MESSAGE. If you have not restored your model before, please restore it for the first time. (:ref:`using_message`)
 
