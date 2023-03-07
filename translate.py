@@ -21,7 +21,8 @@ def translate_text(target, text):
     # will return a sequence of results for each text.
     result = translate_client.translate(text,
                                         target_language=target,
-                                        source_language="en")
+                                        source_language="en",
+                                        format_ ="text")
 
 #    print(u"Text: {}".format(result["input"]))
 #    print(u"Translation: {}".format(result["translatedText"]))
@@ -111,9 +112,9 @@ for f in files:
 
     f_name = os.path.basename(f)
     path_out = "{}/{}".format(path_translated, f_name)
-    with open(path_out, 'w+') as f_rst:
+    with open(path_out, 'w+', encoding='utf-8') as f_rst:
         for l in lines_rest:
-            f_rst.write("{}\n".format(l))
+            f_rst.write(l)
     df['orig'] = lines
     df['final'] = lines_rest
     df.to_csv("{}_table.csv".format(path_out))

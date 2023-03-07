@@ -1,36 +1,36 @@
 .. role:: button
-:class: button
+    :class: button
 
-Travailler avec des scénarios
-===============================
-
-.. note::
-L&#39;interface Excel SPLAT est limitée dans la gestion directe des scénarios. Veuillez ajouter et supprimer des scénarios directement via MESSAGE.
-
-.. _add_scenario :
-
-Ajouter un scénario
-------------------
-Les scénarios doivent être ajoutés via l&#39;interface MESSAGE. Il est recommandé à l&#39;utilisateur de faire une copie d&#39;un scénario existant via l&#39;interface MESSAGE et de le charger dans l&#39;interface SPLAT. Reportez-vous à :ref:`message_copy_scenario`.
-
-.. _select_scenario :
-
-Sélectionnez un scénario
-------------------------
-Pour sélectionner un scénario spécifique dans SPLAT, le scénario respectif doit être activé (mettez &quot;1&quot; dans la colonne Scénario à recharger pour le scénario respectif dans le tableau Scénario) dans la feuille principale.
-Ensuite, le rechargement global doit être activé pour charger les données du modèle pour le modèle spécifié pour une sous-région et un scénario donnés spécifiés dans le tableau.
-
-Les données doivent être définies dans les fiches d&#39;entrée et les fiches de contraintes pour correspondre aux récits et aux hypothèses du scénario spécifique.
+Travailler avec des scÃ©narios
+=======================
 
 .. note::
-Lorsqu&#39;une feuille d&#39;entrées ou de contraintes est rafraîchie pour un scénario (sauf adb) et qu&#39;un champ de données est vide, cela implique que le scénario prend la même valeur que celle définie dans le scénario adb.
-Pour définir une nouvelle valeur pour le champ de données, les données doivent être saisies et :button:`Mettre à jour les données du modèle` doit être enfoncé pour mettre à jour les données du modèle pour le scénario donné.
+    L'interface Excel SPLAT est limitÃ©e dans la gestion directe des scÃ©narios. Veuillez ajouter et supprimer des scÃ©narios directement via MESSAGE.
 
-.. .. _define_fullintegration_scenario :
+.. _add_scenarioÂ :
 
-.. Définition du scénario FullIntegration
-.. ---------------------------------------------
-.. Un scénario d&#39;intégration complète considère l&#39;intégration au niveau national et régional dans le modèle. Contrairement à d&#39;autres scénarios, les interconnexions génériques sont mises en ligne dans ce scénario.
-.. Par conséquent, les coûts de nuit des interconnexions génériques ($/kW) doivent être &quot;bien définis&quot; dans la feuille ``Interconnectors`` dans le cas du scénario FullIntegration.
+Ajouter un scÃ©nario
+--------------
+Les scÃ©narios doivent Ãªtre ajoutÃ©s via l'interface MESSAGE. Il est recommandÃ© Ã  l'utilisateur de faire une copie d'un scÃ©nario existant via l'interface MESSAGE et de le charger dans l'interface SPLAT. Reportez-vous Ã  :ref:`message_copy_scenario`.
+
+.. _select_scenarioÂ :
+
+SÃ©lectionnez un scÃ©nario
+-----------------
+Pour sÃ©lectionner un scÃ©nario spÃ©cifique dans SPLAT, le scÃ©nario respectif doit Ãªtre activÃ© (mettez "1" dans la colonne ScÃ©nario Ã  recharger pour le scÃ©nario respectif dans le tableau ScÃ©nario) dans la feuille principale.
+Ensuite, le rechargement global doit Ãªtre activÃ© pour charger les donnÃ©es du modÃ¨le pour le modÃ¨le spÃ©cifiÃ© pour une sous-rÃ©gion et un scÃ©nario donnÃ©s spÃ©cifiÃ©s dans le tableau.
+
+Les donnÃ©es doivent Ãªtre dÃ©finies dans les fiches d'entrÃ©e et les fiches de contraintes pour correspondre aux rÃ©cits et aux hypothÃ¨ses du scÃ©nario spÃ©cifique.
+
+.. note::
+    Lorsqu'une feuille d'entrÃ©es ou de contraintes est rafraÃ®chie pour un scÃ©nario (sauf adb) et qu'un champ de donnÃ©es est vide, cela implique que le scÃ©nario prend la mÃªme valeur que celle dÃ©finie dans le scÃ©nario adb.
+    Pour dÃ©finir une nouvelle valeur pour le champ de donnÃ©es, les donnÃ©es doivent Ãªtre saisies et :button:`Mettre Ã  jour les donnÃ©es du modÃ¨le` doit Ãªtre enfoncÃ© pour mettre Ã  jour les donnÃ©es du modÃ¨le pour le scÃ©nario donnÃ©.
+
+.. .. _define_fullintegration_scenarioÂ :
+
+.. DÃ©finition du scÃ©nario FullIntegration
+.. ---------------------------------
+.. Un scÃ©nario d'intÃ©gration complÃ¨te considÃ¨re l'intÃ©gration au niveau national et rÃ©gional dans le modÃ¨le. Contrairement Ã  d'autres scÃ©narios, les interconnexions gÃ©nÃ©riques sont mises en ligne dans ce scÃ©nario.
+.. Par consÃ©quent, les coÃ»ts de nuit des interconnexions gÃ©nÃ©riques ($/kW) doivent Ãªtre "bien dÃ©finis" dans la feuille ``Interconnectors`` dans le cas du scÃ©nario FullIntegration.
 
 

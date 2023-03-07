@@ -1,32 +1,32 @@
 .. role:: inputcell
-:class: inputcell
+    :class: inputcell
 .. role:: interfacecell
-:class: interfacecell
+    :class: interfacecell
 .. role:: button
-:class: button
+    :class: button
 
 
 Commencer
-=====================
-Cette section vise à guider le lecteur à travers un certain nombre d&#39;étapes de base.
+===============
+Cette section vise Ã  guider le lecteur Ã  travers un certain nombre d'Ã©tapes de base.
 
-.. _conditions préalables:
+.. _conditions prÃ©alables:
 
-Conditions préalables
-------------------
-Avant d&#39;utiliser l&#39;interface SPLAT, assurez-vous que les logiciels suivants sont installés et que les fichiers sont téléchargés :
+Conditions prÃ©alables
+--------------
+Avant d'utiliser l'interface SPLAT, assurez-vous que les logiciels suivants sont installÃ©s et que les fichiers sont tÃ©lÃ©chargÃ©sÂ :
 
 .. note::
-Si vous avez déjà reçu le kit d&#39;apprentissage SPLAT, les logiciels suivants (à l&#39;exception de Microsoft Excel) sont accessibles dans le dossier des logiciels. Si le kit ne vous a pas encore été délivré, veuillez remplir le `formulaire de demande`_ , ou contactez la personne IRENA avec laquelle vous êtes en contact.
+Si vous avez dÃ©jÃ  reÃ§u le kit d'apprentissage SPLAT, les logiciels suivants (Ã  l'exception de Microsoft Excel) sont accessibles dans le dossier des logiciels. Si le kit ne vous a pas encore Ã©tÃ© dÃ©livrÃ©, veuillez remplir le `formulaire de demande`_ , ou contactez la personne IRENA avec laquelle vous Ãªtes en contact.
 
 
-- Microsoft Excel (version 64 bits, à vérifier :ref:`checking_bits`)
+- Microsoft Excel (version 64 bits, Ã  vÃ©rifier :ref:`checking_bits`)
 - Outil AIEA MESSAGE
-- Un modèle
+-  	Un modÃ¨le
 - Interface Excel SPLAT
-- Solveur CBC (recommandé)
+- Solveur CBC (recommandÃ©)
 
-Le logiciel MESSAGE est livré avec un solveur gratuit appelé GLPK. Si un autre solveur est nécessaire, il devra être installé séparément. Nous vous recommandons d&#39;utiliser le solveur CBC pour une utilisation avec l&#39;interface SPLAT. Reportez-vous à :ref:`install_solver` pour utiliser des solveurs alternatifs comme cbc.
+Le logiciel MESSAGE est livrÃ© avec un solveur gratuit appelÃ© GLPK. Si un autre solveur est nÃ©cessaire, il devra Ãªtre installÃ© sÃ©parÃ©ment. Nous vous recommandons d'utiliser le solveur CBC pour une utilisation avec l'interface SPLAT. Reportez-vous Ã  :ref:`install_solver` pour utiliser des solveurs alternatifs comme cbc.
 
 
 .. _formulaire de demande:
@@ -36,161 +36,161 @@ https://forms.office.com/Pages/ResponsePage.aspx?id=sOvdzLvS0ESYSo5CpcBis8X-QNFm
 .. _conventions:
 
 Conventions
-----------------------
-:inputcell:`Cellule d&#39;entrée utilisateur`
+----------------
+:inputcell:`Cellule d'entrÃ©e utilisateur`
 
-Les cellules formatées comme ci-dessus (police sombre avec fond orange) sont des cellules de saisie utilisateur, où l&#39;utilisateur est autorisé et censé saisir des données.
+Les cellules formatÃ©es comme ci-dessus (police sombre avec fond orange) sont des cellules de saisie utilisateur, oÃ¹ l'utilisateur est autorisÃ© et censÃ© saisir des donnÃ©es.
 
-:interfacecell:`Réservé pour l&#39;interface`
+:interfacecell:`RÃ©servÃ© pour l'interface`
 
-Les cellules formatées comme ci-dessus (police foncée avec fond gris pâle) sont des cellules réservées à l&#39;interface. Ces cellules sont remplies par des macros dans le classeur ou sont des cellules calculées.
+Les cellules formatÃ©es comme ci-dessus (police foncÃ©e avec fond gris pÃ¢le) sont des cellules rÃ©servÃ©es Ã  l'interface. Ces cellules sont remplies par des macros dans le classeur ou sont des cellules calculÃ©es.
 
-Les onglets sont organisés selon les conventions suivantes :
+Les onglets sont organisÃ©s selon les conventions suivantesÂ :
 
-- Feuille ``Index`` : liste toutes les feuilles du classeur
-- Feuille ``Main`` : où les utilisateurs définissent le chemin du modèle et sélectionnent les pays dans le modèle
-- Onglets jaunes : pour revoir et mettre à jour les entrées de base du modèle
-- Onglets rouges : pour exécuter un modèle et extraire les résultats
-- Onglets gris : utilitaires disponibles pour les utilisateurs plus avancés
+- Feuille ``Index``Â : liste toutes les feuilles du classeur
+- Feuille ``Main``Â : oÃ¹ les utilisateurs dÃ©finissent le chemin du modÃ¨le et sÃ©lectionnent les pays dans le modÃ¨le
+- Onglets jaunes : pour revoir et mettre Ã  jour les entrÃ©es de base du modÃ¨le
+- Onglets rouges : pour exÃ©cuter un modÃ¨le et extraire les rÃ©sultats
+- Onglets gris : utilitaires disponibles pour les utilisateurs plus avancÃ©s
 
-.. _first_steps :
+.. _first_stepsÂ :
 
 Premiers pas
-------------------
-Cette documentation utilise un modèle simple pour la démonstration. Vous pouvez utiliser un modèle MESSAGE existant pour la plupart des exemples de cette documentation.
+--------------
+Cette documentation utilise un modÃ¨le simple pour la dÃ©monstration. Vous pouvez utiliser un modÃ¨le MESSAGE existant pour la plupart des exemples de cette documentation.
 
-.. _checking_bits :
+.. _checking_bitsÂ :
 
-Vérification de la version Excel
-+++++++++++++++++++++++++++++++++
+VÃ©rification de la version Excel
++++++++++++++++++++++++++
 
-L&#39;interface SPLAT Excel nécessite la version 64 bits par défaut d&#39;Excel pour ses fonctions principales. Vous pouvez vérifier votre version d&#39;Excel en cliquant sur le menu :button:`Fichier` &gt; :button:`Compte` &gt; :button:`À propos d&#39;Excel`. Si vous avez l&#39;ancien Excel 32 bits, il est recommandé de désinstaller et de réinstaller votre logiciel Microsoft Office avec 64 bits sélectionné, ou d&#39;utiliser un ordinateur avec un logiciel 64 bits déjà installé.
+L'interface SPLAT Excel nÃ©cessite la version 64 bits par dÃ©faut d'Excel pour ses fonctions principales. Vous pouvez vÃ©rifier votre version d'Excel en cliquant sur le menu :button:`Fichier` > :button:`Compte` > :button:`Ã€ propos d'Excel`. Si vous avez l'ancien Excel 32 bits, il est recommandÃ© de dÃ©sinstaller et de rÃ©installer votre logiciel Microsoft Office avec 64 bits sÃ©lectionnÃ©, ou d'utiliser un ordinateur avec un logiciel 64 bits dÃ©jÃ  installÃ©.
 
 .. image:: /images/getting_started_opening_file_2.PNG
 
-.. _restoring_model :
+.. _restoring_modelÂ :
 
-Restaurer le modèle dans MESSAGE
-++++++++++++++++++++++++++++++++++
+Restaurer le modÃ¨le dans MESSAGE
+++++++++++++++++++++++++++
 
-Afin d&#39;exécuter le modèle à l&#39;aide de l&#39;interface Excel SPLAT, vous devrez peut-être restaurer le modèle dans MESSAGE une fois. Reportez-vous au guide pratique sur :ref:`using_message` pour obtenir des instructions sur l&#39;utilisation de MESSAGE.
+Afin d'exÃ©cuter le modÃ¨le Ã  l'aide de l'interface Excel SPLAT, vous devrez peut-Ãªtre restaurer le modÃ¨le dans MESSAGE une fois. Reportez-vous au guide pratique sur :ref:`using_message` pour obtenir des instructions sur l'utilisation de MESSAGE.
 
-.. _opening_file :
+.. _opening_fileÂ :
 
-Ouverture du fichier
-++++++++++++++++++++++++
+Ouverture du dossier
+++++++++++++++++++
 Ouvrez le fichier Excel qui commence par *SPLAT_Interface_...*.
 
-Lorsque vous ouvrez le fichier, vous devez cliquer sur :button:`Activer le contenu` (comme indiqué ci-dessous) pour que le fichier fonctionne.
+Lorsque vous ouvrez le fichier, vous devez cliquer sur :button:`Activer le contenu` (comme indiquÃ© ci-dessous) pour que le fichier fonctionne.
 
 .. image:: /images/getting_started_opening_file.PNG
 
-De plus, les macros doivent être activées. Reportez-vous au lien pour `activer les macros`_.
+De plus, les macros doivent Ãªtre activÃ©es. Reportez-vous au lien pour `activer les macros`_.
 
-.. _activer les macros :
+.. _activer les macrosÂ :
 https://support.microsoft.com/en-gb/office/enable-or-disable-macros-in-microsoft-365-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6
 
-.. _checking_decimal :
+.. _checking_decimalÂ :
 
-Vérification du symbole décimal du système
-++++++++++++++++++++++++++++++++++++++++++++++
-Le séparateur décimal de votre système doit être défini sur &#39;.&#39; (point) pour que l&#39;interface SPLAT Excel fonctionne correctement. S&#39;il en est autrement, par exemple &#39;,&#39; (virgule), allez dans ``Panneau de configuration`` &gt; ``Région`` &gt; ``Paramètres supplémentaires``, et remplacez le symbole décimal par &#39;.&#39;.
+VÃ©rification du symbole dÃ©cimal du systÃ¨me
+++++++++++++++++++++++++++++++++++++
+Le sÃ©parateur dÃ©cimal de votre systÃ¨me doit Ãªtre dÃ©fini sur '.' (point) pour que l'interface SPLAT Excel fonctionne correctement. S'il en est autrement, par ex. ',' (virgule), allez dans ``Panneau de configuration`` > ``RÃ©gion`` > ``ParamÃ¨tres supplÃ©mentaires``, et remplacez le symbole dÃ©cimal par '.'.
 
 .. note::
-Le séparateur virgule est souvent le séparateur par défaut dans les environnements Windows français et devrait être modifié afin de pouvoir utiliser l&#39;interface. Reportez-vous à :ref:`change_decimal_seperator`.
+    Le sÃ©parateur virgule est souvent le sÃ©parateur par dÃ©faut dans les environnements Windows franÃ§ais et devrait Ãªtre modifiÃ© afin de pouvoir utiliser l'interface. Reportez-vous Ã  :ref:`change_decimal_seperator`.
 
-.. _link_interface :
+.. _link_interfaceÂ :
 
-Lier l&#39;interface à votre fichier modèle
-++++++++++++++++++++++++++++++++++++++++++++++++++ +++++++
+Lier l'interface Ã  votre fichier modÃ¨le
++++++++++++++++++++++++++++++++++++++++++
 
-1. Dans l&#39;onglet ``Main`` du fichier, assurez-vous que les champs :inputcell:`Model Folder` et :inputcell:`Main Region` sont correctement définis, comme indiqué ci-dessous, pour refléter l&#39;emplacement du dossier modèle MESSAGE restauré sur votre ordinateur.
+1. Dans l'onglet ``Main`` du fichier, assurez-vous que les champs :inputcell:`Model Folder` et :inputcell:`Main Region` sont correctement dÃ©finis, comme indiquÃ© ci-dessous, pour reflÃ©ter l'emplacement du dossier modÃ¨le MESSAGE restaurÃ© sur votre ordinateur.
 
-2. dans la section ``Sous-régions`` de l&#39;onglet ``Principal``, choisissez le(s) pays que vous souhaitez activer, en plaçant un &quot;1&quot; à côté dans la colonne orange, et un &quot;0&quot; à côté de tout autre pays.
+2. dans la section ``Sous-rÃ©gions`` de l'onglet ``Principal``, choisissez le(s) pays que vous souhaitez activer, en plaÃ§ant un "1" Ã  cÃ´tÃ© dans la colonne orange, et un "0" Ã  cÃ´tÃ© de tout autre pays.
 
-3. Cliquez sur le bouton :button:`Reload Global` en haut de la page (ceci connecte les fichiers de modèle MESSAGE avec ce classeur Excel). Les fichiers modèles sont lus et chargés en mémoire dans Excel.
+3. Cliquez sur le bouton :button:`Reload Global` en haut de la page (ceci connecte les fichiers de modÃ¨le MESSAGE avec ce classeur Excel). Les fichiers modÃ¨les sont lus et chargÃ©s en mÃ©moire dans Excel.
 
-4. Vous verrez une fenêtre pop-up indiquant &quot;Données de 2 pays chargées en mémoire&quot; (comme indiqué ci-dessous) ; appuyez sur :button:`OK`.
+4. Vous verrez une fenÃªtre pop-up indiquant "DonnÃ©es de 2 pays chargÃ©es en mÃ©moire" (comme indiquÃ© ci-dessous)Â ; appuyez sur :button:`OK`.
 
 .. image:: /images/getting_started_linking_interface_1.PNG
 
 .. image:: /images/getting_started_linking_interface_2.PNG
 
-.. _view_input :
+.. _view_inputÂ :
 
-Affichage de l&#39;entrée du modèle
-++++++++++++++++++++++++++++++++
+Affichage de l'entrÃ©e du modÃ¨le
+++++++++++++++++++++++++
 
-L&#39;interface SPLAT Excel permet à un utilisateur de voir les données d&#39;entrée stockées dans les modèles SPLAT-MESSAGE.
+L'interface SPLAT Excel permet Ã  un utilisateur de voir les donnÃ©es d'entrÃ©e stockÃ©es dans les modÃ¨les SPLAT-MESSAGE.
 
-1. Dans l&#39;un des onglets jaunes, choisissez le scénario dans la liste déroulante de la cellule C3.
+1. Dans l'un des onglets jaunes, choisissez le scÃ©nario dans la liste dÃ©roulante de la cellule C3.
 
-2. Cliquez sur :button:`Refresh Sheet`, les données stockées dans le modèle s&#39;afficheront dans le tableau.
+2. Cliquez sur :button:`Refresh Sheet`, les donnÃ©es stockÃ©es dans le modÃ¨le s'afficheront dans le tableau.
 
-Ce processus fonctionne de la même manière pour tous les onglets jaunes (``Demande``, ``Transmission``, ``Distribution``, etc.) de l&#39;interface SPLAT Excel. Vous pouvez également actualiser toutes les feuilles dans ces onglets en cliquant sur :button:`Actualiser toutes les feuilles` dans l&#39;onglet ``Principal``.
+Ce processus fonctionne de la mÃªme maniÃ¨re pour tous les onglets jaunes (``Demande``, ``Transmission``, ``Distribution``, etc.) de l'interface SPLAT Excel. Vous pouvez Ã©galement actualiser toutes les feuilles dans ces onglets en cliquant sur :button:`Actualiser toutes les feuilles` dans l'onglet ``Principal``.
 
 .. image:: /images/getting_started_viewing_input.PNG
 
 
 .. caution::
-Si vous avez vidé les cellules sous l&#39;en-tête du tableau, appuyer sur &#39;Actualiser la feuille&#39; provoquera une erreur. Cela se produit car le code de macro sous-jacent ne parvient pas à identifier la cellule de départ pour commencer à coller les données de modèle requises. Si vous rencontrez cette erreur, cliquez sur &#39;fin&#39;&gt; Recharger global&gt; écrivez un simple alphabet simple dans la cellule juste sous la première cellule de l&#39;en-tête du tableau&gt; actualisez la feuille.
+Si vous avez vidÃ© les cellules sous l'en-tÃªte du tableau, appuyer sur 'Actualiser la feuille' provoquera une erreur. Cela se produit car le code de macro sous-jacent ne parvient pas Ã  identifier la cellule de dÃ©part pour commencer Ã  coller les donnÃ©es de modÃ¨le requises. Si vous rencontrez cette erreur, cliquez sur 'fin'> Recharger global> Ã©crivez un simple alphabet simple dans la cellule juste sous la premiÃ¨re cellule de l'en-tÃªte du tableau> actualisez la feuille.
 
 
 .. note::
-Gardez à l&#39;esprit que le scénario &quot;adb&quot; (Application Database) contient toutes les données de base du modèle. Le choix d&#39;un autre scénario n&#39;affichera que les données **différentes** dans ce scénario. Donc, si vous choisissez un scénario et que les données sont vides, cela signifie qu&#39;il a les mêmes données que &quot;adb&quot;.
+    Gardez Ã  l'esprit que le scÃ©nario "adb" (Application Database) contient toutes les donnÃ©es de base du modÃ¨le. Le choix d'un autre scÃ©nario n'affichera que les donnÃ©es **diffÃ©rentes** dans ce scÃ©nario. Donc, si vous choisissez un scÃ©nario et que les donnÃ©es sont vides, cela signifie qu'il a les mÃªmes donnÃ©es que "adb".
 
 
-.. _run_model :
+.. _run_modelÂ :
 
-Exécution du modèle
-++++++++++++++++++++++++++
+ExÃ©cution du modÃ¨le
+++++++++++++++++++++
 
-**Après** avoir lié votre modèle au fichier d&#39;interface dans l&#39;onglet ``Main``, vous pouvez exécuter votre modèle SPLAT à l&#39;aide de l&#39;onglet ``ReportGen-Annual``.
+**AprÃ¨s** avoir liÃ© votre modÃ¨le au fichier d'interface dans l'onglet ``Main``, vous pouvez exÃ©cuter votre modÃ¨le SPLAT Ã  l'aide de l'onglet ``ReportGen-Annual``.
 
-1. Sélectionnez la bonne combinaison de scénario et de pays que vous souhaitez exécuter.
-Pour exécuter le modèle pour l&#39;ensemble du continent, sélectionnez tous les pays et &quot;MAINa&quot; dans les sous-régions/pays.
+1. SÃ©lectionnez la bonne combinaison de scÃ©nario et de pays que vous souhaitez exÃ©cuter.
+Pour exÃ©cuter le modÃ¨le pour l'ensemble du continent, sÃ©lectionnez tous les pays et "MAINa" dans les sous-rÃ©gions/pays.
 
-2. Sélectionnez l&#39;option préférée (avec ou sans interconnexions entre les sous-régions) sous ``Options d&#39;exécution (sous-régions)``.
-Pour un modèle à un seul comté, sélectionnez :inputcell:`Separate Subregions`.
-Pour un modèle multi-pays, :inputcell:`Sous-régions séparées` ou :inputcell:`Interconnectées` peuvent être sélectionnées en fonction du récit du scénario pour l&#39;interconnexion entre les pays.
-Dans cet exemple, nous sélectionnons l&#39;option :inputcell:`Interconnecté``.
+2. SÃ©lectionnez l'option prÃ©fÃ©rÃ©e (avec ou sans interconnexions entre les sous-rÃ©gions) sous ``Options d'exÃ©cution (sous-rÃ©gions)``.
+Pour un modÃ¨le Ã  un seul comtÃ©, sÃ©lectionnez :inputcell:`Separate Subregions`.
+Pour un modÃ¨le multi-pays, :inputcell:`Sous-rÃ©gions sÃ©parÃ©es` ou :inputcell:`InterconnectÃ©es` peuvent Ãªtre sÃ©lectionnÃ©es en fonction du rÃ©cit du scÃ©nario pour l'interconnexion entre les pays.
+Dans cet exemple, nous sÃ©lectionnons l'option :inputcell:`InterconnectÃ©``.
 
-3. Sélectionnez l&#39;option correcte sous les catégories &quot;Exécuter&quot;. Les catégories correspondent aux mêmes options dans le menu &quot;Exécuter&quot; MESSAGE :
-:inputcell:`Mxg` = générateur de matrice ;
-:inputcell:`Opt` = Optimisation ;
-:inputcell:`Cap` = Création du fichier Cap ;
-:inputcell:`All` = effectuer tout ce qui précède.
-Il existe trois options différentes fournies dans l&#39;interface pour CPLEX, CBC et GUROBI selon le solveur que vous avez préinstallé. Si vous êtes un nouvel utilisateur, veuillez installer et utiliser CBC (:ref:`install_solver`).
+3. SÃ©lectionnez l'option correcte sous les catÃ©gories "ExÃ©cuter". Les catÃ©gories correspondent aux mÃªmes options dans le menu "ExÃ©cuter" MESSAGEÂ :
+:inputcell:`Mxg` = gÃ©nÃ©rateur de matriceÂ ;
+:inputcell:`Opt` = OptimisationÂ ;
+:inputcell:`Cap` = CrÃ©ation du fichier CapÂ ;
+:inputcell:`All` = effectuer tout ce qui prÃ©cÃ¨de.
+Il existe trois options diffÃ©rentes fournies dans l'interface pour CPLEX, CBC et GUROBI selon le solveur que vous avez prÃ©installÃ©. Si vous Ãªtes un nouvel utilisateur, veuillez installer et utiliser CBC (:ref:`install_solver`).
 
-4. Appuyez sur le bouton :button:`Exécuter`. Vous devriez voir la fenêtre MESSAGE noire apparaître et commencer à s&#39;exécuter.
+4. Appuyez sur le bouton :button:`ExÃ©cuter`. Vous devriez voir la fenÃªtre MESSAGE noire apparaÃ®tre et commencer Ã  s'exÃ©cuter.
 
 .. image:: /images/getting_started_running_model.PNG
 
-.. _extract_results :
+.. _extract_resultsÂ :
 
-Extraction des résultats
-++++++++++++++++++++++++++++++++
+Extraction des rÃ©sultats
+++++++++++++++++++++++++
 
-Utiliser l&#39;onglet ReportGen
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-L&#39;onglet ``ReportGen-Annual`` est également l&#39;endroit où vous pouvez extraire les résultats du modèle que vous venez d&#39;exécuter.
+Utiliser l'onglet ReportGen
+~~~~~~~~~~~~~~~~~~~~~~~~~
+L'onglet ``ReportGen-Annual`` est Ã©galement l'endroit oÃ¹ vous pouvez extraire les rÃ©sultats du modÃ¨le que vous venez d'exÃ©cuter.
 
-1. Sélectionnez la combinaison scénario(s), pays(s), variable(s) et année(s) dont vous souhaitez afficher les résultats. Veuillez vous assurer que le scénario souhaité a été chargé dans la mémoire Excel. S&#39;il n&#39;apparaît pas dans la liste déroulante, veuillez revenir à l&#39;onglet « Principal » et marquer le scénario souhaité « 1 » et appuyer sur le bouton « Recharger global ».
+1. SÃ©lectionnez la combinaison scÃ©nario(s), pays(s), variable(s) et annÃ©e(s) dont vous souhaitez afficher les rÃ©sultats. Veuillez vous assurer que le scÃ©nario souhaitÃ© a Ã©tÃ© chargÃ© dans la mÃ©moire Excel. S'il n'apparaÃ®t pas dans la liste dÃ©roulante, veuillez revenir Ã  l'onglet Â«Â PrincipalÂ Â» et marquer le scÃ©nario souhaitÃ© Â«Â 1Â Â» et appuyer sur le bouton Â«Â Recharger globalÂ Â».
 
-2. Sélectionnez le format de sortie et entrez le chemin de sortie (le cas échéant) dans la section ``Destination des résultats``.
+2. SÃ©lectionnez le format de sortie et entrez le chemin de sortie (le cas Ã©chÃ©ant) dans la section ``Destination des rÃ©sultats``.
 
-3. Cliquez sur :button:`Get Results` (cercle rouge dans l&#39;image ci-dessous). Si :inputcell:`sur cette feuille` est sélectionné, vous devriez voir les résultats bruts apparaître sur la feuille lorsque le processus est terminé. Si :inputcell:`csv` est sélectionné, les résultats seront écrits dans un fichier csv à l&#39;emplacement spécifié. Si l&#39;emplacement n&#39;existe pas, il y aura un message d&#39;erreur. L&#39;option csv est plus pratique lorsque vous travaillez avec un grand nombre de résultats, et ils peuvent être liés à d&#39;autres tableaux croisés dynamiques dans Excel ou d&#39;autres logiciels tels que PowerBi ou Tableau.
+3. Cliquez sur :button:`Get Results` (cercle rouge dans l'image ci-dessous). Si :inputcell:`sur cette feuille` est sÃ©lectionnÃ©, vous devriez voir les rÃ©sultats bruts apparaÃ®tre sur la feuille lorsque le processus est terminÃ©. Si :inputcell:`csv` est sÃ©lectionnÃ©, les rÃ©sultats seront Ã©crits dans un fichier csv Ã  l'emplacement spÃ©cifiÃ©. Si l'emplacement n'existe pas, il y aura un message d'erreur. L'option csv est plus pratique lorsque vous travaillez avec un grand nombre de rÃ©sultats, et ils peuvent Ãªtre liÃ©s Ã  d'autres tableaux croisÃ©s dynamiques dans Excel ou d'autres logiciels tels que PowerBi ou Tableau.
 
 .. image:: /images/getting_started_extract_results_1.PNG
 
-Mettre à jour les tableaux de résultats
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Vous pouvez trouver les tableaux de résultats annuels dans les feuilles rouges : ``Capacity``, ``Output``, ``New Capacity``, ``CO2`` et ``Costs``.
+Mettre Ã  jour les tableaux de rÃ©sultats
+~~~~~~~~~~~~~~~~~~~~~~~~~
+Vous pouvez trouver les tableaux de rÃ©sultats annuels dans les feuilles rougesÂ : ``Capacity``, ``Output``, ``New Capacity``, ``CO2`` et ``Costs``.
 
 .. important::
 
-Assurez-vous de vérifier que le scénario et le pays corrects sont choisis en haut du tableau.
+    Assurez-vous de vÃ©rifier que le scÃ©nario et le pays corrects sont choisis en haut du tableau.
 
-Cliquez avec le bouton droit n&#39;importe où dans le tableau de la feuille de calcul et sélectionnez :button:`Actualiser` dans les options. Ces graphiques doivent être mis à jour ** chaque fois ** que vous obtenez de nouveaux résultats.
+Cliquez avec le bouton droit n'importe oÃ¹ dans le tableau de la feuille de calcul et sÃ©lectionnez :button:`Actualiser` dans les options. Ces graphiques doivent Ãªtre mis Ã  jour ** chaque fois ** que vous obtenez de nouveaux rÃ©sultats.
 
 .. image:: /images/getting_started_extract_results_2.PNG

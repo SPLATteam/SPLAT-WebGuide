@@ -1,51 +1,51 @@
 .. role:: inputcell
-:class: inputcell
+    :class: inputcell
 .. role:: interfacecell
-:class: interfacecell
+    :class: interfacecell
 .. role:: button
-:class: button
+    :class: button
 
-Définir le temps
-==================
+DÃ©finir le temps
+==============
 
 .. important::
-L&#39;interface doit être liée au modèle avant d&#39;exécuter l&#39;une des étapes de cette section.
-Voir :ref:`link_interface`.
+    L'interface doit Ãªtre liÃ©e au modÃ¨le avant d'exÃ©cuter l'une des Ã©tapes de cette section.
+    Voir :ref:`link_interface`.
 
-La feuille ``Timeslices (Load Regions)`` permet à l&#39;utilisateur de voir quelles régions de chargement se trouvent dans le modèle. Il permet également à l&#39;utilisateur de sélectionner le fuseau horaire avec lequel exécuter le modèle. Pour apporter des modifications à la définition de la région de chargement, les données de demande et de profil doivent être fournies dans un dossier spécifié conformément aux spécifications décrites plus loin dans ce document.
+La feuille ``Timeslices (Load Regions)`` permet Ã  l'utilisateur de voir quelles rÃ©gions de chargement se trouvent dans le modÃ¨le. Il permet Ã©galement Ã  l'utilisateur de sÃ©lectionner le fuseau horaire avec lequel exÃ©cuter le modÃ¨le. Pour apporter des modifications Ã  la dÃ©finition de la rÃ©gion de chargement, les donnÃ©es de demande et de profil doivent Ãªtre fournies dans un dossier spÃ©cifiÃ© conformÃ©ment aux spÃ©cifications dÃ©crites plus loin dans ce document.
 
-Notez qu&#39;actuellement, l&#39;interface ne prend pas en charge plusieurs types de jours (par exemple, les jours de semaine ou les week-ends), bien que cela sera ajouté dans les futures versions de l&#39;interface.
+Notez qu'actuellement, l'interface ne prend pas en charge plusieurs types de jours (par exemple, les jours de la semaine et les week-ends), bien que cela sera ajoutÃ© dans les futures versions de l'interface.
 
-L&#39;utilisateur peut revoir la définition des régions de chargement en cliquant sur le bouton :button:`Afficher TS en mémoire`.
+L'utilisateur peut revoir la dÃ©finition des rÃ©gions de chargement en cliquant sur le bouton :button:`Afficher TS en mÃ©moire`.
 
-.. _time_zones :
+.. _time_zonesÂ :
 
-Définition des fuseaux horaires et de la granularité
--------------------------------------------------
+DÃ©finition des fuseaux horaires et de la granularitÃ©
+-----------------------------------
 
-1. Ajoutez les informations de fuseau horaire local à regid_AllRegions.tit (par rapport à UTC).
+1. Ajoutez les informations de fuseau horaire local Ã  regid_AllRegions.tit (par rapport Ã  UTC).
 
-2. Dans la feuille ``Timeslices (Load Regions)``, sélectionnez l&#39;une des configurations prédéfinies et le fuseau horaire du modèle
-
-.. note::
-
-Il existe 4 configurations de région de chargement prédéfinies dans l&#39;interface :
-
-- Grand modèle : 30 tranches horaires/régions de chargement (3 saisons de 10 blocs chacune)
-
-- Petit modèle : 10 time-slices/load regions (3 saisons, 2 à 3 blocs, 1 à 4 blocs)
-
-- Petit modèle V2 : 10 time-slices/load regions (1 saison avec 10 blocs)
-
-- Très petit modèle : 3 tranches/régions de charge (1 saison avec 3 blocs)
-
-3. Mettez à jour les définitions de tranches de temps dans le modèle en cliquant sur le bouton :button:`Mettre à jour les fichiers`. Cette volonté:
-
-- Mettre à jour les définitions de tranches de temps dans les fichiers adb, ldb et ldr
-
-- Décalez les séries chronologiques du facteur de capacité et les séries chronologiques de la demande des fuseaux horaires locaux des régions vers le fuseau horaire du modèle sélectionné.
-
-- Mettre à jour les profils RE et les profils de demande qui sont stockés dans des séries de données 8760 dans des fichiers csv séparés. Les fichiers csv pour les profils de demande et d&#39;ER sont stockés dans le dossier de données de chaque pays/sous-région.
+2. Dans la feuille ``Timeslices (Load Regions)``, sÃ©lectionnez l'une des configurations prÃ©dÃ©finies et le fuseau horaire du modÃ¨le
 
 .. note::
-Requis : Macros-&gt; outils -&gt; Références (Microsoft Active X â€¦..)
+
+    Il existe 4Â configurations de rÃ©gion de chargement prÃ©dÃ©finies dans l'interfaceÂ :
+
+    - Grand modÃ¨leÂ : 30 tranches horaires/rÃ©gions de chargement (3Â saisons de 10Â blocs chacune)
+
+    - Petit modÃ¨le : 10 time-slices/load regions (3 saisons, 2 Ã  3 blocs, 1 Ã  4 blocs)
+
+    - Petit modÃ¨le V2 : 10 time-slices/load regions (1 saison avec 10 blocs)
+
+    - TrÃ¨s petit modÃ¨leÂ : 3Â tranches/rÃ©gions de charge (1Â saison avec 3Â blocs)
+
+3. Mettez Ã  jour les dÃ©finitions de tranches de temps dans le modÃ¨le en cliquant sur le bouton :button:`Mettre Ã  jour les fichiers`. Cette volontÃ©:
+
+    - Mettre Ã  jour les dÃ©finitions de tranches de temps dans les fichiers adb, ldb et ldr
+
+    - DÃ©calez les sÃ©ries chronologiques du facteur de capacitÃ© et les sÃ©ries chronologiques de la demande des fuseaux horaires locaux des rÃ©gions vers le fuseau horaire du modÃ¨le sÃ©lectionnÃ©.
+
+    - Mettre Ã  jour les profils RE et les profils de demande qui sont stockÃ©s dans des sÃ©ries de donnÃ©es 8760 dans des fichiers csv sÃ©parÃ©s. Les fichiers csv pour les profils de demande et d'ER sont stockÃ©s dans le dossier de donnÃ©es de chaque pays/sous-rÃ©gion.
+
+.. note::
+    Requis : Macros-> outils -> RÃ©fÃ©rences (Microsoft Active X Ã¢â‚¬Â¦..)

@@ -1,95 +1,95 @@
 .. role:: inputcell
-:class: inputcell
+    :class: inputcell
 .. role:: interfacecell
-:class: interfacecell
+    :class: interfacecell
 .. role:: button
-:class: button
+    :class: button
 .. role:: tight-tableau
-:class: tight-tableau
+    :class: tight-tableau
 
 MESSAGE
-=============================
-Modèle pour les alternatives de stratégie de système énergétique et leurs impacts environnementaux généraux (MESSAGE)
-a été conçu pour développer un modèle d&#39;optimisation d&#39;un système énergétique pour la planification à moyen et long terme, l&#39;analyse de la politique énergétique et le développement de scénarios.
-MESSAGE formule le modèle de programmation linéaire dynamique avec une option d&#39;entiers mixtes.
-(Les contraintes non linéaires ou la fonction objectif non linéaire ne peuvent être définies que pour un problème spécifique.)
-MESSAGE résout le modèle d&#39;optimisation en deux étapes :
+=====================
+ModÃ¨le pour les alternatives de stratÃ©gie de systÃ¨me Ã©nergÃ©tique et leurs impacts environnementaux gÃ©nÃ©raux (MESSAGE)
+a Ã©tÃ© conÃ§u pour dÃ©velopper un modÃ¨le d'optimisation d'un systÃ¨me Ã©nergÃ©tique pour la planification Ã  moyen et long terme, l'analyse de la politique Ã©nergÃ©tique et le dÃ©veloppement de scÃ©narios.
+MESSAGE formule le modÃ¨le de programmation linÃ©aire dynamique avec une option d'entiers mixtes.
+(Les contraintes non linÃ©aires ou la fonction objectif non linÃ©aire ne peuvent Ãªtre dÃ©finies que pour un problÃ¨me spÃ©cifique.)
+MESSAGE rÃ©sout le modÃ¨le d'optimisation en deux Ã©tapesÂ :
 
-1. Génération de matrice.
+1. GÃ©nÃ©ration de matrice.
 
-2. Optimisation du modèle à l&#39;aide de la matrice générée.
+2. Optimisation du modÃ¨le Ã  l'aide de la matrice gÃ©nÃ©rÃ©e.
 
-La version actuelle du logiciel MESSAGE comprend les composants suivants :
+La version actuelle du logiciel MESSAGE comprend les composants suivantsÂ :
 
-* Une interface utilisateur pour construire un modèle.
+* Une interface utilisateur pour construire un modÃ¨le.
 
-* Bases de données.
+* Bases de donnÃ©es.
 
-* Un programme de génération de matrice appelé &quot;mxg&quot;.
+* Un programme de gÃ©nÃ©ration de matrice appelÃ© "mxg".
 
-* Un programme d&#39;optimisation appelé &quot;opts&quot;.
+* Un programme d'optimisation appelÃ© "opts".
 
-* Un programme de post-traitement de la solution d&#39;extraction des résultats appelé &quot;cap&quot;.
+* Un programme de post-traitement de la solution d'extraction des rÃ©sultats appelÃ© "cap".
 
-La figure suivante montre le flux de contrôle et d&#39;informations entre ces composants lors de l&#39;exécution du programme MESSAGE.
+La figure suivante montre le flux de contrÃ´le et d'informations entre ces composants lors de l'exÃ©cution du programme MESSAGE.
 
 .. image:: /images/message_components.PNG
 
-La première partie de cette section décrit les différentes bases de données utilisées dans MESSAGE. Et la deuxième partie décrit l&#39;importance des fichiers de modélisation créés par divers programmes lors de l&#39;utilisation de MESSAGE.
+La premiÃ¨re partie de cette section dÃ©crit les diffÃ©rentes bases de donnÃ©es utilisÃ©es dans MESSAGE. Et la deuxiÃ¨me partie dÃ©crit l'importance des fichiers de modÃ©lisation crÃ©Ã©s par divers programmes lors de l'utilisation de MESSAGE.
 
-.. _Databases_in_MESSAGE :
+.. _Databases_in_MESSAGEÂ :
 
-Bases de données dans MESSAGE
---------------------------------
-MESSAGE crée chaque modèle dans une étude de cas distincte et, par conséquent, un fichier de base de données pour chaque modèle. Les types de bases de données utilisées dans MESSAGE sont donnés dans le tableau ci-dessous :
+Bases de donnÃ©es dans MESSAGE
+------------------------
+MESSAGE crÃ©e chaque modÃ¨le dans une Ã©tude de cas distincte et, par consÃ©quent, un fichier de base de donnÃ©es pour chaque modÃ¨le. Les types de bases de donnÃ©es utilisÃ©es dans MESSAGE sont donnÃ©s dans le tableau ci-dessous :
 
-.. csv-table :: Bases de données dans MESSAGE
-:lignes d&#39;en-tête : 1
-:file: csv_file/message_databases.csv
-:width: 5, 5, 20
+.. csv-table :: Bases de donnÃ©es dans MESSAGE
+    :lignes d'en-tÃªteÂ : 1
+    :file: csv_file/message_databases.csv
+    :width: 5, 5, 20
 
-L&#39;interrelation des bases de données utilisées dans le programme MESSAGE est illustrée dans la figure ci-dessous :
+L'interrelation des bases de donnÃ©es utilisÃ©es dans le programme MESSAGE est illustrÃ©e dans la figure ci-dessousÂ :
 
 .. image:: /images/message_databases.PNG
 
-Signification des différents fichiers de modèle MESSAGE
--------------------------------------------------- ---------
-Cette section décrit les différents types de fichiers qui sont présents ou créés dans les sous-dossiers tels que ``data``, ``int`` et ``res`` dans le dossier ``models/Region`` lors de l&#39;exécution du MESSAGE.
+Signification des diffÃ©rents fichiers de modÃ¨le MESSAGE
+------------------------------------------------
+Cette section dÃ©crit les diffÃ©rents types de fichiers qui sont prÃ©sents ou crÃ©Ã©s dans les sous-dossiers tels que ``data``, ``int`` et ``res`` dans le dossier ``models/Region`` lors de l'exÃ©cution du MESSAGE.
 
 .. note::
-* ``Région`` pourrait faire référence à un acronyme pour un pays, par exemple, ``ZAa`` pour l&#39;Afrique du Sud ou ``MAINa`` pour l&#39;ensemble du continent.
+  * ``RÃ©gion`` pourrait faire rÃ©fÃ©rence Ã  un acronyme pour un pays, par exemple, ``ZAa`` pour l'Afrique du Sud ou ``MAINa`` pour l'ensemble du continent.
+  
+  * ``CaseName`` fait rÃ©fÃ©rence Ã  un scÃ©nario.
+  
+  * ``MXG`` est un programme de gÃ©nÃ©ration de matrice et ``CAP`` est utilisÃ© pour le post-traitement de la solution et pour l'extraction des rÃ©sultats dans l'application MESSAGE GUI.
 
-* ``CaseName`` fait référence à un scénario.
-
-* ``MXG`` est un programme de génération de matrice et ``CAP`` est utilisé pour le post-traitement de la solution et pour l&#39;extraction des résultats dans l&#39;application MESSAGE GUI.
-
-Types de fichiers dans le dossier de données
-+++++++++++++++++++++++++++++++++++++++
+Types de fichiers dans le dossier de donnÃ©es
++++++++++++++++++++++++++++++++
 .. table-csv ::
-:class: full-largeur
-:lignes d&#39;en-tête : 1
-:file: csv_file/message_data.csv
+    :class: full-largeur
+    :lignes d'en-tÃªteÂ : 1
+    :file: csv_file/message_data.csv
 
-Types de fichiers dans le dossier intm (intérimaire)
-+++++++++++++++++++++++++++++++++++++++
+Types de fichiers dans le dossier intm (intÃ©rimaire)
++++++++++++++++++++++++++++++++
 .. table-csv ::
-:class: full-largeur
-:lignes d&#39;en-tête : 1
-:file: csv_file/message_intm.csv
+    :class: full-largeur
+    :lignes d'en-tÃªteÂ : 1
+    :file: csv_file/message_intm.csv
 
 Types de fichiers dans le dossier res
-+++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++
 .. table-csv ::
-:class: full-largeur
-:lignes d&#39;en-tête : 1
-:file: csv_file/message_res.csv
+    :class: full-largeur
+    :lignes d'en-tÃªteÂ : 1
+    :file: csv_file/message_res.csv
 
-.. _splat_message_workflow :
+.. _splat_message_workflowÂ :
 
 Flux de travail SPLAT MESSAGE
--------------------------------
+------------------------
 
-Le diagramme de workflow SPLAT MESSAGE se présente comme suit :
+Le diagramme de workflow SPLAT MESSAGE se prÃ©sente comme suitÂ :
 
 .. image:: /images/splat_message_workflow.PNG
 

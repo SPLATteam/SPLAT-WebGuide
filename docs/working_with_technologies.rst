@@ -1,269 +1,269 @@
 .. role:: inputcell
-:class: inputcell
+    :class: inputcell
 .. role:: interfacecell
-:class: interfacecell
+    :class: interfacecell
 .. role:: button
-:class: button
+    :class: button
 
 
 Travailler avec les technologies
-====================================
+==========================
 
 .. important::
-L&#39;interface doit être liée au modèle avant d&#39;exécuter l&#39;une des étapes de cette section.
-Voir :ref:`link_interface`.
+    L'interface doit Ãªtre liÃ©e au modÃ¨le avant d'exÃ©cuter l'une des Ã©tapes de cette section.
+    Voir :ref:`link_interface`.
 
-Une technologie dans le modèle est une unité de production d&#39;électricité ou une combinaison de ces unités ou une ligne de transmission avec des paramètres spécifiques tels que la capacité maximale, le facteur de capacité, le CAPEX, le FOM, le coût du carburant, etc.
+Une technologie dans le modÃ¨le est une unitÃ© de production d'Ã©lectricitÃ© ou une combinaison de ces unitÃ©s ou une ligne de transmission avec des paramÃ¨tres spÃ©cifiques tels que la capacitÃ© maximale, le facteur de capacitÃ©, le CAPEX, le FOM, le coÃ»t du carburant, etc.
 
-Une technologie peut être spécifique à un site (une centrale ou une ligne de transmission spécifique avec des paramètres connus) ou générique (une technologie avec des paramètres généralisés).
-Les technologies dans SPLAT sont classées en quatre types principaux :
+Une technologie peut Ãªtre spÃ©cifique Ã  un site (une centrale ou une ligne de transmission spÃ©cifique avec des paramÃ¨tres connus) ou gÃ©nÃ©rique (une technologie avec des paramÃ¨tres gÃ©nÃ©ralisÃ©s).
+Les technologies dans SPLAT sont classÃ©es en quatre types principauxÂ :
 
-**1. Existing technologies:** Les technologies qui sont déjà en place à partir de l&#39;année de référence.
+**1. Existing technologies:** Les technologies qui sont dÃ©jÃ  en place Ã  partir de l'annÃ©e de rÃ©fÃ©rence.
 
-**2. Committed technologies:** Les technologies en cours de construction ou dont la mise en œuvre a été approuvée. Le déploiement de ces technologies peut être considéré comme garanti dans les résultats du modèle.
+**2. Committed technologies:** Les technologies en cours de construction ou dont la mise en Å“uvre a Ã©tÃ© approuvÃ©e. Le dÃ©ploiement de ces technologies peut Ãªtre considÃ©rÃ© comme garanti dans les rÃ©sultats du modÃ¨le.
 
-**3. Candidate technologies:** Les technologies qui peuvent ou non être mises en service à long terme et donc faire partie du processus d&#39;optimisation. Les caractéristiques de ces projets (taille, emplacement, technologie, etc.) doivent être cohérentes avec les infrastructures existantes, l&#39;évolution des prix et le potentiel des ressources énergétiques.
-Le modèle les sélectionnera s&#39;ils présentent un avantage net pour le système électrique modélisé, ce qui implique que leur construction, leur exploitation et leur maintenance devraient minimiser le coût total de l&#39;expansion du système électrique.
+**3. Candidate technologies:** Les technologies qui peuvent ou non Ãªtre mises en service Ã  long terme et donc faire partie du processus d'optimisation. Les caractÃ©ristiques de ces projets (taille, emplacement, technologie, etc.) doivent Ãªtre cohÃ©rentes avec les infrastructures existantes, l'Ã©volution des prix et le potentiel des ressources Ã©nergÃ©tiques.
+Le modÃ¨le les sÃ©lectionnera s'ils prÃ©sentent un avantage net pour le systÃ¨me Ã©lectrique modÃ©lisÃ©, ce qui implique que leur construction, leur exploitation et leur maintenance devraient minimiser le coÃ»t total de l'expansion du systÃ¨me Ã©lectrique.
 
-Le modèle SPLAT Africa utilisé dans le projet Continental Power System Master Plan (CMP) utilise le modèle énergétique « supply regions » (MSR).
-MSR comprend des options d&#39;approvisionnement solaire PV géoréférencées, solaires CSP, éoliennes terrestres et offshore conçues par l&#39;IRENA grâce à une analyse géospatiale systématique expliquée dans cet article.<https://www.nature.com/articles/s41597-022-01786-5> `_.
-Ces technologies d&#39;énergies renouvelables variables sont également considérées comme des technologies candidates.
+Le modÃ¨le SPLAT Africa utilisÃ© dans le projet Continental Power System Master Plan (CMP) utilise le modÃ¨le Ã©nergÃ©tique Â« supply regions Â» (MSR).
+MSR comprend des options d'approvisionnement solaire PV gÃ©orÃ©fÃ©rencÃ©es, solaires CSP, Ã©oliennes terrestres et offshore conÃ§ues par l'IRENA grÃ¢ce Ã  une analyse gÃ©ospatiale systÃ©matique expliquÃ©e dans cet article <https://www.nature.com/articles/s41597-022-01786 -5>`_.
+Ces technologies d'Ã©nergies renouvelables variables sont Ã©galement considÃ©rÃ©es comme des technologies candidates.
 
-**4. Generic technologies:** Ces technologies ne sont pas spécifiques au site. Ils ont des paramètres généralisés. À l&#39;instar des technologies candidates, ces technologies font également partie du processus d&#39;optimisation. Le modèle sélectionnerait ces technologies si elles présentent un avantage net pour le système électrique modélisé.
+**4. Generic technologies:** Ces technologies ne sont pas spÃ©cifiques au site. Ils ont des paramÃ¨tres gÃ©nÃ©ralisÃ©s. Ã€ l'instar des technologies candidates, ces technologies font Ã©galement partie du processus d'optimisation. Le modÃ¨le sÃ©lectionnerait ces technologies si elles prÃ©sentent un avantage net pour le systÃ¨me Ã©lectrique modÃ©lisÃ©.
 
-Les technologies génériques sont normalement configurées de manière à ne pas être mises en ligne dans des scénarios de référence. L&#39;une des principales motivations pour avoir des technologies génériques dans le modèle est de rendre le modèle indépendant de la technologie, ce qui à son tour augmente l&#39;acceptation parmi les parties prenantes.
+Les technologies gÃ©nÃ©riques sont normalement configurÃ©es de maniÃ¨re Ã  ne pas Ãªtre mises en ligne dans des scÃ©narios de rÃ©fÃ©rence. L'une des principales motivations pour avoir des technologies gÃ©nÃ©riques dans le modÃ¨le est de rendre le modÃ¨le indÃ©pendant de la technologie, ce qui Ã  son tour augmente l'acceptation parmi les parties prenantes.
 
-Les onglets Technologie sont répertoriés dans :ref:`technologysheets`
+Les onglets Technologie sont rÃ©pertoriÃ©s dans :ref:`technologysheets`
 
-Cette section décrit comment afficher, ajouter et modifier des technologies à l&#39;aide de l&#39;interface SPLAT Excel.
+Cette section dÃ©crit comment afficher, ajouter et modifier des technologies Ã  l'aide de l'interface SPLAT Excel.
 
 
-.. _view_tech_inputs :
+.. _view_tech_inputsÂ :
 
-Affichage des entrées technologiques
------------------------------------
-
-1. Dans l&#39;une des :ref:`fiches technologiques` (à l&#39;exception des onglets contenant des informations sur des zones spécifiques), saisissez le scénario à interroger dans la cellule ``Choisir un scénario``
-
-2. Cliquez sur :button:`Actualiser la feuille`. Les technologies et leurs paramètres dans le scénario seront présentés dans la même feuille. Seules les données du ou des pays chargés (dans la feuille ``Principal``) seront affichées.
-
-3. Reportez-vous à :ref:`renewable_tech` pour connaître les étapes de récupération des informations sur les zones renouvelables (Solar PV, Solar CSP, Onshore Wind, Offshore Wind).
-
-.. _add_tech :
-
-Ajouter une technologie
+Affichage des entrÃ©es technologiques
 -------------------------
 
-1. Actualisez la feuille :ref:`SpecificTech` pour le scénario sélectionné.
+1. Dans l'une des :ref:`fiches technologiques` (Ã  l'exception des onglets contenant des informations sur des zones spÃ©cifiques), saisissez le scÃ©nario Ã  interroger dans la cellule ``Choisir un scÃ©nario``
 
-2. Ajoutez un nouveau nom de technologie spécifique et des paramètres dans le tableau. Assurez-vous que le code de technologie est unique et non répété.
+2. Cliquez sur :button:`Actualiser la feuille`. Les technologies et leurs paramÃ¨tres dans le scÃ©nario seront prÃ©sentÃ©s dans la mÃªme feuille. Seules les donnÃ©es du ou des pays chargÃ©s (dans la feuille ``Principal``) seront affichÃ©es.
 
-3. Cliquez sur :button:`Ajouter de nouveaux techniciens`. Une technologie est ajoutée avec les paramètres de la technologie générique sous-jacente.
+3. Reportez-vous Ã  :ref:`renewable_tech` pour connaÃ®tre les Ã©tapes de rÃ©cupÃ©ration des informations sur les zones renouvelables (Solar PV, Solar CSP, Onshore Wind, Offshore Wind).
 
-4. Actualisez la feuille pour voir la nouvelle technologie ajoutée. Actualisez les autres feuilles avant de modifier les paramètres pertinents.
+.. _add_techÂ :
+
+Ajouter une technologie
+-------------------
+
+1. Actualisez la feuille :ref:`SpecificTech` pour le scÃ©nario sÃ©lectionnÃ©.
+
+2. Ajoutez un nouveau nom de technologie spÃ©cifique et des paramÃ¨tres dans le tableau. Assurez-vous que le code de technologie est unique et non rÃ©pÃ©tÃ©.
+
+3. Cliquez sur :button:`Ajouter de nouveaux techniciens`. Une technologie est ajoutÃ©e avec les paramÃ¨tres de la technologie gÃ©nÃ©rique sous-jacente.
+
+4. Actualisez la feuille pour voir la nouvelle technologie ajoutÃ©e. Actualisez les autres feuilles avant de modifier les paramÃ¨tres pertinents.
 
 .. note::
-Les technologies de stockage de batterie et de pompe doivent être définies séparément dans la feuille :ref:`Battery&amp;PumpStorage` dans l&#39;interface SPLAT.
+Les technologies de stockage de batterie et de pompe doivent Ãªtre dÃ©finies sÃ©parÃ©ment dans la feuille :ref:`Battery&PumpStorage` dans l'interface SPLAT.
 
-.. _rename_tech :
+.. _rename_techÂ :
 
 Renommer une technologie
------------------------------
+---------------------
 
 1. Entrez les anciens et nouveaux noms de technologie dans :ref:`RenameTechFacility` et cliquez sur :button:`Rename Techs in List`.
 
-2. Pour confirmer que la technologie a été renommée, actualisez les onglets correspondants (``GenericTech`` ou ``SpecificTech``) pour voir les noms mis à jour. Plusieurs technologies peuvent être renommées.
+2. Pour confirmer que la technologie a Ã©tÃ© renommÃ©e, actualisez les onglets correspondants (``GenericTech`` ou ``SpecificTech``) pour voir les noms mis Ã  jour. Plusieurs technologies peuvent Ãªtre renommÃ©es.
 
 .. image:: /images/technology_rename.PNG
 
-.. _delete_tech :
+.. _delete_techÂ :
 
-Suppression d&#39;une technologie
-------------------------------
+Suppression d'une technologie
+----------------------
 
 1. Entrez les noms des technologies dans :ref:`DeleteTechFacility` et cliquez sur :button:`Delete Techs in List`.
 
-2. Pour confirmer que la technologie a bien été supprimée, actualisez les onglets correspondants (``GenericTech`` ou ``SpecificTech``) pour voir la mise à jour. Plusieurs technologies peuvent être supprimées.
+2. Pour confirmer que la technologie a bien Ã©tÃ© supprimÃ©e, actualisez les onglets correspondants (``GenericTech`` ou ``SpecificTech``) pour voir la mise Ã  jour. Plusieurs technologies peuvent Ãªtre supprimÃ©es.
 
 .. image:: /images/technology_delete.PNG
 
-.. _change_tech :
+.. _change_techÂ :
 
 Changer de technologie
-------------------------------
+----------------------
 
-1. Dans l&#39;une des :ref:`fiches techniques` (à l&#39;exception des onglets contenant des informations sur des zones spécifiques), cliquez sur :button:`Actualiser la feuille` pour obtenir les données enregistrées dans le modèle pour le scénario choisi.
+1. Dans l'une des :ref:`fiches techniques` (Ã  l'exception des onglets contenant des informations sur des zones spÃ©cifiques), cliquez sur :button:`Actualiser la feuille` pour obtenir les donnÃ©es enregistrÃ©es dans le modÃ¨le pour le scÃ©nario choisi.
 
 2. Apportez des modifications aux technologies de la feuille.
 
-3. Cliquez sur :button:`Mettre à jour les données du modèle` pour mettre à jour le modèle avec les nouvelles données.
+3. Cliquez sur :button:`Mettre Ã  jour les donnÃ©es du modÃ¨le` pour mettre Ã  jour le modÃ¨le avec les nouvelles donnÃ©es.
 
 .. .. _carburant:
 
 .. Prix du carburant
-.. ---------------
+.. -----------
 
-.. 1. Dans l&#39;onglet :ref:`fuelprices`, cliquez sur :button:`Refresh Sheet` pour récupérer les données enregistrées dans le modèle pour le scénario et les pays choisis.
+.. 1. Dans l'onglet :ref:`fuelprices`, cliquez sur :button:`Refresh Sheet` pour rÃ©cupÃ©rer les donnÃ©es enregistrÃ©es dans le modÃ¨le pour le scÃ©nario et les pays choisis.
 
 .. 2. Apportez des modifications aux prix du carburant dans la feuille.
 
-.. 3. Cliquez sur :button:`Mettre à jour les données du modèle` pour mettre à jour le modèle avec les nouvelles données.
+.. 3. Cliquez sur :button:`Mettre Ã  jour les donnÃ©es du modÃ¨le` pour mettre Ã  jour le modÃ¨le avec les nouvelles donnÃ©es.
 
 .. .. note::
-.. 1. Le prix du carburant est indiqué en $/GJ. Il n&#39;est actuellement pas possible d&#39;ajouter de nouvelles technologies d&#39;approvisionnement en carburant via l&#39;interface SPLAT, cela est laissé pour un développement futur (ainsi que la possibilité de spécifier des limites, qui seraient nécessaires si l&#39;on voulait modéliser une courbe d&#39;approvisionnement pour un carburant particulier).
-.. 2. Si un utilisateur spécifie des valeurs à la fois dans la colonne Constante et dans les colonnes de l&#39;année du jalon, seule la valeur constante sera utilisée pour mettre à jour le modèle MESSAGE et les autres valeurs seront ignorées.
+.. 1. Le prix du carburant est indiquÃ© en $/GJ. Il n'est actuellement pas possible d'ajouter de nouvelles technologies d'approvisionnement en carburant via l'interface SPLAT, cela est laissÃ© pour un dÃ©veloppement futur (ainsi que la possibilitÃ© de spÃ©cifier des limites, qui seraient nÃ©cessaires si l'on voulait modÃ©liser une courbe d'approvisionnement pour un carburant particulier).
+.. 2. Si un utilisateur spÃ©cifie des valeurs Ã  la fois dans la colonne Constante et dans les colonnes de l'annÃ©e du jalon, seule la valeur constante sera utilisÃ©e pour mettre Ã  jour le modÃ¨le MESSAGE et les autres valeurs seront ignorÃ©es.
 
-.. .. _tech_cost :
+.. .. _tech_costÂ :
 
-.. Coûts technologiques
-.. -----------------------
+.. CoÃ»ts technologiques
+.. -----------------
 
-.. 1. Dans l&#39;onglet :ref:`generictechcosts` et :ref:`specifictechcosts`, cliquez sur :button:`Refresh Sheet` pour obtenir les données de coûts enregistrées dans le modèle pour le scénario et les pays choisis.
+.. 1. Dans l'onglet :ref:`generictechcosts` et :ref:`specifictechcosts`, cliquez sur :button:`Refresh Sheet` pour obtenir les donnÃ©es de coÃ»ts enregistrÃ©es dans le modÃ¨le pour le scÃ©nario et les pays choisis.
 
-.. 2. Apportez des modifications aux coûts (coût de nuit-$/kW, coût fixe d&#39;O&amp;M-$/kW, coût variable d&#39;O&amp;M-$/MWh) dans la feuille.
+.. 2. Apportez des modifications aux coÃ»ts (coÃ»t de nuit-$/kW, coÃ»t fixe d'O&M-$/kW, coÃ»t variable d'O&M-$/MWh) dans la feuille.
 
-.. 3. Cliquez sur :button:`Mettre à jour les données du modèle` pour mettre à jour le modèle avec les nouvelles données.
-
-.. .. note::
-.. Si un utilisateur spécifie des valeurs à la fois dans la colonne Constante et dans les colonnes de l&#39;année du jalon, seule la valeur constante sera utilisée pour mettre à jour le modèle MESSAGE et les autres valeurs seront ignorées.
-
-.. .. _tech_capacity :
-
-.. Limite de capacité
-.. ---------------------
-
-.. 1. Dans l&#39;onglet :ref:`specificcapacitylimits`, cliquez sur :button:`Refresh Sheet` pour obtenir les limites de capacité enregistrées dans le modèle pour le scénario et les pays choisis.
-
-.. 2. Modifiez les limites de capacité dans la feuille.
-
-.. 3. Cliquez sur :button:`Mettre à jour les données du modèle` pour mettre à jour le modèle avec les nouvelles données.
+.. 3. Cliquez sur :button:`Mettre Ã  jour les donnÃ©es du modÃ¨le` pour mettre Ã  jour le modÃ¨le avec les nouvelles donnÃ©es.
 
 .. .. note::
-.. 1. Il n&#39;y a pas de limite de capacité pour les technologies génériques.
-.. 2. Si un utilisateur spécifie des valeurs à la fois dans la colonne Constante et dans les colonnes de l&#39;année du jalon, seule la valeur constante sera utilisée pour mettre à jour le modèle MESSAGE et les autres valeurs seront ignorées.
+.. Si un utilisateur spÃ©cifie des valeurs Ã  la fois dans la colonne Constante et dans les colonnes de l'annÃ©e du jalon, seule la valeur constante sera utilisÃ©e pour mettre Ã  jour le modÃ¨le MESSAGE et les autres valeurs seront ignorÃ©es.
 
-.. _renewable_tech :
+.. .. _tech_capacityÂ :
 
-Définir les technologies d&#39;énergies renouvelables variables
--------------------------------------------------- ---------------
+.. Limite de capacitÃ©
+.. ---------------
 
-.. _solar_wind :
+.. 1. Dans l'onglet :ref:`specificcapacitylimits`, cliquez sur :button:`Refresh Sheet` pour obtenir les limites de capacitÃ© enregistrÃ©es dans le modÃ¨le pour le scÃ©nario et les pays choisis.
+
+.. 2. Modifiez les limites de capacitÃ© dans la feuille.
+
+.. 3. Cliquez sur :button:`Mettre Ã  jour les donnÃ©es du modÃ¨le` pour mettre Ã  jour le modÃ¨le avec les nouvelles donnÃ©es.
+
+.. .. note::
+.. 1. Il n'y a pas de limite de capacitÃ© pour les technologies gÃ©nÃ©riques.
+.. 2. Si un utilisateur spÃ©cifie des valeurs Ã  la fois dans la colonne Constante et dans les colonnes de l'annÃ©e du jalon, seule la valeur constante sera utilisÃ©e pour mettre Ã  jour le modÃ¨le MESSAGE et les autres valeurs seront ignorÃ©es.
+
+.. _renewable_techÂ :
+
+DÃ©finir les technologies d'Ã©nergies renouvelables variables
+-----------------------------------------------
+
+.. _solar_windÂ :
 
 Solaire PV, CSP, Eolien onshore et offshore
-+++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++
 
-Les technologies VRE peuvent être définies de deux manières : soit comme des technologies génériques, soit comme des technologies spécifiques à un site. Vous trouverez ci-dessous un exemple d&#39;ajout d&#39;éolien offshore, d&#39;abord en tant que technologie générique, puis en tant que zones.
+Les technologies ERV peuvent Ãªtre dÃ©finies de deux maniÃ¨res : soit comme des technologies gÃ©nÃ©riques, soit comme des technologies spÃ©cifiques Ã  un site. Vous trouverez ci-dessous un exemple d'ajout d'Ã©olien offshore, d'abord en tant que technologie gÃ©nÃ©rique, puis en tant que zones.
 
-1. Dans l&#39;onglet :ref:`GenericTech`, ajoutez la technologie &quot;XXWDLCO00&quot; (XX étant l&#39;ID du pays, par exemple DZ) avec la description de la technologie &quot;Technologie générique offshore&quot;. Utilisez le bouton Ajouter une nouvelle technologie. La macro mettra à jour les fichiers sous-jacents et se rechargera à la fin.
+1. Dans l'onglet :ref:`GenericTech`, ajoutez la technologie "XXWDLCO00" (XX Ã©tant l'ID du pays, par exemple DZ) avec la description de la technologie "Technologie gÃ©nÃ©rique offshore". Utilisez le bouton Ajouter une nouvelle technologie. La macro mettra Ã  jour les fichiers sous-jacents et se rechargera Ã  la fin.
 
-2. Accédez à la feuille :ref:`RenameTechFacility`. Remplacez les technologies offshore nouvellement ajoutées par le nom de technologie générique approprié, c&#39;est-à-dire XXWDOC00. La macro mettra à jour les fichiers sous-jacents et se rechargera à la fin.
+2. AccÃ©dez Ã  la feuille :ref:`RenameTechFacility`. Remplacez les technologies offshore nouvellement ajoutÃ©es par le nom de technologie gÃ©nÃ©rique appropriÃ©, c'est-Ã -dire XXWDOC00. La macro mettra Ã  jour les fichiers sous-jacents et se rechargera Ã  la fin.
 
-3. Accédez à la feuille :ref:`OffshoreWindZones`. Ajoutez de nouvelles technologies dans chaque pays. Cliquez sur :button:`Ajouter de nouveaux techniciens`. La macro mettra à jour les fichiers sous-jacents et se rechargera à la fin.
+3. AccÃ©dez Ã  la feuille :ref:`OffshoreWindZones`. Ajoutez de nouvelles technologies dans chaque pays. Cliquez sur :button:`Ajouter de nouveaux techniciens`. La macro mettra Ã  jour les fichiers sous-jacents et se rechargera Ã  la fin.
 
-4. Localisez le fichier .tit du modèle et ouvrez-le en tant qu&#39;Excel, il vous demandera le paramètre de délimitation. Sélectionnez virgule. Les zones génériques éoliennes offshore et offshore nouvellement ajoutées auront les mêmes profils. Maintenant, allez à la feuille :ref:`OffshoreWindZones`. Donnez l&#39;adresse au fichier qui contient les profils, dans la section fichier de données MSR. Cela mettra à jour les profils de zone dans le fichier .tit. Actuellement, la technologie générique éolienne offshore a le même profil que l&#39;éolien générique. Mais rappelez-vous, la technologie générique éolienne terrestre a été évincée du modèle en définissant la première année = 2050
+4. Localisez le fichier .tit du modÃ¨le et ouvrez-le en tant qu'Excel, il vous demandera le paramÃ¨tre de dÃ©limitation. SÃ©lectionnez virgule. Les zones gÃ©nÃ©riques Ã©oliennes offshore et offshore nouvellement ajoutÃ©es auront les mÃªmes profils. Maintenant, allez Ã  la feuille :ref:`OffshoreWindZones`. Donnez l'adresse au fichier qui contient les profils, dans la section fichier de donnÃ©es MSR. Cela mettra Ã  jour les profils de zone dans le fichier .tit. Actuellement, la technologie gÃ©nÃ©rique Ã©olienne offshore a le mÃªme profil que l'Ã©olien gÃ©nÃ©rique. Mais rappelez-vous, la technologie gÃ©nÃ©rique Ã©olienne terrestre a Ã©tÃ© Ã©vincÃ©e du modÃ¨le en dÃ©finissant la premiÃ¨re annÃ©e = 2050
 
-5. Les profils mis à jour dans le fichier .tit doivent être insérés dans les fichiers modèles. Accédez à la feuille :ref:`TimeSlices`, appuyez sur :button:`Update Files`.
+5. Les profils mis Ã  jour dans le fichier .tit doivent Ãªtre insÃ©rÃ©s dans les fichiers modÃ¨les. AccÃ©dez Ã  la feuille :ref:`TimeSlices`, appuyez sur :button:`Update Files`.
 
-.. _hydro_dam :
+.. _hydro_damÂ :
 
-Barrage hydroélectrique
-++++++++++++++++
+Barrage hydroÃ©lectrique
+++++++++++
 
-La feuille ``SpecificTechHydroDams`` manipule les barrages hydroélectriques dans le modèle.
+La feuille ``SpecificTechHydroDams`` manipule les barrages hydroÃ©lectriques dans le modÃ¨le.
 
-1. Cliquez sur le bouton :button:`Refresh Sheet` pour extraire les technologies appartenant au `TechSetL2` : `Large Hydro Dams`.
+1. Cliquez sur le bouton :button:`Refresh Sheet` pour extraire les technologies appartenant au `TechSetL2`Â : `Large Hydro Dams`.
 
 2. Le bouton :button:`Create River Tech+Storage Constraint` ajoute une technologie et une contrainte de stockage pour chaque barrage.
 
-Une nouvelle technologie factice pour chaque centrale hydroélectrique avec barrage est ajoutée pour modéliser les apports de la rivière au barrage. La convention de dénomination de la technologie factice est XXRIDM_rivername, par exemple CMRIDM_LAGDO (en utilisant LAGDO comme exemple). La sortie est réglée sur la forme d&#39;énergie elc fictive existante.
+Une nouvelle technologie factice pour chaque centrale hydroÃ©lectrique avec barrage est ajoutÃ©e pour modÃ©liser les apports de la riviÃ¨re au barrage. La convention de dÃ©nomination de la technologie factice est XXRIDM_rivername, par exemple CMRIDM_LAGDO (en utilisant LAGDO comme exemple). La sortie est rÃ©glÃ©e sur la forme d'Ã©nergie elc fictive existante.
 
-Une nouvelle contrainte de stockage est ajoutée, exemple D_LAGDO avec le nom court DXXX. La contrainte de stockage est liée à CMRIDM_LAGDO avec un coefficient de +1, donc chaque flux de MWyr de CMRIDM_LAGDO augmente le contenu de stockage de 1 MWyr.
+Une nouvelle contrainte de stockage est ajoutÃ©e, exemple D_LAGDO avec le nom court DXXX. La contrainte de stockage est liÃ©e Ã  CMRIDM_LAGDO avec un coefficient de +1, donc chaque flux de MWyr de CMRIDM_LAGDO augmente le contenu de stockage de 1 MWyr.
 
-La contrainte de stockage est liée à CMHYDM_LAGDO avec un coefficient -1 (c&#39;est-à-dire que chaque flux de MWyr de CMHYDM_LAGDO diminue le contenu du stockage de 1 MWyr). Il serait en théorie possible de faire une modélisation en cascade en liant le débit des usines amont à des contraintes de stockage en aval (plutôt qu&#39;une technologie fluviale). Les coefficients devraient être mis à l&#39;échelle par &quot;l&#39;énergie par unité de volume (MJ/m3)&quot; relative des usines en amont et en aval. Cette fonctionnalité devra être revisitée en tant que nouvelle tâche de développement s&#39;il y a un besoin pressant.
+La contrainte de stockage est liÃ©e Ã  CMHYDM_LAGDO avec un coefficient -1 (c'est-Ã -dire que chaque flux de MWyr de CMHYDM_LAGDO diminue le contenu du stockage de 1 MWyr). Il serait en thÃ©orie possible de faire une modÃ©lisation en cascade en liant le dÃ©bit des usines amont Ã  des contraintes de stockage en aval (plutÃ´t qu'une technologie fluviale). Les coefficients devraient Ãªtre mis Ã  l'Ã©chelle par "l'Ã©nergie par unitÃ© de volume (MJ/m3)" relative des usines en amont et en aval. Cette fonctionnalitÃ© devra Ãªtre revisitÃ©e en tant que nouvelle tÃ¢che de dÃ©veloppement s'il y a un besoin pressant.
 
-L&#39;utilisateur doit spécifier 2 paramètres, dont les valeurs peuvent être calculées dans le tableau le plus à droite et copiées-collées.
+L'utilisateur doit spÃ©cifier 2 paramÃ¨tres, dont les valeurs peuvent Ãªtre calculÃ©es dans le tableau le plus Ã  droite et copiÃ©es-collÃ©es.
 
-3. Une fois cela fait, l&#39;utilisateur peut cliquer sur :button:`Mettre à jour les données du modèle` :
+3. Une fois cela fait, l'utilisateur peut cliquer sur :button:`Mettre Ã  jour les donnÃ©es du modÃ¨le`Â :
 
-La capacité est définie sur le débit maximal (en MW, débit maximal en m3/s mis à l&#39;échelle par le débit de conception). La capacité est spécifiée comme limite de capacité sur la River Technology (bdi) .
+La capacitÃ© est dÃ©finie sur le dÃ©bit maximal (en MW, dÃ©bit maximal en m3/s mis Ã  l'Ã©chelle par le dÃ©bit de conception). La capacitÃ© est spÃ©cifiÃ©e comme limite de capacitÃ© sur la River Technology (bdi) .
 
-Le volume maximal de la contrainte de stockage est défini sur Volume maximal en MWyr conformément au tableau.
+Le volume maximal de la contrainte de stockage est dÃ©fini sur Volume maximal en MWyr conformÃ©ment au tableau.
 
-L&#39;utilisateur doit ensuite ajouter une série temporelle dans le fichier csv sous les technologies CMRIDM_LAGDO et :button:`Update Timeslices` dans la feuille ``Timeslice``. Les valeurs dans le fichier csv doivent être le débit moyen mensuel divisé par le &quot;débit max&quot; qui a été utilisé pour définir la &quot;capacité de la rivière&quot;, en utilisant la même valeur de débit max quel que soit le scénario.
-Si l&#39;utilisateur souhaite simuler différents scénarios de précipitations sans série temporelle complète, il peut utiliser le facteur de plante pour augmenter ou réduire le profil dans la feuille ``SpecificTech``. Il n&#39;est actuellement pas possible de spécifier un profil saisonnier différent par scénario, mais cette fonctionnalité est sur la liste des tâches dans un avenir proche.
+L'utilisateur doit ensuite ajouter une sÃ©rie temporelle dans le fichier csv sous les technologies CMRIDM_LAGDO et :button:`Update Timeslices` dans la feuille ``Timeslice``. Les valeurs dans le fichier csv doivent Ãªtre le dÃ©bit moyen mensuel divisÃ© par le "dÃ©bit max" qui a Ã©tÃ© utilisÃ© pour dÃ©finir la "capacitÃ© de la riviÃ¨re", en utilisant la mÃªme valeur de dÃ©bit max quel que soit le scÃ©nario.
+Si l'utilisateur souhaite simuler diffÃ©rents scÃ©narios de prÃ©cipitations sans sÃ©rie temporelle complÃ¨te, il peut utiliser le facteur de plante pour augmenter ou rÃ©duire le profil dans la feuille ``SpecificTech``. Il n'est actuellement pas possible de spÃ©cifier un profil saisonnier diffÃ©rent par scÃ©nario, mais cette fonctionnalitÃ© est sur la liste des tÃ¢ches dans un avenir proche.
 
 .. _batteries:
 
 Batteries et stockage de la pompe
-++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++
 
-Les technologies de stockage de batteries et de pompes peuvent être ajoutées et modifiées de la même manière via l&#39;interface excel SPLAT.
+Les technologies de stockage de batteries et de pompes peuvent Ãªtre ajoutÃ©es et modifiÃ©es de la mÃªme maniÃ¨re via l'interface excel SPLAT.
 
-1. Dans la feuille ``Battery&amp;PumpStorage`` : créez la technologie avec la convention techname : xxELSTyyyy pour une batterie ou xxELSTPSyyyy pour le stockage de la pompe, où xx est le code du pays et yyyy est la description du site. (Par exemple, ZAELSTPSDrakensberg)
+1. Dans la feuille ``Battery&PumpStorage``Â : crÃ©ez la technologie avec la convention technameÂ : xxELSTyyyy pour une batterie ou xxELSTPSyyyy pour le stockage de la pompe, oÃ¹ xx est le code du pays et yyyy est la description du site. (Par exemple, ZAELSTPSDrakensberg)
 
 2. :button:`Recharger Global`
 
-3. Dans la même feuille ``Battery&amp;PumpStorage`` cliquez sur :button:`Refresh` puis spécifiez les heures de stockage et l&#39;efficacité du cycle
+3. Dans la mÃªme feuille ``Battery&PumpStorage`` cliquez sur :button:`Refresh` puis spÃ©cifiez les heures de stockage et l'efficacitÃ© du cycle
 
-4. Dans les fiches ``TechSpecific`` précisez les autres paramètres usuels hc, bdi, inv etc...
+4. Dans les fiches ``TechSpecific`` prÃ©cisez les autres paramÃ¨tres usuels hc, bdi, inv etc...
 
-.. .. _csp :
+.. .. _cspÂ :
 
-.. Énergie Solaire Concentrée (CSP)
-.. ++++++++++++++++++++++++++++++++++++++++++
+.. Ã‰nergie Solaire ConcentrÃ©e (CSP)
+.. ++++++++++++++++++++++++++++++
 
-.. Reportez-vous aux étapes de :ref:`solar_wind`. (Améliorations à venir)
+.. Reportez-vous aux Ã©tapes de :ref:`solar_wind`. (AmÃ©liorations Ã  venir)
 
-.. .. _transmission_distribution :
+.. .. _transmission_distributionÂ :
 
 .. Transport et Distribution
-.. --------------------------------------------
+.. -----------------------------
 
-.. Les fiches :ref:`transmission` et :ref:`distribution` sont utilisées pour réviser ou modifier les paramètres des technologies de transmission et de distribution selon les définitions de la feuille ``TechnologySets`` (voir section ci-dessous).
+.. Les fiches :ref:`transmission` et :ref:`distribution` sont utilisÃ©es pour rÃ©viser ou modifier les paramÃ¨tres des technologies de transmission et de distribution selon les dÃ©finitions de la feuille ``TechnologySets`` (voir section ci-dessous).
 
 .. .. note::
-.. 1. Si l&#39;utilisateur veut modéliser avec une demande &quot;envoyée&quot; (voir :ref:`demande`), l&#39;efficacité de transmission doit être réglée sur 100 % et les coûts d&#39;investissement sur une petite valeur. Dans la configuration par défaut, aucune technologie de distribution n&#39;est spécifiée pour l&#39;électricité &quot;envoyée&quot;.
+.. 1. Si l'utilisateur veut modÃ©liser avec une demande "envoyÃ©e" (voir :ref:`demande`), l'efficacitÃ© de transmission doit Ãªtre rÃ©glÃ©e sur 100Â % et les coÃ»ts d'investissement sur une petite valeur. Dans la configuration par dÃ©faut, aucune technologie de distribution n'est spÃ©cifiÃ©e pour l'Ã©lectricitÃ© "envoyÃ©e".
 
-.. 2. Si un utilisateur spécifie des valeurs à la fois dans la colonne Constante et dans les colonnes de l&#39;année du jalon, seule la valeur constante sera utilisée pour mettre à jour le modèle MESSAGE et les autres valeurs seront ignorées.
+.. 2. Si un utilisateur spÃ©cifie des valeurs Ã  la fois dans la colonne Constante et dans les colonnes de l'annÃ©e du jalon, seule la valeur constante sera utilisÃ©e pour mettre Ã  jour le modÃ¨le MESSAGE et les autres valeurs seront ignorÃ©es.
 
-.. .. _interconnexion :
+.. .. _interconnexionÂ :
 
 .. Interconnexion
-.. -----------------------
+.. -----------------
 
-.. La fiche :ref:`interconnexions` permet de revoir et de mettre à jour les paramètres des interconnexions transfrontalières.
+.. La fiche :ref:`interconnexions` permet de revoir et de mettre Ã  jour les paramÃ¨tres des interconnexions transfrontaliÃ¨res.
 
-.. Au minimum les deux pays interconnectés (qui doivent être actifs) doivent être spécifiés pour visualiser les interconnexions entre eux.
+.. Au minimum les deux pays interconnectÃ©s (qui doivent Ãªtre actifs) doivent Ãªtre spÃ©cifiÃ©s pour visualiser les interconnexions entre eux.
 
-.. _tech_naming :
+.. _tech_namingÂ :
 
-Nommage de la technologie dans le modèle SPLAT
---------------------------------------------------
+Nommage de la technologie dans le modÃ¨le SPLAT
+-----------------------------------------
 
-La convention de dénomination des différentes technologies, y compris les niveaux de jeu de technologies 1 et 2, et les technologies génériques, est indiquée dans le tableau ci-dessous.
-Le &quot;??&quot; dans le code de technologie au début fait référence au code de pays à deux lettres (alpha-2). Et le * fournit des informations supplémentaires sur la technologie.
+La convention de dÃ©nomination des diffÃ©rentes technologies, y compris les niveaux de jeu de technologies 1 et 2, et les technologies gÃ©nÃ©riques, est indiquÃ©e dans le tableau ci-dessous.
+Le "??" dans le code de technologie au dÃ©but fait rÃ©fÃ©rence au code de pays Ã  deux lettres (alpha-2). Et le * fournit des informations supplÃ©mentaires sur la technologie.
 
-La dénomination de l&#39;ensemble technologique de niveau 1 suit les conventions suivantes dans le modèle SPLAT :
-
-.. table-csv ::
-:file: csv_file/level1sets_sheet.csv
-:lignes d&#39;en-tête : 1
-
-La dénomination de l&#39;ensemble technologique de niveau 2 suit les conventions suivantes dans le modèle SPLAT :
+La dÃ©nomination de l'ensemble technologique de niveau 1 suit les conventions suivantes dans le modÃ¨le SPLATÂ :
 
 .. table-csv ::
-:file: csv_file/level2sets_sheet.csv
-:lignes d&#39;en-tête : 1
+    :file: csv_file/level1sets_sheet.csv
+    :lignes d'en-tÃªteÂ : 1
 
-La convention de dénomination des technologies génériques est donnée dans le tableau ci-dessous :
+La dÃ©nomination de l'ensemble technologique de niveau 2 suit les conventions suivantes dans le modÃ¨le SPLATÂ :
 
 .. table-csv ::
-:file: csv_file/generictechcodes_sheet.csv
-:lignes d&#39;en-tête : 1
+    :file: csv_file/level2sets_sheet.csv
+    :lignes d'en-tÃªteÂ : 1
 
-.. _country_code :
+La convention de dÃ©nomination des technologies gÃ©nÃ©riques est donnÃ©e dans le tableau ci-dessous :
 
-Code pays dans le modèle SPLAT
-------------------------------------------------
+.. table-csv ::
+    :file: csv_file/generictechcodes_sheet.csv
+    :lignes d'en-tÃªteÂ : 1
 
-Les codes de pays à deux ou trois lettres utilisés dans le modèle SPLAT sont basés sur `ISO 3166-1<https://en.wikipedia.org/wiki/ISO_3166-1> `_ norme.
+.. _country_codeÂ :
+
+Code pays dans le modÃ¨le SPLAT
+-------------------------------
+
+Les codes de pays Ã  deux ou trois lettres utilisÃ©s dans le modÃ¨le SPLAT sont basÃ©s sur la norme `ISO 3166-1 <https://en.wikipedia.org/wiki/ISO_3166-1>`_.

@@ -1,46 +1,46 @@
 .. role:: inputcell
-:class: inputcell
+    :class: inputcell
 .. role:: interfacecell
-:class: interfacecell
+    :class: interfacecell
 .. role:: button
-:class: button
+    :class: button
 
 Travailler avec la demande
-============================
+====================
 
 .. important::
-L&#39;interface doit être liée au modèle avant d&#39;exécuter l&#39;une des étapes de cette section.
-Voir :ref:`link_interface`.
+    L'interface doit Ãªtre liÃ©e au modÃ¨le avant d'exÃ©cuter l'une des Ã©tapes de cette section.
+    Voir :ref:`link_interface`.
 
-Cette section décrit comment afficher, modifier et ajouter une demande à l&#39;aide de l&#39;interface SPLAT.
+Cette section dÃ©crit comment afficher, modifier et ajouter une demande Ã  l'aide de l'interface SPLAT.
 
-.. view_demand :
+.. view_demandÂ :
 
 Affichage de la saisie de la demande
------------------------------
+---------------------
 
-1. Dans l&#39;onglet ``Demande``, entrez le scénario à interroger dans la cellule ``Choisir le scénario``
+1. Dans l'onglet ``Demande``, entrez le scÃ©nario Ã  interroger dans la cellule ``Choisir le scÃ©nario``
 
-2. Cliquez sur :button:`Actualiser la feuille`. La demande annuelle dans le scénario (fichier adb ou ldb) sera indiquée dans la même feuille. Seules les données du ou des pays chargés (dans la feuille ``Principal``) seront affichées.
+2. Cliquez sur :button:`Actualiser la feuille`. La demande annuelle dans le scÃ©nario (fichier adb ou ldb) sera indiquÃ©e dans la mÃªme feuille. Seules les donnÃ©es du ou des pays chargÃ©s (dans la feuille ``Principal``) seront affichÃ©es.
 
-3. Dans l&#39;onglet ``PeakDemand``, répétez les étapes 1 et 2 pour récupérer la demande de pointe pour le scénario sélectionné.
-
-.. note::
-Des dispositions ont été prises pour travailler soit avec une demande &quot;envoyée&quot;, soit avec une demande sectorielle telle que industrielle, urbaine et rurale. L&#39;utilisateur verra les données de demande classées dans ces niveaux de demande multiples. Si le modèle utilise uniquement la demande d&#39;émission, l&#39;utilisateur doit définir les données sur les autres niveaux de demande à zéro, et vice versa, sinon la demande sera comptée deux fois. Notez également que les données brutes sont stockées dans les fichiers adb et ldb de MWyr. Les valeurs MWyr sont converties par SPLAT en GWh par défaut.
+3. Dans l'onglet ``PeakDemand``, rÃ©pÃ©tez les Ã©tapes 1 et 2 pour rÃ©cupÃ©rer la demande de pointe pour le scÃ©nario sÃ©lectionnÃ©.
 
 .. note::
-La demande de pointe n&#39;est pas une entrée directe dans le modèle SPLAT. La demande de pointe est estimée sur la base des valeurs énergétiques annuelles et du paramétrage du profil correspondant stocké dans le fichier Application Database (adb).
+    Des dispositions ont Ã©tÃ© prises pour travailler soit avec une demande "envoyÃ©e", soit avec une demande sectorielle telle que industrielle, urbaine et rurale. L'utilisateur verra les donnÃ©es de demande classÃ©es dans ces niveaux de demande multiples. Si le modÃ¨le utilise uniquement la demande d'Ã©mission, l'utilisateur doit dÃ©finir les donnÃ©es sur les autres niveaux de demande Ã  zÃ©ro, et vice versa, sinon la demande sera comptÃ©e deux fois. Notez Ã©galement que les donnÃ©es brutes sont stockÃ©es dans les fichiers adb et ldb de MWyr. Les valeurs MWyr sont converties par SPLAT en GWh par dÃ©faut.
 
-.. change_demand :
+.. note::
+La demande de pointe n'est pas une entrÃ©e directe dans le modÃ¨le SPLAT. La demande de pointe est estimÃ©e sur la base des valeurs Ã©nergÃ©tiques annuelles et du paramÃ©trage du profil correspondant stockÃ© dans le fichier Application Database (adb).
 
-Modification de l&#39;entrée de la demande
-------------------------------
+.. change_demandÂ :
 
-1. Dans l&#39;onglet ``Demande``, cliquez sur :button:`Refresh Sheet` pour obtenir les données enregistrées dans le modèle.
+Modification de l'entrÃ©e de la demande
+----------------------
 
-2. Apportez des modifications à la série de demandes dans la feuille.
+1. Dans l'onglet ``Demande``, cliquez sur :button:`Refresh Sheet` pour obtenir les donnÃ©es enregistrÃ©es dans le modÃ¨le.
 
-3. Cliquez sur :button:`Mettre à jour la feuille` pour mettre à jour le modèle avec les nouvelles données.
+2. Apportez des modifications Ã  la sÃ©rie de demandes dans la feuille.
+
+3. Cliquez sur :button:`Mettre Ã  jour la feuille` pour mettre Ã  jour le modÃ¨le avec les nouvelles donnÃ©es.
 
 .. image:: /images/demand_update.PNG
 

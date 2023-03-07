@@ -1,27 +1,27 @@
-Définition des régions
-=======================
+DÃ©finition des rÃ©gions
+=================
 
-VÉRIFIER:
+VÃ‰RIFIER:
 
-Des régions peuvent être ajoutées à un modèle MESSAGE-SPLAT multirégion existant comme suit :
+Des rÃ©gions peuvent Ãªtre ajoutÃ©es Ã  un modÃ¨le MESSAGE-SPLAT multirÃ©gion existant comme suitÂ :
 
 1. Copier le dossier Blank Regions
 
-2. Renommez les fichiers (utilisez le code VBA dans ``Regions`` Module appelé : ``Rename_Files()``
+2. Renommez les fichiers (utilisez le code VBA dans ``Regions`` Module appelÃ©Â : ``Rename_Files()``
 
-3. Modifiez les fichiers :
+3. Modifiez les fichiersÂ :
 
 - C:\Programs\MESSAGE_INT\models\ACEC_V2\MAINa\Regid
 
-- Recharger global dans l&#39;interface SPLAT
+- Recharger global dans l'interface SPLAT
 
-4. Rename Technologies (utilisez le code VBA dans le module ``Regions`` appelé : ``DeleteandrenameTechs()`` suivi du code VBA dans le module ``writeadb`` appelé ``WriteAllScenarios()``
+4. Rename Technologies (utilisez le code VBA dans le module ``Regions`` appelÃ©Â : ``DeleteandrenameTechs()`` suivi du code VBA dans le module ``writeadb`` appelÃ© ``WriteAllScenarios()``
 
 5. Renommer la description du pays (en haut)
 
-6. Rechercher et remplacer les produits échangés, ainsi que l&#39;électricité secondaire
+6. Rechercher et remplacer les produits Ã©changÃ©s, ainsi que l'Ã©lectricitÃ© secondaire
 
-7. Ajoutez le nom de région to C:\Programs\MESSAGE_INT\models\ACEC_V2\MAINa\data\MAINa.gen fichier
+7. Ajoutez le nom de rÃ©gion to C:\Programs\MESSAGE_INT\models\ACEC_V2\MAINa\data\MAINa.gen fichier
 
 8. ajouter le fichier XXa.dir to C:\Programs\MESSAGE_INT\models\mms_fils\
 
