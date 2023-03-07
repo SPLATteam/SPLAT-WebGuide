@@ -7,13 +7,13 @@
 
 
 Commencer
-===============
+=====================
 Cette section vise à guider le lecteur à travers un certain nombre d&#39;étapes de base.
 
 .. _conditions préalables:
 
 Conditions préalables
-----------------------
+------------------
 Avant d&#39;utiliser l&#39;interface SPLAT, assurez-vous que les logiciels suivants sont installés et que les fichiers sont téléchargés :
 
 .. note::
@@ -36,7 +36,7 @@ https://forms.office.com/Pages/ResponsePage.aspx?id=sOvdzLvS0ESYSo5CpcBis8X-QNFm
 .. _conventions:
 
 Conventions
-----------------
+----------------------
 :inputcell:`Cellule d&#39;entrée utilisateur`
 
 Les cellules formatées comme ci-dessus (police sombre avec fond orange) sont des cellules de saisie utilisateur, où l&#39;utilisateur est autorisé et censé saisir des données.
@@ -56,7 +56,7 @@ Les onglets sont organisés selon les conventions suivantes :
 .. _first_steps :
 
 Premiers pas
---------------
+------------------
 Cette documentation utilise un modèle simple pour la démonstration. Vous pouvez utiliser un modèle MESSAGE existant pour la plupart des exemples de cette documentation.
 
 .. _checking_bits :
@@ -71,14 +71,14 @@ L&#39;interface SPLAT Excel nécessite la version 64 bits par défaut d&#39;Excel 
 .. _restoring_model :
 
 Restaurer le modèle dans MESSAGE
-+++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
 
 Afin d&#39;exécuter le modèle à l&#39;aide de l&#39;interface Excel SPLAT, vous devrez peut-être restaurer le modèle dans MESSAGE une fois. Reportez-vous au guide pratique sur :ref:`using_message` pour obtenir des instructions sur l&#39;utilisation de MESSAGE.
 
 .. _opening_file :
 
-Ouverture du dossier
-++++++++++++++++++
+Ouverture du fichier
+++++++++++++++++++++++++
 Ouvrez le fichier Excel qui commence par *SPLAT_Interface_...*.
 
 Lorsque vous ouvrez le fichier, vous devez cliquer sur :button:`Activer le contenu` (comme indiqué ci-dessous) pour que le fichier fonctionne.
@@ -93,7 +93,7 @@ https://support.microsoft.com/en-gb/office/enable-or-disable-macros-in-microsoft
 .. _checking_decimal :
 
 Vérification du symbole décimal du système
-++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++
 Le séparateur décimal de votre système doit être défini sur &#39;.&#39; (point) pour que l&#39;interface SPLAT Excel fonctionne correctement. S&#39;il en est autrement, par exemple &#39;,&#39; (virgule), allez dans ``Panneau de configuration`` &gt; ``Région`` &gt; ``Paramètres supplémentaires``, et remplacez le symbole décimal par &#39;.&#39;.
 
 .. note::
@@ -102,11 +102,11 @@ Le séparateur virgule est souvent le séparateur par défaut dans les environnemen
 .. _link_interface :
 
 Lier l&#39;interface à votre fichier modèle
-+++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++ +++++++
 
 1. Dans l&#39;onglet ``Main`` du fichier, assurez-vous que les champs :inputcell:`Model Folder` et :inputcell:`Main Region` sont correctement définis, comme indiqué ci-dessous, pour refléter l&#39;emplacement du dossier modèle MESSAGE restauré sur votre ordinateur.
 
-2. dans la section ``Sous-régions`` de l&#39;onglet ``Principal``, choisissez le(s) pays que vous souhaitez activer, en plaçant un &quot;1&quot; à côté dans la colonne orange, et un &quot;0&quot; à côté de tout autre pays. Assurez-vous que la sous-région ``MAINa`` est activée.
+2. dans la section ``Sous-régions`` de l&#39;onglet ``Principal``, choisissez le(s) pays que vous souhaitez activer, en plaçant un &quot;1&quot; à côté dans la colonne orange, et un &quot;0&quot; à côté de tout autre pays.
 
 3. Cliquez sur le bouton :button:`Reload Global` en haut de la page (ceci connecte les fichiers de modèle MESSAGE avec ce classeur Excel). Les fichiers modèles sont lus et chargés en mémoire dans Excel.
 
@@ -119,7 +119,7 @@ Lier l&#39;interface à votre fichier modèle
 .. _view_input :
 
 Affichage de l&#39;entrée du modèle
-++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++
 
 L&#39;interface SPLAT Excel permet à un utilisateur de voir les données d&#39;entrée stockées dans les modèles SPLAT-MESSAGE.
 
@@ -143,7 +143,7 @@ Gardez à l&#39;esprit que le scénario &quot;adb&quot; (Application Database) con
 .. _run_model :
 
 Exécution du modèle
-++++++++++++++++++++
+++++++++++++++++++++++++++
 
 **Après** avoir lié votre modèle au fichier d&#39;interface dans l&#39;onglet ``Main``, vous pouvez exécuter votre modèle SPLAT à l&#39;aide de l&#39;onglet ``ReportGen-Annual``.
 
@@ -169,22 +169,22 @@ Il existe trois options différentes fournies dans l&#39;interface pour CPLEX, CB
 .. _extract_results :
 
 Extraction des résultats
-++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++
 
 Utiliser l&#39;onglet ReportGen
-~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 L&#39;onglet ``ReportGen-Annual`` est également l&#39;endroit où vous pouvez extraire les résultats du modèle que vous venez d&#39;exécuter.
 
 1. Sélectionnez la combinaison scénario(s), pays(s), variable(s) et année(s) dont vous souhaitez afficher les résultats. Veuillez vous assurer que le scénario souhaité a été chargé dans la mémoire Excel. S&#39;il n&#39;apparaît pas dans la liste déroulante, veuillez revenir à l&#39;onglet « Principal » et marquer le scénario souhaité « 1 » et appuyer sur le bouton « Recharger global ».
 
 2. Sélectionnez le format de sortie et entrez le chemin de sortie (le cas échéant) dans la section ``Destination des résultats``.
 
-3. Cliquez sur :button:`Get Results` (cercle rouge dans l&#39;image ci-dessous). Si :inputcell:`sur cette feuille` est sélectionné, vous devriez voir les résultats bruts apparaître sur la feuille lorsque le processus est terminé.
+3. Cliquez sur :button:`Get Results` (cercle rouge dans l&#39;image ci-dessous). Si :inputcell:`sur cette feuille` est sélectionné, vous devriez voir les résultats bruts apparaître sur la feuille lorsque le processus est terminé. Si :inputcell:`csv` est sélectionné, les résultats seront écrits dans un fichier csv à l&#39;emplacement spécifié. Si l&#39;emplacement n&#39;existe pas, il y aura un message d&#39;erreur. L&#39;option csv est plus pratique lorsque vous travaillez avec un grand nombre de résultats, et ils peuvent être liés à d&#39;autres tableaux croisés dynamiques dans Excel ou d&#39;autres logiciels tels que PowerBi ou Tableau.
 
 .. image:: /images/getting_started_extract_results_1.PNG
 
 Mettre à jour les tableaux de résultats
-~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Vous pouvez trouver les tableaux de résultats annuels dans les feuilles rouges : ``Capacity``, ``Output``, ``New Capacity``, ``CO2`` et ``Costs``.
 
 .. important::

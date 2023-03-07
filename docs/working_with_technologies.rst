@@ -7,7 +7,7 @@
 
 
 Travailler avec les technologies
-=================================
+====================================
 
 .. important::
 L&#39;interface doit être liée au modèle avant d&#39;exécuter l&#39;une des étapes de cette section.
@@ -41,7 +41,7 @@ Cette section décrit comment afficher, ajouter et modifier des technologies à l&
 .. _view_tech_inputs :
 
 Affichage des entrées technologiques
---------------------------------------
+-----------------------------------
 
 1. Dans l&#39;une des :ref:`fiches technologiques` (à l&#39;exception des onglets contenant des informations sur des zones spécifiques), saisissez le scénario à interroger dans la cellule ``Choisir un scénario``
 
@@ -52,7 +52,7 @@ Affichage des entrées technologiques
 .. _add_tech :
 
 Ajouter une technologie
-------------------------
+-------------------------
 
 1. Actualisez la feuille :ref:`SpecificTech` pour le scénario sélectionné.
 
@@ -68,7 +68,7 @@ Les technologies de stockage de batterie et de pompe doivent être définies sépar
 .. _rename_tech :
 
 Renommer une technologie
---------------------------
+-----------------------------
 
 1. Entrez les anciens et nouveaux noms de technologie dans :ref:`RenameTechFacility` et cliquez sur :button:`Rename Techs in List`.
 
@@ -79,7 +79,7 @@ Renommer une technologie
 .. _delete_tech :
 
 Suppression d&#39;une technologie
-----------------------
+------------------------------
 
 1. Entrez les noms des technologies dans :ref:`DeleteTechFacility` et cliquez sur :button:`Delete Techs in List`.
 
@@ -90,7 +90,7 @@ Suppression d&#39;une technologie
 .. _change_tech :
 
 Changer de technologie
-----------------------
+------------------------------
 
 1. Dans l&#39;une des :ref:`fiches techniques` (à l&#39;exception des onglets contenant des informations sur des zones spécifiques), cliquez sur :button:`Actualiser la feuille` pour obtenir les données enregistrées dans le modèle pour le scénario choisi.
 
@@ -98,59 +98,59 @@ Changer de technologie
 
 3. Cliquez sur :button:`Mettre à jour les données du modèle` pour mettre à jour le modèle avec les nouvelles données.
 
-.. _carburant:
+.. .. _carburant:
 
-Prix du carburant
-------------------
+.. Prix du carburant
+.. ---------------
 
-1. Dans l&#39;onglet :ref:`fuelprices`, cliquez sur :button:`Refresh Sheet` pour obtenir les données enregistrées dans le modèle pour le scénario et les pays choisis.
+.. 1. Dans l&#39;onglet :ref:`fuelprices`, cliquez sur :button:`Refresh Sheet` pour récupérer les données enregistrées dans le modèle pour le scénario et les pays choisis.
 
-2. Modifiez les prix du carburant dans la feuille.
+.. 2. Apportez des modifications aux prix du carburant dans la feuille.
 
-3. Cliquez sur :button:`Mettre à jour les données du modèle` pour mettre à jour le modèle avec les nouvelles données.
+.. 3. Cliquez sur :button:`Mettre à jour les données du modèle` pour mettre à jour le modèle avec les nouvelles données.
 
-.. note::
-1. Le prix du carburant est indiqué en $/GJ. Il n&#39;est actuellement pas possible d&#39;ajouter de nouvelles technologies d&#39;approvisionnement en carburant via l&#39;interface SPLAT, cela est laissé pour un développement futur (ainsi que la possibilité de spécifier des limites, qui seraient nécessaires si l&#39;on voulait modéliser une courbe d&#39;approvisionnement pour un carburant particulier).
-2. Si un utilisateur spécifie des valeurs à la fois dans la colonne Constante et dans les colonnes de l&#39;année du jalon, seule la valeur constante sera utilisée pour mettre à jour le modèle MESSAGE et les autres valeurs seront ignorées.
+.. .. note::
+.. 1. Le prix du carburant est indiqué en $/GJ. Il n&#39;est actuellement pas possible d&#39;ajouter de nouvelles technologies d&#39;approvisionnement en carburant via l&#39;interface SPLAT, cela est laissé pour un développement futur (ainsi que la possibilité de spécifier des limites, qui seraient nécessaires si l&#39;on voulait modéliser une courbe d&#39;approvisionnement pour un carburant particulier).
+.. 2. Si un utilisateur spécifie des valeurs à la fois dans la colonne Constante et dans les colonnes de l&#39;année du jalon, seule la valeur constante sera utilisée pour mettre à jour le modèle MESSAGE et les autres valeurs seront ignorées.
 
-.. _tech_cost :
+.. .. _tech_cost :
 
-Coûts technologiques
---------------------
+.. Coûts technologiques
+.. -----------------------
 
-1. Dans l&#39;onglet :ref:`generictechcosts` et :ref:`specifictechcosts`, cliquez sur :button:`Refresh Sheet` pour obtenir les données de coûts enregistrées dans le modèle pour le scénario et les pays choisis.
+.. 1. Dans l&#39;onglet :ref:`generictechcosts` et :ref:`specifictechcosts`, cliquez sur :button:`Refresh Sheet` pour obtenir les données de coûts enregistrées dans le modèle pour le scénario et les pays choisis.
 
-2. Modifiez les coûts (coût de nuit-$/kW, coût fixe d&#39;O&amp;M-$/kW, coût variable d&#39;O&amp;M-$/MWh) dans la feuille.
+.. 2. Apportez des modifications aux coûts (coût de nuit-$/kW, coût fixe d&#39;O&amp;M-$/kW, coût variable d&#39;O&amp;M-$/MWh) dans la feuille.
 
-3. Cliquez sur :button:`Mettre à jour les données du modèle` pour mettre à jour le modèle avec les nouvelles données.
+.. 3. Cliquez sur :button:`Mettre à jour les données du modèle` pour mettre à jour le modèle avec les nouvelles données.
 
-.. note::
-Si un utilisateur spécifie des valeurs à la fois dans la colonne Constante et dans les colonnes de l&#39;année du jalon, seule la valeur constante sera utilisée pour mettre à jour le modèle MESSAGE et les autres valeurs seront ignorées.
+.. .. note::
+.. Si un utilisateur spécifie des valeurs à la fois dans la colonne Constante et dans les colonnes de l&#39;année du jalon, seule la valeur constante sera utilisée pour mettre à jour le modèle MESSAGE et les autres valeurs seront ignorées.
 
-.. _tech_capacity :
+.. .. _tech_capacity :
 
-Limite de capacité
-------------------------------
+.. Limite de capacité
+.. ---------------------
 
-1. Dans l&#39;onglet :ref:`specificcapacitylimits`, cliquez sur :button:`Refresh Sheet` pour obtenir les limites de capacité enregistrées dans le modèle pour le scénario et les pays choisis.
+.. 1. Dans l&#39;onglet :ref:`specificcapacitylimits`, cliquez sur :button:`Refresh Sheet` pour obtenir les limites de capacité enregistrées dans le modèle pour le scénario et les pays choisis.
 
-2. Modifiez les limites de capacité dans la feuille.
+.. 2. Modifiez les limites de capacité dans la feuille.
 
-3. Cliquez sur :button:`Mettre à jour les données du modèle` pour mettre à jour le modèle avec les nouvelles données.
+.. 3. Cliquez sur :button:`Mettre à jour les données du modèle` pour mettre à jour le modèle avec les nouvelles données.
 
-.. note::
-1. Il n&#39;y a pas de limite de capacité pour les technologies génériques.
-2. Si un utilisateur spécifie des valeurs à la fois dans la colonne Constante et dans les colonnes de l&#39;année du jalon, seule la valeur constante sera utilisée pour mettre à jour le modèle MESSAGE et les autres valeurs seront ignorées.
+.. .. note::
+.. 1. Il n&#39;y a pas de limite de capacité pour les technologies génériques.
+.. 2. Si un utilisateur spécifie des valeurs à la fois dans la colonne Constante et dans les colonnes de l&#39;année du jalon, seule la valeur constante sera utilisée pour mettre à jour le modèle MESSAGE et les autres valeurs seront ignorées.
 
 .. _renewable_tech :
 
-Technologies renouvelables et de stockage
-------------------------------------------
+Définir les technologies d&#39;énergies renouvelables variables
+-------------------------------------------------- ---------------
 
 .. _solar_wind :
 
-Solaire PV, éolien onshore et offshore
-+++++++++++++++++++++++++++++++++++++++
+Solaire PV, CSP, Eolien onshore et offshore
++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Les technologies VRE peuvent être définies de deux manières : soit comme des technologies génériques, soit comme des technologies spécifiques à un site. Vous trouverez ci-dessous un exemple d&#39;ajout d&#39;éolien offshore, d&#39;abord en tant que technologie générique, puis en tant que zones.
 
@@ -164,11 +164,10 @@ Les technologies VRE peuvent être définies de deux manières : soit comme des tec
 
 5. Les profils mis à jour dans le fichier .tit doivent être insérés dans les fichiers modèles. Accédez à la feuille :ref:`TimeSlices`, appuyez sur :button:`Update Files`.
 
-
 .. _hydro_dam :
 
 Barrage hydroélectrique
-++++++++++++++++++++++++++++++
+++++++++++++++++
 
 La feuille ``SpecificTechHydroDams`` manipule les barrages hydroélectriques dans le modèle.
 
@@ -178,7 +177,7 @@ La feuille ``SpecificTechHydroDams`` manipule les barrages hydroélectriques dans
 
 Une nouvelle technologie factice pour chaque centrale hydroélectrique avec barrage est ajoutée pour modéliser les apports de la rivière au barrage. La convention de dénomination de la technologie factice est XXRIDM_rivername, par exemple CMRIDM_LAGDO (en utilisant LAGDO comme exemple). La sortie est réglée sur la forme d&#39;énergie elc fictive existante.
 
-Une nouvelle contrainte de stockage est ajoutée, exemple D_LAGDO avec le nom abrégé DXXX. La contrainte de stockage est liée à CMRIDM_LAGDO avec un coefficient de +1, donc chaque flux de MWyr de CMRIDM_LAGDO augmente le contenu de stockage de 1 MWyr.
+Une nouvelle contrainte de stockage est ajoutée, exemple D_LAGDO avec le nom court DXXX. La contrainte de stockage est liée à CMRIDM_LAGDO avec un coefficient de +1, donc chaque flux de MWyr de CMRIDM_LAGDO augmente le contenu de stockage de 1 MWyr.
 
 La contrainte de stockage est liée à CMHYDM_LAGDO avec un coefficient -1 (c&#39;est-à-dire que chaque flux de MWyr de CMHYDM_LAGDO diminue le contenu du stockage de 1 MWyr). Il serait en théorie possible de faire une modélisation en cascade en liant le débit des usines amont à des contraintes de stockage en aval (plutôt qu&#39;une technologie fluviale). Les coefficients devraient être mis à l&#39;échelle par &quot;l&#39;énergie par unité de volume (MJ/m3)&quot; relative des usines en amont et en aval. Cette fonctionnalité devra être revisitée en tant que nouvelle tâche de développement s&#39;il y a un besoin pressant.
 
@@ -193,11 +192,10 @@ Le volume maximal de la contrainte de stockage est défini sur Volume maximal en 
 L&#39;utilisateur doit ensuite ajouter une série temporelle dans le fichier csv sous les technologies CMRIDM_LAGDO et :button:`Update Timeslices` dans la feuille ``Timeslice``. Les valeurs dans le fichier csv doivent être le débit moyen mensuel divisé par le &quot;débit max&quot; qui a été utilisé pour définir la &quot;capacité de la rivière&quot;, en utilisant la même valeur de débit max quel que soit le scénario.
 Si l&#39;utilisateur souhaite simuler différents scénarios de précipitations sans série temporelle complète, il peut utiliser le facteur de plante pour augmenter ou réduire le profil dans la feuille ``SpecificTech``. Il n&#39;est actuellement pas possible de spécifier un profil saisonnier différent par scénario, mais cette fonctionnalité est sur la liste des tâches dans un avenir proche.
 
-
 .. _batteries:
 
 Batteries et stockage de la pompe
-++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++
 
 Les technologies de stockage de batteries et de pompes peuvent être ajoutées et modifiées de la même manière via l&#39;interface excel SPLAT.
 
@@ -209,60 +207,63 @@ Les technologies de stockage de batteries et de pompes peuvent être ajoutées et 
 
 4. Dans les fiches ``TechSpecific`` précisez les autres paramètres usuels hc, bdi, inv etc...
 
-.. _csp :
+.. .. _csp :
 
-Énergie Solaire Concentrée (CSP)
-++++++++++++++++++++++++++++++++
+.. Énergie Solaire Concentrée (CSP)
+.. ++++++++++++++++++++++++++++++++++++++++++
 
-Reportez-vous aux étapes de :ref:`solar_wind`. (Améliorations à venir)
+.. Reportez-vous aux étapes de :ref:`solar_wind`. (Améliorations à venir)
 
-.. _transmission_distribution :
+.. .. _transmission_distribution :
 
-Transport et Distribution
------------------------------
+.. Transport et Distribution
+.. --------------------------------------------
 
-Les feuilles :ref:`transmission` et :ref:`distribution` sont utilisées pour revoir ou modifier les paramètres des technologies de transmission et de distribution selon les définitions de la feuille ``TechnologySets`` (voir section ci-dessous).
+.. Les fiches :ref:`transmission` et :ref:`distribution` sont utilisées pour réviser ou modifier les paramètres des technologies de transmission et de distribution selon les définitions de la feuille ``TechnologySets`` (voir section ci-dessous).
 
-.. note::
-1. Si l&#39;utilisateur souhaite modéliser avec une demande &quot;envoyée&quot; (voir :ref:`demande`), l&#39;efficacité de transmission doit être définie sur 100 % et les coûts d&#39;investissement sur une petite valeur. Dans la configuration par défaut, aucune technologie de distribution n&#39;est spécifiée pour l&#39;électricité &quot;envoyée&quot;.
+.. .. note::
+.. 1. Si l&#39;utilisateur veut modéliser avec une demande &quot;envoyée&quot; (voir :ref:`demande`), l&#39;efficacité de transmission doit être réglée sur 100 % et les coûts d&#39;investissement sur une petite valeur. Dans la configuration par défaut, aucune technologie de distribution n&#39;est spécifiée pour l&#39;électricité &quot;envoyée&quot;.
 
-2. Si un utilisateur spécifie des valeurs à la fois dans la colonne Constante et dans les colonnes de l&#39;année du jalon, seule la valeur constante sera utilisée pour mettre à jour le modèle MESSAGE et les autres valeurs seront ignorées.
+.. 2. Si un utilisateur spécifie des valeurs à la fois dans la colonne Constante et dans les colonnes de l&#39;année du jalon, seule la valeur constante sera utilisée pour mettre à jour le modèle MESSAGE et les autres valeurs seront ignorées.
 
-.. _interconnexion :
+.. .. _interconnexion :
 
-Interconnexion
------------------
+.. Interconnexion
+.. -----------------------
 
-La fiche :ref:`interconnectors` permet de revoir et de mettre à jour les paramètres des interconnexions transfrontalières.
+.. La fiche :ref:`interconnexions` permet de revoir et de mettre à jour les paramètres des interconnexions transfrontalières.
 
-Au minimum, les deux pays interconnectés (qui doivent être actifs) doivent être spécifiés pour visualiser les interconnexions entre eux.
+.. Au minimum les deux pays interconnectés (qui doivent être actifs) doivent être spécifiés pour visualiser les interconnexions entre eux.
 
 .. _tech_naming :
 
 Nommage de la technologie dans le modèle SPLAT
 --------------------------------------------------
 
-La dénomination des technologies suit les conventions suivantes dans le modèle SPLAT :
+La convention de dénomination des différentes technologies, y compris les niveaux de jeu de technologies 1 et 2, et les technologies génériques, est indiquée dans le tableau ci-dessous.
+Le &quot;??&quot; dans le code de technologie au début fait référence au code de pays à deux lettres (alpha-2). Et le * fournit des informations supplémentaires sur la technologie.
 
-??BMST_[nom] Biomasse Bagasse Cogen
-??BWST_[nom] Biomasse Bois Cogen
-??COSC_[nom] Charbon
-??COCS_[nom] Charbon w CCS
-??DSRC_[nom] Moteur diesel
-??DSSC_[nom] Turbine Diesel
-??NGCC_[nom] Cycle Combiné Gaz
-??NGRC_[nom] Moteur à essence
-??NGSC_[nom] Cycle d&#39;ouverture du gaz
-??GOCV_[nom] Géothermie
-??HFRC_[nom] Moteur HFO
-??HFSC_[nom] HFO Turbine à vapeur
-??HFSC_[nom] HFO Turbine à vapeur
-??HYRO_[nom] Hydro au fil de l&#39;eau
-??HYMI_[nom] Hydro Small
-??HYDM_[nom] Hydro avec barrage
-??NUPW_[nom] Nucléaire
-??EPPT_[nom] Stockage pompé
-??SOTN_[nom] Solar CSP pas de stockage
-??SOTS_[nom] Solar CSP avec stockage
-??SOPC_[nom] Système solaire photovoltaïque (service public)
-??WDLC_[nom] Vent
+La dénomination de l&#39;ensemble technologique de niveau 1 suit les conventions suivantes dans le modèle SPLAT :
+
+.. table-csv ::
+:file: csv_file/level1sets_sheet.csv
+:lignes d&#39;en-tête : 1
+
+La dénomination de l&#39;ensemble technologique de niveau 2 suit les conventions suivantes dans le modèle SPLAT :
+
+.. table-csv ::
+:file: csv_file/level2sets_sheet.csv
+:lignes d&#39;en-tête : 1
+
+La convention de dénomination des technologies génériques est donnée dans le tableau ci-dessous :
+
+.. table-csv ::
+:file: csv_file/generictechcodes_sheet.csv
+:lignes d&#39;en-tête : 1
+
+.. _country_code :
+
+Code pays dans le modèle SPLAT
+------------------------------------------------
+
+Les codes de pays à deux ou trois lettres utilisés dans le modèle SPLAT sont basés sur `ISO 3166-1<https://en.wikipedia.org/wiki/ISO_3166-1> `_ norme.

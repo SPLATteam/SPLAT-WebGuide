@@ -8,7 +8,7 @@
 :class: tight-tableau
 
 MESSAGE
-=====================
+=============================
 Modèle pour les alternatives de stratégie de système énergétique et leurs impacts environnementaux généraux (MESSAGE)
 a été conçu pour développer un modèle d&#39;optimisation d&#39;un système énergétique pour la planification à moyen et long terme, l&#39;analyse de la politique énergétique et le développement de scénarios.
 MESSAGE formule le modèle de programmation linéaire dynamique avec une option d&#39;entiers mixtes.
@@ -40,7 +40,7 @@ La première partie de cette section décrit les différentes bases de données util
 .. _Databases_in_MESSAGE :
 
 Bases de données dans MESSAGE
----------------------------------
+--------------------------------
 MESSAGE crée chaque modèle dans une étude de cas distincte et, par conséquent, un fichier de base de données pour chaque modèle. Les types de bases de données utilisées dans MESSAGE sont donnés dans le tableau ci-dessous :
 
 .. csv-table :: Bases de données dans MESSAGE
@@ -53,7 +53,7 @@ L&#39;interrelation des bases de données utilisées dans le programme MESSAGE est
 .. image:: /images/message_databases.PNG
 
 Signification des différents fichiers de modèle MESSAGE
---------------------------------------------------------------
+-------------------------------------------------- ---------
 Cette section décrit les différents types de fichiers qui sont présents ou créés dans les sous-dossiers tels que ``data``, ``int`` et ``res`` dans le dossier ``models/Region`` lors de l&#39;exécution du MESSAGE.
 
 .. note::
@@ -64,21 +64,21 @@ Cette section décrit les différents types de fichiers qui sont présents ou créés
 * ``MXG`` est un programme de génération de matrice et ``CAP`` est utilisé pour le post-traitement de la solution et pour l&#39;extraction des résultats dans l&#39;application MESSAGE GUI.
 
 Types de fichiers dans le dossier de données
-+++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++
 .. table-csv ::
 :class: full-largeur
 :lignes d&#39;en-tête : 1
 :file: csv_file/message_data.csv
 
 Types de fichiers dans le dossier intm (intérimaire)
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++
 .. table-csv ::
 :class: full-largeur
 :lignes d&#39;en-tête : 1
 :file: csv_file/message_intm.csv
 
 Types de fichiers dans le dossier res
-++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++
 .. table-csv ::
 :class: full-largeur
 :lignes d&#39;en-tête : 1
@@ -87,7 +87,7 @@ Types de fichiers dans le dossier res
 .. _splat_message_workflow :
 
 Flux de travail SPLAT MESSAGE
----------------------------------
+-------------------------------
 
 Le diagramme de workflow SPLAT MESSAGE se présente comme suit :
 

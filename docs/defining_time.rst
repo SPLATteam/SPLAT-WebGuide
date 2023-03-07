@@ -6,7 +6,7 @@
 :class: button
 
 Définir le temps
-=================
+==================
 
 .. important::
 L&#39;interface doit être liée au modèle avant d&#39;exécuter l&#39;une des étapes de cette section.
@@ -21,7 +21,7 @@ L&#39;utilisateur peut revoir la définition des régions de chargement en cliquan
 .. _time_zones :
 
 Définition des fuseaux horaires et de la granularité
-------------------------------------------------------
+-------------------------------------------------
 
 1. Ajoutez les informations de fuseau horaire local à regid_AllRegions.tit (par rapport à UTC).
 

@@ -1,5 +1,5 @@
 Documentation de l&#39;interface SPLAT
-=======================================
+================================================
 
 L&#39;**interface SPLAT** est un classeur Excel avec un ensemble de macros actionnées via des boutons ou des raccourcis clavier. Le classeur peut être utilisé conjointement avec l&#39;interface standard du modèle MESSAGE. Le manuel a été développé pour des modèles MESSAGE_V2 à un ou plusieurs pays.
 
@@ -11,7 +11,7 @@ Ce guide se concentre sur l&#39;utilisation de l&#39;**interface Excel SPLAT** p
 
 
 Contenu
---------
+----------
 
 .. toctree::
 :maxdepth: 2
@@ -25,9 +25,6 @@ working_with_scenarios
 how_to
 glossary
 MESSAGE
-add_tutorials_section
-basic_tutorials
-
 
 
 

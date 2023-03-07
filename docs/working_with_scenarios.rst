@@ -10,13 +10,13 @@ L&#39;interface Excel SPLAT est limitée dans la gestion directe des scénarios. V
 .. _add_scenario :
 
 Ajouter un scénario
----------------------
+------------------
 Les scénarios doivent être ajoutés via l&#39;interface MESSAGE. Il est recommandé à l&#39;utilisateur de faire une copie d&#39;un scénario existant via l&#39;interface MESSAGE et de le charger dans l&#39;interface SPLAT. Reportez-vous à :ref:`message_copy_scenario`.
 
 .. _select_scenario :
 
 Sélectionnez un scénario
---------------------------
+------------------------
 Pour sélectionner un scénario spécifique dans SPLAT, le scénario respectif doit être activé (mettez &quot;1&quot; dans la colonne Scénario à recharger pour le scénario respectif dans le tableau Scénario) dans la feuille principale.
 Ensuite, le rechargement global doit être activé pour charger les données du modèle pour le modèle spécifié pour une sous-région et un scénario donnés spécifiés dans le tableau.
 
@@ -29,7 +29,7 @@ Pour définir une nouvelle valeur pour le champ de données, les données doivent ê
 .. .. _define_fullintegration_scenario :
 
 .. Définition du scénario FullIntegration
-.. -----------------------------------------
+.. ---------------------------------------------
 .. Un scénario d&#39;intégration complète considère l&#39;intégration au niveau national et régional dans le modèle. Contrairement à d&#39;autres scénarios, les interconnexions génériques sont mises en ligne dans ce scénario.
 .. Par conséquent, les coûts de nuit des interconnexions génériques ($/kW) doivent être &quot;bien définis&quot; dans la feuille ``Interconnectors`` dans le cas du scénario FullIntegration.
 

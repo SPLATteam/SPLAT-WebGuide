@@ -11,7 +11,7 @@ Guides pratiques
 .. _change_decimal_seperator :
 
 Changer le séparateur décimal dans l&#39;environnement Windows
-----------------------------------------------------------------
+-------------------------------------------------- --------------
 
 
 .. image:: /images/how_to_ChangeDecimalSeparator1.png
@@ -32,7 +32,7 @@ Changer le séparateur décimal dans l&#39;environnement Windows
 .. _install_solver :
 
 Installation d&#39;un solveur gratuit alternatif (plus rapide)
-------------------------------------------------------------------
+-------------------------------------------------- --------------
 
 Le logiciel MESSAGE est livré par défaut avec un solveur gratuit appelé GLPK. Ce solveur est adéquat pour travailler avec de petits modèles, cependant, lorsqu&#39;un modèle plus grand doit être utilisé (par exemple, de nombreuses tranches de temps, de nombreuses technologies et sous-régions), ce solveur devient inadéquat et nécessite beaucoup de temps pour terminer un &quot;RUN&quot;.
 
@@ -57,7 +57,7 @@ Certains fichiers peuvent déjà exister dans le dossier, vous pouvez accepter d&#
 .. _using_message :
 
 Restauration et ouverture d&#39;un modèle à l&#39;aide de l&#39;interface MESSAGE
------------------------------------------------------------------------------------
+-------------------------------------------------- ------------------------------
 
 1. Enregistrez le fichier ZIP du modèle (SPLAT) qui commence par ``\MAINa_...`` dans un emplacement connu de l&#39;ordinateur
 
@@ -102,7 +102,7 @@ Par exemple, supposons que votre pays soit le Cameroun, alors vous choisissez le
 .. _message_copy_scenario :
 
 Copier un scénario à l&#39;aide de l&#39;interface MESSAGE
------------------------------------------------------------
+-------------------------------------------------- ---------------
 
 1. Ouvrez votre modèle dans MESSAGE. Si vous n&#39;avez pas restauré votre modèle auparavant, veuillez le restaurer pour la première fois. (:ref:`using_message`)
 

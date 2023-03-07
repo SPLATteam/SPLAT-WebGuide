@@ -6,3 +6,4 @@ regex,example
 :\w+\: \w+,:class: inputcell
 :\w+\:,:class:
 \w+\_\w+,file_path
+glossary,glossary
