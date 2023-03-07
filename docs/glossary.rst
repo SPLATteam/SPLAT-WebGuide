@@ -6,12 +6,12 @@
     :class: button
 
 Description of Sheets
-=====================
+=============================
 
 .. _main:
 
 Main
------
+-------
 
 Set the model path, reload model data to memory, and select active countries for querying
 
@@ -51,7 +51,7 @@ If this button is pressed the MAINa ldb files will also be updated if MAINa is s
 .. _input_sheets:
 
 Input Sheets
---------------
+------------------
 
 This section contains the list of parameters (along with parameter code, their unit and definitions) present in each input sheet in the SPLAT interface.
 
@@ -63,7 +63,7 @@ This section contains the list of parameters (along with parameter code, their u
 .. _demand_sheet:
 
 Demand
-+++++++++++++++++++
++++++++++++++++++++++++++
     
 .. csv-table::
     :file: csv_file/demand_sheet.csv
@@ -73,7 +73,7 @@ Demand
 .. _peakdemand_sheet:
 
 PeakDemand
-+++++++++++
++++++++++++++++
 .. csv-table::
     :file: csv_file/peakdemand_sheet.csv
     :header-rows: 1
@@ -82,7 +82,7 @@ PeakDemand
 .. _t&d_sheet:
 
 Transmission and Distribution
-++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++
 
 The :ref:`transmission` and :ref:`distribution` sheets are used to review or modify transmission and distribution technologies parameters as per the definitions in the ``TechnologySets`` sheet (see section below).
 
@@ -102,7 +102,7 @@ The :ref:`transmission` and :ref:`distribution` sheets are used to review or mod
 .. _fuelprices_sheet:
 
 FuelPrices
-+++++++++++++++++++
++++++++++++++++++++++++++
 .. csv-table:: 
     :file: csv_file/fuelprices_sheet.csv
     :header-rows: 1
@@ -111,7 +111,7 @@ FuelPrices
 .. _tech_sheet:
 
 GenericTech and SpecificTech
-+++++++++++++++++++
++++++++++++++++++++++++++
 
 The ``GenericTech`` sheet displays generic technology parameters.
 
@@ -133,7 +133,7 @@ Once a new technology is added, its parameters must be updated using the :button
 .. _techcosts_sheet:
 
 GenericTechCosts and SpecificTechCosts
-+++++++++++++++++++
++++++++++++++++++++++++++
 
 These sheets display the cost parameters that are either constant or change over the model horizon.
 
@@ -145,7 +145,7 @@ These sheets display the cost parameters that are either constant or change over
 .. _specifictechhydrodams_sheet:
 
 SpecificTechHydroDams
-+++++++++++++++++++
++++++++++++++++++++++++++
 
 The approach to define hydro dam technologies in SPLAT is given in :ref:`hydro_dam` section. The parameters used to define them are given below:
 
@@ -157,7 +157,7 @@ The approach to define hydro dam technologies in SPLAT is given in :ref:`hydro_d
 .. _battery&pumpstorage_sheet:
 
 Battery&PumpStorage
-+++++++++++++++++++
++++++++++++++++++++++++++
 
 The approach to define battery and pump storage technologies in SPLAT is given in :ref:`batteries` section. The parameters used to define them are given below:
 
@@ -169,7 +169,7 @@ The approach to define battery and pump storage technologies in SPLAT is given i
 .. _interconnectors_sheet:
 
 Interconnectors
-+++++++++++++++++++
++++++++++++++++++++++++++
 
 The :ref:`interconnectors` sheet is used to review and update cross-border interconnector parameters. At a minimum the two interconnecting countries (which must be active) must be specified to view the interconnections between them. 
 
@@ -181,7 +181,7 @@ The :ref:`interconnectors` sheet is used to review and update cross-border inter
 .. _caplimits_sheet:
 
 SpecificCapacityLimits and InterconnectorsCapLimits
-+++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. csv-table:: 
     :file: csv_file/caplimits_sheet.csv
@@ -191,7 +191,7 @@ SpecificCapacityLimits and InterconnectorsCapLimits
 .. _vrezones_sheet:
 
 PVZones, WindZones, OffshoreWindZones, CSP6hrZones and CSP12hrZones
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 The approach to define VRE technologies (solar PV, CSP, onshore and offshore wind) is given in :ref:`solar_wind` section.
 The parameters needed to define VRE zones are stated in the table below:
@@ -211,47 +211,47 @@ The parameters needed to define VRE zones are stated in the table below:
 .. .. _demand:
 
 .. Demand
-.. ++++++
+.. ++++++++
 
 .. Displays all demand series in the model, including total "Sent Out" (i.e. Secondary, or before transmission & distribution) demand and Final demand by sector
 
 .. .. _peakdemand:
 
 .. PeakDemand
-.. ++++++++++
+.. ++++++++++++++
 
 .. Displays Peak Demand series in MW in the model, including total "Sent Out" (i.e. Secondary, or before transmission & distribution) demand and Final demand by sector
 
 .. .. _fuelprices:
 
 .. FuelPrices
-.. ----------
+.. --------------
 
 .. Displays fuel prices used in the model
 
 .. .. _technologysheets:
 
 .. Technology sheets
-.. ------------------
+.. ------------------------
 
 .. .. _generictech:
 
 .. GenericTech
-.. +++++++++++
+.. +++++++++++++++
 
 .. Displays generic technology parameters that are constant over the model horizon
 
 .. .. _generictechcosts:
 
 .. GenericTechCosts
-.. ++++++++++++++++
+.. ++++++++++++++++++++++
 
 .. Displays generic technology cost parameters that are either constant or change over the model horizon (e.g. CAPEX, FOM, VOM)
 
 .. .. _specifictec:
 
 .. SpecificTech
-.. +++++++++++++
+.. +++++++++++++++++
 
 .. Displays site-specific technology parameters that are constant over the model horizon
 
@@ -267,7 +267,7 @@ The parameters needed to define VRE zones are stated in the table below:
 .. .. _specifictechhydrodams:
 
 .. SpecificTechHydroDams
-.. +++++++++++++++++++++
+.. +++++++++++++++++++++++++++++
 
 .. Displays site-specific technology parameters that are specific to hydro plants with storage (dams)
 
@@ -283,84 +283,84 @@ The parameters needed to define VRE zones are stated in the table below:
 .. .. _specifictechcosts:
 
 .. SpecificTechCosts
-.. ++++++++++++++++++
+.. ++++++++++++++++++++++++
 
 .. Displays site-specific technology cost parameters that are either constant or change over the model horizon (e.g. CAPEX, FOM, VOM)
 
 .. .. _specificcapacitylimits:
 
 .. SpecificCapacityLimits
-.. +++++++++++++++++++++++
+.. +++++++++++++++++++++++++++++++
 
 .. Displays site-specific technology capacity limits that are either constant or change over the model horizon
 
 .. .. _batterystorage:
 
 .. BatteryStorage
-.. ++++++++++++++
+.. ++++++++++++++++++
 
 .. Displays Battery Storage Parameters
 
 .. .. _pvzones:
 
 .. PVZones
-.. ++++++++
+.. ++++++++++
 
 .. Displays PV Zones Data
 
 .. .. _windzones:
 
 .. WindZones
-.. ++++++++++
+.. ++++++++++++++
 
 .. Displays Wind Zones Data
 
 .. .. _offshorewindzones:
 
 .. OffshoreWindZones
-.. +++++++++++++++++
+.. +++++++++++++++++++++++
 
 .. Displays OffshoreWind Zones Data
 
 .. .. _csp6hrzones:
 
 .. CSP6hrZones
-.. ++++++++++++
+.. ++++++++++++++++
 
 .. Displays CSP 6hr Zones Data
 
 .. .. _csp12hrzones:
 
 .. CSP12hrZones
-.. ++++++++++++
+.. ++++++++++++++++
 
 .. Displays CSP 12hr Zones Data
 
 .. .. _interconnectors:
 
 .. Interconnectors
-.. +++++++++++++++
+.. +++++++++++++++++++++
 
 .. Displays regional interconnector parameters
 
 .. .. _transmission:
 
 .. Transmission
-.. ++++++++++++
+.. ++++++++++++++++
 
 .. Displays transmission network parameters by country
 
 .. .. _distribution:
 
 .. Distribution
-.. ++++++++++++
+.. ++++++++++++++++
 
 .. Displays distribution network parameters by country and sector
 
 .. _constraint_sheets:
 
 Constraint Sheets
------------------
+-----------------------
 
 Constraints are linear mathematical equations applicable across several technologies (power plants, storage, transmission, etc. 
 These are user-defined relations to guide a model based on scenario narratives.
@@ -373,14 +373,14 @@ This section describes the different constraints (including their equations and 
 .. _constraintlist_sheet:
 
 ConstraintList
-++++++++++++++
+++++++++++++++++++
 
 This sheet contains the list of all the constraints in the model which are defined in the following sheets.
 
 .. _buildlimconstraint_sheet:
 
 PVAnnualBuildLim and WindAnnualBuildLim
-+++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 These two sheets are used to set annual build limits for solar PV and wind onshore respectively.
 The equation(s) used in the sheet is as given below:
@@ -407,7 +407,7 @@ The parameters used in this sheet are as follows:
 .. _rmconstraint_sheet:
 
 ReserveMarginConstraint
-+++++++++++++++++++++++
++++++++++++++++++++++++++++++++
 
 In a power system, generation must always equal consumption.
 When the balance is disrupted, it can lead to outages and complete black outs.
@@ -467,7 +467,7 @@ LS = Transmission Losses
 .. _localreconstraint_sheet:
 
 LocalREConstraint
-+++++++++++++++++
++++++++++++++++++++++++
 
 Different countries or regions can have target of achieving certain minimum share RE in the the total power generation by certain year.
 In the ``LocalREConstraint`` sheet, the minimum "target" share of RE (more specifically VRE) technologies in the total power generation is set as a constraint in the model for different years.
@@ -502,7 +502,7 @@ other_gen = generation from non-VRE technologies
 .. _co2constraint_sheet:
 
 CO2Constraint:
-++++++++++++++
+++++++++++++++++++
 
 The CO2 emissions constraints are set in more ambitious scenarios.
 In this sheet, the reduction target for CO2 emissions for different years is set relative to a specific reference scenario.
@@ -526,7 +526,7 @@ RHS represents the maximum limit of CO2 emissions from power sector in same year
 .. _reportgen_annual:
 
 ReportGen-Annual
------------------
+-----------------------
 
 This sheet allows to run the model and get results in annual resolution.
 The steps are described in :ref:`run_model`.
@@ -534,13 +534,13 @@ The steps are described in :ref:`run_model`.
 .. _reportgen_profiles:
 
 ReportGen-Profiles
--------------------
+-------------------------
 
 This sheet allows to generate Sub-Annual (Profiles) results file. The steps are described in :ref:`extract_results`.
 
 .. _timeslices:
 
 TimeSlices
------------
+---------------
 
 Displays timeslice definitions (load regions) used in model

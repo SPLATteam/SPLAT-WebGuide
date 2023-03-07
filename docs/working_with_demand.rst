@@ -6,7 +6,7 @@
     :class: button
 
 Working with Demand
-====================
+============================
 
 .. important::
     The interface must be linked to the model before executing any of the steps in this section.
@@ -17,7 +17,7 @@ This section describes how to view, change and add demand using the SPLAT interf
 .. view_demand:
 
 Viewing demand input
----------------------
+-----------------------------
 
 1. In the ``Demand`` tab, enter the scenario to be queried in the cell ``Choose Scenario``
 
@@ -34,7 +34,7 @@ Viewing demand input
 .. change_demand:
 
 Changing demand input
-----------------------
+------------------------------
 
 1. In the ``Demand`` tab, click on :button:`Refresh Sheet` to get the data saved in the model.
 

@@ -7,13 +7,13 @@ Create sections:
 	create a reference_link to section: .. section_name:
 	create a section: underline the section name with symbols (defined in this document as following)
 		first layer
-		===========
+		===============
 		second layer
-		------------
+		----------------
 		third layer
-		+++++++++++
+		+++++++++++++++
 		fourth layer
-		~~~~~~~~~~~~
+		~~~~~~~~~~~~~~~~
 
 Add link:
 	:ref:`reference_link` (where reference_link is the reference_link of the section, for example :ref:`install_solver`)

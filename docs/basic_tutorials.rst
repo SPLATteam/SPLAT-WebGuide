@@ -6,7 +6,7 @@
     :class: button
 
 Basic Tutorials
-====================
+============================
 
 This section consists of some basic tutorials for running SPLAT:
 
@@ -15,24 +15,24 @@ This section consists of some basic tutorials for running SPLAT:
 
 .. tutorial_1:
 Modifying single country model contents
----------------------------------------
+-----------------------------------------------------
 
 
 .. tutorial_2:
 Modifying model contents that interlink multiple countries
-----------------------------------------------------------
+--------------------------------------------------------------------------------
 
 
 .. tutorial_3:
 SPLAT processes
----------------
+---------------------
 
 .. tutorial_4:
 Scenarios
----------
+-----------
 
 .. tutorial_5:
 Miscellaneous
--------------
+-----------------
 
 

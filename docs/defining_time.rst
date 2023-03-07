@@ -6,7 +6,7 @@
     :class: button
 
 Defining Time
-==============
+==================
 
 .. important::
     The interface must be linked to the model before executing any of the steps in this section.
@@ -21,7 +21,7 @@ The user can review the load regions definition by clicking on the :button:`Show
 .. _time_zones:
 
 Defining time zones and granularity
------------------------------------
+-------------------------------------------------
 
 1. Add local time zone information to regid_AllRegions.tit (relative to UTC).
 
