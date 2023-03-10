@@ -17,7 +17,7 @@ Pre-requisites
 Before using the SPLAT interface, ensure that you have the following software installed and files downloaded:
 
 .. note::
-	If you are already issued the SPLAT learning kit, the following software (except Microsoft Excel) can be accessed in the software folder. If the kit has not been issued to you yet, please fill in the `request form`_ , or contact the IRENA person you are in touch with.
+	If you are already issued the SPLAT learning kit, the following software (except Microsoft Excel) can be accessed in the software folder. If the kit has not been issued to you yet, please fill in the `request form <https://forms.office.com/Pages/ResponsePage.aspx?id=sOvdzLvS0ESYSo5CpcBis8X-QNFmuJNIrZ3pyvqZdPxURVJMTUw0Mzg1SkFHOTFFV0lXTFhLN1NEVS4u>`_ , or contact the IRENA person you are in touch with.
 
 
 -	Microsoft Excel (64 bit version, to check :ref:`checking_bits`)
@@ -27,11 +27,6 @@ Before using the SPLAT interface, ensure that you have the following software in
 -	(recommended) CBC solver
 
 The MESSAGE software comes with a free solver called GLPK. If a different solver is needed, it will have to be installed separately. We recommend using the CBC solver for use with the SPLAT interface. Refer to :ref:`install_solver` for using alternative solvers like cbc. 
-
-
-.. _request form:
-https://forms.office.com/Pages/ResponsePage.aspx?id=sOvdzLvS0ESYSo5CpcBis8X-QNFmuJNIrZ3pyvqZdPxURVJMTUw0Mzg1SkFHOTFFV0lXTFhLN1NEVS4u
-
 
 .. _conventions:
 
