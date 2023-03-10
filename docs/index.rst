@@ -23,7 +23,7 @@ Contenu
     defining_time
     working_with_scenarios
     how_to
-    glossaire
+    glossary
     MESSAGE
 
 
