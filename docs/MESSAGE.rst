@@ -42,12 +42,12 @@ The first part of this section describes the various databases used in MESSAGE. 
 Databases in MESSAGE
 --------------------------------
 MESSAGE creates each model in a separate case study and accordingly one database file for each model. The types of databases used in MESSAGE are given in the table below:
-
-.. csv-table:: Databases in MESSAGE
+.. csv-table::
+    :class: full-width
     :header-rows: 1
-    :file: csv_file/message_databases.csv     
-    :width: 5, 5, 20
-
+    :file: csv_file/message_databases.csv  
+    :widths: 10 20 50
+   
 The interrelationship of the databases used in the MESSAGE program is depicted in the figure below:
 
 .. image:: /images/message_databases.PNG
