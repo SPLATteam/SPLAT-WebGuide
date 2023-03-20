@@ -40,7 +40,7 @@ There is an alternative free solver that can be used with MESSAGE called the CBC
 
 However, to execute runs with this solver one must use the SPLAT Excel Interface to initiate runs (see Tutorial C - Using the SPLAT Excel Interface) and one has to add the solver to the user's existing MESSAGE installation. This guide gives a brief description on how to do this installation.
 
-1. Download the cbc.rar archive file from the `cbc link`_ and put it in the MESSAGE installation folder called:
+1. Download the cbc.rar archive file and put it in the MESSAGE installation folder called:
 ``C:\Programs\MESSAGE_INT\message_bin``
 
 .. _cbc link: https://irena.sharepoint.com/:u:/r/sites/EPS/PTG%20Tools%20and%20Data/SPLAT%20kit/Software/AlternativeSolver/cbc_files.rar?csf=1&web=1&e=QPdmhj
