@@ -1,7 +1,7 @@
 SPLAT Interface Documentation
 =================================================
 
-The **SPLAT interface** is an excel workbook with a set of macros operated via buttons or short-cut keys. The workbook can be used in conjunction with the standard MESSAGE model interface. The workbook has been developed for single or multi-country MESSAGE_V2 models.
+The **SPLAT interface** is an excel workbook with a set of macros operated via buttons or short-cut keys. The workbook can be used in conjunction with the standard MESSAGE model interface. The workbook has been developed for single or multi-country MESSAGE_V5 models.
 
 The workbook has a core set of spreadsheets that the user can add to or duplicate as needed for managing input data and results for the model they are working on. This guide describes the features of the latest stable version of the SPLAT excel interface.
 
