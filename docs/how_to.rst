@@ -60,9 +60,9 @@ Installing an Alternative (Faster) Commercial Solver
 Gurobi is a commercial solver, which means that it is not free. Gurobi is suitable for running larger model with higher resolution or computational complexity as it is faster than other solvers like CBC and GLPK. 
 To run the model with Gurobi cloud solver, 
 
-1. The following three files **gurobi95.dll**, **gurobimsg.exe**, **mxg.exe** should be copied in the **C:\Programs\MESSAGE_INT\message_bin folder**. New mxg.exe file replaces the old one. 
+1. The following three files **gurobi95.dll**, **gurobimsg.exe** and **mxg.exe** should be copied in the ``C:\Programs\MESSAGE_INT\message_bin folder``. New mxg.exe file replaces the old one. 
 
-2. Gurobi license file **gurobi.lic** should be copied in Windows User folder **C:\Users\Username**, where **Username** should be based on local system.
+2. Gurobi license file **gurobi.lic** should be copied in Windows User folder ``C:\Users\Username``, where ``Username`` should be based on local system.
 
 .. _using_message:
 
