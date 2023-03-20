@@ -49,10 +49,20 @@ However, to execute runs with this solver one must use the SPLAT Excel Interface
 
 .. image:: /images/how_to_1.png
 
-
 2. Use a 3rd party software such as Winrar to extract the files from ``cbc.rar`` into the ``C:\Programs\MESSAGE_INT\message_bin`` folder (use "extract here")
 Some of the files may already exist in the folder, you can accept to overwrite those files with the ones from the ``cbc.rar`` archive.
 
+.. _install_solver_gurobi:
+
+Installing an Alternative (Faster) Commercial Solver
+----------------------------------------------------------------
+
+Gurobi is a commercial solver, which means that it is not free. Gurobi is suitable for running larger model with higher resolution or computational complexity as it is faster than other solvers like CBC and GLPK. 
+To run the model with Gurobi cloud solver, 
+
+1. The following three files **gurobi95.dll**, **gurobimsg.exe**, **mxg.exe** should be copied in the **C:\Programs\MESSAGE_INT\message_bin folder**. New mxg.exe file replaces the old one. 
+
+2. Gurobi license file **gurobi.lic** should be copied in Windows User folder **C:\Users\Username**, where **Username** should be based on local system.
 
 .. _using_message:
 
