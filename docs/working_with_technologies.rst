@@ -15,8 +15,13 @@ Working with Technologies
 
 A technology in the model is a power-producing unit or a combination of such units or a transmission line with specific parameters such as, maximum capacity, capacity factor, CAPEX, FOM, fuel cost etc.
 
+.. _technology_types:
+
+Technology Types in SPLAT
+--------------------------
+
 A technology can be site specific (a specific plant or transmission line with known parameters) or generic (a technology with generalised parameters).
-Technologies in SPLAT are classified into four main types:
+In high level (Level 0), all the technologies in SPLAT are classified into four main types:
 
 **1. Existing technologies:** The technologies which are already in place as of the reference year.
 
@@ -33,10 +38,8 @@ These variable renewable energy technologies are also considered as candidate te
 
 The generic technologies are normally set up in a way that they don't come online in reference scenaerios. One of the main motivations to have generic technologies in the model is to make the model tech-agnostic, which in turn increases acceptance among stakeholders.
 
-The Technology tabs are listed at :ref:`technologysheets`
-
-This section describes how to view, add and change technologies using the SPLAT Excel Interface.
-
+The technologies in SPLAT are further sub-classified into different levels as given in :ref:`tech_naming`.
+The sections below describe the ways to view, add and change technologies using the SPLAT Excel Interface.
 
 .. _view_tech_inputs:
 
@@ -80,6 +83,11 @@ Renaming a technology
 
 Deleting a technology
 ------------------------------
+
+If a technology is not relevant in the current model run but may be relevant in the future, one trick to deactivate the technology in the current model run is to specify the year after the end of model time horizon as the **First Year**.  
+e.g., if the model time horizon ends at 2050 and we don't want a technology to appear in the results, it's **First Year** can be specified as 2051. This can be changed in the future if we want the technolgy to be the part of model run.
+
+In case we want to delete a technology, the procedure is as follows:
 
 1. Enter the technology names in :ref:`DeleteTechFacility` and click on :button:`Delete Techs in List`. 
 
