@@ -85,7 +85,7 @@ Deleting a technology
 ------------------------------
 
 If a technology is not relevant in the current model run but may be relevant in the future, one trick to deactivate the technology in the current model run is to specify the year after the end of model time horizon as the **First Year**.  
-e.g., if the model time horizon ends at 2050 and we don't want a technology to appear in the results, it's **First Year** can be specified as 2051. This can be changed in the future if we want the technolgy to be the part of model run.
+e.g., if the model time horizon ends at 2050 and we don't want a technology to appear in the results, it's **First Year** can be specified as 2051. This can be changed in the future if we want the technology to be the part of the model simulation.
 
 In case we want to delete a technology, the procedure is as follows:
 
@@ -205,15 +205,16 @@ If the user wants to simulate different rainfall scenarios without a full time s
 Batteries and Pump Storage
 ++++++++++++++++++++++++++++++++++++
 
-Batteries and pump storage technologies can be added and modified in the same way through the SPLAT excel interface.
+The storage technologies, which are currently modelled in SPLAT-MESSAGE modelling framework, are battery storage (intraday storage) and pumped hydro (intraday or multi-day in some cases) technologies.
+The storage technologies have to be defined in the ``Battery&PumpStorage`` sheet in SPLAT excel interface with the following steps:
 
-1. In ``Battery&PumpStorage`` sheet: create the technology with techname convention: xxELSTyyyy for a battery or xxELSTPSyyyy for pump storage, where xx is country code, and yyyy is site description. (For example, ZAELSTPSDrakensberg)
+1. In ``Battery&PumpStorage`` sheet: create the technology with techname convention: xxELSTyyyy for a battery or xxELSTPSyyyy for pump storage, where xx is country code, and yyyy is site description (For example, ZAELSTPSDrakensberg). 
 
-2. :button:`Reload Global`
+2. :button:`Reload Global`.
 
-3. In the same ``Battery&PumpStorage`` sheet click :button:`Refresh` and then specify storage hours and cycle efficiency
+3. In the same ``Battery&PumpStorage`` sheet click :button:`Refresh` and then specify hours of storage and storage cycle efficiency.
 
-4. In the ``TechSpecific`` sheets specify the other usual parameters hc, bdi, inv etc....
+4. In the ``SpecificTech`` sheets specify the other usual parameters first year, total capacity upper limit, lifetime, etc.
 
 .. .. _csp:
 

@@ -160,7 +160,13 @@ The approach to define hydro dam technologies in SPLAT is given in :ref:`hydro_d
 Battery&PumpStorage
 +++++++++++++++++++++++++
 
-The approach to define battery and pump storage technologies in SPLAT is given in :ref:`batteries` section. The parameters used to define them are given below:
+The approach to define battery and pump storage technologies in SPLAT excel interface is given in :ref:`batteries` section.
+In the SPLAT MESSAGE modelling framework, the battery storage technologies are modelled as generic technologies, unless there are any existing or committed projects.
+The pumped hydro storage technologies are modelled as non-generic technologies.
+The storage capacity in terms of MW is based on the result of the optimization process (the total capacity upper limit can be defined in ``SpecificTech`` sheet), while the hours of storage already needs to be defined for the technology.
+
+For each storage technology, there is a corresponding proxy technology created automatically by the MESSAGE modelling framework to write the equations.
+The parameters used to define them are given below:
 
 .. csv-table:: 
     :file: csv_file/battery&pumpstorage_sheet.csv
