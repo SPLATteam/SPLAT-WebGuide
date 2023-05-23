@@ -169,6 +169,12 @@ VRE technologies can be defined in two ways - either as generic technologies or 
 Hydro Dam
 ++++++++++++++
 
+SPLAT characterizes the dam-based hydropower plants by accounting river and dam specific resource conditions. Their dispatch is optimized while synergizing with other renewable supply options (i.e. the solar photovoltaic, wind, concentrated solar power and run of river based hydropower) that are given fixed and exogenously determined generation profiles. 
+
+The dam hydropower plants are represented as a combination of three elements: river, dam and a generator. The river and the generator are inserted as ‘technology’ while the dam is inserted as a ‘storage’ (for details, see MESSAGE manual). As explained ahead, the SPLAT naming convention requires these three elements to carry a common name but different prefixes. 
+
+The river technology is characterized with the exogenously determined maximum monthly inflow assumption in MW units and a normalized monthly flow profile. Similarly, the dam storage is characterized with a maximum volume in MWyr units. These assumptions are mainly derived from 'IRENA’s AfREP Hydropower database<https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower>'_. In rare cases, when refinements are necessary, the SPLAT user has the ability to modify these characteristics. However, in normal use case, the user is required to just review/revise the generator side characteristics only (see :ref:`tech_sheet`).
+
 The ``SpecificTechHydroDams`` sheet manipulates the hydro dams in the model.
 
 1. Click on :button:`Refresh Sheet` button to extract the technologies that belong to the `TechSetL2`: `Large Hydro Dams`.
