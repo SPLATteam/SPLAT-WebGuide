@@ -214,7 +214,7 @@ g periods of seasonal scale.
 
 3. Dummy technologies are inserted to complete the battery model. Dummy technology ensures that the main battery technology accounts the charge left in the reservoir in the end time slice (end of the day), by shifting it into the beginning time slice (beginning of the day). Separate dummy technology is required for each season. SPLAT naming convention sets the dummy technology name as ‘??ELDT04_??’, where the suffix preceded by underscore represents the season number. This means, that the count of dummy technologies will be equal to the count of seasons selected for the model run.
 
-.. image:: /images/BatteryModel.PNG
+.. image:: /images/BatteryModel.png
 
 In SPLAT models, the pumped hydropower plant is represented using the same modelling concept as the battery technology. However, the user can insert multiple pumped hydropower plants and control their type (i.e. committed or candidate). Since, each of such technology requires insertion of several extra technologies as described above, usually, the user cannot insert more than 6 or 7 pumped hydropower technologies in any single country due to inherent MESSAGE software limitations. The way around for this is therefore to aggregate multiple pumped hydropower plants in one technology.
 
