@@ -203,9 +203,24 @@ If the user wants to simulate different rainfall scenarios without a full time s
 Batteries and Pump Storage
 ++++++++++++++++++++++++++++++++++++
 
-Batteries and pump storage technologies can be added and modified in the same way through the SPLAT excel interface.
+SPLAT interface allows the user to characterize one battery technology per country. This technology represents a 4 hour grid connected storage resource, whose capacity is optimized. In the modelled energy system, the batteries would charge and discharge when it makes least cost sense. Their contribution to ReserveMarginConstraint is also allowed. 
 
-1. In ``Battery&PumpStorage`` sheet: create the technology with techname convention: xxELSTyyyy for a battery or xxELSTPSyyyy for pump storage, where xx is country code, and yyyy is site description. (For example, ZAELSTPSDrakensberg)
+The inherent modelling of ‘storages’ in MESSAGE can appropriately represent the characteristics of hydro dams, which can store water resources for long durations up to seasonal scale. In contrast, the batteries can store only a few hours of charge which, in practice, can be retained up to few days at most. As a result, the inclusion of battery storage model in MESSAGE is not straight forward and required insertion of several elements and constraints. The user doesn’t have to deal with these elements and constraints in the normal use cases. These are briefly described and illustrated below just for context:
+
+1. SPLAT model entails a main ‘technology’ (??ELST04) that represents battery and a ‘storage’ (SS_??ELST04) that represents the reservoir of charge connected with the main technology
+
+2. SPLAT model entails a proxy ‘technology’ (??ELPT04) that is constrained – via a constraint called PC_??ELST04 - to have the same installed MW as the main technology (??ELST04) and is linked with storage (SS_??ELST04) – via a constraint called PS_??ELST04 - to enforce a constant relationship between installed MW and the charge reservoir size (MWh). In simple words, this relationship can be described as ‘every MW battery installed would expand the charge reservoir size by 4 MWh’. This relationship is enforced by activating an exogenously determined capacity factor (CF) profile on the proxy technology (??ELPT04) using a formula given in the diagram.  Keeping in view the shorter storage duration limits of grid batteries (vs hydropower dam), the CF value in the last time slice of every season is set to 0. This means that whatever charge that is left in the storage (SS_??ELST04) at the end of the season is discarded (because of PS_??ELST04 constaint), or in other words, the batteries cannot retain charge for lon
+g periods of seasonal scale. 
+
+3. Dummy technologies are inserted to complete the battery model. Dummy technology ensures that the main battery technology accounts the charge left in the reservoir in the end time slice (end of the day), by shifting it into the beginning time slice (beginning of the day). Separate dummy technology is required for each season. SPLAT naming convention sets the dummy technology name as ‘??ELDT04_??’, where the suffix preceded by underscore represents the season number. This means, that the count of dummy technologies will be equal to the count of seasons selected for the model run.
+
+.. image:: /images/BatteryModel.PNG
+
+In SPLAT models, the pumped hydropower plant is represented using the same modelling concept as the battery technology. However, the user can insert multiple pumped hydropower plants and control their type (i.e. committed or candidate). Since, each of such technology requires insertion of several extra technologies as described above, usually, the user cannot insert more than 6 or 7 pumped hydropower technologies in any single country due to inherent MESSAGE software limitations. The way around for this is therefore to aggregate multiple pumped hydropower plants in one technology.
+
+Batteries and pump storage technologies can be added and modified in the standard way through the SPLAT excel interface:
+
+1. In ``Battery&PumpStorage`` sheet: create the technology with techname convention: xxELST?? for a battery (the suffice ?? should be set as storage size in hours e.g. 04) or xxELSTPS[site/group name] for pump storage (e.g. ZAELSTPSDrakensberg); where xx is the country code. 
 
 2. :button:`Reload Global`
 
