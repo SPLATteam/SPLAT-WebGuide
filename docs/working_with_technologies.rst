@@ -169,7 +169,7 @@ VRE technologies can be defined in two ways - either as generic technologies or 
 Hydro Dam
 ++++++++++++++
 
-SPLAT characterizes the dam-based hydropower plants by accounting river and dam specific resource conditions. Their dispatch is optimized while synergizing with other renewable supply options (i.e. the solar photovoltaic, wind, concentrated solar power and run of river based hydropower) that are given fixed and exogenously determined generation profiles. 
+SPLAT CMP model characterizes the dam-based hydropower plants by accounting river and dam specific resource conditions. Their dispatch is optimized while synergizing with other renewable supply options (i.e. the solar photovoltaic, wind, concentrated solar power and run of river based hydropower) that are given fixed and exogenously determined generation profiles. 
 
 The dam hydropower plants are represented as a combination of three elements: river, dam and a generator. The river and the generator are inserted as ‘technology’ while the dam is inserted as a ‘storage’ (for details, see MESSAGE manual). As explained ahead, the SPLAT naming convention requires these three elements to carry a common name but different prefixes. 
 
@@ -203,7 +203,7 @@ If the user wants to simulate different rainfall scenarios without a full time s
 Batteries and Pump Storage
 ++++++++++++++++++++++++++++++++++++
 
-SPLAT interface allows the user to characterize one battery technology per country. This technology represents a 4 hour grid connected storage resource, whose capacity is optimized. In the modelled energy system, the batteries would charge and discharge when it makes least cost sense. Their contribution to ReserveMarginConstraint is also allowed. 
+SPLAT interface allows the user to characterize one battery technology per country. This technology represents a 4 hour grid connected storage resource, whose capacity is optimized. In the modelled energy system, the batteries would charge and discharge when it makes least cost sense. Their contribution to :ref:`rmconstraint_sheet` is also allowed. 
 
 The inherent modelling of ‘storages’ in MESSAGE can appropriately represent the characteristics of hydro dams, which can store water resources for long durations up to seasonal scale. In contrast, the batteries can store only a few hours of charge which, in practice, can be retained up to few days at most. As a result, the inclusion of battery storage model in MESSAGE is not straight forward and required insertion of several elements and constraints. The user doesn’t have to deal with these elements and constraints in the normal use cases. These are briefly described and illustrated below just for context:
 
@@ -214,7 +214,7 @@ g periods of seasonal scale.
 
 3. Dummy technologies are inserted to complete the battery model. Dummy technology ensures that the main battery technology accounts the charge left in the reservoir in the end time slice (end of the day), by shifting it into the beginning time slice (beginning of the day). Separate dummy technology is required for each season. SPLAT naming convention sets the dummy technology name as ‘??ELDT04_??’, where the suffix preceded by underscore represents the season number. This means, that the count of dummy technologies will be equal to the count of seasons selected for the model run.
 
-.. image:: /images/BatteryModel.PNG
+.. images:: /images/BatteryModel.PNG
 
 In SPLAT models, the pumped hydropower plant is represented using the same modelling concept as the battery technology. However, the user can insert multiple pumped hydropower plants and control their type (i.e. committed or candidate). Since, each of such technology requires insertion of several extra technologies as described above, usually, the user cannot insert more than 6 or 7 pumped hydropower technologies in any single country due to inherent MESSAGE software limitations. The way around for this is therefore to aggregate multiple pumped hydropower plants in one technology.
 
