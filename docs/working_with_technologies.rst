@@ -171,6 +171,7 @@ VRE technologies can be defined in two ways - either as generic technologies or 
 4.	Locate the .tit file of the model and open as excel, it will ask you about delimit parameter. Select comma. The generic wind offshore and newly added offshore zones will have same profiles. Now, got to :ref:`OffshoreWindZones` sheet. Give address to the file that contains the profiles, in the section MSR data file. This will update the zone profiles in .tit file. Currently, the wind offshore generic tech has same profile as wind generic. But remember, wind onshore generic tech has been ousted from model by setting first year=2050
 
 5.	The updated profiles in the .tit file needs to be inserted in model files. Go to :ref:`TimeSlices` sheet, press :button:`Update Files`.
+The profiles refer to the capacity factor in the case of solar and wind technologies. In case of hydro technologies, the profiles refer to normalized peak monthly river flow rates.
 
 .. _hydro_dam:
 
