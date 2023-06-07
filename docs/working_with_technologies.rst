@@ -15,8 +15,13 @@ Working with Technologies
 
 A technology in the model is a power-producing unit or a combination of such units or a transmission line with specific parameters such as, maximum capacity, capacity factor, CAPEX, FOM, fuel cost etc.
 
+.. _technology_types:
+
+Technology Types in SPLAT
+--------------------------
+
 A technology can be site specific (a specific plant or transmission line with known parameters) or generic (a technology with generalised parameters).
-Technologies in SPLAT are classified into four main types:
+In high level (Level 0), all the technologies in SPLAT are classified into four main types:
 
 **1. Existing technologies:** The technologies which are already in place as of the reference year.
 
@@ -33,10 +38,8 @@ These variable renewable energy technologies are also considered as candidate te
 
 The generic technologies are normally set up in a way that they don't come online in reference scenaerios. One of the main motivations to have generic technologies in the model is to make the model tech-agnostic, which in turn increases acceptance among stakeholders.
 
-The Technology tabs are listed at :ref:`technologysheets`
-
-This section describes how to view, add and change technologies using the SPLAT Excel Interface.
-
+The technologies in SPLAT are further sub-classified into different levels as given in :ref:`tech_naming`.
+The sections below describe the ways to view, add and change technologies using the SPLAT Excel Interface.
 
 .. _view_tech_inputs:
 
@@ -80,6 +83,11 @@ Renaming a technology
 
 Deleting a technology
 ------------------------------
+
+If a technology is not relevant in the current model run but may be relevant in the future, one trick to deactivate the technology in the current model run is to specify the year after the end of model time horizon as the **First Year**.  
+e.g., if the model time horizon ends at 2050 and we don't want a technology to appear in the results, it's **First Year** can be specified as 2051. This can be changed in the future if we want the technology to be the part of the model simulation.
+
+In case we want to delete a technology, the procedure is as follows:
 
 1. Enter the technology names in :ref:`DeleteTechFacility` and click on :button:`Delete Techs in List`. 
 
@@ -163,6 +171,7 @@ VRE technologies can be defined in two ways - either as generic technologies or 
 4.	Locate the .tit file of the model and open as excel, it will ask you about delimit parameter. Select comma. The generic wind offshore and newly added offshore zones will have same profiles. Now, got to :ref:`OffshoreWindZones` sheet. Give address to the file that contains the profiles, in the section MSR data file. This will update the zone profiles in .tit file. Currently, the wind offshore generic tech has same profile as wind generic. But remember, wind onshore generic tech has been ousted from model by setting first year=2050
 
 5.	The updated profiles in the .tit file needs to be inserted in model files. Go to :ref:`TimeSlices` sheet, press :button:`Update Files`.
+The profiles refer to the capacity factor in the case of solar and wind technologies. In case of hydro technologies, the profiles refer to normalized peak monthly river flow rates.
 
 .. _hydro_dam:
 
@@ -197,15 +206,16 @@ If the user wants to simulate different rainfall scenarios without a full time s
 Batteries and Pump Storage
 ++++++++++++++++++++++++++++++++++++
 
-Batteries and pump storage technologies can be added and modified in the same way through the SPLAT excel interface.
+The storage technologies, which are currently modelled in SPLAT-MESSAGE modelling framework, are battery storage (intraday storage) and pumped hydro (intraday or multi-day in some cases) technologies.
+The storage technologies have to be defined in the ``Battery&PumpStorage`` sheet in SPLAT excel interface with the following steps:
 
-1. In ``Battery&PumpStorage`` sheet: create the technology with techname convention: xxELSTyyyy for a battery or xxELSTPSyyyy for pump storage, where xx is country code, and yyyy is site description. (For example, ZAELSTPSDrakensberg)
+1. In ``Battery&PumpStorage`` sheet: create the technology with techname convention: xxELSTyyyy for a battery or xxELSTPSyyyy for pump storage, where xx is country code, and yyyy is site description (For example, ZAELSTPSDrakensberg). 
 
-2. :button:`Reload Global`
+2. :button:`Reload Global`.
 
-3. In the same ``Battery&PumpStorage`` sheet click :button:`Refresh` and then specify storage hours and cycle efficiency
+3. In the same ``Battery&PumpStorage`` sheet click :button:`Refresh` and then specify hours of storage and storage cycle efficiency.
 
-4. In the ``TechSpecific`` sheets specify the other usual parameters hc, bdi, inv etc....
+4. In the ``SpecificTech`` sheets specify the other usual parameters first year, total capacity upper limit, lifetime, etc.
 
 .. .. _csp:
 

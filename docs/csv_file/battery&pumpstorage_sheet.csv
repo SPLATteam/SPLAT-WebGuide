@@ -1,7 +1,7 @@
 ﻿Parameter,Parameter Code,Unit,Definition
 Description,Par_descr1,,Includes technology name (Battery Storage or Pump Storage) and storage hours.
 Corresponding Proxy Tech,,,"Technology code: {CountryCode}ELPT{StorageHours} for battery storage and {CountryCode}. 
-ELPTPS for pump storage."
+ELPTPS for pump storage. The proxy technologies are created automatically by MESSAGE framework to write equations"
 Hours of storage,Par_hrs,hours,Storage hours offered by the techniology.
 Storage efficiency,Par_moutp,%,Ratio of energy output by the system to the energy input to the system.
 RelationSSLongName,,,"Technology code: SS_{CountryCode}{StorageTechnologyCode}. 
@@ -11,9 +11,9 @@ Proxy Capacity Constraint Long Name,,,Technology code: PC_{CountryCode}{StorageT
 Proxy Capacity Constraint Short Name,,,"Named as PC01, PC02, and so on based on storage technologies available in the country."
 Rel.SS-Proxy Constraint Long Name,,,Technology code: PS_{CountryCode}{StorageTechnologyCode}
 Rel.SS-Proxy Constraint Short Name,,,"Named as PS01, PS02, and so on based on storage technologies available in the country."
-ST_Act.1.-SS Coefficient,,,
-ST_Act.2.-SS Coefficient,,,Same as efficiency.
-ST_Cap-PC Coefficient,,,
-PT_Cap-PC Coefficient,,,
-PT_Act.1.-PS Coefficient,,,
-SS-PS Coefficient,,,
+ST_Act.1.-SS Coefficient,,,Used in balance equation. -1 in Activity 1refers that the technology will take 1 unit of energy from the system.
+ST_Act.2.-SS Coefficient,,,Same as cycle efficiency. Used in balance equation. 0.9 in Activity 2 refers that 0.9 unit of energy from the system will be stored by the technology. 
+ST_Cap-PC Coefficient,,,Storage technology contribution to reserve margin.
+PT_Cap-PC Coefficient,,,Default value for proxy technology.
+PT_Act.1.-PS Coefficient,,,Default value for proxy technology.
+SS-PS Coefficient,,,Default value for proxy technology.

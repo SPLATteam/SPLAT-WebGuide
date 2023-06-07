@@ -40,7 +40,7 @@ There is an alternative free solver that can be used with MESSAGE called the CBC
 
 However, to execute runs with this solver one must use the SPLAT Excel Interface to initiate runs (see Tutorial C - Using the SPLAT Excel Interface) and one has to add the solver to the user's existing MESSAGE installation. This guide gives a brief description on how to do this installation.
 
-1. Download the cbc.rar archive file from the `cbc link`_ and put it in the MESSAGE installation folder called:
+1. Download the cbc.rar archive file and put it in the MESSAGE installation folder called:
 ``C:\Programs\MESSAGE_INT\message_bin``
 
 .. _cbc link: https://irena.sharepoint.com/:u:/r/sites/EPS/PTG%20Tools%20and%20Data/SPLAT%20kit/Software/AlternativeSolver/cbc_files.rar?csf=1&web=1&e=QPdmhj
@@ -49,10 +49,20 @@ However, to execute runs with this solver one must use the SPLAT Excel Interface
 
 .. image:: /images/how_to_1.png
 
-
 2. Use a 3rd party software such as Winrar to extract the files from ``cbc.rar`` into the ``C:\Programs\MESSAGE_INT\message_bin`` folder (use "extract here")
 Some of the files may already exist in the folder, you can accept to overwrite those files with the ones from the ``cbc.rar`` archive.
 
+.. _install_solver_gurobi:
+
+Installing an Alternative (Faster) Commercial Solver
+----------------------------------------------------------------
+
+Gurobi is a commercial solver, which means that it is not free. Gurobi is suitable for running larger model with higher resolution or computational complexity as it is faster than other solvers like CBC and GLPK. 
+To run the model with Gurobi cloud solver, 
+
+1. The following three files **gurobi95.dll**, **gurobimsg.exe** and **mxg.exe** should be copied in the ``C:\Programs\MESSAGE_INT\message_bin folder``. New mxg.exe file replaces the old one. 
+
+2. Gurobi license file **gurobi.lic** should be copied in Windows User folder ``C:\Users\Username``, where ``Username`` should be based on local system.
 
 .. _using_message:
 

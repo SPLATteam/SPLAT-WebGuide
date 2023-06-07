@@ -124,6 +124,7 @@ Once a new technology is added, its parameters must be updated using the :button
     :file: csv_file/tech_sheet.csv
     :header-rows: 1
     :widths: 20 20 10 50
+    :class: longtable
 
 .. note:: 
     1. The profiles/load curves are calculated by SPLAT based on the hourly values (8760) present in *.tit file in data folder. They are stored in the adb, ldb and ldr files. The reason for not having them in the spreadsheet is that they vary depending on the load region/timeslice definition (e.g. large model/small model) and are would be very difficult to manage effectively in a spreadsheet.
@@ -159,7 +160,13 @@ The approach to define hydro dam technologies in SPLAT is given in :ref:`hydro_d
 Battery&PumpStorage
 +++++++++++++++++++++++++
 
-The approach to define battery and pump storage technologies in SPLAT is given in :ref:`batteries` section. The parameters used to define them are given below:
+The approach to define battery and pump storage technologies in SPLAT excel interface is given in :ref:`batteries` section.
+In the SPLAT MESSAGE modelling framework, the battery storage technologies are modelled as generic technologies, unless there are any existing or committed projects.
+The pumped hydro storage technologies are modelled as non-generic technologies.
+The storage capacity in terms of MW is based on the result of the optimization process (the total capacity upper limit can be defined in ``SpecificTech`` sheet), while the hours of storage already needs to be defined for each technology.
+
+For each storage technology, there is a corresponding proxy technology created automatically by the MESSAGE modelling framework to write the equations.
+The parameters used to define them are given below:
 
 .. csv-table:: 
     :file: csv_file/battery&pumpstorage_sheet.csv
