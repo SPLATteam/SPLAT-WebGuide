@@ -15,8 +15,13 @@ Working with Technologies
 
 A technology in the model is a power-producing unit or a combination of such units or a transmission line with specific parameters such as, maximum capacity, capacity factor, CAPEX, FOM, fuel cost etc.
 
+.. _technology_types:
+
+Technology Types in SPLAT
+--------------------------
+
 A technology can be site specific (a specific plant or transmission line with known parameters) or generic (a technology with generalised parameters).
-Technologies in SPLAT are classified into four main types:
+In high level (Level 0), all the technologies in SPLAT are classified into four main types:
 
 **1. Existing technologies:** The technologies which are already in place as of the reference year.
 
@@ -33,10 +38,8 @@ These variable renewable energy technologies are also considered as candidate te
 
 The generic technologies are normally set up in a way that they don't come online in reference scenaerios. One of the main motivations to have generic technologies in the model is to make the model tech-agnostic, which in turn increases acceptance among stakeholders.
 
-The Technology tabs are listed at :ref:`technologysheets`
-
-This section describes how to view, add and change technologies using the SPLAT Excel Interface.
-
+The technologies in SPLAT are further sub-classified into different levels as given in :ref:`tech_naming`.
+The sections below describe the ways to view, add and change technologies using the SPLAT Excel Interface.
 
 .. _view_tech_inputs:
 
@@ -80,6 +83,11 @@ Renaming a technology
 
 Deleting a technology
 ------------------------------
+
+If a technology is not relevant in the current model run but may be relevant in the future, one trick to deactivate the technology in the current model run is to specify the year after the end of model time horizon as the **First Year**.  
+e.g., if the model time horizon ends at 2050 and we don't want a technology to appear in the results, it's **First Year** can be specified as 2051. This can be changed in the future if we want the technology to be the part of the model simulation.
+
+In case we want to delete a technology, the procedure is as follows:
 
 1. Enter the technology names in :ref:`DeleteTechFacility` and click on :button:`Delete Techs in List`. 
 
@@ -144,7 +152,7 @@ Changing a technology
 
 .. _renewable_tech:
 
-Defining variable renewable energy technologies
+Defining variable renewable energy and storage technologies
 -----------------------------------------------------------------
 
 .. _solar_wind:
@@ -204,6 +212,7 @@ VRE technologies can be defined in two ways - either as generic technologies or 
 4.	Locate the .tit file of the model and open as excel, it will ask you about delimit parameter. Select comma. The generic wind offshore and newly added offshore zones will have same profiles. Now, got to :ref:`OffshoreWindZones` sheet. Give address to the file that contains the profiles, in the section MSR data file. This will update the zone profiles in .tit file. Currently, the wind offshore generic tech has same profile as wind generic. But remember, wind onshore generic tech has been ousted from model by setting first year=2050
 
 5.	The updated profiles in the .tit file needs to be inserted in model files. Go to :ref:`TimeSlices` sheet, press :button:`Update Files`.
+The profiles refer to the capacity factor in the case of solar and wind technologies. In case of hydro technologies, the profiles refer to normalized peak monthly river flow rates.
 
 .. _hydro_dam:
 
@@ -244,29 +253,34 @@ If the user wants to simulate different rainfall scenarios without a full time s
 Batteries and Pump Storage
 ++++++++++++++++++++++++++++++++++++
 
-SPLAT interface allows the user to characterize one battery technology per country. This technology represents a 4 hour grid connected storage resource, whose capacity is optimized. In the modelled energy system, the batteries would charge and discharge when it makes least cost sense. Their contribution to :ref:`rmconstraint_sheet` is also allowed. 
+SPLAT interface allows the user to characterize one battery technology per country. This technology represents a 4 hour grid connected storage resource, whose capacity is optimized.
+In the modelled energy system, the batteries would charge and discharge when it makes least cost sense. Their contribution to :ref:`rmconstraint_sheet` is also allowed. 
 
-The inherent modelling of â€˜storagesâ€™ in MESSAGE can appropriately represent the characteristics of hydro dams, which can store water resources for long durations up to seasonal scale. In contrast, the batteries can store only a few hours of charge which, in practice, can be retained up to few days at most. As a result, the inclusion of battery storage model in MESSAGE is not straight forward and required insertion of several elements and constraints. The user doesnâ€™t have to deal with these elements and constraints in the normal use cases. These are briefly described and illustrated below just for context:
+The inherent modelling of â€˜storagesâ€™ in MESSAGE can appropriately represent the characteristics of hydro dams, which can store water resources for long durations up to seasonal scale.
+In contrast, the batteries can store only a few hours of charge which, in practice, can be retained up to few days at most. As a result, the inclusion of battery storage model in MESSAGE is not straight forward and required insertion of several elements and constraints. The user doesnâ€™t have to deal with these elements and constraints in the normal use cases. These are briefly described and illustrated below just for context:
 
-1. SPLAT model entails a main â€˜technologyâ€™ (??ELST04) that represents battery and a â€˜storageâ€™ (SS\_??ELST04) that represents the reservoir of charge connected with the main technology
+1. SPLAT model entails a main â€˜technologyâ€™ (??ELST04) that represents battery and a â€˜storageâ€™ (SS\_??ELST04) that represents the reservoir of charge connected with the main technology.
 
-2. SPLAT model entails a proxy â€˜technologyâ€™ (??ELPT04) that is constrained â€“ via a constraint called PC\_??ELST04 - to have the same installed MW as the main technology (??ELST04) and is linked with storage (SS\_??ELST04) â€“ via a constraint called PS\_??ELST04 - to enforce a constant relationship between installed MW and the charge reservoir size (MWh). In simple words, this relationship can be described as â€˜every MW battery installed would expand the charge reservoir size by 4 MWhâ€™. This relationship is enforced by activating an exogenously determined capacity factor (CF) profile on the proxy technology (??ELPT04) using a formula given in the diagram.  Keeping in view the shorter storage duration limits of grid batteries (vs hydropower dam), the CF value in the last time slice of every season is set to 0. This means that whatever charge that is left in the storage (SS\_??ELST04) at the end of the season is discarded (because of PS\_??ELST04 constaint), or in other words, the batteries cannot retain charge for long periods of seasonal scale. 
+2. SPLAT model entails a proxy â€˜technologyâ€™ (??ELPT04) that is constrained â€“ via a constraint called PC\_??ELST04 - to have the same installed MW as the main technology (??ELST04) and is linked with storage (SS\_??ELST04) â€“ via a constraint called PS\_??ELST04 - to enforce a constant relationship between installed MW and the charge reservoir size (MWh).
+In simple words, this relationship can be described as â€˜every MW battery installed would expand the charge reservoir size by 4 MWhâ€™. This relationship is enforced by activating an exogenously determined capacity factor (CF) profile on the proxy technology (??ELPT04) using a formula given in the diagram.  Keeping in view the shorter storage duration limits of grid batteries (vs hydropower dam), the CF value in the last time slice of every season is set to 0. This means that whatever charge that is left in the storage (SS\_??ELST04) at the end of the season is discarded (because of PS\_??ELST04 constaint), or in other words, the batteries cannot retain charge for long periods of seasonal scale. 
 
 3. Dummy technologies are inserted to complete the battery model. Dummy technology ensures that the main battery technology accounts the charge left in the reservoir in the end time slice (end of the day), by shifting it into the beginning time slice (beginning of the day). Separate dummy technology is required for each season. SPLAT naming convention sets the dummy technology name as â€˜??ELDT04_??â€™, where the suffix preceded by underscore represents the season number. This means, that the count of dummy technologies will be equal to the count of seasons selected for the model run.
 
 .. image:: /images/BatteryModel.png
 
-In SPLAT models, the pumped hydropower plant is represented using the same modelling concept as the battery technology. However, the user can insert multiple pumped hydropower plants and control their type (i.e. committed or candidate). Since, each of such technology requires insertion of several extra technologies as described above, usually, the user cannot insert more than 6 or 7 pumped hydropower technologies in any single country due to inherent MESSAGE software limitations. The way around for this is therefore to aggregate multiple pumped hydropower plants in one technology.
+In SPLAT models, the pumped hydropower plant is represented using the same modelling concept as the battery technology. However, the user can insert multiple pumped hydropower plants and control their type (i.e. committed or candidate).
+Since, each of such technology requires insertion of several extra technologies as described above, usually, the user cannot insert more than 6 or 7 pumped hydropower technologies in any single country due to inherent MESSAGE software limitations.
+The way around for this is therefore to aggregate multiple pumped hydropower plants in one technology.
 
 Batteries and pump storage technologies can be added and modified in the standard way through the SPLAT excel interface:
 
 1. In ``Battery&PumpStorage`` sheet: create the technology with techname convention: xxELST?? for a battery (the suffix ?? should be set as storage size in hours e.g. 04) or xxELSTPS[*site/group name*] for pump storage (e.g. ZAELSTPSDrakensberg); where xx is the country code. 
 
-2. :button:`Reload Global`
+2. :button:`Reload Global`.
 
-3. In the same ``Battery&PumpStorage`` sheet click :button:`Refresh` and then specify storage hours and cycle efficiency
+3. In the same ``Battery&PumpStorage`` sheet click :button:`Refresh` and then specify hours of storage and storage cycle efficiency.
 
-4. In the ``TechSpecific`` sheets specify the other usual parameters hc, bdi, inv etc....
+4. In the ``SpecificTech`` sheets specify the other usual parameters first year, total capacity upper limit, lifetime, etc.
 
 .. .. _csp:
 
