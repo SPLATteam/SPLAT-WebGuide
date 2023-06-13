@@ -187,7 +187,7 @@ The representation of the above stated georeferenced zones, allow capturing of t
 
 - To optimize the selection of each zone capacity based on a more elaborate accounting of the complementarities of production patterns of these supply options with demand, dispatchable hydropower dam technologies, run of river generators and cross-border energy system resources
 
-In rare cases, when refinements are necessary, the SPLAT user has the ability to modify the above stated zone parameters (see :ref:`_vrezones_sheet` & :ref:`defining_time`). However, in normal use case, the user is required to just review/revise the ‘first year’ for the zones only (see :ref:`_tech_sheet`).
+In rare cases, when refinements are necessary, the SPLAT user has the ability to modify the above stated zone parameters (see :ref:`_vrezones_sheet` & :ref:`_defining_time`). However, in normal use case, the user is required to just review/revise the ‘first year’ for the zones only (see :ref:`_tech_sheet`).
 
 VRE technologies can be defined in two ways - either as generic technologies or site-specific technologies. Below is an example for adding offshore wind, first as a generic technology, then as zones.
 
