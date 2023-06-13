@@ -152,36 +152,41 @@ Defining variable renewable energy technologies
 Solar PV, CSP, onshore and offshore Wind
 +++++++++++++++++++++++++++++++++++++++++++++++++
 
-As part of the features of SPLAT starter modelling kits for users, the SPLAT models have been pre-loaded with special supply options (called ‘zones’) for four generation technologies: solar PV (??SOPCZ), concentrated solar power CSP, wind onshore (??WDOCZ), wind offshore (??WDOCZ). For CSP, given the fact that there can be many plant design possibilities with varying thermal storage and solar field size; only two specific plant-design based zones are available in SPLAT which are namely, the solar multiple 2 plant with 6 hour storage (??SOTNZ) and solar multiple 4 plant with 12 hour storage (??SOTSZ). Each zone name carries a suffix representing its id (e.g. 001, 002 …). 
+As part of the features of SPLAT starter modelling kits for users, the SPLAT models have been pre-loaded with special supply options (called ‘zones’) for four generation technologies: solar PV (??SOPCZ), concentrated solar power CSP, wind onshore (??WDOCZ), wind offshore (??WDOCZ). For CSP, given the fact that there can be many plant design possibilities with varying thermal storage and solar field size; only two specific plant-design based zones are available in SPLAT which are namely, the solar multiple 2 plant with 6 hour storage (??SOTNZ) and solar multiple 4 plant with 12 hour storage (??SOTSZ). Each zone name carries a suffix representing its id (e.g. 001, 002 …).
+ 
 SPLAT zones have site specific cost and performance assumptions, derived from an exogenous GIS assisted analysis that identified thousands of georeferenced Model Supply Regions (MSRs) across Africa and clustered them into SPLAT zones (see `MSR methodology paper <https://www.nature.com/articles/s41597-022-01786-5>`_ for more details).
+
 Technology wise, the SPLAT zones vary in count. For CSP and wind offshore, given the relatively less impact of site weather on the production profiles, only two zones are included per country. For solar PV and wind onshore, given their high future prospects in almost all African countries and high impact of site weather on the production profiles, higher number of zones are included in SPLAT models which vary across three country groups, described below.
+
 .. csv-table::
     :file: csv_file/CountryWiseZoneCount.csv
     :header-rows: 1
     :widths: 30 10 70
 
-Country Group	Countries	Zone Count
-Group A 
-Large countries with large population	South Africa, Egypt, Nigeria, Ethiopia, DRC, Algeria, Tanzania, Kenya, Sudan	10
-Group B
-Small countries with relatively small population	Morocco, Tunisia, Libya, Mauritania, Senegal, Guinée-Conakry, Mali, Niger, Burkina Faso, Sierra Leone, Liberia, Côte d'Ivoire, Ghana, Togo, Benin, Chad, Central African Republic, South Sudan, Somalia, Eritrea, Cameroon, Congo-Brazzaville, Gabon, Angola, Zambia, Zimbabwe, Namibia, Malawi, Mozambique, Rwanda, Burundi, Uganda	2
-Group C
-Countries not in A & B	The Gambia, Equatorial Guinea, Lesotho, Eswatini, Djibouti, Guiné-Bissau	5
-
 Unlike other generation technologies, the per kW overnight capital costs assumed for zones, include an additional offset which represents following:
-All MSR technologies except Wind offshore: the cost of typical grid tie infrastructure and the connecting road, required to connect each kW of capacity, with the existing transmission grid and existing road respectively 
-Wind offshore: the cost of typical grid tie infrastructure, involving offshore and onshore parts, required to connect each kW of capacity with the existing transmission grid 
+
+**All MSR technologies except Wind offshore:** the cost of typical grid tie infrastructure and the connecting road, required to connect each kW of capacity, with the existing transmission grid and existing road respectively 
+
+**Wind offshore:** the cost of typical grid tie infrastructure, involving offshore and onshore parts, required to connect each kW of capacity with the existing transmission grid 
+
 Additionally in wind onshore zones, the overnight cost assumption is set by subjecting this assumption adopted for generic wind onshore case, to a multiplication depending on the appropriate wind class per zone, estimated in the MSR analysis. The multiplication factors are set as 1x, 1.16x and 1.36x; for class-1, class-2 and class-3 wind respectively (classes as per `NREL wind toolkit-2014 <https://www.nrel.gov/docs/fy14osti/61714.pdf>`_).
-The MSR analysis has also derived the following parameters required by SPLAT as input per zone:  
-Sheets: ``PVZones``, ``WindZones``, ``OffshoreWindZones``, ``CSP6hrZones``, ``CSP12hrZones``
+
+The MSR analysis has also derived the following parameters required by SPLAT as input per zone:
+  
+- **Sheets:** ``PVZones``, ``WindZones``, ``OffshoreWindZones``, ``CSP6hrZones``, ``CSP12hrZones``
 Capacity potential MW (upper bound on total installed capacity i.e. bdi up c)
 Location info (Longitude & latitude)
 Overnight cost offsets
-Sheet: ``TimeSlices``
+
+- **Sheet:** ``TimeSlices``
 Zone specific representative hourly profiles (the hourly values available in .tit file in each subregion model directory can be reviewed and re-aggregated to model time slices (load regions) if needed)
+
 The representation of the above stated georeferenced zones, allow capturing of the following two important aspects in SPLAT models:
-Significant influence of the location and site specific weather on the cost and performance of these supply options respectively
-To optimize the selection of each zone capacity based on a more elaborate accounting of the complementarities of production patterns of these supply options with demand, dispatchable hydropower dam technologies, run of river generators and cross-border energy system resources
+
+- Significant influence of the location and site specific weather on the cost and performance of these supply options respectively
+
+- To optimize the selection of each zone capacity based on a more elaborate accounting of the complementarities of production patterns of these supply options with demand, dispatchable hydropower dam technologies, run of river generators and cross-border energy system resources
+
 In rare cases, when refinements are necessary, the SPLAT user has the ability to modify the above stated zone parameters (see 7.2.11 & 4.Defining Time). However, in normal use case, the user is required to just review/revise the ‘first year’ for the zones only (see :ref:`_tech_sheet`).
 
 VRE technologies can be defined in two ways - either as generic technologies or site-specific technologies. Below is an example for adding offshore wind, first as a generic technology, then as zones.
