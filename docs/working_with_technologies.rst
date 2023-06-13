@@ -165,21 +165,21 @@ Technology wise, the SPLAT zones vary in count. For CSP and wind offshore, given
 
 Unlike other generation technologies, the per kW overnight capital costs assumed for zones, include an additional offset which represents following:
 
-**All MSR technologies except Wind offshore:** the cost of typical grid tie infrastructure and the connecting road, required to connect each kW of capacity, with the existing transmission grid and existing road respectively 
+    **All MSR technologies except Wind offshore:** the cost of typical grid tie infrastructure and the connecting road, required to connect each kW of capacity, with the existing transmission grid and existing road respectively 
 
-**Wind offshore:** the cost of typical grid tie infrastructure, involving offshore and onshore parts, required to connect each kW of capacity with the existing transmission grid 
+    **Wind offshore:** the cost of typical grid tie infrastructure, involving offshore and onshore parts, required to connect each kW of capacity with the existing transmission grid 
 
 Additionally in wind onshore zones, the overnight cost assumption is set by subjecting this assumption adopted for generic wind onshore case, to a multiplication depending on the appropriate wind class per zone, estimated in the MSR analysis. The multiplication factors are set as 1x, 1.16x and 1.36x; for class-1, class-2 and class-3 wind respectively (classes as per `NREL wind toolkit-2014 <https://www.nrel.gov/docs/fy14osti/61714.pdf>`_).
 
 The MSR analysis has also derived the following parameters required by SPLAT as input per zone:
   
-- **Sheets:** ``PVZones``, ``WindZones``, ``OffshoreWindZones``, ``CSP6hrZones``, ``CSP12hrZones``
-Capacity potential MW (upper bound on total installed capacity i.e. bdi up c)
-Location info (Longitude & latitude)
-Overnight cost offsets
+    **Sheets:** ``PVZones``, ``WindZones``, ``OffshoreWindZones``, ``CSP6hrZones``, ``CSP12hrZones``
+    - Capacity potential MW (upper bound on total installed capacity i.e. bdi up c)
+    - Location info (Longitude & latitude)
+    - Overnight cost offsets
 
-- **Sheet:** ``TimeSlices``
-Zone specific representative hourly profiles (the hourly values available in .tit file in each subregion model directory can be reviewed and re-aggregated to model time slices (load regions) if needed)
+    **Sheet:** ``TimeSlices``
+    - Zone specific representative hourly profiles (the hourly values available in .tit file in each subregion model directory can be reviewed and re-aggregated to model time slices (load regions) if needed)
 
 The representation of the above stated georeferenced zones, allow capturing of the following two important aspects in SPLAT models:
 
@@ -187,7 +187,7 @@ The representation of the above stated georeferenced zones, allow capturing of t
 
 - To optimize the selection of each zone capacity based on a more elaborate accounting of the complementarities of production patterns of these supply options with demand, dispatchable hydropower dam technologies, run of river generators and cross-border energy system resources
 
-In rare cases, when refinements are necessary, the SPLAT user has the ability to modify the above stated zone parameters (see 7.2.11 & 4.Defining Time). However, in normal use case, the user is required to just review/revise the ‘first year’ for the zones only (see :ref:`_tech_sheet`).
+In rare cases, when refinements are necessary, the SPLAT user has the ability to modify the above stated zone parameters (see :ref:`_vrezones_sheet` & :ref:`defining_time`). However, in normal use case, the user is required to just review/revise the ‘first year’ for the zones only (see :ref:`_tech_sheet`).
 
 VRE technologies can be defined in two ways - either as generic technologies or site-specific technologies. Below is an example for adding offshore wind, first as a generic technology, then as zones.
 
