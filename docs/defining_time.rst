@@ -5,6 +5,8 @@
 .. role:: button
     :class: button
 
+.. _defining_time:
+
 Defining Time
 ==================
 

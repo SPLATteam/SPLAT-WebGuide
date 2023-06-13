@@ -1,0 +1,7 @@
+﻿Country Group,Countries,Zone Count,
+"Group A 
+Large countries with large population","South Africa, Egypt, Nigeria, Ethiopia, DRC, Algeria, Tanzania, Kenya, Sudan",10,
+"Group B
+Small countries with relatively small population","Morocco, Tunisia, Libya, Mauritania, Senegal, Guinée-Conakry, Mali, Niger, Burkina Faso, Sierra Leone, Liberia, Côte d'Ivoire, Ghana, Togo, Benin, Chad, Central African Republic, South Sudan, Somalia, Eritrea, Cameroon, Congo-Brazzaville, Gabon, Angola, Zambia, Zimbabwe, Namibia, Malawi, Mozambique, Rwanda, Burundi, Uganda",2,
+"Group C
+Countries not in A & B","The Gambia, Equatorial Guinea, Lesotho, Eswatini, Djibouti, Guiné-Bissau",5,

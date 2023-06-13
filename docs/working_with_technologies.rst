@@ -152,13 +152,54 @@ Changing a technology
 
 .. _renewable_tech:
 
-Defining variable renewable energy technologies
+Defining variable renewable energy and storage technologies
 -----------------------------------------------------------------
 
 .. _solar_wind:
 
 Solar PV, CSP, onshore and offshore Wind
 +++++++++++++++++++++++++++++++++++++++++++++++++
+
+As part of the features of SPLAT starter modelling kits for users, the SPLAT models have been pre-loaded with special supply options (called ‘zones’) for four generation technologies: solar PV (??SOPCZ), concentrated solar power CSP, wind onshore (??WDOCZ), wind offshore (??WDOCZ). For CSP, given the fact that there can be many plant design possibilities with varying thermal storage and solar field size; only two specific plant-design based zones are available in SPLAT which are namely, the solar multiple 2 plant with 6 hour storage (??SOTNZ) and solar multiple 4 plant with 12 hour storage (??SOTSZ). Each zone name carries a suffix representing its id (e.g. 001, 002 …).
+ 
+SPLAT zones have site specific cost and performance assumptions, derived from an exogenous GIS assisted analysis that identified thousands of georeferenced Model Supply Regions (MSRs) across Africa and clustered them into SPLAT zones (see `MSR methodology paper <https://www.nature.com/articles/s41597-022-01786-5>`_ for more details).
+
+Technology wise, the SPLAT zones vary in count. For CSP and wind offshore, given the relatively less impact of site weather on the production profiles, only two zones are included per country. For solar PV and wind onshore, given their high future prospects in almost all African countries and high impact of site weather on the production profiles, higher number of zones are included in SPLAT models which vary across three country groups, described below.
+
+.. csv-table::
+    :file: csv_file/CountryWiseZoneCount.csv
+    :header-rows: 1
+    :widths: 30 10 70
+
+Unlike other generation technologies, the per kW overnight capital costs assumed for zones, include an additional offset which represents following:
+
+    **All MSR technologies except Wind offshore:** the cost of typical grid tie infrastructure and the connecting road, required to connect each kW of capacity, with the existing transmission grid and existing road respectively 
+
+    **Wind offshore:** the cost of typical grid tie infrastructure, involving offshore and onshore parts, required to connect each kW of capacity with the existing transmission grid 
+
+Additionally in wind onshore zones, the overnight cost assumption is set by subjecting this assumption adopted for generic wind onshore case, to a multiplication depending on the appropriate wind class per zone, estimated in the MSR analysis. The multiplication factors are set as 1x, 1.16x and 1.36x; for class-1, class-2 and class-3 wind respectively (classes as per `NREL wind toolkit-2014 <https://www.nrel.gov/docs/fy14osti/61714.pdf>`_).
+
+The MSR analysis has also derived the following parameters required by SPLAT as input per zone:
+  
+    **Sheets:** ``PVZones``, ``WindZones``, ``OffshoreWindZones``, ``CSP6hrZones``, ``CSP12hrZones``
+
+    - Capacity potential MW (upper bound on total installed capacity i.e. bdi up c)
+
+    - Location info (Longitude & latitude)
+
+    - Overnight cost offsets
+
+    **Sheet:** ``TimeSlices``
+
+    - Zone specific representative hourly profiles (the hourly values available in .tit file in each subregion model directory can be reviewed and re-aggregated to model time slices (load regions) if needed)
+
+The representation of the above stated georeferenced zones, allow capturing of the following two important aspects in SPLAT models:
+
+- Significant influence of the location and site specific weather on the cost and performance of these supply options respectively
+
+- To optimize the selection of each zone capacity based on a more elaborate accounting of the complementarities of production patterns of these supply options with demand, dispatchable hydropower dam technologies, run of river generators and cross-border energy system resources
+
+In rare cases, when refinements are necessary, the SPLAT user has the ability to modify the above stated zone parameters (see :ref:`vrezones_sheet` & :ref:`defining_time`). However, in normal use case, the user is required to just review/revise the 'first year' for the zones only (see :ref:`tech_sheet`).
 
 VRE technologies can be defined in two ways - either as generic technologies or site-specific technologies. Below is an example for adding offshore wind, first as a generic technology, then as zones.
 
@@ -177,6 +218,12 @@ The profiles refer to the capacity factor in the case of solar and wind technolo
 
 Hydro Dam
 ++++++++++++++
+
+SPLAT CMP model characterizes the dam-based hydropower plants by accounting river and dam specific resource conditions. Their dispatch is optimized while synergizing with other renewable supply options (i.e. the solar photovoltaic, wind, concentrated solar power and run of river based hydropower) that are given fixed and exogenously determined generation profiles. 
+
+The dam hydropower plants are represented as a combination of three elements: river, dam and a generator. The river and the generator are inserted as â€˜technologyâ€™ while the dam is inserted as a â€˜storageâ€™ (for details, see MESSAGE manual). As explained ahead, the SPLAT naming convention requires these three elements to carry a common name but different prefixes. 
+
+The river technology is characterized with the exogenously determined maximum monthly inflow assumption in MW units and a normalized monthly flow profile. Similarly, the dam storage is characterized with a maximum volume in MWyr units. These assumptions are mainly derived from IRENAâ€™s `AfREP Hydropower database <https://www.irena.org/publications/2021/Dec/African-Renewable-Electricity-Profiles-Hydropower/>`_. In rare cases, when refinements are necessary, the SPLAT user has the ability to modify these characteristics. However, in normal use case, the user is required to just review/revise the generator side characteristics only (see :ref:`tech_sheet`).
 
 The ``SpecificTechHydroDams`` sheet manipulates the hydro dams in the model.
 
@@ -206,10 +253,28 @@ If the user wants to simulate different rainfall scenarios without a full time s
 Batteries and Pump Storage
 ++++++++++++++++++++++++++++++++++++
 
-The storage technologies, which are currently modelled in SPLAT-MESSAGE modelling framework, are battery storage (intraday storage) and pumped hydro (intraday or multi-day in some cases) technologies.
-The storage technologies have to be defined in the ``Battery&PumpStorage`` sheet in SPLAT excel interface with the following steps:
+SPLAT interface allows the user to characterize one battery technology per country. This technology represents a 4 hour grid connected storage resource, whose capacity is optimized.
+In the modelled energy system, the batteries would charge and discharge when it makes least cost sense. Their contribution to :ref:`rmconstraint_sheet` is also allowed. 
 
-1. In ``Battery&PumpStorage`` sheet: create the technology with techname convention: xxELSTyyyy for a battery or xxELSTPSyyyy for pump storage, where xx is country code, and yyyy is site description (For example, ZAELSTPSDrakensberg). 
+The inherent modelling of â€˜storagesâ€™ in MESSAGE can appropriately represent the characteristics of hydro dams, which can store water resources for long durations up to seasonal scale.
+In contrast, the batteries can store only a few hours of charge which, in practice, can be retained up to few days at most. As a result, the inclusion of battery storage model in MESSAGE is not straight forward and required insertion of several elements and constraints. The user doesnâ€™t have to deal with these elements and constraints in the normal use cases. These are briefly described and illustrated below just for context:
+
+1. SPLAT model entails a main â€˜technologyâ€™ (??ELST04) that represents battery and a â€˜storageâ€™ (SS\_??ELST04) that represents the reservoir of charge connected with the main technology.
+
+2. SPLAT model entails a proxy â€˜technologyâ€™ (??ELPT04) that is constrained â€“ via a constraint called PC\_??ELST04 - to have the same installed MW as the main technology (??ELST04) and is linked with storage (SS\_??ELST04) â€“ via a constraint called PS\_??ELST04 - to enforce a constant relationship between installed MW and the charge reservoir size (MWh).
+In simple words, this relationship can be described as â€˜every MW battery installed would expand the charge reservoir size by 4 MWhâ€™. This relationship is enforced by activating an exogenously determined capacity factor (CF) profile on the proxy technology (??ELPT04) using a formula given in the diagram.  Keeping in view the shorter storage duration limits of grid batteries (vs hydropower dam), the CF value in the last time slice of every season is set to 0. This means that whatever charge that is left in the storage (SS\_??ELST04) at the end of the season is discarded (because of PS\_??ELST04 constaint), or in other words, the batteries cannot retain charge for long periods of seasonal scale. 
+
+3. Dummy technologies are inserted to complete the battery model. Dummy technology ensures that the main battery technology accounts the charge left in the reservoir in the end time slice (end of the day), by shifting it into the beginning time slice (beginning of the day). Separate dummy technology is required for each season. SPLAT naming convention sets the dummy technology name as â€˜??ELDT04_??â€™, where the suffix preceded by underscore represents the season number. This means, that the count of dummy technologies will be equal to the count of seasons selected for the model run.
+
+.. image:: /images/BatteryModel.png
+
+In SPLAT models, the pumped hydropower plant is represented using the same modelling concept as the battery technology. However, the user can insert multiple pumped hydropower plants and control their type (i.e. committed or candidate).
+Since, each of such technology requires insertion of several extra technologies as described above, usually, the user cannot insert more than 6 or 7 pumped hydropower technologies in any single country due to inherent MESSAGE software limitations.
+The way around for this is therefore to aggregate multiple pumped hydropower plants in one technology.
+
+Batteries and pump storage technologies can be added and modified in the standard way through the SPLAT excel interface:
+
+1. In ``Battery&PumpStorage`` sheet: create the technology with techname convention: xxELST?? for a battery (the suffix ?? should be set as storage size in hours e.g. 04) or xxELSTPS[*site/group name*] for pump storage (e.g. ZAELSTPSDrakensberg); where xx is the country code. 
 
 2. :button:`Reload Global`.
 
