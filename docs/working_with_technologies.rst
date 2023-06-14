@@ -152,7 +152,7 @@ Changing a technology
 
 .. _renewable_tech:
 
-Defining variable renewable energy and storage technologies
+Defining some key technologies
 -----------------------------------------------------------------
 
 .. _solar_wind:
