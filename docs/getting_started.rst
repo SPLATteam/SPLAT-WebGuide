@@ -80,7 +80,7 @@ When you open the file, you must click :button:`Enable Content` (as shown below)
 
 .. image:: /images/getting_started_opening_file.PNG
 
-Also, macros must be enabled. Refer to link to `enable macros .<https://support.microsoft.com/en-gb/office/enable-or-disable-macros-in-microsoft-365-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6>`_
+Also, macros must be enabled. Refer to link to `enable macros <https://support.microsoft.com/en-gb/office/enable-or-disable-macros-in-microsoft-365-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6>`_
 
 .. _checking_decimal:
 
