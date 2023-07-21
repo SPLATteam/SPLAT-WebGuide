@@ -80,10 +80,7 @@ When you open the file, you must click :button:`Enable Content` (as shown below)
 
 .. image:: /images/getting_started_opening_file.PNG
 
-Also, macros must be enabled. Refer to link to `enable macros`_.
-
-.. _enable macros:
-https://support.microsoft.com/en-gb/office/enable-or-disable-macros-in-microsoft-365-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6
+Also, macros must be enabled. Refer to link to `enable macros .<https://support.microsoft.com/en-gb/office/enable-or-disable-macros-in-microsoft-365-files-12b036fd-d140-4e74-b45e-16fed1a7e5c6>`_
 
 .. _checking_decimal:
 
@@ -101,7 +98,7 @@ Linking the interface to your model file
 
 1. In the ``Main`` tab of the file, make sure the fields :inputcell:`Model Folder` and :inputcell:`Main Region` are set correctly as shown below, to reflect the location of the restored MESSAGE model folder on your computer.
 
-2. in the ``Subregions`` section of the ``Main`` tab, choose which country / countries you want to activate, by placing a "1" next to it in the orange column, and a "0" next to any other countries.
+2. In the ``Subregions`` section of the ``Main`` tab, choose which country / countries you want to activate, by placing a "1" next to it the orange column, and a "0" next to any other countries.
 
 3. Click the :button:`Reload Global` button at the top of the page (this connects the MESSAGE model files with this Excel workbook). The model files are read and loaded into memory in Excel.
 
@@ -153,7 +150,7 @@ In this example we select :inputcell:`Interconnected`` option.
 3.	Select the correct option under the "Run" categories. The categories correspond to the same options in the MESSAGE "Run" menu:
 	:inputcell:`Mxg` = Matrix Generator;
 	:inputcell:`Opt` = Optimisation;
-	:inputcell:`Cap` = Cap file creation;
+	:inputcell:`Cap` = Calculator program (Cap) file creation;
 	:inputcell:`All` = perform all of the above.
 	There are three different options provided in the interface for CPLEX, CBC and GUROBI depending on which solver you have pre-installed. If you are a new user, please install and use CBC (:ref:`install_solver`).
 
