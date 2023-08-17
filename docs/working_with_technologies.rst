@@ -34,7 +34,7 @@ The SPLAT Africa model used in the Continental Power System Master Plan (CMP) pr
 MSR comprises of pre-loaded georeferenced solar PV, solar CSP, wind onshore and offshore supply options designed by IRENA through a systematic geospatial analysis explained in this `paper <https://www.nature.com/articles/s41597-022-01786-5>`_.
 These variable renewable energy technologies are also considered as candidate technologies.
 
-**4. Generic technologies:** These technologies are not site specific. They have generalised parameters. Similar to candidate technologies, these technologies are also part of the optimisation process. The model would select these technologies if they show a net benefit to the modelled power system.
+**4. Generic technologies:** These technologies are not site specific. They have generalised parameters and hence, they cannot be assigned specific name/description. Generic technologies appear in the model results when the candidate and other technologies are not sufficient to close the gap between supply and demand.
 
 The generic technologies are normally set up in a way that they don't come online in reference scenaerios. One of the main motivations to have generic technologies in the model is to make the model tech-agnostic, which in turn increases acceptance among stakeholders.
 
