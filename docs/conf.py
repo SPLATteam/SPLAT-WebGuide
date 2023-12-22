@@ -9,7 +9,7 @@ author = 'Yunshu Li, Himalaya Bir Shrestha'
 release = '0.1'
 version = '0.1.0'
 
-formats = ["epub", "pdf"]
+#formats = ["epub", "pdf"]
 
 # -- General configuration
 
