@@ -480,23 +480,7 @@ Different countries or regions can have target of achieving certain minimum shar
 In the ``LocalREConstraint`` sheet, the minimum "target" share of RE (more specifically VRE) technologies in the total power generation is set as a constraint in the model for different years.
 The equation representing this constraint can be represented below:
 
-vres_gen >= target_vres_share * total_gen
-
-vres_gen - target_vres_share * total_gen >= 0
-
-vres_gen - target_vres_share * (vres_gen + other_gen) >= 0
-
-vres_gen - target_vres_share * vres_gen - target_vres_share * other_gen >=0
-
-(1 - target_vres_share) * vres_gen - target_vres_share * other_gen >= 0
-
-where,
-
-vres_gen = generation from VRE technology
-
-vres_share = share of VRE in total generation (total_gen) which is set as the minimum target share by a country or region
-
-other_gen = generation from non-VRE technologies
+.. image:: /images/localre_constraint_equation.PNG
 
 "ConAct_RE" refers to the coefficient of Activity/Generation (GWh) of a power plant technology.
 
